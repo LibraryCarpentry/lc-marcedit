@@ -1,44 +1,40 @@
-# Library Carpentry: MarcEdit
+# Maintainers for Library Carpentry: MarcEdit
 
-[![Create a Slack Account with us](https://img.shields.io/badge/Create_Slack_Account-The_Carpentries-071159.svg)](https://swc-slack-invite.herokuapp.com/)
+- [Owen Stephens](https://github.com/ostephens)
+- [Chris Erdmann](https://github.com/libcce)
+- Interested in being a maintainer on this lesson, let us know!
 
-This repository generates the corresponding lesson website from [The Carpentries](https://carpentries.org/) repertoire of lessons.
+Lesson Maintainers communication is via the [team site (not available)]().
+
+## Library Carpentry
+
+[Library Carpentry](https://librarycarpentry.org) is a software and data skills training programme for people working in library- and information-related roles. It builds on the work of [Software Carpentry](http://software-carpentry.org/) and [Data Carpentry](http://www.datacarpentry.org/). Library Carpentry is an official Lesson Program of [The Carpentries](https://carpentries.org/).
+
+## License
+
+All Software, Data, and Library Carpentry instructional material is made available under the [Creative Commons Attribution
+license](https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/LICENSE.md).
 
 ## Contributing
 
-We welcome all contributions to improve the lesson! Maintainers will do their best to help you if you have any
-questions, concerns, or experience any difficulties along the way.
+There are many ways to discuss and contribute to Library Carpentry lessons. Visit the lesson [discussion page](https://librarycarpentry.org/lc-marcedit/discuss/index.html) to learn more. Also see [Contributing](https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/CONTRIBUTING.md).
 
-We'd like to ask you to familiarize yourself with our [Contribution Guide](CONTRIBUTING.md) and have a look at
-the [more detailed guidelines][lesson-example] on proper formatting, ways to render the lesson locally, and even
-how to write new episodes.
+## Code of Conduct
 
-Please see the current list of [issues][FIXME] for ideas for contributing to this
-repository. For making your contribution, we use the GitHub flow, which is
-nicely explained in the chapter [Contributing to a Project](http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project) in Pro Git
-by Scott Chacon.
-Look for the tag ![good_first_issue](https://img.shields.io/badge/-good%20first%20issue-gold.svg). This indicates that the mantainers will welcome a pull request fixing this issue.  
-
-
-## Maintainer(s)
-
-Current maintainers of this lesson are
-
-* FIXME
-* FIXME
-* FIXME
-
+All participants should agree to abide by The Carpentries [Code of Conduct](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html).
 
 ## Authors
 
-A list of contributors to the lesson can be found in [AUTHORS](AUTHORS)
+Library Carpentry is authored and maintained through issues, commits, and pull requests from the community.
+
+## Citation
+
+Library Carpentry: MarcEdit (2019, September). https://github.com/LibraryCarpentry/lc-marcedit. 
 
 ## Acknowledgement
 
 Some of the content in this MarcEdit lesson was initially based on CC-BY materials developed by Owen Stephens in November 2015.
 
-## Citation
+## Checking and Previewing the Lesson
 
-To cite this lesson, please consult with [CITATION](CITATION)
-
-[lesson-example]: https://carpentries.github.io/lesson-example
+To check and preview a lesson locally, see [http://carpentries.github.io/lesson-example/07-checking/index.html](http://carpentries.github.io/lesson-example/07-checking/index.html).
