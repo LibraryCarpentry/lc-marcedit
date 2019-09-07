@@ -33,6 +33,10 @@ Current maintainers of this lesson are
 
 A list of contributors to the lesson can be found in [AUTHORS](AUTHORS)
 
+## Acknowledgement
+
+Some of the content in this MarcEdit lesson was initially based on CC-BY materials developed by Owen Stephens in November 2015.
+
 ## Citation
 
 To cite this lesson, please consult with [CITATION](CITATION)
