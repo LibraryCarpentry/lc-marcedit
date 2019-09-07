@@ -31,7 +31,7 @@ Use the settings (cog) icon on the opening screen to modify the shortcuts that a
 
 
 ## The MarcEdit interface
-![MarcEdit Main menu/navigation](../assets/img/main-menu.png)
+![MarcEdit Main menu/navigation](../fig/main-menu.png)
 
 The MarcEdit interface is a little different to standard Windows or Mac software. On starting the software, the first screen shows a set of icons for different tools within MarcEdit. This screen can be customised so that you can access the tools you use most from this starting screen.
 
@@ -62,7 +62,7 @@ These records are derived from [a set of MARC records made available by the Univ
 ## Exercise 1: Opening MARC records in the MarcEditor
 
 If you want to view and/or directly edit MARC records in MarcEdit, you do this using the MarcEditor. This can be accessed directly from the (default) start screen, or from the File menu.
-![Empty MarcEditor screen](../assets/img/marc-editor-empty.png)
+![Empty MarcEditor screen](../fig/marc-editor-empty.png)
 
 Click the MarcEditor option, and the MarcEditor will open with an empty screen:
 
@@ -132,7 +132,7 @@ To open a file of MARC records in the MarcEditor:
 
 You should now see the MARC records from the file displaying in the MarcEditor
 
-![MarcEditor screen with file open](../assets/img/marc-editor.png)
+![MarcEditor screen with file open](../fig/marc-editor.png)
 
 The MarcEditor displays the records in what is called the 'MARC Text File' format (file extension *.mrk). Each line in the file represents a field in a MARC record:
 
@@ -253,7 +253,7 @@ To find what fields are present (and how many times they appear) in the file you
 
 Scrolling down the report you can see (for example) that the 090 field (local call number) appears 235 times (in 234 records):
 
-![Field Count report](../assets/img/field-count-report.png)
+![Field Count report](../fig/field-count-report.png)
 
 **Remove the 090 using Add/Delete Field**
 
@@ -305,7 +305,7 @@ You can use the Find options in the MarcEditor to identify problems with MARC re
 *   Check the 'Use regular expressions' box
 *   Click 'Find All'
 
-![Find All results](../assets/img/find-all-results.png)
+![Find All results](../fig/find-all-results.png)
 
 *   You should be shown a list of all matching lines from the file:
 *   To correct individual records you can click the line you want to edit then click 'Jump to Page'.
