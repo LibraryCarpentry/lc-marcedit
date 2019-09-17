@@ -4,7 +4,7 @@
 - [Jennifer Eustis](https://github.com/jenmawe)
 - Interested in being a maintainer on this lesson, let us know!
 
-Lesson Maintainers communication is via the [team site (not available)]().
+Lesson Maintainers communication is via the [team site](https://github.com/orgs/LibraryCarpentry/teams/lc-marcedit-maintainers).
 
 ## Library Carpentry
 
