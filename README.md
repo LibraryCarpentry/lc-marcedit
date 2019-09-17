@@ -1,7 +1,7 @@
 # Maintainers for Library Carpentry: MarcEdit
 
 - [Owen Stephens](https://github.com/ostephens)
-- [Chris Erdmann](https://github.com/libcce)
+- [Jennifer Eustis](https://github.com/jenmawe)
 - Interested in being a maintainer on this lesson, let us know!
 
 Lesson Maintainers communication is via the [team site (not available)]().
