@@ -2,6 +2,7 @@
 
 - [Owen Stephens](https://github.com/ostephens)
 - [Jennifer Eustis](https://github.com/jenmawe)
+- [Abigail Sparling](https://github.com/abigailsparling)
 - Interested in being a maintainer on this lesson, let us know!
 
 Lesson Maintainers communication is via the [team site](https://github.com/orgs/LibraryCarpentry/teams/lc-marcedit-maintainers).
