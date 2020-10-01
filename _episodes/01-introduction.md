@@ -23,8 +23,6 @@ This work is licensed under a Creative Commons Attribution 4.0 International Lic
 
 [http://creativecommons.org/licenses/by/4.0/](http://creativecommons.org/licenses/by/4.0/).
 
-It is suggested when crediting this work, you include the phrase “Developed by Owen Stephens”.
-
 The exercises in this document were designed for and have been tested with MarcEdit 6.2 on Windows. Most of the exercises will also work on other versions and platforms, but they have not been tested.
 
 **1. Getting Started**
