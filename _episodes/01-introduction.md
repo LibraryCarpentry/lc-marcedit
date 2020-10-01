@@ -19,11 +19,11 @@ keypoints:
 
 This Introduction to MarcEdit is based on materials developed by Owen Stephens ([owen@ostephens.com](mailto:owen@ostephens.com)) in November 2015.
 
-This work is licensed under a Creative Commons Attribution 4.0 International License
+This work is licensed under a Creative Commons Attribution 4.0 International License.
 
 [http://creativecommons.org/licenses/by/4.0/](http://creativecommons.org/licenses/by/4.0/).
 
-It is suggested when crediting this work, you include the phrase “Developed by Owen Stephens”
+It is suggested when crediting this work, you include the phrase “Developed by Owen Stephens”.
 
 The exercises in this document were designed for and have been tested with MarcEdit 6.2 on Windows. Most of the exercises will also work on other versions and platforms, but they have not been tested.
 
@@ -517,4 +517,3 @@ You are now ready to run the Generate Call Numbers tool. There are quite a few s
 *   You are now ready to run the tool - you do this by clicking the 'Classify' button
 *   The tool will now look up each record in your file against the OCLC service - it does the look up using one or more control numbers in your record - in this case the records only have ISBNs, so this is used, but the service would also use OCLC numbers if they were present
 *   The process may take several minutes (even for just 3 records), but once it is complete you should see that subject headings and Dewey Decimal classifications have been added to your skeleton MARC records
-
