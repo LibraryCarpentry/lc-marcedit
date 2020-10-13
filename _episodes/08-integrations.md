@@ -1,14 +1,14 @@
 ---
-title: "Profiling Your MARC data"
+title: "Integrations"
 teaching: 0
 exercises: 0
 questions:
-- "How can you create a profile?"
+- "What are integrations?"
 - "What can it do?"
 objectives:
 - "Explain ..."
 
- files"
+
 keypoints:
 - "First key point. "
 ---
@@ -16,4 +16,4 @@ keypoints:
 {% include links.md %}
 
 
-# Profiling your MARC data
+# Integrations
