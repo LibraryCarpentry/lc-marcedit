@@ -6,11 +6,11 @@ questions:
 - "What is a MARC binary file?"
 
 objectives:
-- "Explain..."
+- "Explain the objective"
 
 
 keypoints:
-- "First key point. "
+- "First key point."
 ---
 
 
