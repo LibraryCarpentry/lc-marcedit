@@ -7,11 +7,11 @@ questions:
 
 
 objectives:
-- "Explain ..."
+- "Explain the objective"
 
 
 keypoints:
-- "First key point. "
+- "First key point."
 ---
 
 {% include links.md %}
