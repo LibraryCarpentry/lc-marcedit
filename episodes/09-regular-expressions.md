@@ -6,12 +6,11 @@ questions:
 - "What are regular expressions?"
 - "What can it do?"
 objectives:
-- "Explain ...."
+- "Explain the objective"
 
 
 keypoints:
-- "First key point. "
----
+- "First key point."
 
 {% include links.md %}
 
