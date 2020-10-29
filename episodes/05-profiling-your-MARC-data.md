@@ -7,8 +7,6 @@ questions:
 - "What can it do?"
 objectives:
 - "Explain the objective"
-
- files"
 keypoints:
 - "First key point."
 ---
