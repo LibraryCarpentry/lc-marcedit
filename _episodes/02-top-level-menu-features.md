@@ -10,7 +10,8 @@ objectives:
 - "Locate top level menu features"
 - "Explain the top level menu features"
 keypoints:
-- "First key point."
+- "MarcEdit offers a customizable interface with a suite of tools including the MarcEditor"
+- "Users can customize their preferences in the Settings module"
 ---
 
 # Top Level Menu Features
