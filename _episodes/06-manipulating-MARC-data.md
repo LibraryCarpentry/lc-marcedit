@@ -166,4 +166,4 @@ The MARC data that you manipulate in the MarcEditor is a friendly view that was 
 
 When you save or save as in the MarcEditor, you are saving your latest changes as a .mrk or in the friendly view that was broken from the binary .mrc file.
 
-When you compile, you are saving all of your latest changes and reforming that record into its binary .mrc format.
+When you compile, you are saving all of your latest changes and reforming that record into its binary .mrc format that can be used to load the records in external systems such as your ILS or LSP.
