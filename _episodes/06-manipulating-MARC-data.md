@@ -33,7 +33,7 @@ In the top middle section of the window, there are two data entry fields: Field 
   ![Add/Delete Window](../assets/img/addDeleteField.png)
   ![Example of Syntax to add or delete a field](../assets/img/example_addDelete.png)
 
-To add the field, click on the Add butoon and to delete, the Delete button.
+To add the field, click on the Add button and to delete, the Delete button.
 
 There are a number of options for adding a MARC field to your data. The MARC field can be inserted first in the list of those MARC fields or last. MARC fields can be added only if that MARC field is not present in that record or based on the presence of other criteria based on other MARC fields. For example, a MARC field 655  \4$aElectronic books can be added to only those records that are eBooks based on the data in the LDR or 008.
 
