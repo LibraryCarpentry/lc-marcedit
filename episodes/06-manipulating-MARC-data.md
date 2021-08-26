@@ -58,7 +58,7 @@ The options to delete a MARC field include removing duplicates, removing MARC fi
 {: .challenge}
 
 ### Add, Delete, or Change information for a subfield in a MARC field
-To manipulate a subfield or change information that is in a subfield, go to Tools in the menu at the top and select Edit Subfield data which will open a new window. You'll notice that this is the same window that opened for Add/Delete a field. From here once you have selected to edit a subfield, you can add a new subfield, delete a subfield, or replace text in a subfield. How you do this is selecting one of the options below the data entry fields at the top of the window.
+To edit subfield data within a given field, go to Tools and select Edit Subfield data. A new window will open (notice that this is the same window that opened for Add/Delete a field, you can also navigate between the MarcEdit Batch Editing Tools using the labels on the left hand side of the window). From here you can add a new subfield, delete a subfield, or replace text in a subfield. How you do this is selecting one of the options below the data entry fields at the top of the window.
 
 To add a subfield, enter the MARC field and then the subfield. The information or text that goes into that subfield goes into the box called Replace With. Select New Subfield from the options below and then click Replace Text. Even though you are adding a subfield, you still click replace text. For adding a subfield, the information that goes in that field doesn't go in the box called Field Data, see the example below.
 
