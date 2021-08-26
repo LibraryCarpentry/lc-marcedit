@@ -35,7 +35,7 @@ In the top middle section of the window, there are two data entry fields: Field 
 
 To add the field, click on the Add button and to delete, the Delete button.
 
-There are a number of options for adding a MARC field to your data. The MARC field can be inserted first in the list of those MARC fields or last. MARC fields can be added only if that MARC field is not present in that record or based on the presence of other criteria based on other MARC fields. For example, a MARC field 655  \4$aElectronic books can be added to only those records that are eBooks based on the data in the LDR or 008.
+There are a number of options for adding a MARC field to your data. If the field you are adding already exists, it can be inserted first in the list of those MARC fields or last. MARC fields can be added only if that MARC field is not present in that record or based on the presence of other criteria based on other MARC fields. For example, a MARC field 655  \4$aElectronic books can be added to only those records that are eBooks based on the data in the LDR or 008.
 
 The options to delete a MARC field include removing duplicates, removing MARC fields based on field position, removing MARC fields that do not match what is entered in the Field Data, or removing invalid UTF-8 MARC fields. For example, to ensure that only the field 655  \4$aElectronic books. is present in the MARC data, the option to remove the MARC fields that don't match can be selected.
 
