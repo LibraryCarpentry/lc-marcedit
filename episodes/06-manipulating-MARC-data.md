@@ -74,7 +74,7 @@ To replace text in a subfield, enter the MARC field, the subfield, the text (or 
 > In version 7.5, you can preview all of these changes before making the change.
 > If you do make the change and see that those changes weren't what you expected, you can do a Special Undo.
 > Go to Edit in the top level menu in the MarcEditor and select Special Undo.
-> This will only work once. If you perform an action after your batch change, that will not undo your batch change but the action you just performed.
+> This will only on your most recent batch edit. If you perform an action after your batch change, that will not undo your batch change but the action you just performed.
 >
 {: .callout}
 
