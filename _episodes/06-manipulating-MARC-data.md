@@ -29,7 +29,7 @@ To manipulate MARC data, that MARC data needs to be open as .mrk in the MarcEdit
 ### Add/Delete a MARC field
 To add or delete a MARC field, go to Tools in the upper menu in the MarcEditor and scroll down to Add/Delete. This will open a new window. The Add/Delete functions are on the same menu level and you will need to select the action of either add or delete using the buttons on the right hand side.
 
-In the top middle section of the window, there are 2 data entry fields, Field and Field Data. The MARC field goes into the data entry Field. In the Field Data, the indicators, subfields, and information are entered here. Remember to include the dollar sign to indicate a subfield.
+In the top middle section of the window, there are two data entry fields: Field and Field Data. Enter the MARC field number in Field. Enter the indicators, subfields, and data in Field Data. Remember to include the dollar sign to indicate a subfield.
   ![Add/Delete Window](../assets/img/addDeleteField.png)
   ![Example of Syntax to add or delete a field](../assets/img/example_addDelete.png)
 
