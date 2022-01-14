@@ -1,7 +1,7 @@
 ---
 title: "Manipulating MARC data"
 teaching: 20
-exercises: 4
+exercises: 5
 questions:
 - "How can MARC data be manipulated?"
 - "How can fields, subfields, and/or indicators be added, changed, or removed?"
@@ -54,6 +54,20 @@ The options to delete a MARC field include removing duplicates, removing MARC fi
 > > 7. Enter 655 in the Field box
 > > 8. In the Field Data box, you can enter \4$aElectronic books.
 > > 9. Click on the Delete button. You can also preview this change by clicking on the arrow on the right side and selecting Preview in the 7.5 version of MarcEdit
+> {: .solution}
+{: .challenge}
+
+>## Delete a range of MARC fields that begin with a number
+>
+>1. Make sure the file has multiple 9XX Marc fields. Add more to your file if necessary.
+>2. Delete all variations of the MARC fields that begin with 9 or delete all 9XX MARC fields.
+>
+> > ## Solution
+> > 1. Go to Tools in the upper menu in the MarcEditor
+> > 2. Select Add/Delete Field (F7)
+> > 3. Add 9XX in the Field box
+> > 4. Click on the Delete button. You can also preview this change by clicking on the arrow on the right side and selecting Preview in the 7.5 version of MarcEdit
+> > 5. Check your MARC data. Were all 9XX fields removed?
 > {: .solution}
 {: .challenge}
 

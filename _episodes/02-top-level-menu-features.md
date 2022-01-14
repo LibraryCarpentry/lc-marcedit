@@ -1,7 +1,7 @@
 ---
 title: "Top Level Menu Features"
-teaching: 0
-exercises: 0
+teaching: 20
+exercises: 6
 questions:
 - "What are top level features?"
 - "Where are the top level features located?"
@@ -19,33 +19,163 @@ keypoints:
 **1. Getting Started**
 
 ## Where are the top level menu features?
+MarcEdit has two sections with top level menus. There is the Main Menu and the top level menu in the MarcEditor. This lesson will cover because each offers different and important options for working with MARC data.
 
+### MarcEdit Main Menu
+The main menu of MarcEdit is the first window to open when you click to open this application. From here, you can access MarcTools, Settings, Plug-ins, and Help.
+![MarcEdit Main Menu](../assets/img/topLevelFeatures_mainMenu.png)
 
+MarcEdit remembers what you did last. In Quick Links, you can easily access your most used tools in MarcEdit.
+![MarcEdit Main Menu Quick Links](../assets/img/quickLinks_mainMenu.png)
 
-## What are the top level menu features?
+Settings is where you can set your preferences for MarcEdit. Preferences include the font and size used in the MarcEditor, the default character encoding such as MARC8 or UTF-8, the tools that appear in the MarcEdit Main Menu, or languages for instance.
+![MarcEdit Main Menu Settings](../assets/img/settings_mainMenu.png)
 
+#### MarcEdit Main Menu
+When you click on MARCEdit Tools Icon from the Main Menu, the available features are:
+* MarcBreaker: This "breaks" the MARC binary file into a readable format that can be edited in the MarcEditor.
+* MarcMaker: This takes the readable format MARC data file and creates the MARC binary file.
+* MARC21 to MARC21XML: This converts a MARC21 file to MARC21XML.
+* MARC21XML to MARC21: This converts a MARC21XML file to a MARC21 binary file.
+* MARC to JSON: This converts a MARC21 file to a JSON file.
+* JSON to MARC: This converts a JSON file to a MARC21 file.
+* JSON to XML: This converts a JSON file to XML.
+* XML to JSON: This converts an XML file to JSON.
+Options include changing the default character encoding only for the tool that you select, translating the MARC data to MARC-8 or UTF8. To change the default character encoding, you will need to go to Settings.
 
-**Going Further**
+The conversions from one encoding standard to another, as in MARC21 to MARC21XML, rely on eXtensible stylesheets. MarcEdit comes with several default stylesheets which come from those maintained by the Library of Congress. If you are familiar with stylesheets, you can also create your own.
 
+There are more features available with the tope level menu option called Tools. There are so many options here. Some will be covered in Integrations in Lesson 8. Let's highlight some tools from this menu.
+* Preferences: This will take you to Settings. Often in MarcEdit, there is more than one place to get to a feature or setting.
+* Delimited Text Translator: If you have a spreadsheet of data, this tool will take that data and create MARC data.
+* Export: You can export a MARC record. More importantly, you can export a Tab Delimited file from MARC data. This tool will take a MARC binary file and create a spreadsheet (either tab or comma separated based on your selection) of all the MARC data.
+* MARC Processing Tools: Features include MARCSplit, MARCJoin, Merge, MARCCompare, MARCValidator, or finding duplicate records.
 
+The MARC Processing Tools can be added to the Main Menu Window in Preferences or Settings. For example, if you use MARCJOIN frequently, then you can add this to the Main Menu Window.
+![MarcEdit Main Menu Tools](../assets/img/tools_mainMenu.png)
 
+>## Update the default character encoding setting
+>
+>1. Change or verify the default character encoding setting to UTF8
+>
+> > ## Solution
+> > 1. Click on the gear icon in the Main Menu window or go to Tools and then Preferences
+> > 2. Click on MarcEditor
+> > 3. In the Default Encoding down down menu, select UTF8
+> > 4. Click OK
+> {: .solution}
+{: .challenge}
 
-## What features are available?
+>## Change the font and size used in the MarcEditor
+>
+>1. Change the font to Arial and size 14
+>
+> > ## Solution
+> > 1. Click on the gear icon in the Main Menu window or go to Tools and then Preferences
+> > 2. Click on MarcEditor
+> > 3. In the Set MarcEditor Font Properties window, click on Set Font
+> > 4. Scroll down to Ariel and select font size 14
+> > 5. Click OK
+> {: .solution}
+{: .challenge}
 
+> ## Go back to the defaults
+>
+> If you don't like the font and size, you can go back to the defaults.
+> Go back to Settings by clicking on the gear icon or Tools and Preferences
+> Go to MarcEditor
+> In the Set MarcEditor Font Properties, click on Set Defaults.
+>
+{: .callout}
 
-## Getting Help
+>## Add a MARC Processing Tool to the Main Menu Window
+>
+>1. Add MARCJoin to the Main Menu Window
+>
+> > ## Solution
+> > 1. Click on the gear icon in the Main Menu window or go to Tools and then Preferences
+> > 2. The top option Main Window should already be highlighted. If not, click on Main Window
+> > 3. Check off MARCJoin
+> > 5. Click OK
+> {: .solution}
+{: .challenge}
 
+> ## Main Window and Updating Settings/Preferences
+>
+> Only 4 programs can be added to the Main Window.
+> When you update some settings like the font and size, you might have to close and reopen MarcEdit.
+>
+{: .callout}
 
+### MarcEditor Top Level Menu
+The MarcEditor has a robust set of features available via the top level menu. Features can be accessed through the menu or through shortcut keys. The shortcut key for a feature appears next to it in the menu.
 
-## Exercise 1:
+![MarcEditor Top Level Menu](../assets/img/topLevelFeatures_marcEditor.png)
 
+#### MarcEditor Top Level Menu Features
+Each top level menu features so many gems. Let's highlight some of those.
 
-## Exercise 2:
+File
+* Save, Save As, Open, Recent: This is where you'll find those important functions of saving, saving as, opening up a recent file, or opening a new file.
+* Select Records for Edit: This is where you can work on a subset of the data.
+* Compile File: This is the same function as MarcMaker meaning that the readable version of your MARC data in the MarcEditor will be converted to a MARC binary file.
 
+Edit
+* Find and Replace: You can find or find and replace just on the current page or in the entire file.
+* Edit Shortcuts: This is where you can change the case, find records that have a missing MARC field or duplicate MARC field, or find fields with a missing word.
+* Jump To: You can use this to jump to record in the file.
+* Insert/Edit 006 or 008: This will open a form to easily insert or edit these fixed fields.
+* Delete Record: You can delete one or more records in a range or based on invalid encoding characters.
 
+Fonts
+If you need to change the font and size for the current MARC data you are working on in the MarcEditor, this is the place to do that.
 
-## Exercise 3:
+Reports
+* Create a custom report
+* Get a count of all the MARC Fields in the MARC Data
+* Get a count of the records based on type (book, serials, videorecordings, etc.)
+* MARCValidator
 
+Tools
+* Add/Delete Marc Fields
+* Edit subfields
+* Edit Indicators
+* Build a new MARC field
+* RDA Helper
 
+OCLC WorldCat
+MarcEdit offers a number of integrations one of which is to OCLC. You can use the Z39.50 tool or OCLC's APIs for metadata and searching to bring in records from WorldCat, update/delete holdings, or work on local bibliographic data.
 
-## Exercise 4:
+>## Where is the feature "Select Records for Edit"
+>
+>1. Find Select Records for Edit
+>
+> > ## Solution
+> > 1. In the MarcEditor, click on File
+> > 2. Scroll down to Select Records to Edit
+> {: .solution}
+{: .challenge
+
+>## Where is the feature to edit one or both indicators for a MARC field
+>
+>1. Find Edit Indicators
+>
+> > ## Solution
+> > 1. In the MarcEditor, click on Tools
+> > 2. Scroll down to Edit Indicator Data
+> {: .solution}
+{: .challenge}
+
+>## Where is the feature to find a missing MARC field
+>
+>1. Find out if you file has any missing 856 MARC fields
+>
+> > ## Solution
+> > 1. In the MarcEditor, click on Edit
+> > 2. Scroll down to Edit Shortcuts
+> > 3. Select Field Edits
+> > 4. Select Find Records Missing Fields
+> > 5. In the pop up winder, type in 856
+> > 6. Click OK
+> {: .solution}
+{: .challenge}
