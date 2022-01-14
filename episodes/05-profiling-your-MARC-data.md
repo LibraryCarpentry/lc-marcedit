@@ -75,7 +75,7 @@ We can use Find to locate and review the 245 field. To run the Find Report
 
 [Image]
 
-The results list is organized by record number, displaying the matched field content on the left, and the record number the field belong to on the right. We can see from our results that Record # 8 appears twice, signalling that this record contains two 245 fields.  By double clicking on  "Jump to record #: 8" we could go directly to the record in our file to edit it. However, next we will show you a set of tools that can be used to locate and fix common errors like duplicate fields.
+The results list is organized by record number, displaying the matched field content on the left, and the record number the field belong to on the right. We can see from our results that Record # 8 appears twice, signaling that this record contains two 245 fields.  By double clicking on  "Jump to record #: 8" we could go directly to the record in our file to edit it. However, next we will show you a set of tools that can be used to locate and fix common errors like duplicate fields.
 
 The `Find Records With Duplicate Tags` function allows us to easily locate records with a duplicated field. To run this function
 * Click Edit
