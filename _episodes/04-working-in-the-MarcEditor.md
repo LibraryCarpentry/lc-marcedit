@@ -20,7 +20,7 @@ MarcEditor works slightly differently than other text editors. To work with MARC
 ## Paging versus Preview
 Preview mode is particularly useful for large MARC files. In Preview mode, you can use the edit functions on the file. However, the disadvantage is that you can not edit the file itself because Preview mode opens the file as read only.
 
-Paging mode is the default set when opening up a file in the MarcEditor. Here, the entire MARC file is read to retrieve the total number of records in the MARC file that are then split into a number of virtually created pages. Here, you can use any of the MarcEdtor tools and make edits to any record on any of the virtual pages. When this file is saved in Paging mode, the number of pages is recalculated, or the file is re-paged.
+Paging mode is set as the default when opening a file in the MarcEditor. Here, the entire MARC file is read to retrieve the total number of records in the MARC file that are then split into a number of virtually created pages. In paging mode you can use all of the MarcEditor tools and make edits to any record on across the virtual pages. When a file is saved in Paging mode, the number of pages is recalculated, or the file is re-paged.
 
 > ## Paging Version 7 Updates
 >
