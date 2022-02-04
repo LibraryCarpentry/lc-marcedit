@@ -14,19 +14,81 @@ keypoints:
 - "The MarcEditor can be used to perform one task at a time or automate a set of tasks for particular types of MARC files"
 - "It is necessary to break a MARC binary file to work with that MARC data in the MarcEditor. The extension of these easily readble MARC files are .mrk rather than the binary extension of .mrc"
 ---
+# MarcEditor Top Level Menu
+The MarcEditor has a robust set of features available via the top level menu. Features can be accessed through the menu or through shortcut keys. The shortcut key for a feature appears next to it in the menu.
+
+![MarcEditor Top Level Menu](../assets/img/topLevelFeatures_marcEditor.png)
+
+## MarcEditor Top Level Menu Features
+Each top level menu features so many gems. Let's highlight some of those.
+
+File
+* Save, Save As, Open, Recent: This is where you'll find those important functions of saving, saving as, opening up a recent file, or opening a new file.
+* Select Records for Edit: This is where you can work on a subset of the data.
+* Compile File: This is the same function as MarcMaker meaning that the readable version of your MARC data in the MarcEditor will be converted to a MARC binary file.
+
+Edit
+* Find and Replace: You can find or find and replace just on the current page or in the entire file.
+* Edit Shortcuts: This is where you can change the case, find records that have a missing MARC field or duplicate MARC field, or find fields with a missing word.
+* Jump To: You can use this to jump to record in the file.
+* Insert/Edit 006 or 008: This will open a form to easily insert or edit these fixed fields.
+* Delete Record: You can delete one or more records in a range or based on invalid encoding characters.
+
+Fonts
+If you need to change the font and size for the current MARC data you are working on in the MarcEditor, this is the place to do that.
+
+Reports
+* Create a custom report
+* Get a count of all the MARC Fields in the MARC Data
+* Get a count of the records based on type (book, serials, videorecordings, etc.)
+* MARCValidator
+
+Tools
+* Add/Delete Marc Fields
+* Edit subfields
+* Edit Indicators
+* Build a new MARC field
+* RDA Helper
+
+OCLC WorldCat
+MarcEdit offers a number of integrations one of which is to OCLC. You can use the Z39.50 tool or OCLC's APIs for metadata and searching to bring in records from WorldCat, update/delete holdings, or work on local bibliographic data.
+
+>## Where is the feature "Select Records for Edit"
+>
+>1. Find Select Records for Edit
+>
+> > ## Solution
+> > 1. In the MarcEditor, click on File
+> > 2. Scroll down to Select Records to Edit
+> {: .solution}
+{: .challenge
+
+>## Where is the feature to edit one or both indicators for a MARC field
+>
+>1. Find Edit Indicators
+>
+> > ## Solution
+> > 1. In the MarcEditor, click on Tools
+> > 2. Scroll down to Edit Indicator Data
+> {: .solution}
+{: .challenge}
+
+>## Where is the feature to find a missing MARC field
+>
+>1. Find out if you file has any missing 856 MARC fields
+>
+> > ## Solution
+> > 1. In the MarcEditor, click on Edit
+> > 2. Scroll down to Edit Shortcuts
+> > 3. Select Field Edits
+> > 4. Select Find Records Missing Fields
+> > 5. In the pop up winder, type in 856
+> > 6. Click OK
+> {: .solution}
+{: .challenge}
+
 # Working in the MarcEditor
 MarcEditor works slightly differently than other text editors. To work with MARC data in the MarcEditor, it is first necessary to "break" the MARC binary file using MarcBreaker. To do this you can use the MarcBreaker tools. Another way is to simply click on the MARC finary file (often this file has the extension .mrc). This will prompt the MarcBreaker tool window to open. Selecting execute will start the process. Here MarcEdit reads the entire MARC file. It then creates the virtual pages of the MARC records in the file. This is called the Paging style of opening a file.
-
-## Paging versus Preview
-Preview mode is particularly useful for large MARC files. In Preview mode, you can use the edit functions on the file. However, the disadvantage is that you can not edit the file itself because Preview mode opens the file as read only.
-
-Paging mode is set as the default when opening a file in the MarcEditor. Here, the entire MARC file is read to retrieve the total number of records in the MARC file that are then split into a number of virtually created pages. In paging mode you can use all of the MarcEditor tools and make edits to any record on across the virtual pages. When a file is saved in Paging mode, the number of pages is recalculated, or the file is re-paged.
-
-> ## Paging Version 7 Updates
->
-> In version 7, the technology behind saving and re-paging saved to address the issue of the time it took to do this on large files. For previous versions, and in particular version 6, it is recommended to use the preview mode for data over approximately 150 MB. In other words, the paging mode works better for data under approximately 150 MBs.
->
-{: .callout}
 
 # MarcEditor features
 There are five features to highlight that will be covered in the next lessons:
