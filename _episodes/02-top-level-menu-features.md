@@ -94,3 +94,9 @@ You can set up to four MARC Processing Tools in Preferences that can be added to
 > > 5. Click OK
 > {: .solution}
 {: .challenge}
+
+> ## MarcEdit Plugins
+>
+> There are a number of useful plugins that can be added to MarcEdit to extend its functionality. Examples include: MARC to KBART converter or cuttering tool. 
+> You can find more information on plugins on the [MarcEdit Plugin page](https://marcedit.reeset.net/managing-plugins-in-marcedit)
+{: .callout}
