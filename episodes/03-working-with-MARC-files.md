@@ -95,7 +95,6 @@ keypoints:
 >5. Under Character encoding select UTF8 as default character encoding.
 >6. Click execute. Once you click execute the newly created .mrk file will open in the MarcEditor.
 >
->Add image here.
 {: .checklist}
 
 >## Character Encoding
