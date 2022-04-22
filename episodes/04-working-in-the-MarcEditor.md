@@ -49,6 +49,7 @@ Tools
 * Edit Indicators
 * Build a new MARC field
 * RDA Helper
+* Sort By
 
 OCLC WorldCat
 MarcEdit offers a number of integrations one of which is to OCLC. You can use the Z39.50 tool or OCLC's APIs for metadata and searching to bring in records from WorldCat, update/delete holdings, or work on local bibliographic data.
