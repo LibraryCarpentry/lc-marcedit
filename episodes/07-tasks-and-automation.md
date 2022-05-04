@@ -34,7 +34,7 @@ Task Actions include:
 - Clone: This will duplicate an existing task.
 - Delete: This will remove a task.
 - Edit: This will allow you to edit an existing task.
-- Rename: This is how to give a different name to an existing task.
+- Rename: This will let you assign a different name to an existing task.
 
 Manage Existing Tasks include:
 - Assign to Group: You can put tasks into different categories or groups.
