@@ -103,7 +103,7 @@ To change an existing task, go to Tools and Manage Tasks. This will open the Tas
 > > 1. Go to Tools in the upper menu in the MarcEditor
 > > 2. Select Manage Tasks
 > > 3. Select the Task you just created. The selected Task will be highlighted.
-> > 4. In Task Actions, select Edit and click Select.
+> > 4. In Task Actions, select Edit Task and click Select.
 > > 5. Select the plus button and select "Add a Replace All Task"
 > > 6. Replace the 856  40$u with 856  40$u[your proxy]. Remember to add 2 spaces after the MARC field.
 > > 7. Save
