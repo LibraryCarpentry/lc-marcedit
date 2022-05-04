@@ -13,7 +13,7 @@ objectives:
 - "Successfully export a task"
 
 keypoints:
-- "MarcEdit tasks are a way to automate a series of functions."
+- "MarcEdit tasks are a way to automate a series of functions"
 - "Tasks can consist of any type of function offered in the MarcEditor tools"
 ---
 
