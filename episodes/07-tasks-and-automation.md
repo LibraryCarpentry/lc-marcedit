@@ -14,7 +14,7 @@ objectives:
 
 keypoints:
 - "MarcEdit tasks are a way to automate a series of functions."
-- "Tasks can consiste of any type of function offered in the MarcEditor tools"
+- "Tasks can consist of any type of function offered in the MarcEditor tools"
 ---
 
 # Tasks and Automation
