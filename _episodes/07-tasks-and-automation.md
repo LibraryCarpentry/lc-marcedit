@@ -97,7 +97,7 @@ To change an existing task, go to Tools and Manage Tasks. This will open the Tas
 
 >## Add a proxy to the 856 40$u in your Task
 >
->1. After you run your Task, your MARC records should have your institution's proxy before the url. Remember to check your data to see if there are any proxy stems present.You will need to remove those before running your Task. If the MARC data has different types of electronic urls (resource, related resource, etc.) as noted in the MARC field 856 indicators, you will need to account for that in your Task.
+>1. After you run your Task, your MARC records should have your institution's proxy before the URL. Remember to check your data to see if there are any proxy stems present. You will need to remove those before running your Task. If the MARC data has different types of electronic URLs (resource, related resource, etc.) as noted in the MARC field 856 indicators, you will need to account for that in your Task.
 >
 > > ## Solution
 > > 1. Go to Tools in the upper menu in the MarcEditor
