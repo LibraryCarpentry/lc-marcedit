@@ -23,7 +23,7 @@ Very often we deal with a set of MARC records where the data needs the same or v
 Indeed, a MarcEdit task is a series of changes to MARC data that occur in the sequence they are entered in the task. One could think of tasks as a mini script of sorts that string together different MarcEditor tools that manipulate MARC data in some way. All tasks are created, managed, and run in the MarcEditor. In this way, tasks are another way to manipulate your data and are an extension of the other tools offered in the MarcEditor.
 
 ## What are tasks?
-A task is a series of MarcEdit functions to manipulate data. In the previous lessons, we've run one function at a time. Tasks string those functions together to run at once. Tasks run each function one after another. As such, it is important to think about which tasks follow other tasks. For instance, if you want to add a proxy and the MARC data already has a proxy that you need to delete, your task has to account for that and remove the old proxy before adding a new one.
+A task is a series of MarcEdit functions to manipulate data. In the previous lessons, we ran one function at a time. Tasks string a set of functions together so you can run them as a group. Tasks run each function one after another. As such, it is important to think about how you order the functions in your task. For instance, if you want to add a proxy and the MARC data already has a proxy that you need to delete, your task has to account for that and remove the old proxy before adding a new one.
 
 Tasks are managed through the Task Manager in the MarcEditor. To access the Task Manager, go to Tools and then Manage Tasks in the top level menu. This will open the new tasks window.
 
