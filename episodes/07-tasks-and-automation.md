@@ -27,7 +27,7 @@ A task is a series of MarcEdit functions to manipulate data. In the previous les
 
 Tasks are managed through the Task Manager in the MarcEditor. To access the Task Manager, go to Tools and then Manage Tasks in the top level menu. This will open the new tasks window.
 
-In this window, you will see any tasks that you have created previously. You will see the name that you gave those tasks, the path or where those files are saved on your local computer, a shortcut, and a description. At the bottom of this window you will also have two options "Task Actions" and "Manage Existing Tasks".
+In this window, you will see any tasks that you have created previously. You will see the name that you gave those tasks, the path to where those files are saved on your local computer, a shortcut, and a description. At the bottom of this window you will also have two options "Task Actions" and "Manage Existing Tasks".
 
 Task Actions include:
 - New Task: This will create a new task.
