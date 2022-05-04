@@ -93,7 +93,7 @@ If you have a lot of Tasks, it does help to assign them to groups to more easily
 {: .challenge}
 
 ## Managing your Task
-To change an existing task, go to Tools and Manage Task. This will open the Task Manager window. From here you can rename tasks, export, import them, or assign a Task to a Group.
+To change an existing task, go to Tools and Manage Tasks. This will open the Task Manager window. From here you can rename tasks, export and import them, or assign a Task to a Group.
 
 >## Add a proxy to the 856 40$u in your Task
 >
