@@ -20,7 +20,7 @@ keypoints:
 When you first open MarcEdit, the main menu or the main window opens. From here, you can access the many features and tools. One thing you'll notice is that there are both shortcuts, linked icons, and menu options that lead to the same features. For example, to join records in one MARC file with another one, you can click on your shortcut if you have added that to your shortcuts or go to Tools, MARC Processing tools, and then select MARCJoin. 
 
 It is from the main window where you can access the primary MarcEdit features or the MarcTools, Preferences, Plug-ins, and Help.
- <img src="../assets/img/topLevelFeatures_mainMenu.png" width="650">
+ <img src="https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/assets/img/topLevelFeatures_mainMenu.PNG" width="650">
 
 ### MarcEdit Main Menu: Preferences
 MarcEdit remembers what you did last in the Quick Links section. For those features you access frequently, Quick Links will get you there.
