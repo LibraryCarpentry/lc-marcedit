@@ -24,10 +24,10 @@ It is from the main window where you can access the primary MarcEdit features or
 
 ### MarcEdit Main Menu: Preferences
 MarcEdit remembers what you did last in the Quick Links section. For those features you access frequently, Quick Links will get you there.
-<img src="../assets/img/quickLinks_mainMenu.png" width="650">
+<img src="https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/assets/img/quickLinks_mainMenu.png" width="650">
 
 To personalize your MarcEdit further, preferences allows you to change or reset settings for MarcEdit. Preferences include the font and size used in the MarcEditor, the default character encoding such as MARC8 or UTF-8, the tools that appear in the MarcEdit Main Menu Window, or languages for instance. Sometimes it is necessary to close and reopen MarcEdit once you have changed your preferences. 
-<img src="../assets/img/settings_mainMenu.png" width="650">
+<img src="https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/assets/img/settings_mainMenu.png" width="650">
 
 #### MarcEdit Tools: Features
 When you click on MARCEdit Tools Icon from the Main Menu, the available features are:
@@ -51,7 +51,7 @@ There are more features available with the tope level menu option called Tools. 
 * MARC Processing Tools: Features include MARCSplit, MARCJoin, Merge, MARCCompare, MARCValidator, or finding duplicate records.
 
 You can set up to four MARC Processing Tools in Preferences that can be added to the Main Menu Window as shortcuts. For example, if you use MARCJOIN frequently, then you can add this to the Main Menu Window.
-<img src="../assets/img/tools_mainMenu.png" width="650">
+<img src="https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/assets/img/tools_mainMenu.png" width="650">
 
 >## How do you update the default character encoding setting for MarcEdit?
 >
