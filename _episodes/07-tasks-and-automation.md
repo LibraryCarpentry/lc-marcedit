@@ -4,17 +4,15 @@ teaching: 20
 exercises: 2
 questions:
 - "What are tasks?"
-- "How do you manage and create new tasks?""
-- "How do you run tasks?""
-
+- "How do you manage and create new tasks?"
+- "How do you run tasks?"
 objectives:
-- "Explain how to create, manage, edit and run tasks"
+- "Explain how to create, manage, edit, and run tasks"
 - "Successfully create and run a new task"
 - "Successfully export a task"
-
 keypoints:
-- "MarcEdit tasks are a way to automate a series of functions"
-- "Tasks can consist of any type of function offered in the MarcEditor tools"
+- "MarcEdit tasks are a way to automatic a series of functions"
+- "Tasks can consist of any type of function among the MarcEditor tools"
 ---
 
 # Tasks and Automation
