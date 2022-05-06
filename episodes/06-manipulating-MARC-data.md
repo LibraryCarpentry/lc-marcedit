@@ -30,8 +30,8 @@ To manipulate MARC data, that MARC data needs to be open as .mrk in the MarcEdit
 To add or delete a MARC field, go to Tools in the upper menu in the MarcEditor and scroll down to Add/Delete. This will open a new window. The Add/Delete functions are on the same menu level and you will need to select the action of either add or delete using the buttons on the right hand side.
 
 In the top middle section of the window, there are two data entry fields: Field and Field Data. Enter the MARC field number in Field. Enter the indicators, subfields, and data in Field Data. Remember to include the dollar sign to indicate a subfield.
-  <img src="../assets/img/addDeleteField.png" width="650">
-  <img src="../assets/img/example_addDelete.png" width="650">
+  <img src="https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/assets/img/addDeleteField.png" width="650">
+  <img src="https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/assets/img/example_addDelete.png" width="650">
 
 To add the field, click on the Add button and to delete, the Delete button.
 
@@ -80,8 +80,8 @@ To delete a subfield, enter the MARC field and then the subfield. Select Delete 
 
 To replace text in a subfield, enter the MARC field, the subfield, the text (or information) that needs to be changed, and in the box Replace With the text that will replace what needs to be changed. Then click on Replace Text.
 
-<img src="../assets/img/editSubField.png" width="650">
-<img src="../assets/img/example_SubField.png" width="650">
+<img src="https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/assets/img/editSubfield.png" width="650">
+<img src="https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/assets/img/example_Subfield.png" width="650">
 
 > ## Ability to Preview and Special Undo
 >
@@ -113,14 +113,14 @@ To replace text in a subfield, enter the MARC field, the subfield, the text (or 
 >
 > Sometimes it is necessary to create a MARC field based on other MARC fields.
 > This is possible using the function called, Build New Field.
->  ![Build New Field Window](../assets/img/buildNewField.png)
+>  ![Build New Field Window](https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/assets/img/buildNewField.png)
 {: .callout}
 
 ### Change one or both indicators in a MARC field
 Sometimes it is necessary to change one or both indicators of a MARC field in your MARC data. Go to Tools and select Edit Indicators. This will open a new window. Enter the MARC field, the indicators that you would like to change, and the indicators you want. Here you will want to be careful of the combinations of indicators. If you leave the box called Indicators blank and add indicators in the Replace With Indicators box, all the indicators for that MARC field will be changed to what you put in the Replace With Indicators box.
 
-<img src="../assets/img/editIndicators.png" width="650">
-<img src="../assets/img/example_editIndicators.png" width="650">
+<img src="https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/assets/img/editIndicators.png" width="650">
+<img src="https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/assets/img/example_editIndicators.png" width="650">
 
 >## Change an indicator for a MARC field in your MARC data
 >
@@ -140,7 +140,7 @@ Records aren't created equal in that we encounter MARC data that follows differe
 
 Go to Tools and Select RDA Helper. In the window that opens, you can pick and choose how you would like to transform your records to align better with the RDA descriptive standard. For example, you can add the RDA fields 336, 337, and 338 for content, media, and carrier terms. You can update the MARC field 040 to include the subfield e with rda and delete the GMD statement. You can also evaluate the 260/264.
 
-<img src="../assets/img/rdaHelper.png" width="650">
+<img src="https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/assets/img/rdaHelper.png" width="650">
 
 >## Run the RDA Helper on your MARC data
 >
@@ -160,7 +160,7 @@ Working with fixed fields can be difficult. In the MarcEditor, you can edit one 
 
 You can also batch insert an 006 or 008 into your records. Go to Edit and select the appropriate Insert/Edit.
 
-<img src="../assets/img/fixedFields.png" width="650">
+<img src="https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/assets/img/fixedFields.png" width="650">
 
 > ## Batch Editing Fixed Fields in Multiple MARC Records
 >
@@ -173,8 +173,8 @@ There are times when you need to work on a subset of your MARC data. The Select 
 
 Go to File, Select the Select Records for Edit. In the window, you will see Display field in the lower right hand corner. This is where you enter the MARC field you want to see displayed once you Import your file. You can enter a MARC field and subfield or just a MARC field. The MARC field and/or subfield that you add in this box will provide the criteria you need to select records you want to edit. Once you have entered the Display field, click on Import File. This will import the MARC (.mrk) file that you are currently working on. You can select another MARC (.mrk) file in the box Source MARC file.
 
-<img src="../assets/img/selectRecordsForEdit.png" width="650">
-<img src="../assets/img/example_selectRecordsForEdit.png" width="650">
+<img src="https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/assets/img/selectRecordsForEdit.png" width="650">
+<img src="https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/assets/img/example_selectRecordsForEdit.png" width="650">
 
 ## Save and Compile
 The MARC data that you manipulate in the MarcEditor is a friendly view that was broken from the binary .mrc file. You will notice that the extension of your file that you are manipulating in the MarcEditor has the file extention of .mrk. If you look at the file in your file directory, sometimes the color is also blue whereas the .mrc or binary MARC file is a sort of purple.
