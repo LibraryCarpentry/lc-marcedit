@@ -17,7 +17,7 @@ keypoints:
 # MarcEditor Top Level Menu
 The MarcEditor has a robust set of features available via the top level menu. Features can be accessed through the menu or through shortcut keys. The shortcut key for a feature appears next to it in the menu.
 
-![MarcEditor Top Level Menu](../assets/img/topLevelFeatures_marcEditor.png)
+<img src="../assets/img/topLevelFeatures_marcEditor.png" width="650">
 
 ## MarcEditor Top Level Menu Features
 Each top level menu features so many gems. Let's highlight some of those.
@@ -49,54 +49,18 @@ Tools
 * Edit Indicators
 * Build a new MARC field
 * RDA Helper
+* Sort By
 
-OCLC WorldCat
-MarcEdit offers a number of integrations one of which is to OCLC. You can use the Z39.50 tool or OCLC's APIs for metadata and searching to bring in records from WorldCat, update/delete holdings, or work on local bibliographic data.
-
->## Where is the feature "Select Records for Edit"
->
->1. Find Select Records for Edit
->
-> > ## Solution
-> > 1. In the MarcEditor, click on File
-> > 2. Scroll down to Select Records to Edit
-> {: .solution}
-{: .challenge
-
->## Where is the feature to edit one or both indicators for a MARC field
->
->1. Find Edit Indicators
->
-> > ## Solution
-> > 1. In the MarcEditor, click on Tools
-> > 2. Scroll down to Edit Indicator Data
-> {: .solution}
-{: .challenge}
-
->## Where is the feature to find a missing MARC field
->
->1. Find out if you file has any missing 856 MARC fields
->
-> > ## Solution
-> > 1. In the MarcEditor, click on Edit
-> > 2. Scroll down to Edit Shortcuts
-> > 3. Select Field Edits
-> > 4. Select Find Records Missing Fields
-> > 5. In the pop up winder, type in 856
-> > 6. Click OK
-> {: .solution}
-{: .challenge}
+OCLC WorldCat: Requires OCLC Integration Setup
+* Search WorldCat
+* Add/Delete/Update OCLC Bibliographic Data
+* Create/Update Bibliographic Data
+* Update Holdings
 
 # Working in the MarcEditor
 MarcEditor works slightly differently than other text editors. To work with MARC data in the MarcEditor, it is first necessary to "break" the MARC binary file using MarcBreaker. To do this you can use the MarcBreaker tools. Another way is to simply click on the MARC finary file (often this file has the extension .mrc). This will prompt the MarcBreaker tool window to open. Selecting execute will start the process. Here MarcEdit reads the entire MARC file. It then creates the virtual pages of the MARC records in the file. This is called the Paging style of opening a file.
 
-# MarcEditor features
-There are five features to highlight that will be covered in the next lessons:
-* Profiling MARC data
-* Manipulating MARC data
-* Tasks and automation
-* Integrations
-* Use of regular expressions
+# MarcEditor Primary Features: Profiling and Manipulatng MARC data, Tasks and automation, Integrations, and Regular expressions
 
 ## Profiling MARC Data
 Before working with any data, it is advantagous to understand that data. Does the file contain MARC data that describes only books and are those books print and/or electronic? Do the records follow national metadata standards and best practices needed for your local systems? How many records are in the file?
