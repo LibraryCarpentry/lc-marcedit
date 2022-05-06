@@ -17,7 +17,7 @@ keypoints:
 # MarcEditor Top Level Menu
 The MarcEditor has a robust set of features available via the top level menu. Features can be accessed through the menu or through shortcut keys. The shortcut key for a feature appears next to it in the menu.
 
-<img src="../assets/img/topLevelFeatures_marcEditor.png" width="650">
+<img src="../assets/img/topLevelFeatures_marcEditor.PNG" width="650">
 
 ## MarcEditor Top Level Menu Features
 Each top level menu features so many gems. Let's highlight some of those.
