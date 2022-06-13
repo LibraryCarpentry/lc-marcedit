@@ -56,27 +56,3 @@ OCLC WorldCat: Requires OCLC Integration Setup
 * Add/Delete/Update OCLC Bibliographic Data
 * Create/Update Bibliographic Data
 * Update Holdings
-
-# Working in the MarcEditor
-MarcEditor works slightly differently than other text editors. To work with MARC data in the MarcEditor, it is first necessary to "break" the MARC binary file using MarcBreaker. To do this you can use the MarcBreaker tools. Another way is to simply click on the MARC finary file (often this file has the extension .mrc). This will prompt the MarcBreaker tool window to open. Selecting execute will start the process. Here MarcEdit reads the entire MARC file. It then creates the virtual pages of the MARC records in the file. This is called the Paging style of opening a file.
-
-# MarcEditor Primary Features: Profiling and Manipulatng MARC data, Tasks and automation, Integrations, and Regular expressions
-
-## Profiling MARC Data
-Before working with any data, it is advantagous to understand that data. Does the file contain MARC data that describes only books and are those books print and/or electronic? Do the records follow national metadata standards and best practices needed for your local systems? How many records are in the file?
-
-Getting a profile of the MARC data in your file can help you make a plan on what changes need to be made to the file. Further, it can help you automate some of the changes if this type of file is one that you work with often.
-
-## Manipulating MARC Data
-The MarcEditor is like the Swiss army knife of MARC data. You can perform single or global edits such as adding or deleting MARC fields, subfields, indicator values. Other edit functions are building fields using MARC data from other fields, or changing the case of data in a field. Other operations include running operations to help update your MARC data to the content standard Resource Description and Access (RDA) or to assign OCLC's FAST headings to records in the file.
-
-## Tasks and Automation
-Edits can be performed on one record by editing directly on the record in the MarcEditor. Edits can be global and done one at a time to the entire file. If you have a list of changes to make, these can be set up in what is called a MARC task. These tasks make automating manipulating your MARC data easier and quicker.
-
-## Integrations
-The MarcEditor can integrate with OCLC's WorldCat and Ex Libis' Alma library system platform. Using the MarcEditor, you can retrive records through these integrations, manipulate the records, and the push those changes back to the integration of your choice.
-
-Though not necessarily an integration, harvested records can also be manipulated in the MarcEdtor. MarcEdit allows to harvest Duplin Core or MARC records.
-
-## Regular Expressions
-The MarcEditor allows for the use of regular expressions in many of its MARC data manipulation features. Regular expressions are a sequence of text to identify a search pattern. This is a powerful tool that allows greater flexibility when manipulating MARC data.
