@@ -11,7 +11,7 @@ You need to install MarcEdit and download a data file to follow this lesson.
 
 MarcEdit is a free, open-source application. You can download MarcEdit from
 [https://marcedit.reeset.net/downloads](https://marcedit.reeset.net/downloads).
-This lesson has been tested with the following versions: MarcEdit 7 (specifically 7.5.21.153) for Windows and MarcEdit 3 for MacOS.
+This lesson has been tested with the following versions: MarcEdit 7 (specifically 7.5.21.153) for Windows and MarcEdit 3 for MacOS. The data file used in this lesson is a MARC21/UTF-8 file.
 
 Packages, along with associated system requirements, are available on <https://marcedit.reeset.net/downloads> for Windows and MacOS.
 
@@ -27,17 +27,20 @@ Notes:
 * Instructions for system administrators has been provided. Also information on managing MarcEdit installations are available <https://marcedit.reeset.net/managing-marcedit-installations>.
 
 System requirements for MarcEdit 7/MarcEdit MacOS 3 <https://marcedit.reeset.net/downloads>:
-* Operating system: Vista (32 & 64 bit), MacOS 10.10+
+* Operating system: Vista (32 & 64-bit), MacOS 10.10+
 * RAM: 8MB minimum; 32 MB+ is recommended
 * Disc space for Windows: 34 MB (setup); 15 MB (application)
 * Disc space for MacOS: 60 MB (setup); 150 MB (installed)
 * For Windows, Windows .NET 4.7.2+ is required.
 * For MacOS, Installer, where all dependencies are packaged and installed, is required.
 
+### Determining if your system is 32 or 64-bit
+* MACs: Select the About This Mac option in the Apple menu. On the About This Mac window, click the Systems Report below the information in the Overview. Click on Hardware. In the Hardware Overview in the top left column, you will see the processor name to determine if it's a 32-bit or 64-bit CPU.
+* PCs: In the Start menu, type in About to get About Your PC. In Device Specifications, the system type will tell you if it's a 32 or 64-bit CPU.
 
 ### Downloading the data
 
-You can download [marc_sample_data.mrc](https://github.com/LibraryCarpentry/lc-marcedit/tree/gh-pages/data/marc_sample_data.mrc), which is a MARC binary file that will open in a new browser tab. Be sure to right click or control click in order to save the file (NOTE: In Safari, right click and select **download linked file**; in Chrome and Firefox, right click and select **save link as...**). Make a note of the location (i.e. the folder, your desktop) to which you save the file.
+You can download [marc_sample_data.mrc](https://github.com/LibraryCarpentry/lc-marcedit/tree/gh-pages/data/marc_sample_data.mrc), which is a MARC binary file that will open in a new browser tab. Be sure to right click or control click in order to save the file (NOTE: In Safari, right click and select **download linked file**; in Chrome and Firefox, right click and select **save link as...**). Make a note of the location (i.e. the folder, your desktop) to which you save the file. Please note that this MARC file follows the MARC21 standard and is encoded in UTF-8.
 
 
 ### Getting help
