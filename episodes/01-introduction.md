@@ -15,7 +15,7 @@ keypoints:
 ---
 ## What is MarcEdit?
 
-MarcEdit is a suite of tools created and maintained by Terry Reese. The tools together form the MarcEdit software. These tools provide numerous features which can be used to create, edit, and work with library metadata, particularly though not limited to records in a variety of MARC formats and standards. In this way, the MarcEdit software is MARC agnostic and can work with Unimarc or MARC21. MarcEdit can be used to
+MarcEdit is a suite of tools created and maintained by Terry Reese. The tools together form the MarcEdit software. These tools provide numerous features which can be used to create, edit, and work with library metadata, particularly (though not limited to) records in a variety of MARC formats and standards. In this way, the MarcEdit software is MARC agnostic and can work with Unimarc or MARC21. MarcEdit can be used to
 
 * make small, single, edits to individual MARC records
 * make edits across many MARC records at a single time
