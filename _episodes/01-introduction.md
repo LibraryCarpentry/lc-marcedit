@@ -19,7 +19,7 @@ MarcEdit is a suite of tools created and maintained by Terry Reese. The tools to
 
 * make small, single, edits to individual MARC records
 * make edits across many MARC records at a single time
-* automate commmon processes
+* automate common edits/processes
 * validate your data against MARC rules
 * convert data between different formats
 * enhance your data
