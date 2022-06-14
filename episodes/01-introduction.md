@@ -25,7 +25,7 @@ MarcEdit is a suite of tools created and maintained by Terry Reese. The tools to
 * enhance your data
 * pull data from external sources
 
-The features offered by the suits of MarcEdit tools continue to evolve and new ones are added as the software is updated by Terry Reese. [A list of features](https://marcedit.reeset.net/features) is available on the MarcEdit website.
+The features offered by the suite of MarcEdit tools continue to evolve, with new features added as the software is updated by Terry Reese. [A list of features](https://marcedit.reeset.net/features) is available on the MarcEdit website.
 
 Although the ability to create, view and edit MARC records is built into many pieces of library and bibliographic management software, MarcEdit is particularly flexible and powerful for editing MARC data as well as offering integration with other software and services. With MarcEdit's wideranging functionality and integration into other library services it is a very powerful toolkit for anyone working with bibliographic data.
 
