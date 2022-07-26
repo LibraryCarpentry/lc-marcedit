@@ -5,7 +5,7 @@
 - [Abigail Sparling](https://github.com/abigailsparling)
 - Interested in being a maintainer on this lesson, let us know!
 
-Lesson Maintainers communication is via the [team site](https://github.com/orgs/LibraryCarpentry/teams/lc-marcedit-maintainers).
+Lesson Maintainers communication is via Slack.
 
 ## Library Carpentry
 
@@ -30,7 +30,7 @@ Library Carpentry is authored and maintained through issues, commits, and pull r
 
 ## Citation
 
-Library Carpentry: MarcEdit (2019, September). https://github.com/LibraryCarpentry/lc-marcedit. 
+Library Carpentry: MarcEdit (2019, September). https://github.com/LibraryCarpentry/lc-marcedit.
 
 ## Acknowledgement
 
