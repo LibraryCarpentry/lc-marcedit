@@ -17,7 +17,7 @@ keypoints:
 # Top Level Menu Features
 
 ## Where are the top level menu features?
-When you first open MarcEdit, the main menu or the main window opens. From here, you can access the many features and tools. One thing you'll notice is that there are both shortcuts, linked icons, and menu options that lead to the same features. For example, to join records in one MARC file with another one, you can click on your shortcut if you have added that to your shortcuts or go to Tools, MARC Processing tools, and then select MARCJoin. 
+When you first open MarcEdit, the main menu or the main window opens. From here, you can access the many features and tools. One thing you'll notice is that there are both shortcuts, linked icons, and menu options that lead to the same features. For example, to join records in one MARC file with another one, you can click on your MARCJoin shortcut if you have added that to your shortcuts, or you can go to Tools --> MARC Processing tools -->  MARCJoin.
 
 It is from the main window where you can access the primary MarcEdit features or the MarcTools, Preferences, Plug-ins, and Help.
  <img src="../assets/img/topLevelFeatures_mainMenu.PNG" width="650">
@@ -26,7 +26,7 @@ It is from the main window where you can access the primary MarcEdit features or
 MarcEdit remembers what you did last in the Quick Links section. For those features you access frequently, Quick Links will get you there.
 <img src="../assets/img/quickLinks_mainMenu.PNG" width="650">
 
-To personalize your MarcEdit further, preferences allows you to change or reset settings for MarcEdit. Preferences include the font and size used in the MarcEditor, the default character encoding such as MARC8 or UTF-8, the tools that appear in the MarcEdit Main Menu Window, or languages for instance. Sometimes it is necessary to close and reopen MarcEdit once you have changed your preferences. 
+To personalize your MarcEdit further, preferences allows you to change or reset settings for MarcEdit. Preferences include the font and font size used in the MarcEditor, the default character encoding for records opened in the MarcEditor (such as MARC8 or UTF-8), the tools that appear in the MarcEdit Main Menu Window, or languages for instance. Sometimes it is necessary to close and reopen MarcEdit once you have changed your preferences.
 <img src="../assets/img/settings_mainMenu.PNG" width="650">
 
 #### MarcEdit Tools: Features
@@ -44,8 +44,8 @@ Options include changing the default character encoding only for the tool that y
 
 The conversions from one encoding standard to another, as in MARC21 to MARC21XML, rely on eXtensible stylesheets. MarcEdit comes with several default stylesheets which come from those maintained by the Library of Congress. If you are familiar with stylesheets, you can also create your own.
 
-There are more features available with the tope level menu option called Tools. There are so many options here. Some will be covered in Integrations in Lesson 8. Let's highlight some:
-* Preferences: This will take you to Settings. Often in MarcEdit, there is more than one place to get to a feature or setting. Here you can click on the gear icon to set your preferences or to to Tools and then Preferences.  
+There are more features available with the top level menu option called Tools. There are so many options here. Some will be covered in Integrations in Lesson 8. Let's highlight some:
+* Preferences: This will take you to Settings. Often in MarcEdit, there is more than one place to get to a feature or setting. Here you can click on the gear icon to set your preferences or to Tools and then Preferences.  
 * Delimited Text Translator: If you have a spreadsheet of data, this tool will take that data and create MARC data.
 * Export: You can export a MARC record. More importantly, you can export a Tab Delimited file from MARC data. This tool will take a MARC binary file and create a spreadsheet (either tab or comma separated based on your selection) of all the MARC data.
 * MARC Processing Tools: Features include MARCSplit, MARCJoin, Merge, MARCCompare, MARCValidator, or finding duplicate records.
@@ -71,12 +71,12 @@ You can set up to four MARC Processing Tools in Preferences that can be added to
 > > 1. Click on the gear icon in the Main Menu window or go to Tools and then Preferences
 > > 2. Click on MarcEditor
 > > 3. In the Set MarcEditor Font Properties window, click on Set Font
-> > 4. Scroll down to Ariel and select font size 14
+> > 4. Scroll down to Arial and select font size 14
 > > 5. Click OK
 > {: .solution}
 {: .challenge}
 
-> ## Can you reset your Prefenences back to the defaults?
+> ## Can you reset your Preferences back to the defaults?
 >
 > If you don't like the font and size, you can go back to the defaults.
 > Go back to Settings by clicking on the gear icon or Tools and Preferences
@@ -97,6 +97,6 @@ You can set up to four MARC Processing Tools in Preferences that can be added to
 
 > ## MarcEdit Plugins
 >
-> There are a number of useful plugins that can be added to MarcEdit to extend its functionality. Examples include: MARC to KBART converter or cuttering tool. 
+> There are a number of useful plugins that can be added to MarcEdit to extend its functionality. Examples include: MARC to KBART converter or cuttering tool.
 > You can find more information on plugins on the [MarcEdit Plugin page](https://marcedit.reeset.net/managing-plugins-in-marcedit)
 {: .callout}

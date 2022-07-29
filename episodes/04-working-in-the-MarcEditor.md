@@ -12,7 +12,6 @@ keypoints:
 - "MarcEditor is a tool to work with MARC data in an easily readable format"
 - "The MarcEditor can be used to perform a number of different functions such as adding, deleting MARC fields or subfields, building MARC fields, running reports, or checking the validity of MARC data"
 - "The MarcEditor can be used to perform one task at a time or automate a set of tasks for particular types of MARC files"
-- "It is necessary to break a MARC binary file to work with that MARC data in the MarcEditor. The extension of these easily readble MARC files are .mrk rather than the binary extension of .mrc"
 ---
 # MarcEditor Top Level Menu
 The MarcEditor has a robust set of features available via the top level menu. Features can be accessed through the menu or through shortcut keys. The shortcut key for a feature appears next to it in the menu.
@@ -40,7 +39,7 @@ If you need to change the font and size for the current MARC data you are workin
 Reports
 * Create a custom report
 * Get a count of all the MARC Fields in the MARC Data
-* Get a count of the records based on type (book, serials, videorecordings, etc.)
+* Get a count of the records based on type (book, serials, video recordings, etc.)
 * MARCValidator
 
 Tools
