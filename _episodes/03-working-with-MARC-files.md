@@ -16,6 +16,7 @@ keypoints:
 - "MarcEdit can work with a variety of file formats"
 - "MARC Tools allow you to convert data from one file format to another"
 - "The MarcEditor works with a MarcEdit specific mnemonic format of MARC records (.mrk)"
+- "It is necessary to break a MARC binary file to work with that MARC data in the MarcEditor. The extension of these easily readable MARC files are .mrk rather than the binary extension of .mrc"
 ---
 
 
@@ -93,7 +94,8 @@ keypoints:
 >3. Under Select Data to Process click the file folder image to the right of the Open box, from here navigate to where you have saved the sample MARC data file (.mrc) and double click to select.
 >4. Next, you will need save your file in the MARC mnemonic format by clicking the file folder to the right of the Save As box. Select the location and name you would like to give you new file.
 >5. Under Character encoding select UTF8 as default character encoding.
->6. Click execute. Once you click execute the newly created .mrk file will open in the MarcEditor.
+>6. Click execute.
+>7. Once you click execute the newly created .mrk file will available to open in the MarcEditor. Under Results at the bottom of the window you will see a count of the records in your file. Click Edit Records to open the .mrk file in the MarcEditor.
 >
 {: .checklist}
 
