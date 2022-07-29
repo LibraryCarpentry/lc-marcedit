@@ -15,10 +15,10 @@ This lesson has been tested with the following versions: MarcEdit 7 (specificall
 
 Packages, along with associated system requirements, are available on <https://marcedit.reeset.net/downloads> for Windows and MacOS.
 
-###Download the current version for MacOS
+#### Download the current version for MacOS
 For MacOS, select ["MacOs"](https://marcedit.reeset.net/software/marcedit75/MarcEdit3_5.pkg.zip).
 
-###Download the current version for Windows
+#### Download the current version for Windows
 For Windows, select [Windows Build Options -> Download MarcEdit 7.5 (All Users)](https://marcedit.reeset.net/software/marcedit75/MarcEdit_7_5_User_Install.exe). The Windows User Only Installation should work for the majority of participants. If you will be using a communal computer, and expect MarcEdit to be used by a number of users on that machine, read through the "Windows Build Options" pop-up to decide the best installation option for you. You can also view these [video tutorials](https://youtu.be/7wYo7VoOwMI) for this type of advanced installation.
 
 Notes for Windows users:
