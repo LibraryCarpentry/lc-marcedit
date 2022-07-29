@@ -54,7 +54,7 @@ To run the Field Count Reports
 > ## Locating errors
 >
 > 1. What do the field count results tell us about our records?
-> 2. Looking at fields 000-300 do any of the results indicate errors in our records?
+> 2. Looking at fields 100-300 do any of the results indicate errors in our records?
 >
 > > ## Solution
 > > 1. Field count outlines each field found in our records, the number of times it occurs, and how many records it occurs in. Field count can also tell us the number of records in our file (536).
