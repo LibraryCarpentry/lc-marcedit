@@ -5,25 +5,25 @@ title: Setup
 
 ## Getting ready
 
-You need to install MarcEdit and download a data file to follow this lesson.
+You need to install MarcEdit and download a data file to follow this lesson. If you are using an older version of MarcEdit, it is recommended you upgrade to the latest tested version.
 
 ### Installing and running MarcEdit
 
 MarcEdit is a free, open-source application. You can download MarcEdit from
 [https://marcedit.reeset.net/downloads](https://marcedit.reeset.net/downloads).
-This lesson has been tested with the following versions: MarcEdit 7 (specifically 7.5.21.153) for Windows and MarcEdit 3 for MacOS. The data file used in this lesson is a MARC21/UTF-8 file.
+This lesson has been tested with the following versions: MarcEdit 7 (specifically 7.5.21.153) for Windows and MarcEdit 3 for MacOS. 
 
 Packages, along with associated system requirements, are available on <https://marcedit.reeset.net/downloads> for Windows and MacOS.
 
-Please download the latest stable version for your operating systems. For Windows, select "Windows Build Options" >> []"Download MarcEdit 7.5 (All Users)"](https://marcedit.reeset.net/software/marcedit75/MarcEdit_7_5_User_Install.exe). For MacOS, select ["MacOs"](https://marcedit.reeset.net/software/marcedit75/MarcEdit3_5.pkg.zip). The installation will be complete once go through the setup wizard and set up the applicaiton configrations.
+####Download the current version for MacOS
+For MacOS, select ["MacOs"](https://marcedit.reeset.net/software/marcedit75/MarcEdit3_5.pkg.zip).
 
-The Windows User Only Installation should work for the majority of participatns. If you will be using a communal computer, and expect MarcEdit to be used by a number of users on that machine, please read through the "Windows Build Options" pop-up to decide the best installation option for you. You can also view these video tutorials for this type of advanced installation <https://youtu.be/7wYo7VoOwMI>.
+####Download the current version for Windows
+For Windows, select [Windows Build Options -> Download MarcEdit 7.5 (All Users)](https://marcedit.reeset.net/software/marcedit75/MarcEdit_7_5_User_Install.exe). The Windows User Only Installation should work for the majority of participants. If you will be using a communal computer, and expect MarcEdit to be used by a number of users on that machine, read through the "Windows Build Options" pop-up to decide the best installation option for you. You can also view these [video tutorials](https://youtu.be/7wYo7VoOwMI) for this type of advanced installation.
 
-If you are using an older version of MarcEdit, it is recommended you upgrade to the latest tested version.
-
-Notes:
-* The Cosolidating Installation for MarcEdit 7.5 for Windows is the only one installation option that currently supports 32-bit systems.
-* If the installation is being done via distributed software or via a distribution client like Microsoft's SCCM, please refer to the packaging tool available on GitHub <https://github.com/reeset/marcedit_package_builder>.
+Notes for Windows users:
+* The Consolidating Installation for MarcEdit 7.5 for Windows is the only one installation option that currently supports 32-bit systems.
+* If the installation is being done via distributed software or via a distribution client like Microsoft's SCCM, refer to the packaging tool available on GitHub <https://github.com/reeset/marcedit_package_builder>.
 * Instructions for system administrators has been provided. Also information on managing MarcEdit installations are available <https://marcedit.reeset.net/managing-marcedit-installations>.
 
 System requirements for MarcEdit 7/MarcEdit MacOS 3 <https://marcedit.reeset.net/downloads>:
