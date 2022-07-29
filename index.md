@@ -3,7 +3,7 @@ layout: lesson
 root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
-FIXME: home page introduction
+MarcEdit Lesson
 
 > ## Under Design
 >
@@ -19,7 +19,7 @@ FIXME: home page introduction
 
 > ## Prerequisites
 >
-> FIXME
+> This lesson requires a basic knowledge of the MARC21 standard.
 {: .prereq}
 
 {% include links.md %}
