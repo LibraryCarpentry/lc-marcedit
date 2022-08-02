@@ -39,7 +39,7 @@ System requirements for MarcEdit 7/MarcEdit MacOS 3 <https://marcedit.reeset.net
 * Windows: In the Start menu, type in About to get About Your PC. In Device Specifications, the system type will tell you if it's a 32 or 64-bit CPU.
 
 #### MarcEdit Setup Wizard
-After downloading MarcEdit and once you launch the installation, you will be asked to go through the setup wizard. The wizard will first ask you to configure the default font, font size, and recommended theme. Then the wizard will then ask you to configure the MARC standard and file standard being used.
+After downloading MarcEdit and once you launch the installation, you will be asked to go through the setup wizard. The wizard will first ask you to configure the default font, font size, and recommended theme. The wizard will then ask you to configure the MARC standard and file standard being used.
 
 * Click on "Let's get started"
 * MarcEdit Appearance 
