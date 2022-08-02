@@ -34,13 +34,26 @@ System requirements for MarcEdit 7/MarcEdit MacOS 3 <https://marcedit.reeset.net
 * For Windows, Windows .NET 4.7.2+ is required.
 * For MacOS, Installer, where all dependencies are packaged and installed, is required.
 
-### Determining if your system is 32 or 64-bit
+#### Determining if your system is 32 or 64-bit
 * MacOS: Select the About This Mac option in the Apple menu. On the About This Mac window, click the Systems Report below the information in the Overview. Click on Hardware. In the Hardware Overview in the top left column, you will see the processor name to determine if it's a 32-bit or 64-bit CPU.
 * Windows: In the Start menu, type in About to get About Your PC. In Device Specifications, the system type will tell you if it's a 32 or 64-bit CPU.
 
-### Downloading the data
+#### MarcEdit Setup Wizard
+After downloading MarcEdit and once you launch the installation, you will be asked to go through the setup wizard. The wizard will first ask you to configure the default font, font size, and recommended theme. The wizard will then ask you to configure the MARC standard and file standard being used.
 
-You can download [marc_sample_data.mrc](https://github.com/LibraryCarpentry/lc-marcedit/tree/gh-pages/data/marc_sample_data.mrc), which is a MARC binary file that will open in a new browser tab. Be sure to right click or control click in order to save the file (NOTE: In Safari, right click and select **download linked file**; in Chrome and Firefox, right click and select **save link as...**). Make a note of the location (i.e. the folder, your desktop) to which you save the file. Please note that this MARC file follows the MARC21 standard and is encoded in UTF-8.
+* Click on "Let's get started"
+* MarcEdit Appearance 
+  ** Default font: Select your preferred font
+  ** Application font size: Select your preferred font size
+  ** Recommended Theme: Select default
+* MarcEdit Data Settings
+  ** My MARC Format is: Select MARC21
+  ** Default Recording Encoding: Select MARC21/UTF8
+  ** Make sure "Enforce Unicode Normalization" is checked
+  ** XML Processing Enging: Select Choose for me
+
+### Downloading the data
+You can download [marc_sample_data.mrc](https://github.com/LibraryCarpentry/lc-marcedit/tree/gh-pages/data/marc_sample_data.mrc), which is a MARC binary file that will open in a new browser tab. Be sure to right click or control click in order to save the file (NOTE: In Safari, right click and select **download linked file**; in Chrome and Firefox, right click and select **save link as...**). Make a note of the location (i.e. the folder, your desktop) to which you save the file. This MARC file follows the MARC21 standard and is encoded in UTF-8.
 
 
 ### Getting help
