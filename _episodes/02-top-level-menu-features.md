@@ -43,7 +43,7 @@ In MarcEdit, Preferences allow you to change the main window and various tools, 
 If you change your preferences for the MarcEditor, the tool used to work with MARC data, you can always go back to the default settings. 
 >## Reset settings for the MarcEditor in Preferences
 >1. Click on the gearbox in the top left corner or go to Tools -> Preferences
->2. Make sure you select "MarcEditor" in the Preferences window in the left hand pane
+>2. Select "MarcEditor" in the Preferences window in the left hand pane
 >3. In the right hand pane, select Set Defaults for either font or font size
 >3. Click Ok
 {: .checklist}
