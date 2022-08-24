@@ -33,7 +33,7 @@ In MarcEdit, Preferences allow you to change the main window and various tools, 
 >
 > > ## Solution
 > > 1. Click on the gear icon in the main window or go to Tools -> Preferences
-> > 2. In the new window, make sure you select Main Window in the left hand pane
+> > 2. In the Preferences window, select Main Window in the left hand pane
 > > 3. In the right pane, select any tool that hasn't been selected
 > > 5. You will see a popup message that says "Only four items can be select. Unselect on one of the options and then reselect."
 > > 6. A user can only select 4 options or tools as shortcuts to appear in the main window.
