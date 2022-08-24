@@ -20,7 +20,7 @@ keypoints:
 When you launch MarcEdit, the main window opens. From here, you can access the suite of MarcEdit tools, features, plug-ins, quick links, or help. One thing you'll notice is that there are both shortcuts, linked icons, and menu options that lead to the same features or tools. For example, to update your preferences, you can go to Tools -> Preferences, use the keyboard shortcut of Ctrl+Shift+P, or click on the gearbox in the upper left hand corner of the main window. 
 
 ### MarcEdit Main Menu: Preferences
-In MarcEdit, Preferences allow you to change for the main window and various tools, such as the MarcEditor, or the tool that allows you to work with MARC data. For example, you can change the font and font size used in the main window. For the MarcEditor, you can update the default character encoding for records that are opened in this tool (such as MARC8 or UTF-8). A further example is to change the shotcuts for tools that appear in the main window. 
+In MarcEdit, Preferences allow you to change the main window and various tools, such as the MarcEditor (the tool used to manipulate MARC data). For example, for the main window you can change the font and font size and select your most frequently used tools to display as shortcuts. For the MarcEditor, you can update the default character encoding for records that are opened in this tool (such as MARC8 or UTF-8).
 
 >## Let's add a shortcut to our main window
 >1. Click on the gearbox in the top left corner or go to Tools -> Preferences
