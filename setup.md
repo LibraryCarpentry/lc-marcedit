@@ -15,14 +15,14 @@ This lesson has been tested with the following versions: MarcEdit 7 (specificall
 
 Packages, along with associated system requirements, are available on <https://marcedit.reeset.net/downloads> for Windows and MacOS.
 
-#### Download the current version for MacOS
+#### To download the current version for MacOS
 For MacOS, select ["MacOs"](https://marcedit.reeset.net/software/marcedit75/MarcEdit3_5.pkg.zip).
 
-#### Download the current version for Windows
+#### To download the current version for Windows
 For Windows, select [Windows Build Options -> Download MarcEdit 7.5 (All Users)](https://marcedit.reeset.net/software/marcedit75/MarcEdit_7_5_User_Install.exe). The Windows User Only Installation should work for the majority of participants. If you will be using a communal computer, and expect MarcEdit to be used by a number of users on that machine, read through the "Windows Build Options" pop-up to decide the best installation option for you. You can also view these [video tutorials](https://youtu.be/7wYo7VoOwMI) for this type of advanced installation.
 
 Notes for Windows users:
-* The Consolidating Installation for MarcEdit 7.5 for Windows is the only one installation option that currently supports 32-bit systems.
+* The Consolidated Installation for MarcEdit 7.5 for Windows is the only one installation option that currently supports 32-bit systems.
 * If the installation is being done via distributed software or via a distribution client like Microsoft's SCCM, refer to the packaging tool available on GitHub <https://github.com/reeset/marcedit_package_builder>.
 * Instructions for system administrators has been provided. Also information on managing MarcEdit installations are available <https://marcedit.reeset.net/managing-marcedit-installations>.
 
@@ -43,17 +43,17 @@ After downloading MarcEdit and once you launch the installation, you will be ask
 
 * Click on "Let's get started"
 * MarcEdit Appearance 
-  ** Default font: Select your preferred font
-  ** Application font size: Select your preferred font size
-  ** Recommended Theme: Select default
+  * Default font: Select your preferred font
+  * Application font size: Select your preferred font size
+  * Recommended Theme: Select default
 * MarcEdit Data Settings
-  ** My MARC Format is: Select MARC21
-  ** Default Recording Encoding: Select MARC21/UTF8
-  ** Make sure "Enforce Unicode Normalization" is checked
-  ** XML Processing Enging: Select Choose for me
+  * My MARC Format is: Select MARC21
+  * Default Recording Encoding: Select MARC21/UTF8
+  * Make sure "Enforce Unicode Normalization" is checked
+  * XML Processing Enging: Select Choose for me
 
 ### Downloading the data
-You can download [marc_sample_data.mrc](https://github.com/LibraryCarpentry/lc-marcedit/tree/gh-pages/data/marc_sample_data.mrc), which is a MARC binary file that will open in a new browser tab. Be sure to right click or control click in order to save the file (NOTE: In Safari, right click and select **download linked file**; in Chrome and Firefox, right click and select **save link as...**). Make a note of the location (i.e. the folder, your desktop) to which you save the file. This MARC file follows the MARC21 standard and is encoded in UTF-8.
+For this lesson, our sample file, [marc_sample_data.mrc](https://github.com/LibraryCarpentry/lc-marcedit/tree/gh-pages/data/marc_sample_data.mrc), is a MARC binary file. To download this file, right click or control click in order to save the file (NOTE: In Safari, right click and select **download linked file**; in Chrome and Firefox, right click and select **save link as...**). If you click on the link, this binary file will open in a new tab or window in your browser. Make a note of the location (i.e. the folder, your desktop) to which you save the file. This MARC file follows the MARC21 standard and is encoded in UTF-8. 
 
 
 ### Getting help
