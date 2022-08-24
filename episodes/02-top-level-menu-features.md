@@ -24,7 +24,7 @@ In MarcEdit, Preferences allow you to change the main window and various tools, 
 
 >## Let's add a shortcut to our main window
 >1. Click on the gearbox in the top left corner or go to Tools -> Preferences
->2. Make sure you select "Main Window" in the Preferences popup window in the left hand pane
+>2. Select "Main Window" in the Preferences window in the left hand pane
 >3. In the right hand pane, select MARCSplit
 >3. Click Ok
 {: .checklist}
