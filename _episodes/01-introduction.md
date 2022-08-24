@@ -45,7 +45,7 @@ Edits can be performed on one record by editing directly on the record or global
 ### Integrations
 MarcEdit can integrate with OCLC's WorldCat and Ex Libris' Alma library system platform. Thanks to these integrations, you can retrieve records from external services, manipulate those records, and then push those changes back to the integration of your choice.
 
-Though not necessarily an integration, harvested records can also be manipulated. MarcEdit allows to harvest [OAI or Open Archives Initiative for Harvesting Metadata Protocole](https://www.openarchives.org/pmh/) Duplin Core or MARC21 records.
+Though not necessarily an integration, harvested records can also be manipulated. Using MarcEdit you can harvest [OAI or Open Archives Initiative for Harvesting Metadata Protocol](https://www.openarchives.org/pmh/) Dublin Core or MARC21 records.
 
 ### Regular Expressions
 MarcEdit allows for the use of regular expressions in many of its MARC data manipulation features. Regular expressions are a sequence of text to identify a search pattern. This is a powerful tool that allows greater flexibility when manipulating MARC data.
