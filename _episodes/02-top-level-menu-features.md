@@ -26,22 +26,22 @@ In the main window top level menu, there are three options: Tools, Plug-ins, and
 There are a number of useful plugins that can be added to MarcEdit to extend its functionality. An example is the MARC to [KBART or Knowledge bases and related tools](https://www.niso.org/standards-committees/kbart/kbart-frequently-asked-questions) converter. You can find more information on plugins on the [MarcEdit Plugin page](https://marcedit.reeset.net/managing-plugins-in-marcedit).
 
 #### Help
-This top level menu Help allows you to find information on updates, about your current MarcEdit installation, and links out to video tutorials or online help for instance. 
+This top level menu Help allows you to find information on updates, about your current MarcEdit installation, and links out to video tutorials or online help. 
 
 #### Tools
-The Tools menu allows you to access a number of different features such as Prefernces which we saw above. Other features to highlight are:
+The Tools menu allows you to access a number of different features such as Preferences. Other features to highlight are:
 * The MarcEdit regular expression store
 * OAI Harvester
 * Export either MARC records or records reformatted as a text delimited csv (comma separated value) or tsv (tab separated value) file
-* MARC Processing Tools: MARCsplit, MARCcompare, MARCjoin, MARCmerge, find duplicate records, RDA Helper, or MARCValidator for instance
+* MARC Processing Tools: MARCsplit, MARCcompare, MARCjoin, MARCmerge, find duplicate records, RDA Helper, or MARCValidator
 * Delimited Text Translator
 * Preferences
 * Utilities that include a verify URL tool
 
 #### MARCTools or the tools icon
 If you want to work with MARC data files or converting between metadata formats for library bibliographic data, click on the MARCTools icon that has the crossed hammer and spanner in the upper left hand corner. The available features are:
-* MarcBreaker: This "breaks" the MARC binary file into a readable format that can be edited in the MarcEditor.
-* MarcMaker: This takes the readable format MARC data file and creates the MARC binary file.
+* MarcBreaker: This "breaks" the MARC binary file into a readable (mnemonic) format that can be edited in the MarcEditor.
+* MarcMaker: This takes the readable (mnemonic) format MARC data file and creates the MARC binary file.
 * MARC21 to MARC21XML: This converts a MARC21 file to MARC21XML.
 * MARC21XML to MARC21: This converts a MARC21XML file to a MARC21 binary file.
 * MARC to JSON: This converts a MARC21 file to a JSON file.
@@ -54,19 +54,19 @@ The conversions from one encoding standard to another, as in MARC21 to MARC21XML
 >## Where is the feature to export MARC records as a text delimited file?
 >
 > > ## Solution
-> > 1. go to Tools -> Preferences
+> > 1. Go to Tools -> Preferences
 > > 2. Click on Export
 > > 3. Select Export Tab Delimited Records
 > {: .solution}
 {: .challenge}
 
 >## Difference between Tools menu and MARCTools icon
->The functionality in Tools menu is related to working with one or more MARC data files at a time such as exporting, harvesting, spliting, comparing, or joining. Other features that we've seen above are accessing Preferences or using utilities such as checking URLs.
->The MARCTools icon allows you to work with a specific MARC data file in terms of converting MARC files from one format into another such as a binary MARC file into a human readable mnenomic format, or a MARC21 file into a MARCXML file.
+>The functionality in the Tools menu is related to working with one or more MARC data files at a time such as exporting, harvesting, spliting, comparing, or joining. Other features that we've seen above are accessing Preferences or using utilities such as checking URLs.
+>The MARCTools icon allows you to work with a specific MARC data file in terms of converting a MARC file from one format into another such as a binary MARC file into a human readable mnenomic format, or a MARC21 file into a MARCXML file.
 {: .callout}
 
 ### MarcEdit Main Menu: Preferences
-In MarcEdit, Preferences allow you to change the main window and various tools, such as the MarcEditor (the tool used to manipulate MARC data). For example, for the main window you can change the font and font size and select your most frequently used tools to display as shortcuts. For the MarcEditor, you can update the default character encoding for records that are opened in this tool (such as MARC8 or UTF-8).
+In MarcEdit, Preferences allow you to configure the main window and various tools, such as the MarcEditor (the tool used to manipulate MARC data). For example, you can change the font, font size, or select your most frequently used tools to display as shortcuts. In Preferences, you can also configure settings for other tools beyond the main window menu such as the MarcEditor where you can update the default character encoding for records that are opened in this tool (such as MARC8 or UTF-8), integrations with OCLC, or accessability settings.
 
 >## Let's add a shortcut to our main window
 >1. Click on the gearbox in the top left corner or go to Tools -> Preferences
