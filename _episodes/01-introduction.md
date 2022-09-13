@@ -1,21 +1,21 @@
 ---
 title: "Introduction to MarcEdit"
-teaching: 0
+teaching: 10
 exercises: 0
 questions:
 - "What is MarcEdit?"
 - "What can MarcEdit do?"
 objectives:
 - "Explain what the MarcEdit software does"
-- "Explain how the MarcEdit software can help work with metadata files"
+- "Explain how the MarcEdit software can help work with library bibliographic data and library MARC files"
 keypoints:
 - "MarcEdit is a tool for working with bibliographic metadata, specifically in the MARC format"
 - "MarcEdit can be used to open and edit MARC files"
-- "MarcEdit can be used to convert between several different metadata formats, including different expressions of MARC such as MARCXML and Mnemonic MARC"
+- "MarcEdit can be used to convert between several different library bibliographic metadata formats, including different expressions of MARC such as MARCXML and Mnemonic MARC"
 ---
 ## What is MarcEdit?
 
-MarcEdit is a suite of tools created and maintained by Terry Reese. The tools together form the MarcEdit software. These tools provide numerous features which can be used to create, edit, and work with library metadata, particularly (though not limited to) records in a variety of MARC formats and standards. In this way, the MarcEdit software is MARC agnostic and can work with Unimarc or MARC21. MarcEdit can be used to
+MarcEdit is a suite of tools created and maintained by Terry Reese. The tools together form the MarcEdit software. These tools provide numerous features which can be used to create, edit, and manipulate library metadata, particularly, though not limited to, records in a variety of MARC formats and standards. In this way, the MarcEdit software is MARC agnostic and can work with Unimarc or MARC21. MarcEdit can be used to
 
 * make small, single, edits to individual MARC records
 * make edits across many MARC records at a single time
@@ -37,18 +37,19 @@ Before working with any data, it is advantageous to understand that data. Does t
 Getting a profile of the MARC data in your file can help you make a plan on what changes need to be made to the file. Further, it can help you automate some of the changes if this type of file is one that you work with often.
 
 ### Manipulating MARC Data
-The MarcEditor is like the Swiss army knife of MARC data. You can perform single or global edits such as adding or deleting MARC fields, subfields, indicator values. Other edit functions are building fields using MARC data from other fields, or changing the case of data in a field. Other operations include running operations to help update your MARC data to the content standard Resource Description and Access (RDA) or to assign OCLC's FAST headings to records in the file.
+MarcEdit is like the Swiss army knife for MARC data. You can perform single or global edits such as adding or deleting MARC fields, subfields, indicator values. Other edit functions are building fields using MARC data from other fields, or changing the case of data in a field. Other operations include running operations to help update your MARC data to the content standard Resource Description and Access (RDA) or to assign OCLC's FAST headings to records in the file.
 
 ### Tasks and Automation
-Edits can be performed on one record by editing directly on the record in the MarcEditor. Edits can be global and done one at a time to the entire file. If you have a list of changes to make, these can be set up in what is called a MARC task. These tasks make automating manipulating your MARC data easier and quicker.
+Edits can be performed on one record by editing directly on the record or globally. If you have a list of changes to make, MarcEdit allows you to package those together to be run one after another. This is one of the ways to automate your work and makes manipulating your MARC data easier and quicker.
 
 ### Integrations
-The MarcEditor can integrate with OCLC's WorldCat and Ex Libris' Alma library system platform. Using the MarcEditor, you can retrieve records through these integrations, manipulate the records, and the push those changes back to the integration of your choice.
+MarcEdit can integrate with OCLC's WorldCat and Ex Libris' Alma library system platform. Thanks to these integrations, you can retrieve records from external services, manipulate those records, and then push those changes back to the integration of your choice.
 
-Though not necessarily an integration, harvested records can also be manipulated in the MarcEditor. MarcEdit allows to harvest Duplin Core or MARC records.
+Though not necessarily an integration, harvested records can also be manipulated. Using MarcEdit you can harvest [OAI or Open Archives Initiative for Harvesting Metadata Protocol](https://www.openarchives.org/pmh/) Dublin Core or MARC21 records.
 
 ### Regular Expressions
-The MarcEditor allows for the use of regular expressions in many of its MARC data manipulation features. Regular expressions are a sequence of text to identify a search pattern. This is a powerful tool that allows greater flexibility when manipulating MARC data.
+MarcEdit allows for the use of regular expressions in many of its MARC data manipulation features. Regular expressions are a sequence of text to identify a search pattern. This is a powerful tool that allows greater flexibility when manipulating MARC data.
+
 ## Getting help
 
 If you encounter problems installing or running MarcEdit, a good source of support is the [MarcEdit mailing list]( http://listserv.gmu.edu/cgi-bin/wa?A0=marcedit-l). [The MarcEdit website has a list of places where you can get help using the software](https://marcedit.reeset.net/help) including:
