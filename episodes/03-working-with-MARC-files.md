@@ -1,7 +1,7 @@
 ---
 title: "Working with MARC files"
 teaching: 20
-exercises: 0
+exercises: 1
 questions:
 - "What is a MARC binary file?"
 - "What does it mean to break and make a MARC file and how do I open a file of MARC records in MARCedit?"
