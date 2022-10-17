@@ -38,13 +38,14 @@ With regular expressions you can easily locate variations in your data and repla
 >3. Check Use Regular Expressions box
 >4. Click drop down menu --> Preview Results
 >5. Verify your results look as expected, close preview tab and then click Process
->
 >In this regular expression we use the pipe (|) metacharacter to specify that we are looking for the string on OR ocn OR ocm. We then replace the captured string with (OCoLC).
 {: .checklist}
 
 >## Knowing your dataset
 >Regular expressions are a powerful tool, but using them can sometimes lead to unexpected and undesirable results if you do not know your dataset. In the Edit Field Data exercise above, any 035 field containing the string on, ocn, or ocm would have had these values replaced with (OCoLC).
+>
 >For example: =035  //$a(SFUonline)638023 would have become =035  //$a(SFU(OCoLC)line)638023
+>
 >Reviewing your dataset before employing regular expressions is a good best practice. The MarcEditor Preview Results feature also supports trial and error.
 {: .callout}
 
