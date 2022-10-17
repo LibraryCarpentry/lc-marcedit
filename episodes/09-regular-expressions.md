@@ -31,7 +31,7 @@ Many MarcEdit functions support the use of regular expressions for data selectio
 
 With regular expressions you can easily locate variations in your data and replace them with a single value. In our file the OCLC identifier in the 035 field uses the prefixes on, ocn, and ocm, but our library formats the OCLC with the (OCoLC) prefix. Instead of running three Edit Field Data functions to update these prefixes we can use a regular expression in the Edit Field Data tool to replace these prefixes with the (OCoLC) prefix in a single edit.
 
->### Update 035 OCLC prefixes
+>## Update 035 OCLC prefixes
 >1. Select Tools --> Edit Field Data
 >2. Enter the following values:
 >Field: 035    Find: on|ocn|ocm    Replace: (OCoLC)
@@ -42,7 +42,7 @@ With regular expressions you can easily locate variations in your data and repla
 >In this regular expression we use the pipe (|) metacharacter to specify that we are looking for the string on OR ocn OR ocm. We then replace the captured string with (OCoLC).
 {: .checklist}
 
->### Knowing your dataset
+>## Knowing your dataset
 >Regular expressions are a powerful tool, but using them can sometimes lead to unexpected and undesirable results if you do not know your dataset. In the Edit Field Data exercise above, any 035 field containing the string on, ocn, or ocm would have had these values replaced with (OCoLC).
 >For example: =035  //$a(SFUonline)638023 would have become =035  //$a(SFU(OCoLC)line)638023
 >Reviewing your dataset before employing regular expressions is a good best practice. The MarcEditor Preview Results feature also supports trial and error.
@@ -53,7 +53,7 @@ With regular expressions you can easily locate variations in your data and repla
 
 The Find and Replace tool is another useful way to identify and manipulate data in the MarcEditor with the support of regular expressions. In our file the local call numbers in the 090 field are formatted without a space between the class and subclass (ex. LD1780 and not LD 1780). To update the call number to follow our local policy we need to isolate the components of the call number so we can add a space between them. We can do this with a regular expression by employing groups.
 
->### Add a space between 090 class and subclass
+>## Add a space between 090 class and subclass
 >1. Select Edit --> Find
 >2. Enter =090 in the Find box and click Find All
 >Review the list of 090 fields, what observations can you make about the call numbers in this field?
