@@ -54,7 +54,7 @@ The conversions from one encoding standard to another, as in MARC21 to MARC21XML
 >## Where is the feature to export MARC records as a text delimited file?
 >
 > > ## Solution
-> > 1. Go to Tools -> Preferences
+> > 1. Go to Tools &rarr Preferences
 > > 2. Click on Export
 > > 3. Select Export Tab Delimited Records
 > {: .solution}
