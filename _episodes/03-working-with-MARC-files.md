@@ -6,15 +6,17 @@ questions:
 - "What is a MARC binary file?"
 - "What does it mean to break and make a MARC file and how do I open a file of MARC records in MARCedit?"
 - "Why is encoding important?"
+- "How does the MarcEditor display MARC records?"
 
 objectives:
 - "Explain the difference between mrc and mrk MARC file formats"
 - "Successfully break and open a file of MARC records"
 - "Explain encoding and its importance"
+- "Understand how to read a MARC record in the MarcEditor"
 
 keypoints:
 - "MarcEdit can work with a variety of file formats"
-- "MARC ToolsIcon allow you to convert data from one file format to another"
+- "The MARC Tools Icon allow you to convert data from one file format to another"
 - "The MarcEditor works with a MarcEdit specific mnemonic format of MARC records (.mrk)"
 - "It is necessary to break a MARC binary file to work with that MARC data in the MarcEditor. The extension of these easily readable MARC files are .mrk rather than the binary extension of .mrc"
 ---
@@ -74,7 +76,7 @@ keypoints:
 >### Break a MARC (.mrc) file to use in the MarcEditor
 >
 >1. Launch MarcEdit and from the main window click on the ToolsIcon.
->2. In the MARC Tools window, Select Operation -> MARCBreaker.
+>2. In the MARC Tools window, Select Operation → MARCBreaker.
 >3. In the field, Select Data to Process, click the file folder image to the right of the Open box to browse for the sample MARC data file (.mrc). Double click the found file to select it.
 >4. Next, you will need save your file in the MARC mnemonic format by clicking the file folder to the right of the Save As box. Select the location and name you would like to give you new file.
 >5. Under Character encoding select UTF8 as default character encoding.
@@ -86,3 +88,58 @@ keypoints:
 >## Character Encoding
 >To ensure the integrity of your data you need to select the correct character encoding for your dataset. MarcEdit does not automatically detect character encoding, however, UTF8 is set as the default encoding scheme. You can update the encoding scheme when using the MarcBreaker, or you can update the default in Preferences → MarEditor → Default Encoding. For more information on character encoding and translating from one encoding to another, see [The MarcEdit Field Guide](https://marcedit.reeset.net/learning_marcedit/9-2/dealing-with-character-encodings-in-marcedit/)
 {: .callout}
+
+You should now see the MARC records from the file displaying in the MarcEditor
+
+![MarcEditor screen with file open](../fig/marc-editor.png)
+
+The MarcEditor displays the records in what is called the 'Mnemonic MARC Text File' format (file extension *.mrk). Each line in the file represents a field in a MARC record:
+
+
+```
+=245  14$aThe Lord of the Rings /$c J.R.R. Tolkien.
+```
+
+
+This example breaks down as follows:
+
+
+<table>
+  <tr>
+   <td><code>=</code>
+   </td>
+   <td>Each line/field starts with the '=' sign.
+   </td>
+  </tr>
+  <tr>
+   <td><code>245</code>
+   </td>
+   <td>The '=' is followed immediately by the three character MARC field code.
+   </td>
+  </tr>
+  <tr>
+   <td><code>[two spaces]</code>
+   </td>
+   <td>The MARC field is always followed by two spaces.
+   </td>
+  </tr>
+  <tr>
+   <td><code>14</code>
+   </td>
+   <td>The field indicators follow the spaces - if the field has indicators. For the control or fixed fields, the field content starts directly after the spaces.
+   </td>
+  </tr>
+  <tr>
+   <td><code>$aThe Lord of the Rings /$c J.R.R. Tolkien.</code>
+   </td>
+   <td>The field content contains the subfields (indicated using the '$' symbol) and the text. Because the subfields use the '$' symbol, any real occurrences of the dollar symbol (e.g. for currency) is shown as "[dollar]" instead. Unlike in some cataloguing applications, there are no spaces between subfield codes and the subfield text.
+   </td>
+  </tr>
+</table>
+
+
+Records in the MarcEditor display are separated by a blank line.
+
+The MarcEditor divides a file of MARC records into 'pages' of 100 records. You can scroll up and down the page of MARC records using the scroll bar as usual, but to see the next 100 records you need to use the Next/Previous page controls which are at the bottom left of the screen. The MarcEditor can handle very large files of MARC records, because it never tries to load all the records at the same time.
+
+You can adjust the number of records displayed per 'page' through the MarcEditor preferences which can be accessed through the Tools → Preferences menu option from the MarcEditor, or through the 'Settings' icon on the opening screen of MarcEdit.
