@@ -98,4 +98,4 @@ Working with fixed fields, where character position and coded values impart spec
 >For this example we are going to use a regular expression to look for the presence of an 856 link or a the carrier type online resource. Enter the regular expression =856|=338.+online resource in the Find What box.
 >- This regular expression looks for the string =856 OR the string =338 followed by any character one or more times, followed by the string online resource
 >4. Click Add Field. Review your data, were the new fields added correctly?
->{: .checklist}
+{: .checklist}
