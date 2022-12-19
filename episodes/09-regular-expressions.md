@@ -100,6 +100,8 @@ Working with fixed fields, where character position and coded values impart spec
 >4. Click Add Field. Review your data, were the new fields added correctly?
 {: .checklist}
 
-After making edits to your subset of files, you can either save the edits back into the original file, or save the subset of files separately. 
-To save edits back into the main file, select File → Save (Ctrl+S). You will get a dialogue box indicating that your records have been saved back into the original file.
-To save your subset of files separately, select File → Save As. Specify the name and location of your file and click Ok.
+After editing your subset of records, you can either save the edits back into the original file, or save the subset of records to a new file.
+
+To save the edits back into the original file, select File → Save (Ctrl+S). You will get a dialogue box indicating that your records have been saved back into the original file.
+
+To save your subset of records separately, select File → Save As. Specify the name and location of your new file and click Ok.
