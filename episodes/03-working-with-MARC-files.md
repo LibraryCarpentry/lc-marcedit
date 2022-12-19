@@ -24,7 +24,6 @@ keypoints:
 
 >## Working with MARC files
 >MarcEdit recognizes the following MARC file types:
->
 ><table>
 >  <tr>
 >   <td><strong>File type</strong>
@@ -70,12 +69,25 @@ keypoints:
 >To work with a MARC file in the MARCEditor your file needs to be in MARC mnemonic format. If you only have a binary file, then that file needs to be converted to the mnemonic format.
 {: .callout}
 
->## MARC Tools
->MarcEdit’s MARC Tools allows you to convert between different data formats recognized by MarcEdit.  To transform our binary MARC file into MARC mnemonic human readable format, you use the MarcBreaker.
+### MARC Tools <img src="../fig/MARCTools.PNG" width="80">
+To work with MARC data files or convert between metadata formats for library bibliographic data recognized by MarcEdit, click on the MARC Tools icon that has the crossed hammer and spanner in the upper left hand corner of the main menu. The available features are:
+* MarcBreaker: This "breaks" the MARC binary file into a readable (mnemonic) format that can be edited in the MarcEditor.
+* MarcMaker: This takes the readable (mnemonic) format MARC data file and creates the MARC binary file.
+* MARC21 to MARC21XML: This converts a MARC21 file to MARC21XML.
+* MARC21XML to MARC21: This converts a MARC21XML file to a MARC21 binary file.
+* MARC to JSON: This converts a MARC21 file to a JSON file.
+* JSON to MARC: This converts a JSON file to a MARC21 file.
+* JSON to XML: This converts a JSON file to XML.
+* XML to JSON: This converts an XML file to JSON.
+
+The conversions from one encoding standard to another, as in MARC21 to MARC21XML, rely on eXtensible stylesheets. MarcEdit comes with several default stylesheets which come from those maintained by the Library of Congress. If you are familiar with stylesheets, you can also create your own.
+
+>## Break a MARC Binary File
+>To transform our binary MARC file (.mrc) into MARC mnemonic human readable format (.mrk), you use the MarcBreaker.
 >
 >### Break a MARC (.mrc) file to use in the MarcEditor
 >
->1. Launch MarcEdit and from the main window click on the ToolsIcon.
+>1. Launch MarcEdit and from the main window click on the MARC Tools Icon.
 >2. In the MARC Tools window, Select Operation → MARCBreaker.
 >3. In the field, Select Data to Process, click the file folder image to the right of the Open box to browse for the sample MARC data file (.mrc). Double click the found file to select it.
 >4. Next, you will need save your file in the MARC mnemonic format by clicking the file folder to the right of the Save As box. Select the location and name you would like to give you new file.
@@ -91,7 +103,7 @@ keypoints:
 
 You should now see the MARC records from the file displaying in the MarcEditor
 
-![MarcEditor screen with file open](../fig/marc-editor.png)
+![MarcEditor screen with file open](../fig/marc_sample_data.png)
 
 The MarcEditor displays the records in what is called the 'Mnemonic MARC Text File' format (file extension *.mrk). Each line in the file represents a field in a MARC record:
 
