@@ -31,7 +31,7 @@ With regular expressions you can easily locate variations in your data and repla
 >## Update 035 OCLC prefixes
 >1. Select Tools → Edit Field Data
 >2. Enter the following values:
->Field: 035    Find: on|ocn|ocm    Replace: (OCoLC)
+>Field: 035    Find: <code>on|ocn|ocm</code>    Replace: (OCoLC)
 >3. Check Use Regular Expressions box
 >4. Click drop down menu → Preview Results
 >5. Verify your results look as expected, close preview tab and then click Process
@@ -57,11 +57,11 @@ The Find and Replace tool is another useful way to identify and manipulate data 
 >Review the list of 090 fields, what observations can you make about the call numbers in this field?
 >Review shows us that not all call numbers begin with letters. We do not want to add a space to these call numbers and need to account for this in our regular expression.
 >3. In the Find window, click Replace to bring up the Replace Text functions
->4. In the Find box enter the regular expression (=090  \\\\\$a[A-Z]+)(\d.*)
+>4. In the Find box enter the regular expression <code>(=090  \\\\\$a[A-Z]+)(\d.*)</code>
 >This regular expression uses two sets of () to capture groups and then manipulate them.
->- Broken down, the first group (=090  \\\\\$a[A-Z]+) will match the literal string "=090  \\$a" (the additional backslashes are used to escape the regex metacharacters \ and $ so that they will be read as literals) followed by any single capital letter in the range A to Z ([A-Z]) one or more times (+). By specifying that the regular expression must locate a capital letter at the start of the call number, the regular expression will not edit the call numbers that begin with a digit.
->- The second group (\d.*) will match any digit (/d) followed by any character (.) zero or more times (*)
->5. In the Replace box enter $1 $2
+>- Broken down, the first group <code>(=090  \\\\\$a[A-Z]+)</code> will match the literal string "=090  \\$a" (the additional backslashes are used to escape the regex metacharacters \ and $ so that they will be read as literals) followed by any single capital letter in the range A to Z ([A-Z]) one or more times (+). By specifying that the regular expression must locate a capital letter at the start of the call number, the regular expression will not edit the call numbers that begin with a digit.
+>- The second group <code>(\d.*)</code> will match any digit (\d) followed by any character (.) zero or more times (*)
+>5. In the Replace box enter <code>$1 $2</code>
 >This regular expression refers back to the groups we defined and captured in the Find box. $1 refers to the group defined in the first set of brackets, and $2 refers to the group defined in the second set of brackets. If we had defined additional groups they would be referred to chronologically as $3, $4 etc. The regular expression $1 $2 will output the contents of the two captured groups with a space between them.
 >6. Check the Use regular expressions box
 >7. Click drop down menu → Preview Results
@@ -79,8 +79,8 @@ Working with fixed fields, where character position and coded values impart spec
 >## Isolate continuing resource records
 >1. From the top level menu select File → Select Records for Edit
 >2. The file you are working on will be selected by default in the Source MARC file box. To import the Leader for review, enter LDR in the Display Field Box and Click Import.
->3. To isolate continuing resource records we find any records where LDR/07 = i or s. In the Find box, enter the regular expression .{7}[is].{16}
->- This regular expression looks for any 7 characters (Leader positions 0-6), followed by the character i OR s (Leader position 7), followed by any 16 characters (Leader positions 8-23)
+>3. To isolate continuing resource records we find any records where LDR/07 = i or s. In the Find box, enter the regular expression <code>.{7}[is].{16}</code>
+>- This regular expression looks for any 7 characters (.{7})(Leader positions 0-6), followed by the character i OR s ([is]) (Leader position 7), followed by any 16 characters (.{16})(Leader positions 8-23)
 >4. Check the Use Regular Expressions box and then click the magnifying glass. A popup window will let you know how many records were selected based on your criteria.
 >5. Click Export Selected. You will get a popup will let you know the records have been extracted. Click OK.
 {: .checklist}
@@ -95,7 +95,11 @@ Working with fixed fields, where character position and coded values impart spec
 >2. In the Batch Editing window, enter 655 in the Field box and enter \4$aElectronic journals in the Field Data Box. Under General Options select Use Regular Expression, and under Add Field Options select Add Field If Present/NOT Present.
 >3. To add our 655 field to electronic records only, we need to specify what should be present in the record for the new field to be added. 
 >What are some fields and values we might look at to determine format?
->For this example we are going to use a regular expression to look for the presence of an 856 link or a the carrier type online resource. Enter the regular expression =856|=338.+online resource in the Find What box.
->- This regular expression looks for the string =856 OR the string =338 followed by any character one or more times, followed by the string online resource
+>For this example we are going to use a regular expression to look for the presence of an 856 link or a the carrier type online resource. Enter the regular expression <code>=856|=338.+online resource</code> in the Find What box.
+>- This regular expression looks for the string =856 OR the string =338 followed by any character (.) one or more times (+), followed by the string online resource
 >4. Click Add Field. Review your data, were the new fields added correctly?
 {: .checklist}
+
+After making edits to your subset of files, you can either save the edits back into the original file, or save the subset of files separately. 
+To save edits back into the main file, select File → Save (Ctrl+S). You will get a dialogue box indicating that your records have been saved back into the original file.
+To save your subset of files separately, select File → Save As. Specify the name and location of your file and click Ok.
