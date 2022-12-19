@@ -41,7 +41,7 @@ With regular expressions you can easily locate variations in your data and repla
 >## Knowing your dataset
 >Regular expressions are a powerful tool, but using them can sometimes lead to unexpected and undesirable results if you do not know your dataset. In the Edit Field Data exercise above, any 035 field containing the string on, ocn, or ocm would have had these values replaced with (OCoLC).
 >
->For example: =035  //$a(SFUonline)638023 would have become =035  //$a(SFU(OCoLC)line)638023
+>For example: =035  \\$a(SFUonline)638023 would have become =035  \\$a(SFU(OCoLC)line)638023
 >
 >Reviewing your dataset before employing regular expressions is a good best practice. The MarcEditor Preview Results feature also supports trial and error.
 {: .callout}
@@ -59,7 +59,7 @@ The Find and Replace tool is another useful way to identify and manipulate data 
 >3. In the Find window, click Replace to bring up the Replace Text functions
 >4. In the Find box enter the regular expression <code>(=090  \\\\\$a[A-Z]+)(\d.*)</code>
 >This regular expression uses two sets of () to capture groups and then manipulate them.
->- Broken down, the first group <code>(=090  \\\\\$a[A-Z]+)</code> will match the literal string "=090  \\$a" (the additional backslashes are used to escape the regex metacharacters \ and $ so that they will be read as literals) followed by any single capital letter in the range A to Z ([A-Z]) one or more times (+). By specifying that the regular expression must locate a capital letter at the start of the call number, the regular expression will not edit the call numbers that begin with a digit.
+>- Broken down, the first group <code>(=090  \\\\\$a[A-Z]+)</code> will match the literal string =090  \\$a (the additional backslashes are used to escape the regex metacharacters \ and $ so that they will be read as literals) followed by any single capital letter in the range A to Z ([A-Z]) one or more times (+). By specifying that the regular expression must locate a capital letter at the start of the call number, the regular expression will not edit the call numbers that begin with a digit.
 >- The second group <code>(\d.*)</code> will match any digit (\d) followed by any character (.) zero or more times (*)
 >5. In the Replace box enter <code>$1 $2</code>
 >This regular expression refers back to the groups we defined and captured in the Find box. $1 refers to the group defined in the first set of brackets, and $2 refers to the group defined in the second set of brackets. If we had defined additional groups they would be referred to chronologically as $3, $4 etc. The regular expression $1 $2 will output the contents of the two captured groups with a space between them.
