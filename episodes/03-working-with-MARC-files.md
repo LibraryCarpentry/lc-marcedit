@@ -82,6 +82,10 @@ To work with MARC data files or convert between metadata formats for library bib
 
 The conversions from one encoding standard to another, as in MARC21 to MARC21XML, rely on eXtensible stylesheets. MarcEdit comes with several default stylesheets which come from those maintained by the Library of Congress. If you are familiar with stylesheets, you can also create your own.
 
+>## Character Encoding
+>To ensure the integrity of your data you need to select the correct character encoding for your dataset. MarcEdit does not automatically detect character encoding, however, UTF8 is set as the default encoding scheme. You can update the encoding scheme when using the MarcBreaker, or you can update the default in Preferences → MarEditor → Default Encoding. For more information on character encoding and translating from one encoding to another, see [The MarcEdit Field Guide](https://marcedit.reeset.net/learning_marcedit/9-2/dealing-with-character-encodings-in-marcedit/)
+{: .callout}
+
 >## Break a MARC Binary File
 >To transform our binary MARC file (.mrc) into MARC mnemonic human readable format (.mrk), you use the MarcBreaker.
 >
@@ -96,10 +100,6 @@ The conversions from one encoding standard to another, as in MARC21 to MARC21XML
 >7. Once you click execute the newly created .mrk file will available to open in the MarcEditor. Under Results at the bottom of the window you will see a count of the records in your file. Click Edit Records to open the .mrk file in the MarcEditor.
 >
 {: .checklist}
-
->## Character Encoding
->To ensure the integrity of your data you need to select the correct character encoding for your dataset. MarcEdit does not automatically detect character encoding, however, UTF8 is set as the default encoding scheme. You can update the encoding scheme when using the MarcBreaker, or you can update the default in Preferences → MarEditor → Default Encoding. For more information on character encoding and translating from one encoding to another, see [The MarcEdit Field Guide](https://marcedit.reeset.net/learning_marcedit/9-2/dealing-with-character-encodings-in-marcedit/)
-{: .callout}
 
 You should now see the MARC records from the file displaying in the MarcEditor
 
