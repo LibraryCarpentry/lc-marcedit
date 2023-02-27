@@ -1,5 +1,5 @@
 ---
-title: "Working in the MarcEditor"
+title: "Layout of the MarcEditor"
 teaching: 10
 exercises: 0
 questions:
