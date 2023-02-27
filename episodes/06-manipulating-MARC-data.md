@@ -177,7 +177,7 @@ There are times when you need to work on a subset of your MARC data. The Select 
 
 Go to File and click on Select Records for Edit. In the window, you will see Display Field in the lower right hand corner. This is where you enter the MARC field you want to see displayed once you import your file. You can enter a MARC field and subfield or just a MARC field. The MARC field and/or subfield that you add in this box will provide the criteria you need to select records you want to edit. Once you have entered the Display Field, click on Import File. This will import the MARC (.mrk) file that you are currently working on. You can select another MARC (.mrk) file in the box Source MARC file.
 
-To select only the records you want to edit, enter your criteria in the Search box and click the magnifying glass icon. Records in your file where the contents of the selected Display Field match your search criteria will be selected. Click on Export Selected to export these records and edit them. When saving the exported records you can choose to save the file as a subset, or merge the edits back into your complete record set.
+To select only the records you want to edit, enter your criteria in the Search box and click the magnifying glass icon. Records in your file where the contents of the selected Display Field match your search criteria will be selected. Click on Export Selected to export these records and edit them. When saving the exported records you can choose to save the file as a new record subset (Save As), or merge the edits back into your complete record set (Save).
 
 <img src="../fig/selectRecordsForEdit.png" width="650">
 <img src="../fig/example_selectRecordsForEdit.png" width="650">
