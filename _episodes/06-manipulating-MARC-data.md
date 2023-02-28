@@ -129,7 +129,7 @@ To replace text in a subfield, enter the MARC field, the subfield, the text (or 
 
 >## Use the Build New Field to add a proxy to the 856$u
 >
->1. For eResources, it is sometimes necessary to add your institution's proxy information to the url in the 856$u. Add http:\\exampleproxy.edu/login?url= prefer the url in the 856$u.
+>1. For eResources, it is sometimes necessary to add your institution's proxy information to the url in the 856$u. Add https:\\exampleproxy.edu/login?url= prefix to the url in the 856$u.
 >
 > > ## Solution
 > > 1. Go to Tools → Build New Field
