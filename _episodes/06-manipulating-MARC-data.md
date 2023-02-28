@@ -124,7 +124,7 @@ To replace text in a subfield, enter the MARC field, the subfield, the text (or 
 >1. Go to Tools → Build New Field
 >2. In the new window, in the field box, type in =035  9\$a(LCMarcEdit){001}
 >3. Select the box to "Always add this field"
->3. Click Ok
+>3. Click Process
 {: .checklist}
 
 >## Use the Build New Field to add a proxy to the 856$u
