@@ -204,7 +204,7 @@ To select only the records you want to edit, enter your criteria in the Search b
 >## Let's add cutters to call numbers in the 099
 >1. Go to File → Select Records to Edit
 >2. In the new window, type in 099$b in the Field Display
->3. Click on Import FIle
+>3. Click on Import File
 >3. In the search box, type in Display 
 >4. Click enter
 >5. Click on Export Selected Records
