@@ -69,7 +69,7 @@ keypoints:
 >To work with a MARC file in the MARCEditor your file needs to be in MARC mnemonic format. If you only have a binary file, then that file needs to be converted to the mnemonic format.
 {: .callout}
 
-### MARC Tools <img src="../fig/MARCTools.PNG" width="80">
+### MARC Tools
 To work with MARC data files or convert between metadata formats for library bibliographic data recognized by MarcEdit, click on the MARC Tools icon that has the crossed hammer and spanner in the upper left hand corner of the main menu. The available features are:
 * MarcBreaker: This "breaks" the MARC binary file into a readable (mnemonic) format that can be edited in the MarcEditor.
 * MarcMaker: This takes the readable (mnemonic) format MARC data file and creates the MARC binary file.
