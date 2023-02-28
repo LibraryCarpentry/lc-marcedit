@@ -207,7 +207,7 @@ To select only the records you want to edit, enter your criteria in the Search b
 >3. Click on Import File
 >3. In the search box, type in "Display field not found" to locate all records missing 099$b
 >4. Click the magnifying glass icon. A pop up window will indicate the number of records selected that match your criteria. Click OK.
->5. Click on Export Selected Records
+>5. Click on Export Selected. A pop up window indicate that your selected records have been extracted. Click OK.
 >6. In the new MarcEditor, go to Tools → Call Number tools → Cuttering Tools → Generate Cutters
 {: .checklist}
 
