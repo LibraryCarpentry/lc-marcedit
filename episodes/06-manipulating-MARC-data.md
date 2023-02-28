@@ -208,7 +208,10 @@ To select only the records you want to edit, enter your criteria in the Search b
 >3. In the search box, type in "Display field not found" to locate all records missing 099$b
 >4. Click the magnifying glass icon. A pop up window will indicate the number of records selected that match your criteria. Click OK.
 >5. Click on Export Selected. A pop up window indicate that your selected records have been extracted. Click OK.
->6. In the new MarcEditor, go to Tools → Call Number tools → Cuttering Tools → Generate Cutters
+>6. A new MarcEditor window will open. Note the temporary file name at the top of the editor window indicating this file is distinct from your main file. In the new MarcEditor, go to Tools → Call Number tools → Cuttering Tools → Generate Cutters.
+> 7. In the field box enter 099 and click Process
+> 8. Check your results by using Find All =099
+> 9. Select File → Save. A pop up window will indicate your extracted data with edits has been saved back into your main file. Click OK.
 {: .checklist}
 
 ## Save and Compile
