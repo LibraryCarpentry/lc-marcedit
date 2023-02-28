@@ -120,6 +120,25 @@ To replace text in a subfield, enter the MARC field, the subfield, the text (or 
 >  ![Build New Field Window](https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/fig/buildNewField.png)
 {: .callout}
 
+>## Let's build a new 035 9\$a using the data from the 001 and static data
+>1. Go to Tools → Build New Field
+>2. In the new window, in the field box, type in =035  9\$a(LCMarcEdit){001}
+>3. Select the box to "Always add this field"
+>3. Click Process
+{: .checklist}
+
+>## Use the Build New Field to add a proxy to the 856$u
+>
+>1. For eResources, it is sometimes necessary to add your institution's proxy information to the url in the 856$u. Add https:\\exampleproxy.edu/login?url= prefix to the url in the 856$u.
+>
+> > ## Solution
+> > 1. Go to Tools → Build New Field
+> > 2. In the new window, in the field box, type in =856  40\$uhttps:\\exampleproxy.edu/login?url={856$u}
+> > 3. Select the box to "Replace Existing Field"
+> > 4. Click Process
+> {: .solution}
+{: .challenge}
+
 ### Change one or both indicators in a MARC field
 Sometimes it is necessary to change one or both indicators of a MARC field. To edit field indicators, go to Tools and select Edit Indicators. This will open a new Batch Editing Tools window. Enter the MARC field and the indicators that you would like to change. Enter the new indicators you want in the Replace With Indicators box. Here you will want to be careful of the combinations of indicators. If you leave the Indicators box blank and add indicators in the Replace With Indicators box, all the indicators for that MARC field will be changed to the indicators entered in the Replace With Indicators box.
 
@@ -181,6 +200,19 @@ To select only the records you want to edit, enter your criteria in the Search b
 
 <img src="../fig/selectRecordsForEdit.png" width="650">
 <img src="../fig/example_selectRecordsForEdit.png" width="650">
+
+>## Let's add cutters to call numbers in the 099
+>1. Go to File → Select Records to Edit
+>2. In the new window, type in 099$b in the Field Display
+>3. Click on Import File
+>3. In the search box, type in "Display field not found" to locate all records missing 099$b
+>4. Click the magnifying glass icon. A pop up window will indicate the number of records selected that match your criteria. Click OK.
+>5. Click on Export Selected. A pop up window indicate that your selected records have been extracted. Click OK.
+>6. A new MarcEditor window will open. Note the temporary file name at the top of the editor window indicating this file is distinct from your main file. In the new MarcEditor, go to Tools → Call Number tools → Cuttering Tools → Generate Cutters.
+> 7. In the field box enter 099 and click Process
+> 8. Check your results by using Find All =099
+> 9. Select File → Save. A pop up window will indicate your extracted data with edits has been saved back into your main file. Click OK.
+{: .checklist}
 
 ## Save and Compile
 The MARC data that you manipulate in the MarcEditor is a human and computer readable mnemonic view that was broken from the binary .mrc file. You will notice that the extension of your file that you are manipulating in the MarcEditor has the file extension of .mrk. If you look at the file in your file directory, sometimes the color is also blue whereas the .mrc or binary MARC file is purple.
