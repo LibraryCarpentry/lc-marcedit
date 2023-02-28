@@ -133,7 +133,8 @@ To replace text in a subfield, enter the MARC field, the subfield, the text (or 
 >
 > > ## Solution
 > > 1. Go to Tools → Build New Field
-> > 2. In the new window, in the fied box, type in =856  40\$uhttp:\\exampleproxy.edu/login?url={856$u}
+> > 2. In the new window, in the field box, type in =856  40\$uhttps:\\exampleproxy.edu/login?url={856$u}
+> > 3. Select the box to "Replace Existing Field"
 > > 3. Click Ok
 > {: .solution}
 {: .challenge}
