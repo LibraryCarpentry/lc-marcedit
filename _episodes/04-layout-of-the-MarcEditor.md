@@ -19,7 +19,7 @@ The MarcEditor is a discreet utility within MarcEdit that enables you to work wi
 # MarcEditor Top Level Menu
 The MarcEditor has a robust set of features available via the top level menu. Features can be accessed through the menu or through shortcut keys. The shortcut key for a feature appears next to it in the menu.
 
-<img src="../fig/topLevelFeatures_marcEditor.PNG" width="650">
+<img src="../fig/topLevelFeatures_marcEditor.PNG" alt="MarcEdit top level menu" width="650">
 
 ## MarcEditor Top Level Menu Features
 Each top level menu heading contains so many gems. Below are some highlights of those features that are frequently used when working with a set of MARC data.
