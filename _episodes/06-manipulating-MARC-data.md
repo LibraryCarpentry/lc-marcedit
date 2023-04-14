@@ -28,8 +28,8 @@ We've seen how we can manually and individually edit records in the MarcEditor, 
 To add or delete a MARC field, go to Tools in the upper menu in the MarcEditor and select Add/Delete Field. This will open a new Batch Editing Tools window. The Add/Delete Field functions are on the same menu level and you will need to select the action of either add or delete using the buttons on the right hand side.
 
 In the top middle section of the window, there are two data entry fields: Field and Field Data. Enter the MARC field number you want to add or delete in the Field dialogue box. Then enter the indicators, subfields, and data in Field Data dialogue box. Remember to include the dollar sign to indicate a subfield.
-  <img src="../fig/addDeleteField.png" alt="MarcEdit empty Add/Delete Field dialog" width="650">
-  <img src="../fig/example_addDelete.png" alt="MarcEdit completed Add/Delete Field dialog" width="650">
+  ![MarcEdit empty Add/Delete Field dialog](../fig/addDeleteField.png)
+  ![MarcEdit completed Add/Delete Field dialog](../fig/example_addDelete.png)
 
 To add the field, click the Add Field button and to delete any matching fields, click the Delete Field button.
 
@@ -85,8 +85,8 @@ To delete a subfield, enter the MARC field and then the subfield. Select Delete 
 
 To replace text in a subfield, enter the MARC field, the subfield, the text (or information) that needs to be changed in the Field Data box. Enter your updated text in the Replace with box. Click on Replace Text.
 
-<img src="../fig/editSubfield.png" alt="MarcEdit empty edit subfield dialog" width="650">
-<img src="../fig/example_Subfield.png" alt="MarcEdit completed edit subfield dialog" width="650">
+![MarcEdit empty edit subfield dialog](../fig/editSubfield.png)
+![MarcEdit completed edit subfield dialog](../fig/example_Subfield.png)
 
 > ## Ability to Preview and Special Undo
 >
@@ -117,7 +117,7 @@ To replace text in a subfield, enter the MARC field, the subfield, the text (or 
 >
 > Sometimes it is necessary to create a new MARC field based on the content of existing MARC fields.
 > This is possible using the function called, Build New Field.
->  ![Build New Field Window](https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/fig/buildNewField.png)
+>  ![Build New Field Window](../fig/buildNewField.png)
 {: .callout}
 
 >## Let's build a new 035 9\$a using the data from the 001 and static data
@@ -142,8 +142,8 @@ To replace text in a subfield, enter the MARC field, the subfield, the text (or 
 ### Change one or both indicators in a MARC field
 Sometimes it is necessary to change one or both indicators of a MARC field. To edit field indicators, go to Tools and select Edit Indicators. This will open a new Batch Editing Tools window. Enter the MARC field and the indicators that you would like to change. Enter the new indicators you want in the Replace With Indicators box. Here you will want to be careful of the combinations of indicators. If you leave the Indicators box blank and add indicators in the Replace With Indicators box, all the indicators for that MARC field will be changed to the indicators entered in the Replace With Indicators box.
 
-<img src="../fig/editIndicators.png" alt="MarcEdit empty edit indicators dialog" width="650">
-<img src="../fig/example_editIndicators.png" alt="MarcEdit completed edit indicators dialog" width="650">
+![MarcEdit empty edit indicators dialog](../fig/editIndicators.png)
+![MarcEdit completed edit indicators dialog](../fig/example_editIndicators.png)
 
 >## Change an indicator for a MARC field in your MARC data
 >
@@ -163,7 +163,7 @@ Records aren't created equal in that we encounter MARC data that follows differe
 
 To run the RDA Helper, go to Tools and select RDA Helper. In the window that opens, you can pick and choose how you would like to transform your records to align better with the RDA descriptive standard. For example, you can add the RDA fields 336, 337, and 338 for content, media, and carrier types. You can update the MARC field 040 to include the $e rda and delete the GMD statement. You can also evaluate the 260/264.
 
-<img src="../fig/rdaHelper.png" alt="MarcEdit RDA Helper" width="650">
+![MarcEdit RDA Helper](../fig/rdaHelper.png)
 
 >## Run the RDA Helper on your MARC data
 >
@@ -183,7 +183,7 @@ Working with fixed fields can be difficult. In the MarcEditor, you can edit one 
 
 You can also batch insert an 006 or 008 into your records. To insert a fixed field go to Edit and select the appropriate Insert/Edit.
 
-<img src="../fig/fixedFields.png" alt="MarcEdit fixed fields editor" width="650">
+![MarcEdit fixed fields editor](../fig/fixedFields.png)
 
 > ## Batch Editing Fixed Fields in Multiple MARC Records
 >
@@ -198,8 +198,8 @@ Go to File and click on Select Records for Edit. In the window, you will see Dis
 
 To select only the records you want to edit, enter your criteria in the Search box and click the magnifying glass icon. Records in your file where the contents of the selected Display Field match your search criteria will be selected. Click on Export Selected to export these records and edit them. When saving the exported records you can choose to save the file as a new record subset (Save As), or merge the edits back into your complete record set (Save).
 
-<img src="../fig/selectRecordsForEdit.png" alt="MarcEdit empty Select Records for Edit dialog" width="650">
-<img src="../fig/example_selectRecordsForEdit.png" alt="MarcEdit completed Select Records for Edit dialog" width="650">
+![MarcEdit empty Select Records for Edit dialog](../fig/selectRecordsForEdit.png)
+![MarcEdit completed Select Records for Edit dialog](../fig/example_selectRecordsForEdit.png)
 
 >## Let's add cutters to call numbers in the 099
 >1. Go to File → Select Records to Edit
