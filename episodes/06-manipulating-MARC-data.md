@@ -122,9 +122,9 @@ To replace text in a subfield, enter the MARC field, the subfield, the text (or 
 >  ![Build New Field Window](../fig/buildNewField.png)
 {: .callout}
 
->## Let's build a new 035 9\$a using the data from the 001 and static data
+>## Let's build a new `035 9\$a` using the data from the 001 and static data
 >1. Go to Tools → Build New Field
->2. In the new window, in the field box, type in =035  9\$a(LCMarcEdit){001}
+>2. In the new window, in the field box, type in `=035  9\$a(LCMarcEdit){001}`
 >3. Select the box to "Always add this field"
 >3. Click Process
 {: .checklist}
@@ -219,6 +219,6 @@ To select only the records you want to edit, enter your criteria in the Search b
 ## Save and Compile
 The MARC data that you manipulate in the MarcEditor is a human and computer readable mnemonic view that was broken from the binary .mrc file. You will notice that the extension of your file that you are manipulating in the MarcEditor has the file extension of `.mrk`. If you look at the file in your file directory, sometimes the color is also blue whereas the .mrc or binary MARC file is purple.
 
-When you save or save as in the MarcEditor, you are saving your latest changes as a .mrk (in the friendly view that was broken from the binary `.mrc` file).
+When you save or save as in the MarcEditor, you are saving your latest changes as a `.mrk` (in the friendly view that was broken from the binary `.mrc` file).
 
 When you compile, you are saving all of your latest changes and reforming that your record set into its binary .mrc format that can be used to load the records in external systems such as your ILS or LSP.
