@@ -90,7 +90,7 @@ If you have created many Tasks, it does help to assign them to groups to more ea
 ## Managing your Tasks
 To edit an existing task, go to Tools → Manage Tasks. In the Task Manger select the task you want to edit, this will highlight the task. Under Task Actions choose Edit Task and click Select. This will open the Edit Task List window. Just like when creating a new task, you can add, delete, or edit functions in your task. Use the up and down arrows to the right to reorder your functions.
 
->## Add a proxy to the 856 40$u in your Task
+>## Add a proxy to the `856 40$u` in your Task
 >
 >1. After you run your Task, your MARC records should have your institution's proxy before the URL. Remember to check your data first to see if there are any proxy stems present. You will need to remove any existing proxies before running your Task. If the MARC data has different types of electronic URLs (resource, related resource, etc.) as noted in the MARC field 856 indicators, you will need to account for that in your Task.
 >
@@ -100,7 +100,7 @@ To edit an existing task, go to Tools → Manage Tasks. In the Task Manger selec
 > > 3. Select the Task you just created. The selected Task will be highlighted.
 > > 4. In Task Actions, select Edit Task and click Select.
 > > 5. Select the plus button and select "Add a Replace All Task"
-> > 6. Replace the 856  40$u with 856  40$u[your proxy]. Remember to add 2 spaces after the MARC field.
+> > 6. Replace the `856  40$u` with `856  40$u[your proxy]`. Remember to add 2 spaces after the MARC field.
 > > 7. Save
 > > 8. Close out of the Task Manager
 > > 9. Run your Task again
