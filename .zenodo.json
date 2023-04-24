@@ -1,0 +1,42 @@
+{
+  "contributors": [
+    {
+      "type": "Editor",
+      "name": "Owen Stephens",
+      "orcid": "0000-0001-9813-5701"
+    },
+    {
+      "type": "Editor",
+      "name": "jenmawe"
+    },
+    {
+      "type": "Editor",
+      "name": "Abigail Sparling",
+      "orcid": "0000-0002-2635-8348"
+    }
+  ],
+  "creators": [
+    {
+      "name": "jenmawe"
+    },
+    {
+      "name": "Abigail Sparling",
+      "orcid": "0000-0002-2635-8348"
+    },
+    {
+      "name": "Owen Stephens",
+      "orcid": "0000-0001-9813-5701"
+    },
+    {
+      "name": "Christopher Erdmann",
+      "orcid": "0000-0003-2554-180X"
+    },
+    {
+      "name": "Tim Dennis",
+      "orcid": "0000-0001-6632-3812"
+    }
+  ],
+  "license": {
+    "id": "CC-BY-4.0"
+  }
+}
