@@ -65,7 +65,7 @@ keypoints:
 >   <td>A MARC file expressed in the eXtensible Markup format or a text-based format for representing structured information.
 >   </td>
 >  </tr>
->  ></table>
+>  </table>
 >To work with a MARC file in the MARCEditor your file needs to be in MARC mnemonic format. If you only have a binary file, then that file needs to be converted to the mnemonic format.
 {: .callout}
 
