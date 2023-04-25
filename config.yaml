@@ -14,7 +14,7 @@ carpentry: 'lc'
 title: 'Library Carpentry: MarcEdit'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: 
+created: '2019-08-17'
 
 # Comma-separated list of keywords for the lesson
 keywords: 'software, data, lesson, The Carpentries'
@@ -27,7 +27,7 @@ life_cycle: 'pre-alpha'
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/fishtree-attempt/lc-marcedit/'
+source: 'https://github.com/librarycarpentry/lc-marcedit'
 
 # Default branch of your lesson
 branch: 'main'
@@ -84,7 +84,6 @@ profiles:
 # sandpaper and varnish versions) should live
 
 
-url: https://preview.carpentries.org/lc-marcedit
+url: 'https://librarycarpentry.github.io/lc-marcedit'
 analytics: carpentries
 lang: en
-workbench-beta: 'true'
