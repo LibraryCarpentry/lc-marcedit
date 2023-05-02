@@ -17,8 +17,6 @@ Contributions are very welcome**
 
 <!-- this is an html comment -->
 
-{% comment %} This is a comment in Liquid {% endcomment %}
-
 ::::::::::::::::::::::::::::::::::::::::::  prereq
 
 ## Prerequisites
