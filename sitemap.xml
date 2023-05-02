@@ -37,7 +37,13 @@
     <loc>https://librarycarpentry.github.io/lc-marcedit/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/aio.html</loc>
+  </url>
+  <url>
     <loc>https://librarycarpentry.github.io/lc-marcedit/discuss.html</loc>
+  </url>
+  <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/images.html</loc>
   </url>
   <url>
     <loc>https://librarycarpentry.github.io/lc-marcedit/index.html</loc>
@@ -79,10 +85,22 @@
     <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/discuss.html</loc>
   </url>
   <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/os-original-material.html</loc>
@@ -92,6 +110,12 @@
   </url>
   <url>
     <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/key-points.html</loc>
   </url>
   <url>
     <loc>https://librarycarpentry.github.io/lc-marcedit/os-original-material.html</loc>
