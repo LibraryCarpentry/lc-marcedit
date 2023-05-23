@@ -358,7 +358,8 @@ fields: Field and Field Data. Enter the MARC field number you want to
 add or delete in the Field dialogue box. Then enter the indicators,
 subfields, and data in Field Data dialogue box. Remember to include the
 dollar sign to indicate a subfield.</p>
-<figure><img src="fig/addDeleteField.png" alt="MarcEdit empty Add/Delete Field dialog" class="figure mx-auto d-block"><img src="fig/example_addDelete.png" alt="MarcEdit completed Add/Delete Field dialog" class="figure mx-auto d-block"></figure><p>To add the field, click the Add Field button and to delete any
+<p><img src="fig/addDeleteField.png" alt="MarcEdit empty Add/Delete Field dialog" class="figure"><img src="fig/example_addDelete.png" alt="MarcEdit completed Add/Delete Field dialog" class="figure"></p>
+<p>To add the field, click the Add Field button and to delete any
 matching fields, click the Delete Field button.</p>
 <p>For both the Add Field and Delete Field functions there are a number
 of different options that can be applied to control the updates.</p>
@@ -375,12 +376,12 @@ match what is entered in the Field Data, or removing invalid UTF-8 MARC
 fields. For example, to ensure that only the field
 <code>655  \4$aElectronic books</code>. is present in the MARC data, the
 option Remove if field data does not match can be selected.</p>
-<div id="challenge1" class="callout challenge">
+<div id="add-and-then-delete-a-marc-field" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="add-and-then-delete-a-marc-field" class="callout-inner">
-<h3 class="callout-title">Add and then delete a MARC field<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Add and then delete a MARC field<a class="anchor" aria-label="anchor" href="#add-and-then-delete-a-marc-field"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Add a 655 for electronic books with first indicators blank and
@@ -417,12 +418,12 @@ by clicking on the arrow on the right side and selecting Preview in the
 </div>
 </div>
 </div>
-<div id="callout1" class="callout callout">
+<div id="metacharacter-syntax-in-the-marceditor" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="metacharacter-syntax-in-the-marceditor" class="callout-inner">
-<h3 class="callout-title">Metacharacter syntax in the MarcEditor<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<h3 class="callout-title">Metacharacter syntax in the MarcEditor<a class="anchor" aria-label="anchor" href="#metacharacter-syntax-in-the-marceditor"></a>
 </h3>
 <div class="callout-content">
 <p>Within the batch editing tools, MarcEdit uses the X metacharacter to
@@ -432,13 +433,13 @@ if you enter 24X, that edit will act on fields 240-249; if you enter
 </div>
 </div>
 </div>
-<div id="challenge2" class="callout challenge">
+<div id="delete-a-range-of-marc-fields-that-begin-with-a-number" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="delete-a-range-of-marc-fields-that-begin-with-a-number" class="callout-inner">
 <h3 class="callout-title">Delete a range of MARC fields that begin with
-a number<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+a number<a class="anchor" aria-label="anchor" href="#delete-a-range-of-marc-fields-that-begin-with-a-number"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Verify your data contains multiple 9XX fields.</li>
@@ -494,12 +495,13 @@ Text.</p>
 the text (or information) that needs to be changed in the Field Data
 box. Enter your updated text in the Replace with box. Click on Replace
 Text.</p>
-<figure><img src="fig/editSubfield.png" alt="MarcEdit empty edit subfield dialog" class="figure mx-auto d-block"><img src="fig/example_Subfield.png" alt="MarcEdit completed edit subfield dialog" class="figure mx-auto d-block"></figure><div id="callout2" class="callout callout">
+<p><img src="fig/editSubfield.png" alt="MarcEdit empty edit subfield dialog" class="figure"><img src="fig/example_Subfield.png" alt="MarcEdit completed edit subfield dialog" class="figure"></p>
+<div id="ability-to-preview-and-special-undo" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="ability-to-preview-and-special-undo" class="callout-inner">
-<h3 class="callout-title">Ability to Preview and Special Undo<a class="anchor" aria-label="anchor" href="#callout2"></a>
+<h3 class="callout-title">Ability to Preview and Special Undo<a class="anchor" aria-label="anchor" href="#ability-to-preview-and-special-undo"></a>
 </h3>
 <div class="callout-content">
 <p>As of version 7.5, you can preview all of these changes before making
@@ -511,12 +513,12 @@ batch change but the action you just performed.</p>
 </div>
 </div>
 </div>
-<div id="challenge3" class="callout challenge">
+<div id="add-and-then-delete-a-marc-subfield" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="add-and-then-delete-a-marc-subfield" class="callout-inner">
-<h3 class="callout-title">Add and then Delete a MARC subfield<a class="anchor" aria-label="anchor" href="#challenge3"></a>
+<h3 class="callout-title">Add and then Delete a MARC subfield<a class="anchor" aria-label="anchor" href="#add-and-then-delete-a-marc-subfield"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Change the <code>$5</code> for the MARC field 500 from FU to your
@@ -550,26 +552,27 @@ Data (F9)</li>
 </div>
 </div>
 </div>
-<div id="callout3" class="callout callout">
+<div id="building-a-marc-field" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="building-a-marc-field" class="callout-inner">
-<h3 class="callout-title">Building a MARC field<a class="anchor" aria-label="anchor" href="#callout3"></a>
+<h3 class="callout-title">Building a MARC field<a class="anchor" aria-label="anchor" href="#building-a-marc-field"></a>
 </h3>
 <div class="callout-content">
-<figure>Sometimes it is necessary to create a new MARC field based on the
+<p>Sometimes it is necessary to create a new MARC field based on the
 content of existing MARC fields. This is possible using the function
-called, Build New Field. <img src="fig/buildNewField.png" alt="Build New Field Window" class="figure mx-auto d-block"></figure></div>
+called, Build New Field. <img src="fig/buildNewField.png" alt="Build New Field Window" class="figure"></p>
 </div>
 </div>
-<div id="checklist1" class="callout checklist">
+</div>
+<div id="lets-build-a-new-035-9a-using-the-data-from-the-001-and-static-data" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
 </div>
 <div id="lets-build-a-new-035-9a-using-the-data-from-the-001-and-static-data" class="callout-inner">
 <h3 class="callout-title">Let’s build a new <code>035 9\$a</code> using
-the data from the 001 and static data<a class="anchor" aria-label="anchor" href="#checklist1"></a>
+the data from the 001 and static data<a class="anchor" aria-label="anchor" href="#lets-build-a-new-035-9a-using-the-data-from-the-001-and-static-data"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Go to Tools → Build New Field</li>
@@ -581,13 +584,13 @@ the data from the 001 and static data<a class="anchor" aria-label="anchor" href=
 </ol></div>
 </div>
 </div>
-<div id="challenge4" class="callout challenge">
+<div id="use-the-build-new-field-to-add-a-proxy-to-the-856u" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="use-the-build-new-field-to-add-a-proxy-to-the-856u" class="callout-inner">
 <h3 class="callout-title">Use the Build New Field to add a proxy to the
-<code>856$u</code><a class="anchor" aria-label="anchor" href="#challenge4"></a>
+<code>856$u</code><a class="anchor" aria-label="anchor" href="#use-the-build-new-field-to-add-a-proxy-to-the-856u"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>For eResources, it is sometimes necessary to add your institution’s
@@ -628,13 +631,14 @@ want to be careful of the combinations of indicators. If you leave the
 Indicators box blank and add indicators in the Replace With Indicators
 box, all the indicators for that MARC field will be changed to the
 indicators entered in the Replace With Indicators box.</p>
-<figure><img src="fig/editIndicators.png" alt="MarcEdit empty edit indicators dialog" class="figure mx-auto d-block"><img src="fig/example_editIndicators.png" alt="MarcEdit completed edit indicators dialog" class="figure mx-auto d-block"></figure><div id="challenge5" class="callout challenge">
+<p><img src="fig/editIndicators.png" alt="MarcEdit empty edit indicators dialog" class="figure"><img src="fig/example_editIndicators.png" alt="MarcEdit completed edit indicators dialog" class="figure"></p>
+<div id="change-an-indicator-for-a-marc-field-in-your-marc-data" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="change-an-indicator-for-a-marc-field-in-your-marc-data" class="callout-inner">
 <h3 class="callout-title">Change an indicator for a MARC field in your
-MARC data<a class="anchor" aria-label="anchor" href="#challenge5"></a>
+MARC data<a class="anchor" aria-label="anchor" href="#change-an-indicator-for-a-marc-field-in-your-marc-data"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Change the first indicator of the MARC field 050 to 1 for those MARC
@@ -680,12 +684,12 @@ standard. For example, you can add the RDA fields 336, 337, and 338 for
 content, media, and carrier types. You can update the MARC field 040 to
 include the <code>$e</code> rda and delete the GMD statement. You can
 also evaluate the 260/264.</p>
-<figure><img src="fig/rdaHelper.png" alt="MarcEdit RDA Helper" class="figure mx-auto d-block"></figure><div id="challenge6" class="callout challenge">
+<figure><img src="fig/rdaHelper.png" alt="MarcEdit RDA Helper" class="figure mx-auto d-block"></figure><div id="run-the-rda-helper-on-your-marc-data" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="run-the-rda-helper-on-your-marc-data" class="callout-inner">
-<h3 class="callout-title">Run the RDA Helper on your MARC data<a class="anchor" aria-label="anchor" href="#challenge6"></a>
+<h3 class="callout-title">Run the RDA Helper on your MARC data<a class="anchor" aria-label="anchor" href="#run-the-rda-helper-on-your-marc-data"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Run the RDA Helper with these settings: Add 336, 337, 338; Modify
@@ -721,13 +725,13 @@ select Field 006 or Field 008. This will open up a window where you can
 edit the fixed field for that specific MARC record.</p>
 <p>You can also batch insert an 006 or 008 into your records. To insert
 a fixed field go to Edit and select the appropriate Insert/Edit.</p>
-<figure><img src="fig/fixedFields.png" alt="MarcEdit fixed fields editor" class="figure mx-auto d-block"></figure><div id="callout4" class="callout callout">
+<figure><img src="fig/fixedFields.png" alt="MarcEdit fixed fields editor" class="figure mx-auto d-block"></figure><div id="batch-editing-fixed-fields-in-multiple-marc-records" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="batch-editing-fixed-fields-in-multiple-marc-records" class="callout-inner">
 <h3 class="callout-title">Batch Editing Fixed Fields in Multiple MARC
-Records<a class="anchor" aria-label="anchor" href="#callout4"></a>
+Records<a class="anchor" aria-label="anchor" href="#batch-editing-fixed-fields-in-multiple-marc-records"></a>
 </h3>
 <div class="callout-content">
 <p>Sometimes it is necessary to change a fixed field for all records in
@@ -757,13 +761,14 @@ criteria will be selected. Click on Export Selected to export these
 records and edit them. When saving the exported records you can choose
 to save the file as a new record subset (Save As), or merge the edits
 back into your complete record set (Save).</p>
-<figure><img src="fig/selectRecordsForEdit.png" alt="MarcEdit empty Select Records for Edit dialog" class="figure mx-auto d-block"><img src="fig/example_selectRecordsForEdit.png" alt="MarcEdit completed Select Records for Edit dialog" class="figure mx-auto d-block"></figure><div id="checklist2" class="callout checklist">
+<p><img src="fig/selectRecordsForEdit.png" alt="MarcEdit empty Select Records for Edit dialog" class="figure"><img src="fig/example_selectRecordsForEdit.png" alt="MarcEdit completed Select Records for Edit dialog" class="figure"></p>
+<div id="lets-add-cutters-to-call-numbers-in-the-099" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
 </div>
 <div id="lets-add-cutters-to-call-numbers-in-the-099" class="callout-inner">
 <h3 class="callout-title">Let’s add cutters to call numbers in the
-099<a class="anchor" aria-label="anchor" href="#checklist2"></a>
+099<a class="anchor" aria-label="anchor" href="#lets-add-cutters-to-call-numbers-in-the-099"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Go to File → Select Records to Edit</li>
@@ -851,7 +856,7 @@ validate MARC.</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -875,7 +880,7 @@ validate MARC.</li>
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/06-manipulating-MARC-data.html",
   "dateCreated": "2019-08-17",
   "dateModified": "2023-04-25",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-23"
 }
 
   </script><script>
