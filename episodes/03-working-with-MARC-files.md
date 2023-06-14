@@ -28,48 +28,14 @@ exercises: 1
 
 MarcEdit recognizes the following MARC file types:
 
-<table>
- <tr>
-  <td><strong>File type</strong>
-  </td>
-  <td><strong>File extension</strong>
-  </td>
-  <td><strong>Usage</strong>
-  </td>
- </tr>
- <tr>
-  <td>Binary MARC file
-  </td>
-  <td>mrc
-  </td>
-  <td>File format typically used in an  ILS or LSP. Other file extensions provided by vendors (ex. marc, dat, bin) are equivalent. Binary is format consisting of a series of sequential bytes, each of which is eight bits in length.
-  </td>
- </tr>
- <tr>
-  <td>Mnemonic MARC Text File
-  </td>
-  <td>mrk
-  </td>
-  <td>File format used by MarcEdit that is a human readable version of the binary file.
-  </td>
- </tr>
- <tr>
-  <td>MARC UTF-8 Text File
-  </td>
-  <td>mrk8
-  </td>
-  <td>Legacy file format for MARC mnemonic files saved with UTF8 encoding.
-  </td>
- </tr>
- <tr>
-  <td>MARCXML file
-  </td>
-  <td>xml
-  </td>
-  <td>A MARC file expressed in the eXtensible Markup format or a text-based format for representing structured information.
-  </td>
- </tr>
- </table>
+|                                               |                                                                                                                                                                                                                                                                                                                                              |
+|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `=`                                           | Each line/field starts with the '=' sign.                                                                                                                                                                                                                                                                                                    |
+| `245`                                         | The '=' is followed immediately by the three character MARC field code.                                                                                                                                                                                                                                                                      |
+| `[two spaces]`                                | The MARC field is always followed by two spaces.                                                                                                                                                                                                                                                                                             |
+| `14`                                          | The field indicators follow the spaces - if the field has indicators. For the control or fixed fields, the field content starts directly after the spaces.                                                                                                                                                                                   |
+| `$aThe Lord of the Rings /$c J.R.R. Tolkien.` | The field content contains the subfields (indicated using the '$' symbol) and the text. Because the subfields use the '$' symbol, any real occurrences of the dollar symbol (e.g. for currency) is shown as "\[dollar\]" instead. Unlike in some cataloguing applications, there are no spaces between subfield codes and the subfield text. |
+
 To work with a MARC file in the MARCEditor your file needs to be in MARC mnemonic format. If you only have a binary file, then that file needs to be converted to the mnemonic format.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
