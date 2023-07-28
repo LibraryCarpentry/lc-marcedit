@@ -1126,7 +1126,7 @@ a set of tasks for particular types of MARC files</li>
 </div>
 </section></section><section id="aio-05-profiling-your-MARC-data"><p>Content from <a href="05-profiling-your-MARC-data.html">Profiling Your MARC data</a></p>
 <hr>
-<p> Last updated on 2023-04-25 | 
+<p> Last updated on 2023-07-28 | 
         
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/05-profiling-your-MARC-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1176,17 +1176,36 @@ Reports are located under the Reports tab.</p>
 types of resources described in your MARC file. This report is helpful
 when you’re uncertain of what resources are represented in your file, or
 to locate potential errors.</p>
+<div id="run-material-type-report" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="run-material-type-report" class="callout-inner">
+<h3 class="callout-title">Run Material Type Report<a class="anchor" aria-label="anchor" href="#run-material-type-report"></a>
+</h3>
+<div class="callout-content">
 <p>To run the Material Type Report</p>
-<ul>
+<ol style="list-style-type: decimal">
 <li>Click Reports</li>
 <li>Select Material Type Report</li>
 <li>Click Generate Report</li>
-</ul>
+</ol>
+</div>
+</div>
+</div>
 <p>If we expect our MARC file to contain only book records, we can
 easily locate and review records with other material types by using the
 <code>Find Records by Type</code> Report.</p>
+<div id="run-find-records-by-type-report" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="run-find-records-by-type-report" class="callout-inner">
+<h3 class="callout-title">Run Find Records by Type Report<a class="anchor" aria-label="anchor" href="#run-find-records-by-type-report"></a>
+</h3>
+<div class="callout-content">
 <p>To run the Find Records by Type Reports</p>
-<ul>
+<ol style="list-style-type: decimal">
 <li>Click Reports</li>
 <li>Select Material Type Report</li>
 <li>Select material type of records you want to review from the
@@ -1194,7 +1213,10 @@ drop-down list. For this exercise select Continuing Resources. A window
 will open displaying the Leader of each record. Double click on a result
 to be brought to that record in the MarcEditor.</li>
 <li>Click Close to exit the results window</li>
-</ul>
+</ol>
+</div>
+</div>
+</div>
 <p>The <code>Field Count</code> Report can also be used to profile your
 data. The Field Count Report lists each field found in your records, the
 number of times each field occurs in the record set, and the total
@@ -1202,11 +1224,22 @@ number of records each field occurs in. While high level, the results
 can tell you about the cataloguing standards used (260 vs. 264) and
 identify potential errors (repeating non-repeatable fields), missing
 fields, local fields, etc.</p>
+<div id="run-field-count-report" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="run-field-count-report" class="callout-inner">
+<h3 class="callout-title">Run Field Count Report<a class="anchor" aria-label="anchor" href="#run-field-count-report"></a>
+</h3>
+<div class="callout-content">
 <p>To run the Field Count Reports</p>
-<ul>
+<ol style="list-style-type: decimal">
 <li>Click Reports</li>
 <li>Select Field Count</li>
-</ul>
+</ol>
+</div>
+</div>
+</div>
 <div id="locate-errors-using-the-field-count-report" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1231,7 +1264,7 @@ our records?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Field count outlines each field found in our records, the number of
@@ -1255,15 +1288,27 @@ Edit tab.</p>
 function. Find is particularly useful for locating and reviewing all
 instances of a MARC field within your data, or locating a particular
 text string within your data.</p>
-<p>We can use Find to locate and review the 245 field. To run the Find
-Report</p>
-<ul>
+<p>We can use Find to locate and review the 245 field.</p>
+<div id="run-find-function" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="run-find-function" class="callout-inner">
+<h3 class="callout-title">Run Find Function<a class="anchor" aria-label="anchor" href="#run-find-function"></a>
+</h3>
+<div class="callout-content">
+<p>To use the Find function</p>
+<ol style="list-style-type: decimal">
 <li>Click Edit</li>
 <li>Select Find</li>
 <li>In the “Find what:” dialogue box enter =245</li>
 <li>Click Find All</li>
-</ul>
-<p>The results list is organized by record number, displaying the
+</ol>
+<p>Note: You can also use Ctrl+f to launch the Find function</p>
+</div>
+</div>
+</div>
+<p>The Find results list is organized by record number, displaying the
 matched field content on the left, and the record number the field
 belongs to on the right. We can see from our results that Record # 8
 appears twice, signaling that this record contains two 245 fields. By
@@ -1272,29 +1317,52 @@ record in our file to edit it. However, next we will show you a set of
 tools that can be used to locate and fix common errors like duplicate
 fields.</p>
 <p>The <code>Find Records With Duplicate Tags</code> function allows us
-to easily locate records with a duplicated field. To run this
-function</p>
-<ul>
+to easily locate records with a duplicated field.</p>
+<div id="run-find-records-with-duplicate-tags-function" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="run-find-records-with-duplicate-tags-function" class="callout-inner">
+<h3 class="callout-title">Run Find Records With Duplicate Tags
+Function<a class="anchor" aria-label="anchor" href="#run-find-records-with-duplicate-tags-function"></a>
+</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal">
 <li>Click Edit</li>
 <li>Select Edit Shortcuts</li>
 <li>Select Field Edits</li>
 <li>Click Find Records With Duplicate Tags</li>
-<li>In the dialogue box enter 245 and click OK The results list includes
-two records with duplicate 245 fields, # 8 and # 28. Click on Jump to
-Record # to be taken to the record in the MarcEditor. Once on the record
-you can manually delete the incorrect 245 field.</li>
-</ul>
+<li>In the dialogue box enter 245 and click OK</li>
+</ol>
+<p>The results list includes two records with duplicate 245 fields, # 8
+and # 28. Click on Jump to Record # to be taken to the record in the
+MarcEditor. Once on the record you can manually delete the incorrect 245
+field.</p>
+</div>
+</div>
+</div>
 <p>The <code>Find Records Missing Field</code> function allows us to
 easily locate records with a missing field. To run this function</p>
-<ul>
+<div id="run-find-records-missing-field-function" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="run-find-records-missing-field-function" class="callout-inner">
+<h3 class="callout-title">Run Find Records Missing Field Function<a class="anchor" aria-label="anchor" href="#run-find-records-missing-field-function"></a>
+</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal">
 <li>Click Edit</li>
 <li>Select Edit Shortcuts</li>
 <li>Select Field Edits</li>
 <li>Click Find Records Missing Field</li>
-<li>In the dialogue box enter 245 and click OK The results list will
-show one record missing a 245 field. Click on Jump to Record # to be
-taken to the record in the MarcEditor.</li>
-</ul>
+<li>In the dialogue box enter 245 and click OK</li>
+</ol>
+<p>The results list will show one record missing a 245 field. Click on
+Jump to Record # to be taken to the record in the MarcEditor.</p>
+</div>
+</div>
+</div>
 <div id="correct-the-missing-245-field" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1317,7 +1385,7 @@ correctly?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The 245 field number is formatted incorrectly. The MarcEditor relies
@@ -1456,7 +1524,7 @@ second indicator 4 to the MARC data.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -1517,7 +1585,7 @@ a number<a class="anchor" aria-label="anchor" href="#delete-a-range-of-marc-fiel
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Verify your file has multiple 9XX fields by using the Field Count
@@ -1603,7 +1671,7 @@ Library of Congress Organization Code, update the code to XYZ.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -1681,7 +1749,7 @@ the <code>856$u</code>.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools → Build New Field</li>
@@ -1733,7 +1801,7 @@ fields 050 that have a first indicator blank and a second indicator
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -1789,7 +1857,7 @@ abbreviations; Remove the GMD.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2087,7 +2155,7 @@ helper and removes 9XX fields<a class="anchor" aria-label="anchor" href="#create
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2148,7 +2216,7 @@ that in your Task.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2288,7 +2356,7 @@ types of searches performed and translating records to UTF-8.</p>
 </div>
 </section></section><section id="aio-09-regular-expressions"><p>Content from <a href="09-regular-expressions.html">Regular Expressions</a></p>
 <hr>
-<p> Last updated on 2023-04-25 | 
+<p> Last updated on 2023-07-28 | 
         
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/09-regular-expressions.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2398,9 +2466,8 @@ lead to unexpected and undesirable results if you do not know your
 dataset. In the Edit Field Data exercise above, any 035 field containing
 the string <code>on</code>, <code>ocn</code>, or <code>ocm</code> would
 have had these values replaced with <code>(OCoLC)</code>.</p>
-<p>For example: <code>=035  &amp;#92;&amp;#92;$a(SFUonline)638023</code>
-would have become
-<code>=035  &amp;#92;&amp;#92;$a(SFU(OCoLC)line)638023</code></p>
+<p>For example: <code>=035  \\$a(SFUonline)638023</code> would have
+become <code>=035  \\$a(SFU(OCoLC)line)638023</code></p>
 <p>Reviewing your dataset before employing regular expressions is a good
 best practice. The MarcEditor Preview Results feature also supports
 trial and error.</p>
@@ -2480,8 +2547,8 @@ to isolate and then work with a subset of your records. Regular
 expressions can be a powerful tool to help you isolate the subset of
 records you want to work with.</p>
 <p>In this example we want to add the electronic journals genre form
-(<code>655  &amp;#92;&amp;#92;4$aElectronic journals</code>) to our
-electronic continuing resource records.</p>
+(<code>655  \\4$aElectronic journals</code>) to our electronic
+continuing resource records.</p>
 <p>Working with fixed fields, where character position and coded values
 impart specific meaning, can be difficult for the human eye. However,
 regular expressions make it easy to specify the position of a character
@@ -2651,8 +2718,8 @@ are working as intended</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/aio.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/aio.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2023-07-25",
-  "datePublished": "2023-07-25"
+  "dateModified": "2023-07-28",
+  "datePublished": "2023-07-28"
 }
 
   </script><script>

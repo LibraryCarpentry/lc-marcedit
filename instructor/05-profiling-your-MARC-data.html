@@ -285,7 +285,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Profiling Your MARC data</h1>
-        <p> Last updated on 2023-04-25 | 
+        <p> Last updated on 2023-07-28 | 
         
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/05-profiling-your-MARC-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -337,32 +337,65 @@ Reports are located under the Reports tab.</p>
 types of resources described in your MARC file. This report is helpful
 when you’re uncertain of what resources are represented in your file, or
 to locate potential errors.</p>
+<div id="run-material-type-report" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="run-material-type-report" class="callout-inner">
+<h3 class="callout-title">Run Material Type Report<a class="anchor" aria-label="anchor" href="#run-material-type-report"></a>
+</h3>
+<div class="callout-content">
 <p>To run the Material Type Report</p>
-<ul><li>Click Reports</li>
+<ol style="list-style-type: decimal"><li>Click Reports</li>
 <li>Select Material Type Report</li>
 <li>Click Generate Report</li>
-</ul><p>If we expect our MARC file to contain only book records, we can
+</ol></div>
+</div>
+</div>
+<p>If we expect our MARC file to contain only book records, we can
 easily locate and review records with other material types by using the
 <code>Find Records by Type</code> Report.</p>
+<div id="run-find-records-by-type-report" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="run-find-records-by-type-report" class="callout-inner">
+<h3 class="callout-title">Run Find Records by Type Report<a class="anchor" aria-label="anchor" href="#run-find-records-by-type-report"></a>
+</h3>
+<div class="callout-content">
 <p>To run the Find Records by Type Reports</p>
-<ul><li>Click Reports</li>
+<ol style="list-style-type: decimal"><li>Click Reports</li>
 <li>Select Material Type Report</li>
 <li>Select material type of records you want to review from the
 drop-down list. For this exercise select Continuing Resources. A window
 will open displaying the Leader of each record. Double click on a result
 to be brought to that record in the MarcEditor.</li>
 <li>Click Close to exit the results window</li>
-</ul><p>The <code>Field Count</code> Report can also be used to profile your
+</ol></div>
+</div>
+</div>
+<p>The <code>Field Count</code> Report can also be used to profile your
 data. The Field Count Report lists each field found in your records, the
 number of times each field occurs in the record set, and the total
 number of records each field occurs in. While high level, the results
 can tell you about the cataloguing standards used (260 vs. 264) and
 identify potential errors (repeating non-repeatable fields), missing
 fields, local fields, etc.</p>
+<div id="run-field-count-report" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="run-field-count-report" class="callout-inner">
+<h3 class="callout-title">Run Field Count Report<a class="anchor" aria-label="anchor" href="#run-field-count-report"></a>
+</h3>
+<div class="callout-content">
 <p>To run the Field Count Reports</p>
-<ul><li>Click Reports</li>
+<ol style="list-style-type: decimal"><li>Click Reports</li>
 <li>Select Field Count</li>
-</ul><div id="locate-errors-using-the-field-count-report" class="callout challenge">
+</ol></div>
+</div>
+</div>
+<div id="locate-errors-using-the-field-count-report" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -384,7 +417,7 @@ our records?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Field count outlines each field found in our records, the number of
 times it occurs, and how many records it occurs in. Field count can also
@@ -405,13 +438,25 @@ Edit tab.</p>
 function. Find is particularly useful for locating and reviewing all
 instances of a MARC field within your data, or locating a particular
 text string within your data.</p>
-<p>We can use Find to locate and review the 245 field. To run the Find
-Report</p>
-<ul><li>Click Edit</li>
+<p>We can use Find to locate and review the 245 field.</p>
+<div id="run-find-function" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="run-find-function" class="callout-inner">
+<h3 class="callout-title">Run Find Function<a class="anchor" aria-label="anchor" href="#run-find-function"></a>
+</h3>
+<div class="callout-content">
+<p>To use the Find function</p>
+<ol style="list-style-type: decimal"><li>Click Edit</li>
 <li>Select Find</li>
 <li>In the “Find what:” dialogue box enter =245</li>
 <li>Click Find All</li>
-</ul><p>The results list is organized by record number, displaying the
+</ol><p>Note: You can also use Ctrl+f to launch the Find function</p>
+</div>
+</div>
+</div>
+<p>The Find results list is organized by record number, displaying the
 matched field content on the left, and the record number the field
 belongs to on the right. We can see from our results that Record # 8
 appears twice, signaling that this record contains two 245 fields. By
@@ -420,26 +465,49 @@ record in our file to edit it. However, next we will show you a set of
 tools that can be used to locate and fix common errors like duplicate
 fields.</p>
 <p>The <code>Find Records With Duplicate Tags</code> function allows us
-to easily locate records with a duplicated field. To run this
-function</p>
-<ul><li>Click Edit</li>
+to easily locate records with a duplicated field.</p>
+<div id="run-find-records-with-duplicate-tags-function" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="run-find-records-with-duplicate-tags-function" class="callout-inner">
+<h3 class="callout-title">Run Find Records With Duplicate Tags
+Function<a class="anchor" aria-label="anchor" href="#run-find-records-with-duplicate-tags-function"></a>
+</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal"><li>Click Edit</li>
 <li>Select Edit Shortcuts</li>
 <li>Select Field Edits</li>
 <li>Click Find Records With Duplicate Tags</li>
-<li>In the dialogue box enter 245 and click OK The results list includes
-two records with duplicate 245 fields, # 8 and # 28. Click on Jump to
-Record # to be taken to the record in the MarcEditor. Once on the record
-you can manually delete the incorrect 245 field.</li>
-</ul><p>The <code>Find Records Missing Field</code> function allows us to
+<li>In the dialogue box enter 245 and click OK</li>
+</ol><p>The results list includes two records with duplicate 245 fields, # 8
+and # 28. Click on Jump to Record # to be taken to the record in the
+MarcEditor. Once on the record you can manually delete the incorrect 245
+field.</p>
+</div>
+</div>
+</div>
+<p>The <code>Find Records Missing Field</code> function allows us to
 easily locate records with a missing field. To run this function</p>
-<ul><li>Click Edit</li>
+<div id="run-find-records-missing-field-function" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="run-find-records-missing-field-function" class="callout-inner">
+<h3 class="callout-title">Run Find Records Missing Field Function<a class="anchor" aria-label="anchor" href="#run-find-records-missing-field-function"></a>
+</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal"><li>Click Edit</li>
 <li>Select Edit Shortcuts</li>
 <li>Select Field Edits</li>
 <li>Click Find Records Missing Field</li>
-<li>In the dialogue box enter 245 and click OK The results list will
-show one record missing a 245 field. Click on Jump to Record # to be
-taken to the record in the MarcEditor.</li>
-</ul><div id="correct-the-missing-245-field" class="callout challenge">
+<li>In the dialogue box enter 245 and click OK</li>
+</ol><p>The results list will show one record missing a 245 field. Click on
+Jump to Record # to be taken to the record in the MarcEditor.</p>
+</div>
+</div>
+</div>
+<div id="correct-the-missing-245-field" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -459,7 +527,7 @@ correctly?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>The 245 field number is formatted incorrectly. The MarcEditor relies
 on a standard format to identify and take actions on fields. Remove the
@@ -535,8 +603,8 @@ edit your MARC records</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/instructor/05-profiling-your-MARC-data.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/instructor/05-profiling-your-MARC-data.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2023-04-25",
-  "datePublished": "2023-07-25"
+  "dateModified": "2023-07-28",
+  "datePublished": "2023-07-28"
 }
 
   </script><script>

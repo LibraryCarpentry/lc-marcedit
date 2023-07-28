@@ -289,7 +289,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Regular Expressions</h1>
-        <p> Last updated on 2023-04-25 | 
+        <p> Last updated on 2023-07-28 | 
         
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/09-regular-expressions.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -396,9 +396,8 @@ lead to unexpected and undesirable results if you do not know your
 dataset. In the Edit Field Data exercise above, any 035 field containing
 the string <code>on</code>, <code>ocn</code>, or <code>ocm</code> would
 have had these values replaced with <code>(OCoLC)</code>.</p>
-<p>For example: <code>=035  &amp;#92;&amp;#92;$a(SFUonline)638023</code>
-would have become
-<code>=035  &amp;#92;&amp;#92;$a(SFU(OCoLC)line)638023</code></p>
+<p>For example: <code>=035  \\$a(SFUonline)638023</code> would have
+become <code>=035  \\$a(SFU(OCoLC)line)638023</code></p>
 <p>Reviewing your dataset before employing regular expressions is a good
 best practice. The MarcEditor Preview Results feature also supports
 trial and error.</p>
@@ -470,8 +469,8 @@ to isolate and then work with a subset of your records. Regular
 expressions can be a powerful tool to help you isolate the subset of
 records you want to work with.</p>
 <p>In this example we want to add the electronic journals genre form
-(<code>655  &amp;#92;&amp;#92;4$aElectronic journals</code>) to our
-electronic continuing resource records.</p>
+(<code>655  \\4$aElectronic journals</code>) to our electronic
+continuing resource records.</p>
 <p>Working with fixed fields, where character position and coded values
 impart specific meaning, can be difficult for the human eye. However,
 regular expressions make it easy to specify the position of a character
@@ -631,8 +630,8 @@ are working as intended</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/09-regular-expressions.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/09-regular-expressions.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2023-04-25",
-  "datePublished": "2023-07-25"
+  "dateModified": "2023-07-28",
+  "datePublished": "2023-07-28"
 }
 
   </script><script>
