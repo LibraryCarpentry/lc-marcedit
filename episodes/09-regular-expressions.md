@@ -55,7 +55,7 @@ With regular expressions you can easily locate variations in your data and repla
 
 Regular expressions are a powerful tool, but using them can sometimes lead to unexpected and undesirable results if you do not know your dataset. In the Edit Field Data exercise above, any 035 field containing the string `on`, `ocn`, or `ocm` would have had these values replaced with `(OCoLC)`.
 
-For example:  `=035  &#92;&#92;$a(SFUonline)638023` would have become `=035  &#92;&#92;$a(SFU(OCoLC)line)638023`
+For example:  `=035  \\$a(SFUonline)638023` would have become `=035  \\$a(SFU(OCoLC)line)638023`
 
 Reviewing your dataset before employing regular expressions is a good best practice. The MarcEditor Preview Results feature also supports trial and error.
 
@@ -94,7 +94,7 @@ The Find and Replace tool is another useful way to identify and manipulate data 
 
 The Select Records for Edit tool, introduced in lesson 6, allows you to isolate and then work with a subset of your records. Regular expressions can be a powerful tool to help you isolate the subset of records you want to work with.
 
-In this example we want to add the electronic journals genre form (`655  &#92;&#92;4$aElectronic journals`) to our electronic continuing resource records.
+In this example we want to add the electronic journals genre form (`655  \\4$aElectronic journals`) to our electronic continuing resource records.
 
 Working with fixed fields, where character position and coded values impart specific meaning, can be difficult for the human eye. However, regular expressions make it easy to specify the position of a character in a text string in order to find, select or update that data.
 
