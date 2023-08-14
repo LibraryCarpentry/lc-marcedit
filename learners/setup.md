@@ -4,13 +4,13 @@ title: Setup
 
 ## Getting ready
 
-You need to install MarcEdit and download a data file to follow this lesson. If you are using an older version of MarcEdit, it is recommended you upgrade to the latest tested version.
+You need to install the latest version of MarcEdit and download a data file to follow this lesson. If you are using an older version of MarcEdit, it is recommended you upgrade to the latest version which may be beyond what was tested for this lesson.
 
 ### Installing and running MarcEdit
 
 MarcEdit is a free, open-source application. You can download MarcEdit from
 [https://marcedit.reeset.net/downloads](https://marcedit.reeset.net/downloads).
-This lesson has been tested with the following versions: MarcEdit 7 (specifically 7.5.21.153) for Windows and MarcEdit 3 for MacOS.
+This lesson has been tested with the following versions: MarcEdit 7 (specifically 7.5.21.153) for Windows and MarcEdit 3 for MacOS. 
 
 Packages, along with associated system requirements, are available on [https://marcedit.reeset.net/downloads](https://marcedit.reeset.net/downloads) for Windows and MacOS.
 
