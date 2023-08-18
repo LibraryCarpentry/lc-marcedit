@@ -141,7 +141,7 @@ This example breaks down as follows:
   <tr>   <td><code>14</code>   </td>   <td>The field indicators follow the spaces - if the field has indicators. For the control or fixed fields, the field content starts directly after the spaces.
    </td>
   </tr>
-  <tr>   <td><code>$aThe Lord of the Rings /$c J.R.R. Tolkien.</code>   </td>   <td>The field content contains the subfields (indicated using the '$' symbol) and the text. Because the subfields use the '$' symbol, any real occurrences of the dollar symbol (e.g. for currency) is shown as "[dollar]" instead. Unlike in some cataloguing applications, there are no spaces between subfield codes and the subfield text.
+  <tr>   <td><code>$aThe Lord of the Rings /$c J.R.R. Tolkien.</code>   </td>   <td>The field content contains the subfields (indicated using the <code>$</code> symbol) and the text. Because the subfields use the <code>$</code> symbol, any real occurrences of the dollar symbol (e.g. for currency) is shown as <code>[dollar]</code> instead. Unlike in some cataloguing applications, there are no spaces between subfield codes and the subfield text.
    </td>
   </tr>
 </table>
