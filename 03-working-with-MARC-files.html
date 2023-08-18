@@ -278,7 +278,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Working with MARC files</h1>
-        <p> Last updated on 2023-06-14 | 
+        <p> Last updated on 2023-08-18 | 
         
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/03-working-with-MARC-files.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -327,24 +327,57 @@ file of MARC records in MARCedit?</li>
 </h3>
 <div class="callout-content">
 <p>MarcEdit recognizes the following MARC file types:</p>
-<table class="table"><colgroup><col width="12%"><col width="87%"></colgroup><tbody><tr class="odd"><td><code>=</code></td>
-<td>Each line/field starts with the ‘=’ sign.</td>
-</tr><tr class="even"><td><code>245</code></td>
-<td>The ‘=’ is followed immediately by the three character MARC field
-code.</td>
-</tr><tr class="odd"><td><code>[two spaces]</code></td>
-<td>The MARC field is always followed by two spaces.</td>
-</tr><tr class="even"><td><code>14</code></td>
-<td>The field indicators follow the spaces - if the field has
-indicators. For the control or fixed fields, the field content starts
-directly after the spaces.</td>
-</tr><tr class="odd"><td><code>$aThe Lord of the Rings /$c J.R.R. Tolkien.</code></td>
-<td>The field content contains the subfields (indicated using the ‘<span class="math inline">\(' symbol) and the text. Because the subfields
-use the '\)</span>’ symbol, any real occurrences of the dollar
-symbol (e.g. for currency) is shown as “<span class="math display">\[dollar\]</span>” instead. Unlike in some
-cataloguing applications, there are no spaces between subfield codes and
-the subfield text.</td>
-</tr></tbody></table><p>To work with a MARC file in the MARCEditor your file needs to be in
+<table class="table"><tr><td>
+<strong>File type</strong>
+</td>
+<td>
+<strong>File extension</strong>
+</td>
+<td>
+<strong>Usage</strong>
+</td>
+</tr><tr><td>
+Binary MARC file
+</td>
+<td>
+mrc
+</td>
+<td>
+File format typically used in an ILS or LSP. Other file extensions
+provided by vendors (ex. marc, dat, bin) are equivalent. Binary is
+format consisting of a series of sequential bytes, each of which is
+eight bits in length.
+</td>
+</tr><tr><td>
+Mnemonic MARC Text File
+</td>
+<td>
+mrk
+</td>
+<td>
+File format used by MarcEdit that is a human readable version of the
+binary file.
+</td>
+</tr><tr><td>
+MARC UTF-8 Text File
+</td>
+<td>
+mrk8
+</td>
+<td>
+Legacy file format for MARC mnemonic files saved with UTF8 encoding.
+</td>
+</tr><tr><td>
+MARCXML file
+</td>
+<td>
+xml
+</td>
+<td>
+A MARC file expressed in the eXtensible Markup format or a text-based
+format for representing structured information.
+</td>
+</tr></table><p>To work with a MARC file in the MARCEditor your file needs to be in
 MARC mnemonic format. If you only have a binary file, then that file
 needs to be converted to the mnemonic format.</p>
 </div>
@@ -554,8 +587,8 @@ files are .mrk rather than the binary extension of .mrc</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/03-working-with-MARC-files.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/03-working-with-MARC-files.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2023-06-14",
-  "datePublished": "2023-08-17"
+  "dateModified": "2023-08-18",
+  "datePublished": "2023-08-18"
 }
 
   </script><script>

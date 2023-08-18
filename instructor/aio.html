@@ -619,7 +619,7 @@ window?<a class="anchor" aria-label="anchor" href="#how-many-shortcuts-can-be-ad
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Click on the gear icon in the main window or go to Tools →
@@ -679,7 +679,7 @@ changed in Preferences.<a class="anchor" aria-label="anchor" href="#name-three-o
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Click on the gear icon in the main window or go to Tools →
@@ -742,7 +742,7 @@ Tools → Preferences, or by using the keyboard shortcut Ctrl+Shift+P</li>
 </div>
 </section></section><section id="aio-03-working-with-MARC-files"><p>Content from <a href="03-working-with-MARC-files.html">Working with MARC files</a></p>
 <hr>
-<p> Last updated on 2023-06-14 | 
+<p> Last updated on 2023-08-18 | 
         
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/03-working-with-MARC-files.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 21 minutes </p>
@@ -791,39 +791,66 @@ file of MARC records in MARCedit?</li>
 <div class="callout-content">
 <p>MarcEdit recognizes the following MARC file types:</p>
 <table class="table">
-<colgroup>
-<col width="12%">
-<col width="87%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><code>=</code></td>
-<td>Each line/field starts with the ‘=’ sign.</td>
+<tr>
+<td>
+<strong>File type</strong>
+</td>
+<td>
+<strong>File extension</strong>
+</td>
+<td>
+<strong>Usage</strong>
+</td>
 </tr>
-<tr class="even">
-<td><code>245</code></td>
-<td>The ‘=’ is followed immediately by the three character MARC field
-code.</td>
+<tr>
+<td>
+Binary MARC file
+</td>
+<td>
+mrc
+</td>
+<td>
+File format typically used in an ILS or LSP. Other file extensions
+provided by vendors (ex. marc, dat, bin) are equivalent. Binary is
+format consisting of a series of sequential bytes, each of which is
+eight bits in length.
+</td>
 </tr>
-<tr class="odd">
-<td><code>[two spaces]</code></td>
-<td>The MARC field is always followed by two spaces.</td>
+<tr>
+<td>
+Mnemonic MARC Text File
+</td>
+<td>
+mrk
+</td>
+<td>
+File format used by MarcEdit that is a human readable version of the
+binary file.
+</td>
 </tr>
-<tr class="even">
-<td><code>14</code></td>
-<td>The field indicators follow the spaces - if the field has
-indicators. For the control or fixed fields, the field content starts
-directly after the spaces.</td>
+<tr>
+<td>
+MARC UTF-8 Text File
+</td>
+<td>
+mrk8
+</td>
+<td>
+Legacy file format for MARC mnemonic files saved with UTF8 encoding.
+</td>
 </tr>
-<tr class="odd">
-<td><code>$aThe Lord of the Rings /$c J.R.R. Tolkien.</code></td>
-<td>The field content contains the subfields (indicated using the ‘<span class="math inline">\(' symbol) and the text. Because the subfields
-use the '\)</span>’ symbol, any real occurrences of the dollar
-symbol (e.g. for currency) is shown as “<span class="math display">\[dollar\]</span>” instead. Unlike in some
-cataloguing applications, there are no spaces between subfield codes and
-the subfield text.</td>
+<tr>
+<td>
+MARCXML file
+</td>
+<td>
+xml
+</td>
+<td>
+A MARC file expressed in the eXtensible Markup format or a text-based
+format for representing structured information.
+</td>
 </tr>
-</tbody>
 </table>
 <p>To work with a MARC file in the MARCEditor your file needs to be in
 MARC mnemonic format. If you only have a binary file, then that file
@@ -1267,7 +1294,7 @@ our records?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Field count outlines each field found in our records, the number of
@@ -1388,7 +1415,7 @@ correctly?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The 245 field number is formatted incorrectly. The MarcEditor relies
@@ -1528,7 +1555,7 @@ second indicator 4 to the MARC data.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -1589,7 +1616,7 @@ a number<a class="anchor" aria-label="anchor" href="#delete-a-range-of-marc-fiel
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Verify your file has multiple 9XX fields by using the Field Count
@@ -1675,7 +1702,7 @@ Library of Congress Organization Code, update the code to XYZ.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -1753,7 +1780,7 @@ the <code>856$u</code>.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools → Build New Field</li>
@@ -1805,7 +1832,7 @@ fields 050 that have a first indicator blank and a second indicator
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -1861,7 +1888,7 @@ abbreviations; Remove the GMD.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2160,7 +2187,7 @@ helper and removes 9XX fields<a class="anchor" aria-label="anchor" href="#create
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2221,7 +2248,7 @@ that in your Task.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2725,8 +2752,8 @@ are working as intended</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/instructor/aio.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/instructor/aio.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2023-08-17",
-  "datePublished": "2023-08-17"
+  "dateModified": "2023-08-18",
+  "datePublished": "2023-08-18"
 }
 
   </script><script>
