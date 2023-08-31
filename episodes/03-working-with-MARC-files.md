@@ -109,7 +109,7 @@ To transform our binary MARC file (.mrc) into MARC mnemonic human readable forma
 1. Launch MarcEdit and from the main window click on the MARC Tools Icon.
 2. In the MARC Tools window, Select Operation → MARCBreaker.
 3. In the field, Select Data to Process, click the file folder image to the right of the Open box to browse for the sample MARC data file (.mrc). Double click the found file to select it.
-4. Next, you will need save your file in the MARC mnemonic format by clicking the file folder to the right of the Save As box. Select the location and name you would like to give you new file.
+4. Next, you will need save your file in the MARC mnemonic format (.mrk) by clicking the file folder to the right of the Save As box. Select the location and name you would like to give your new file.
 5. Under Character encoding select UTF8 as default character encoding.
 6. Click execute.
 7. Once you click execute the newly created .mrk file will available to open in the MarcEditor. Under Results at the bottom of the window you will see a count of the records in your file. Click Edit Records to open the .mrk file in the MarcEditor.
