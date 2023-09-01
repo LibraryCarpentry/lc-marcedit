@@ -59,7 +59,7 @@ After downloading MarcEdit and once you launch the installation, you will be ask
 
 ### Downloading the data
 
-For this lesson, our sample file, [marc\_sample\_data.mrc](https://github.com/LibraryCarpentry/lc-marcedit/tree/gh-pages/data/marc_sample_data.mrc), is a MARC binary file. To download this file, click on the file name (NOTE: In Safari, right click and select **download linked file**). This will take you to the file in the lesson's GitHub repository. Then you can download the file. This MARC file follows the MARC21 standard and is encoded in UTF-8.
+For this lesson, our sample file, [marc\_sample\_data.mrc](../episodes/data/marc_sample_data.mrc), is a MARC binary file. To download this file, click on the file name (NOTE: In Safari, right click and select **download linked file**). This will take you to the file in the lesson's GitHub repository. Then you can download the file. This MARC file follows the MARC21 standard and is encoded in UTF-8.
 
 ### Getting help
 
