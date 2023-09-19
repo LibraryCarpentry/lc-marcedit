@@ -76,5 +76,3 @@ If you encounter problems installing or running MarcEdit, a good source of suppo
 Include your operating system when searching to find the most relevant answers for your issue.
 
 You may also want to check the [Videos](https://www.youtube.com/playlist?list=PLrHRsJ91nVFScJLS91SWR5awtFfpewMWg) or the [MarcEdit Knowledge Base](https://marcedit.reeset.net/archives/category/knowledge_base).
-
-
