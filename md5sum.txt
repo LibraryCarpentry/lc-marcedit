@@ -16,5 +16,5 @@
 "instructors/os-original-material.md" "ee14e97312170c98502771516bbb266b" "site/built/os-original-material.md" "2023-04-25"
 "learners/discuss.md" "2758e2e5abd231d82d25c6453d8abbc6" "site/built/discuss.md" "2023-04-25"
 "learners/reference.md" "91e816ea6a56a02af74be262081ebe73" "site/built/reference.md" "2023-04-25"
-"learners/setup.md" "de39ebf07371ffe59e3ed21e56066673" "site/built/setup.md" "2023-09-19"
+"learners/setup.md" "971be505cb36179b114993d0f0a488d1" "site/built/setup.md" "2023-09-19"
 "profiles/learner-profiles.md" "60b93493cf1da06dfd63255d73854461" "site/built/learner-profiles.md" "2023-04-25"
