@@ -138,19 +138,12 @@
                   <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         Summary and Setup
         </span>
-      </button>
+      
     </div><!--/div.accordion-header-->
-        
-    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
-      <div class="accordion-body">
-        <ul><li><a href="#getting-ready">Getting ready</a></li>
-        </ul></div><!--/div.accordion-body-->
-    </div><!--/div.accordion-collapse-->
         
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -307,45 +300,27 @@ MARC data files.</strong></p>
 </div>
 
 
-      <section id="setup"><section id="getting-ready"><h2 class="section-heading">Getting ready<a class="anchor" aria-label="anchor" href="#getting-ready"></a>
-</h2>
-<hr class="half-width"><p>You need to install the latest version of MarcEdit and download a
+      <section id="setup"><div class="section level3">
+<h3 id="getting-ready">Getting Ready<a class="anchor" aria-label="anchor" href="#getting-ready"></a></h3>
+<p>You need to install the latest version of MarcEdit and download a
 data file to follow this lesson. If you are using an older version of
 MarcEdit, it is recommended you upgrade to the latest version which may
 be beyond what was tested for this lesson.</p>
-<div class="section level3">
-<h3 id="installing-and-running-marcedit">Installing and running MarcEdit<a class="anchor" aria-label="anchor" href="#installing-and-running-marcedit"></a></h3>
 <p>MarcEdit is a free, open-source application. You can download
 MarcEdit from <a href="https://marcedit.reeset.net/downloads" class="external-link">https://marcedit.reeset.net/downloads</a>.
 This lesson has been tested with the following versions: MarcEdit 7
-(specifically 7.5.21.153) for Windows and MarcEdit 3 for MacOS.</p>
+(specifically 7.6.3) for Windows and MarcEdit 3 for MacOS. It should be
+highlighted that MarcEdit is frequently updated and these instructions
+might have been tested on a slightly earlier version.</p>
+<div class="section level4">
+<h4 id="plug-ins-and-packages">Plug-Ins and Packages<a class="anchor" aria-label="anchor" href="#plug-ins-and-packages"></a></h4>
 <p>Packages, along with associated system requirements, are available on
 <a href="https://marcedit.reeset.net/downloads" class="external-link">https://marcedit.reeset.net/downloads</a>
 for Windows and MacOS.</p>
-<div class="section level4">
-<h4 id="to-download-the-current-version-for-macos">To download the current version for MacOS<a class="anchor" aria-label="anchor" href="#to-download-the-current-version-for-macos"></a></h4>
-<p>For MacOS, select <a href="https://marcedit.reeset.net/software/marcedit75/MarcEdit3_5.pkg.zip" class="external-link">“MacOs”</a>.</p>
 </div>
 <div class="section level4">
-<h4 id="to-download-the-current-version-for-windows">To download the current version for Windows<a class="anchor" aria-label="anchor" href="#to-download-the-current-version-for-windows"></a></h4>
-<p>For Windows, select <a href="https://marcedit.reeset.net/software/marcedit75/MarcEdit_7_5_User_Install.exe" class="external-link">Windows
-Build Options -&gt; Download MarcEdit 7.5 (All Users)</a>. The Windows
-User Only Installation should work for the majority of participants. If
-you will be using a communal computer, and expect MarcEdit to be used by
-a number of users on that machine, read through the “Windows Build
-Options” pop-up to decide the best installation option for you. You can
-also view these <a href="https://youtu.be/7wYo7VoOwMI" class="external-link">video
-tutorials</a> for this type of advanced installation.</p>
-<p>Notes for Windows users:</p>
-<ul><li>The Consolidated Installation for MarcEdit 7.5 for Windows is the
-only one installation option that currently supports 32-bit
-systems.</li>
-<li>If the installation is being done via distributed software or via a
-distribution client like Microsoft’s SCCM, refer to the packaging tool
-available on GitHub <a href="https://github.com/reeset/marcedit_package_builder" class="external-link">https://github.com/reeset/marcedit_package_builder</a>.</li>
-<li>Instructions for system administrators has been provided. Also
-information on managing MarcEdit installations are available <a href="https://marcedit.reeset.net/managing-marcedit-installations" class="external-link">https://marcedit.reeset.net/managing-marcedit-installations</a>.</li>
-</ul><p>System requirements for MarcEdit 7/MarcEdit MacOS 3 <a href="https://marcedit.reeset.net/downloads" class="external-link">https://marcedit.reeset.net/downloads</a>:</p>
+<h4 id="system-requirements-for-mac-and-windows">System Requirements for Mac and Windows<a class="anchor" aria-label="anchor" href="#system-requirements-for-mac-and-windows"></a></h4>
+<p>System requirements for MarcEdit 7/MarcEdit MacOS 3 <a href="https://marcedit.reeset.net/downloads" class="external-link">https://marcedit.reeset.net/downloads</a>:</p>
 <ul><li>Operating system: Vista (32 &amp; 64-bit), MacOS 10.10+</li>
 <li>RAM: 8MB minimum; 32 MB+ is recommended</li>
 <li>Disc space for Windows: 34 MB (setup); 15 MB (application)</li>
@@ -365,13 +340,45 @@ left column, you will see the processor name to determine if it’s a
 Device Specifications, the system type will tell you if it’s a 32 or
 64-bit CPU.</li>
 </ul></div>
+</div>
+<div class="section level3">
+<h3 id="installing-marcedit-on-windows---video">Installing MarcEdit On Windows - <a href="https://www.youtube.com/watch?v=FX0r7jIxeN4" class="external-link">Video</a>
+<a class="anchor" aria-label="anchor" href="#installing-marcedit-on-windows---video"></a></h3>
+<p>For Windows, select <a href="https://marcedit.reeset.net/software/marcedit75/MarcEdit_7_5_User_Install.exe" class="external-link">Windows
+Build Options -&gt; Download MarcEdit 7.5 (All Users)</a>. The Windows
+User Only Installation should work for the majority of participants. If
+you will be using a communal computer, and expect MarcEdit to be used by
+a number of users on that machine, read through the “Windows Build
+Options” pop-up to decide the best installation option for you. You can
+also view this <a href="https://youtu.be/7wYo7VoOwMI" class="external-link">video tutorial</a>
+for this type of advanced installation called the consolidated
+option.</p>
 <div class="section level4">
-<h4 id="marcedit-setup-wizard">MarcEdit Setup Wizard<a class="anchor" aria-label="anchor" href="#marcedit-setup-wizard"></a></h4>
-<p>After downloading MarcEdit and once you launch the installation, you
-will be asked to go through the setup wizard. The wizard will first ask
-you to configure the default font, font size, and recommended theme. The
-wizard will then ask you to configure the MARC standard and file
-standard being used.</p>
+<h4 id="notes-for-windows-users">Notes for Windows users<a class="anchor" aria-label="anchor" href="#notes-for-windows-users"></a></h4>
+<ul><li>The Consolidated Installation for MarcEdit 7.5 for Windows is the
+only one installation option that currently supports 32-bit
+systems.</li>
+<li>If the installation is being done via distributed software or via a
+distribution client like Microsoft’s SCCM, refer to the packaging tool
+available on GitHub <a href="https://github.com/reeset/marcedit_package_builder" class="external-link">https://github.com/reeset/marcedit_package_builder</a>.</li>
+<li>Instructions for system administrators has been provided. Also
+information on managing MarcEdit installations are available <a href="https://marcedit.reeset.net/managing-marcedit-installations" class="external-link">https://marcedit.reeset.net/managing-marcedit-installations</a>.</li>
+</ul></div>
+</div>
+<div class="section level3">
+<h3 id="installing-marcedit-on-mac---video">Installing MarcEdit on Mac - <a href="https://www.youtube.com/watch?v=m8TQsNhpw8I" class="external-link">Video</a>
+<a class="anchor" aria-label="anchor" href="#installing-marcedit-on-mac---video"></a></h3>
+<p>For MacOS, select <a href="https://marcedit.reeset.net/software/marcedit75/MarcEdit3_5.pkg.zip" class="external-link">“MacOs”</a>.
+Unzip the package and follow the MacOS instructions.</p>
+</div>
+<div class="section level3">
+<h3 id="running-marcedit-for-the-first-time-the-setup-wizard---video">Running MarcEdit for the First Time: The Setup Wizard - <a href="https://www.youtube.com/watch?v=iHEimALeojU" class="external-link">Video</a>
+<a class="anchor" aria-label="anchor" href="#running-marcedit-for-the-first-time-the-setup-wizard---video"></a></h3>
+<p>After downloading MarcEdit and once you launch the installation the
+first time, you will be asked to go through the setup wizard. This
+wizard will ask you to configure the default font, font size, and
+recommended theme. The wizard will then ask you to configure the MARC
+standard and file standard being used.</p>
 <ul><li>Click on “Let’s get started”</li>
 <li>MarcEdit Appearance
 <ul><li>Default font: Select your preferred font</li>
@@ -385,16 +392,19 @@ standard being used.</p>
 <li>XML Processing Enging: Select Choose for me</li>
 </ul></li>
 </ul></div>
-</div>
 <div class="section level3">
 <h3 id="downloading-the-data">Downloading the data<a class="anchor" aria-label="anchor" href="#downloading-the-data"></a></h3>
-<p>For this lesson, our sample file, <a href="data/marc_sample_data.mrc">marc_sample_data.mrc</a>, is a MARC
-binary file. To download this file, click on the file name (NOTE: In
-Safari, right click and select <strong>download linked file</strong>).
-This will take you to the file in the lesson’s GitHub repository. Then
-you can download the file. This MARC file follows the MARC21 standard
-and is encoded in UTF-8.</p>
-</div>
+<p>For this lesson, you need to download our sample file from the
+Library Carpentries MarcEdit GitHub repository. Go to the GitHub <a href="https://github.com/LibraryCarpentry/lc-marcedit/blob/main/episodes/data/marc_sample_data.mrc" class="external-link">page
+for that marc_sample_data.mrc</a>. Then, click the download button on
+the right hand side. This MARC file follows the MARC21 standard and is
+encoded in UTF-8.</p>
+<ul><li>Click on <a href="https://github.com/LibraryCarpentry/lc-marcedit/blob/main/episodes/data/marc_sample_data.mrc" class="external-link">this
+link</a>
+</li>
+<li>Click on download button <img src="fig/downloadButton.png" alt="GitHub Download Button icon" class="figure"></li>
+<li>The marc sample file will be saved to your local computer</li>
+</ul></div>
 <div class="section level3">
 <h3 id="getting-help">Getting help<a class="anchor" aria-label="anchor" href="#getting-help"></a></h3>
 <p>Installation video demostrations are available for all users <a href="https://youtu.be/FX0r7jIxeN4" class="external-link">https://youtu.be/FX0r7jIxeN4</a>.</p>
@@ -407,7 +417,9 @@ for your issue.</p>
 or the <a href="https://marcedit.reeset.net/archives/category/knowledge_base" class="external-link">MarcEdit
 Knowledge Base</a>.</p>
 </div>
-</section></section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
+
+
+      </section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link float-end" href="01-introduction.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
@@ -434,7 +446,7 @@ Knowledge Base</a>.</p>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.13.0" class="external-link">sandpaper (0.13.0)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.13.1" class="external-link">sandpaper (0.13.1)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.6.1" class="external-link">pegboard (0.6.1)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.3.0" class="external-link">varnish (0.3.0)</a>.</p>
 			</div>
