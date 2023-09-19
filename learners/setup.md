@@ -2,9 +2,11 @@
 title: Setup
 ---
 
-### Getting Ready
+## Getting Ready
 
 You need to install the latest version of MarcEdit and download a data file to follow this lesson. If you are using an older version of MarcEdit, it is recommended you upgrade to the latest version which may be beyond what was tested for this lesson.
+
+## Downloading MarcEdit
 
 MarcEdit is a free, open-source application. You can download MarcEdit from
 [https://marcedit.reeset.net/downloads](https://marcedit.reeset.net/downloads).
@@ -60,7 +62,7 @@ After downloading MarcEdit and once you launch the installation the first time, 
   - Make sure "Enforce Unicode Normalization" is checked
   - XML Processing Enging: Select Choose for me
 
-### Downloading the data
+## Downloading the data
 
 For this lesson, you need to download our sample file from the Library Carpentries MarcEdit GitHub repository. Go to the GitHub [page for that marc\_sample\_data.mrc](https://github.com/LibraryCarpentry/lc-marcedit/blob/main/episodes/data/marc_sample_data.mrc). Then, click the download button on the right hand side. This MARC file follows the MARC21 standard and is encoded in UTF-8.
 
@@ -68,7 +70,7 @@ For this lesson, you need to download our sample file from the Library Carpentri
 -  Click on download button ![](fig/downloadButton.png){alt='GitHub Download Button icon'}
 -  The marc sample file will be saved to your local computer
 
-### Getting help
+## Getting help
 
 Installation video demostrations are available for all users [https://youtu.be/FX0r7jIxeN4](https://youtu.be/FX0r7jIxeN4).
 
