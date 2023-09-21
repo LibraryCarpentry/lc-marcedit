@@ -276,16 +276,31 @@ This is possible using the Replace function and regular expressions which will b
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+## Saving, Compiling and Version Control
+
+The MARC data that you manipulate in the MarcEditor is in a human and computer readable mnemonic `.mrk` file format that was broken from the original binary `.mrc` file. You will notice that the file name of the file you're working on, displayed at top of the MarcEditor, has the file extension `.mrk`. If you look at the file in your file directory, the file icon color is blue whereas the binary `.mrc` MARC file icon is purple. 
+
+### Saving
+When you save in the MarcEditor, you are saving your latest changes as a `.mrk` file. Using File → Save will save edits into your current `.mrk` file, overwriting the original. To keep a copy of your original `.mrk` data, select File → Save As and choose a new file name for your edited records. 
+
+### Compiling
+To save your edited records back into a MARC binary `.mrc` file (the file format typically required to load MARC records in external systems such as your ILS or LSP) use the compile feature. Select File → Compile File into MARC. Choose a new file name for your edited `.mrc` file. Using the same file name as your original `.mrc` file will overwrite the unedited file. 
+
+Records can also be compiled outside of the MarcEditor using the MarcMaker tool. To use the MarcMaker, from the Main Menu select MARC Tools. In the MARC Tools window, under Select Operation choose MarcMaker. Under Select Data to Process, in the Open box, select the `.mrk` file you'd like to compile. In the Save As box, specify the location and file name for your new `.mrc` file. Set the character encoding options as required, and then click Execute. Once compiled, you will see a message under Results specifying the number of records in the new  `.mrc` file.
+
 ## Select Records to Edit
 
 There are times when you need to work on a subset of your MARC data. The Select Records for Edit function allows you do this.
 
 Go to File and click on Select Records for Edit. In the window, you will see Display Field in the lower right hand corner. This is where you enter the MARC field you want to see displayed once you import your file. You can enter a MARC field and subfield or just a MARC field. The MARC field and/or subfield that you add in this box will provide the criteria you need to select records you want to edit. Once you have entered the Display Field, click on Import File. This will import the MARC (`.mrk`) file that you are currently working on. You can select another MARC (`.mrk`) file in the box Source MARC file.
 
-To select only the records you want to edit, enter your criteria in the Search box and click the magnifying glass icon. Records in your file where the contents of the selected Display Field match your search criteria will be selected. Click on Export Selected to export these records and edit them. When saving the exported records you can choose to save the file as a new record subset (Save As), or merge the edits back into your complete record set (Save).
-
 ![](fig/selectRecordsForEdit.png){alt='MarcEdit empty Select Records for Edit dialog'}
+
+To select only the records you want to edit, enter your criteria in the Search box and click the magnifying glass icon. Records in your file where the contents of the selected Display Field match your search criteria will be selected. Click on Export Selected to export these records and edit them. 
+
 ![](fig/example_selectRecordsForEdit.png){alt='MarcEdit completed Select Records for Edit dialog'}
+
+When saving the exported records you can choose to save the file as a new record subset (Save As), or merge the edits back into your complete record set (Save). 
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
@@ -304,14 +319,6 @@ To select only the records you want to edit, enter your criteria in the Search b
   
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Save and Compile
-
-The MARC data that you manipulate in the MarcEditor is a human and computer readable mnemonic view that was broken from the binary .mrc file. You will notice that the extension of your file that you are manipulating in the MarcEditor has the file extension of `.mrk`. If you look at the file in your file directory, sometimes the color is also blue whereas the .mrc or binary MARC file is purple.
-
-When you save or save as in the MarcEditor, you are saving your latest changes as a `.mrk` (in the friendly view that was broken from the binary `.mrc` file).
-
-When you compile, you are saving all of your latest changes and reforming that your record set into its binary .mrc format that can be used to load the records in external systems such as your ILS or LSP.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 

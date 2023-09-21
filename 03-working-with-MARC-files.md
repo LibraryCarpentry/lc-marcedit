@@ -21,11 +21,9 @@ exercises: 1
 - How does the MarcEditor display MARC records?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::::  callout
-
 ## Working with MARC files
-
+:::::::::::::::::::::::::::::::::::::::::  callout
+##MARC file types
 MarcEdit recognizes the following MARC file types:
 
 <table>
@@ -104,7 +102,7 @@ To ensure the integrity of your data you need to select the correct character en
 
 To transform our binary MARC file (.mrc) into MARC mnemonic human readable format (.mrk), you use the MarcBreaker.
 
-### Break a MARC (.mrc) file to use in the MarcEditor
+##### Break a MARC (.mrc) file to use in the MarcEditor
 
 1. Launch MarcEdit and from the main window click on the MARC Tools Icon.
 2. In the MARC Tools window, Select Operation → MARCBreaker.
@@ -112,11 +110,14 @@ To transform our binary MARC file (.mrc) into MARC mnemonic human readable forma
 4. Next, you will need save your file in the MARC mnemonic format (.mrk) by clicking the file folder to the right of the Save As box. Select the location and name you would like to give your new file.
 5. Under Character encoding select UTF8 as default character encoding.
 6. Click execute.
-7. Once you click execute the newly created .mrk file will available to open in the MarcEditor. Under Results at the bottom of the window you will see a count of the records in your file. Click Edit Records to open the .mrk file in the MarcEditor.
+7. Once you click execute the newly created .mrk file will be available to open in the MarcEditor. Under Results at the bottom of the window you will see a count of the records in your file. Click Edit Records to open the .mrk file in the MarcEditor.
+
+**Note:** When you break a .mrc file and create a new .mrk file for editing in the MarcEditor, you are making a copy of your data in a new file format. As a result, any edits you make to the .mrk file in MarcEdit will not automatically be reflected in the original .mrc file. We will cover saving and making (using the MarcMaker) to create an updated .mrc file in an upcoming lesson.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-You should now see the MARC records from the file displaying in the MarcEditor
+## Layout in the MarcEditor
+You should now see the MARC records from the file displaying in the MarcEditor:
 
 ![](fig/marc_sample_data.png){alt='MarcEditor screen with file open'}
 
