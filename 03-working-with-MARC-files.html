@@ -337,16 +337,15 @@ file of MARC records in MARCedit?</li>
 </div>
 <section id="working-with-marc-files"><h2 class="section-heading">Working with MARC files<a class="anchor" aria-label="anchor" href="#working-with-marc-files"></a>
 </h2>
-<hr class="half-width"><div id="callout1" class="callout callout">
+<hr class="half-width"><div id="marc-file-types" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<div id="marc-file-types" class="callout-inner">
+<h3 class="callout-title">MARC file types<a class="anchor" aria-label="anchor" href="#marc-file-types"></a>
 </h3>
 <div class="callout-content">
-<p>##MARC file types MarcEdit recognizes the following MARC file
-types:</p>
+<p>MarcEdit recognizes the following MARC file types:</p>
 <table class="table"><tr><td>
 <strong>File type</strong>
 </td>
@@ -475,9 +474,9 @@ the .mrk file in the MarcEditor.</li>
 </ol><p><strong>Note:</strong> When you break a .mrc file and create a new
 .mrk file for editing in the MarcEditor, you are making a copy of your
 data in a new file format. As a result, any edits you make to the .mrk
-file in MarcEdit will not automatically be reflected in the original
-.mrc file. We will cover saving and making (using the MarcMaker) to
-create an updated .mrc file in an upcoming lesson.</p>
+file in the MarcEditor will not automatically be reflected in the
+original .mrc file. We will cover saving and compiling (using the
+MarcMaker) to create an updated .mrc file in an upcoming lesson.</p>
 </div>
 </div>
 </div>
@@ -531,6 +530,22 @@ some cataloguing applications, there are no spaces between subfield
 codes and the subfield text.
 </td>
 </tr></table><p>Records in the MarcEditor display are separated by a blank line.</p>
+<div id="marc-syntax-in-the-marceditor" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="marc-syntax-in-the-marceditor" class="callout-inner">
+<h3 class="callout-title">MARC syntax in the MarcEditor<a class="anchor" aria-label="anchor" href="#marc-syntax-in-the-marceditor"></a>
+</h3>
+<div class="callout-content">
+<p>Understanding the layout of MARC data in the MarcEditor is key to
+using the program’s tools successfully. For instance, in some tools it
+is important to specify a field’s indicators directly preceeding the
+first subfield. Throughout this workshop we will highlight how different
+tools rely on this syntax to apply edits.</p>
+</div>
+</div>
+</div>
 <p>The MarcEditor divides a file of MARC records into ‘pages’ of 100
 records. You can scroll up and down the page of MARC records using the
 scroll bar as usual, but to see the next 100 records you need to use the
@@ -557,6 +572,8 @@ MARC records (.mrk)</li>
 <li>It is necessary to break a MARC binary file to work with that MARC
 data in the MarcEditor. The extension of these easily readable MARC
 files are .mrk rather than the binary extension of .mrc</li>
+<li>Understanding the layout (syntax) of MARC records in the MarcEditor
+is key to working with the records.</li>
 </ul></div>
 </div>
 </div>
