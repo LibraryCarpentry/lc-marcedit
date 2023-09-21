@@ -23,7 +23,7 @@ exercises: 1
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 ## Working with MARC files
 :::::::::::::::::::::::::::::::::::::::::  callout
-##MARC file types
+## MARC file types
 MarcEdit recognizes the following MARC file types:
 
 <table>
@@ -112,7 +112,7 @@ To transform our binary MARC file (.mrc) into MARC mnemonic human readable forma
 6. Click execute.
 7. Once you click execute the newly created .mrk file will be available to open in the MarcEditor. Under Results at the bottom of the window you will see a count of the records in your file. Click Edit Records to open the .mrk file in the MarcEditor.
 
-**Note:** When you break a .mrc file and create a new .mrk file for editing in the MarcEditor, you are making a copy of your data in a new file format. As a result, any edits you make to the .mrk file in MarcEdit will not automatically be reflected in the original .mrc file. We will cover saving and making (using the MarcMaker) to create an updated .mrc file in an upcoming lesson.
+**Note:** When you break a .mrc file and create a new .mrk file for editing in the MarcEditor, you are making a copy of your data in a new file format. As a result, any edits you make to the .mrk file in the MarcEditor will not automatically be reflected in the original .mrc file. We will cover saving and compiling (using the MarcMaker) to create an updated .mrc file in an upcoming lesson.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -149,6 +149,15 @@ This example breaks down as follows:
 
 Records in the MarcEditor display are separated by a blank line.
 
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## MARC syntax in the MarcEditor
+
+Understanding the layout of MARC data in the MarcEditor is key to using the program's tools successfully. For instance, in some tools it is important to specify a field's indicators directly preceeding the first subfield. Throughout this workshop we will highlight how different tools rely on this syntax to apply edits. 
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 The MarcEditor divides a file of MARC records into 'pages' of 100 records. You can scroll up and down the page of MARC records using the scroll bar as usual, but to see the next 100 records you need to use the Next/Previous page controls which are at the bottom left of the screen. The MarcEditor can handle very large files of MARC records, because it never tries to load all the records at the same time.
 
 You can adjust the number of records displayed per 'page' through the MarcEditor preferences which can be accessed through the Tools → Preferences menu option from the MarcEditor, or through the 'Settings' icon on the opening screen of MarcEdit.
@@ -159,6 +168,7 @@ You can adjust the number of records displayed per 'page' through the MarcEditor
 - The MARC Tools Icon allow you to convert data from one file format to another
 - The MarcEditor works with a MarcEdit specific mnemonic format of MARC records (.mrk)
 - It is necessary to break a MARC binary file to work with that MARC data in the MarcEditor. The extension of these easily readable MARC files are .mrk rather than the binary extension of .mrc
+- Understanding the layout (syntax) of MARC records in the MarcEditor is key to working with the records.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
