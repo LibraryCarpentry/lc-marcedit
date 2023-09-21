@@ -61,40 +61,6 @@ In MarcEdit, Preferences allow you to configure the main window and various tool
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## How many shortcuts can be added to the main window?
-
-:::::::::::::::  solution
-
-## Solution
-
-1. Click on the gear icon in the main window or go to Tools → Preferences
-2. In the Preferences window, select Main Window in the left hand pane
-3. In the right pane, select any tool that hasn't been selected
-4. You will see a popup message that says "Only four items can be select. Unselect on one of the options and then reselect."
-5. A user can only select 4 options or tools as shortcuts to appear in the main window.
-  
-  
-
-:::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-If you change your preferences for the MarcEditor, the tool used to work with MARC data, you can always go back to the default settings.
-
-:::::::::::::::::::::::::::::::::::::::  checklist
-
-## Reset settings for the MarcEditor in Preferences
-
-1. Click on the gearbox in the top left corner or go to Tools → Preferences
-2. Select "MarcEditor" in the Preferences window in the left hand pane
-3. In the right hand pane, select Set Defaults for either font or font size
-4. Click Ok
-  
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
 ## Name three other tools or features that can be changed in Preferences.
 
 :::::::::::::::  solution
