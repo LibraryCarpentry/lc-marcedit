@@ -116,7 +116,7 @@ To transform our binary MARC file (.mrc) into MARC mnemonic human readable forma
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Layout in the MarcEditor
+## MARC Record layout in the MarcEditor
 You should now see the MARC records from the file displaying in the MarcEditor:
 
 ![](fig/marc_sample_data.png){alt='MarcEditor screen with file open'}
