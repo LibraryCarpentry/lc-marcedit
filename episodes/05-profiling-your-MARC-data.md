@@ -108,11 +108,11 @@ We can use Find to locate and review the 245 field.
 To use the Find function
 
 1. Click Edit
-2. Select Find
+2. Select Find (*Ctrl+f will also launch the `Find` function)
 3. In the "Find what:" dialogue box enter =245
 4. Click Find All
 
-Note: You can also use Ctrl+f to launch the Find function
+**Note:**  When using `Find` to locate instances of a specific field, make sure to include the preceding = before the field number. Including the = ensures only matches on field number will be returned.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
