@@ -165,12 +165,20 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         3. Working with MARC files
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+        
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#working-with-marc-files">Working with MARC files</a></li>
+<li><a href="#layout-in-the-marceditor">Layout in the MarcEditor</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
         
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -287,7 +295,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Working with MARC files</h1>
-        <p> Last updated on 2023-08-31 | 
+        <p> Last updated on 2023-09-21 | 
         
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/03-working-with-MARC-files.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -327,15 +335,18 @@ file of MARC records in MARCedit?</li>
 </div>
 </div>
 </div>
-<div id="working-with-marc-files" class="callout callout">
+<section id="working-with-marc-files"><h2 class="section-heading">Working with MARC files<a class="anchor" aria-label="anchor" href="#working-with-marc-files"></a>
+</h2>
+<hr class="half-width"><div id="callout1" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="working-with-marc-files" class="callout-inner">
-<h3 class="callout-title">Working with MARC files<a class="anchor" aria-label="anchor" href="#working-with-marc-files"></a>
+<div class="callout-inner">
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
 </h3>
 <div class="callout-content">
-<p>MarcEdit recognizes the following MARC file types:</p>
+<p>##MARC file types MarcEdit recognizes the following MARC file
+types:</p>
 <table class="table"><tr><td>
 <strong>File type</strong>
 </td>
@@ -443,8 +454,8 @@ MarcEdit Field Guide</a></p>
 <div class="callout-content">
 <p>To transform our binary MARC file (.mrc) into MARC mnemonic human
 readable format (.mrk), you use the MarcBreaker.</p>
-<div class="section level3">
-<h3 id="break-a-marc--mrc-file-to-use-in-the-marceditor">Break a MARC (.mrc) file to use in the MarcEditor<a class="anchor" aria-label="anchor" href="#break-a-marc--mrc-file-to-use-in-the-marceditor"></a></h3>
+<div class="section level5">
+<h5 id="break-a-marc--mrc-file-to-use-in-the-marceditor">Break a MARC (.mrc) file to use in the MarcEditor<a class="anchor" aria-label="anchor" href="#break-a-marc--mrc-file-to-use-in-the-marceditor"></a></h5>
 <ol style="list-style-type: decimal"><li>Launch MarcEdit and from the main window click on the MARC Tools
 Icon.</li>
 <li>In the MARC Tools window, Select Operation → MARCBreaker.</li>
@@ -457,16 +468,25 @@ Select the location and name you would like to give your new file.</li>
 <li>Under Character encoding select UTF8 as default character
 encoding.</li>
 <li>Click execute.</li>
-<li>Once you click execute the newly created .mrk file will available to
-open in the MarcEditor. Under Results at the bottom of the window you
+<li>Once you click execute the newly created .mrk file will be available
+to open in the MarcEditor. Under Results at the bottom of the window you
 will see a count of the records in your file. Click Edit Records to open
 the .mrk file in the MarcEditor.</li>
-</ol></div>
+</ol><p><strong>Note:</strong> When you break a .mrc file and create a new
+.mrk file for editing in the MarcEditor, you are making a copy of your
+data in a new file format. As a result, any edits you make to the .mrk
+file in MarcEdit will not automatically be reflected in the original
+.mrc file. We will cover saving and making (using the MarcMaker) to
+create an updated .mrc file in an upcoming lesson.</p>
 </div>
 </div>
 </div>
-<p>You should now see the MARC records from the file displaying in the
-MarcEditor</p>
+</div>
+</div>
+</section><section id="layout-in-the-marceditor"><h2 class="section-heading">Layout in the MarcEditor<a class="anchor" aria-label="anchor" href="#layout-in-the-marceditor"></a>
+</h2>
+<hr class="half-width"><p>You should now see the MARC records from the file displaying in the
+MarcEditor:</p>
 <figure><img src="fig/marc_sample_data.png" alt="MarcEditor screen with file open" class="figure mx-auto d-block"></figure><p>The MarcEditor displays the records in what is called the ‘Mnemonic
 MARC Text File’ format (file extension *.mrk). Each line in the file
 represents a field in a MARC record:</p>
@@ -540,11 +560,7 @@ files are .mrk rather than the binary extension of .mrc</li>
 </ul></div>
 </div>
 </div>
-</div>
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="02-top-level-menu-features.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="04-layout-of-the-MarcEditor.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -580,7 +596,7 @@ files are .mrk rather than the binary extension of .mrc</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.13.1" class="external-link">sandpaper (0.13.1)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.13.2" class="external-link">sandpaper (0.13.2)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.6.1" class="external-link">pegboard (0.6.1)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.3.0" class="external-link">varnish (0.3.0)</a>.</p>
 			</div>
@@ -603,8 +619,8 @@ files are .mrk rather than the binary extension of .mrc</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/03-working-with-MARC-files.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/03-working-with-MARC-files.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2023-08-31",
-  "datePublished": "2023-09-19"
+  "dateModified": "2023-09-21",
+  "datePublished": "2023-09-21"
 }
 
   </script><script>

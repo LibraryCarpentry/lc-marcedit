@@ -745,7 +745,7 @@ Tools → Preferences, or by using the keyboard shortcut Ctrl+Shift+P</li>
 </div>
 </section></section><section id="aio-03-working-with-MARC-files"><p>Content from <a href="03-working-with-MARC-files.html">Working with MARC files</a></p>
 <hr>
-<p> Last updated on 2023-08-31 | 
+<p> Last updated on 2023-09-21 | 
         
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/03-working-with-MARC-files.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 21 minutes </p>
@@ -784,15 +784,19 @@ file of MARC records in MARCedit?</li>
 </div>
 </div>
 </div>
-<div id="working-with-marc-files" class="callout callout">
+<section id="working-with-marc-files"><h2 class="section-heading">Working with MARC files<a class="anchor" aria-label="anchor" href="#working-with-marc-files"></a>
+</h2>
+<hr class="half-width">
+<div id="callout1" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="working-with-marc-files" class="callout-inner">
-<h3 class="callout-title">Working with MARC files<a class="anchor" aria-label="anchor" href="#working-with-marc-files"></a>
+<div class="callout-inner">
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
 </h3>
 <div class="callout-content">
-<p>MarcEdit recognizes the following MARC file types:</p>
+<p>##MARC file types MarcEdit recognizes the following MARC file
+types:</p>
 <table class="table">
 <tr>
 <td>
@@ -915,9 +919,9 @@ MarcEdit Field Guide</a></p>
 <div class="callout-content">
 <p>To transform our binary MARC file (.mrc) into MARC mnemonic human
 readable format (.mrk), you use the MarcBreaker.</p>
-<div class="section level3">
-<h3 id="break-a-marc--mrc-file-to-use-in-the-marceditor">Break a MARC (.mrc) file to use in the MarcEditor<a class="anchor" aria-label="anchor" href="#break-a-marc--mrc-file-to-use-in-the-marceditor"></a>
-</h3>
+<div class="section level5">
+<h5 id="break-a-marc--mrc-file-to-use-in-the-marceditor">Break a MARC (.mrc) file to use in the MarcEditor<a class="anchor" aria-label="anchor" href="#break-a-marc--mrc-file-to-use-in-the-marceditor"></a>
+</h5>
 <ol style="list-style-type: decimal">
 <li>Launch MarcEdit and from the main window click on the MARC Tools
 Icon.</li>
@@ -931,17 +935,27 @@ Select the location and name you would like to give your new file.</li>
 <li>Under Character encoding select UTF8 as default character
 encoding.</li>
 <li>Click execute.</li>
-<li>Once you click execute the newly created .mrk file will available to
-open in the MarcEditor. Under Results at the bottom of the window you
+<li>Once you click execute the newly created .mrk file will be available
+to open in the MarcEditor. Under Results at the bottom of the window you
 will see a count of the records in your file. Click Edit Records to open
 the .mrk file in the MarcEditor.</li>
 </ol>
+<p><strong>Note:</strong> When you break a .mrc file and create a new
+.mrk file for editing in the MarcEditor, you are making a copy of your
+data in a new file format. As a result, any edits you make to the .mrk
+file in MarcEdit will not automatically be reflected in the original
+.mrc file. We will cover saving and making (using the MarcMaker) to
+create an updated .mrc file in an upcoming lesson.</p>
 </div>
 </div>
 </div>
 </div>
+</div>
+</section><section id="layout-in-the-marceditor"><h2 class="section-heading">Layout in the MarcEditor<a class="anchor" aria-label="anchor" href="#layout-in-the-marceditor"></a>
+</h2>
+<hr class="half-width">
 <p>You should now see the MARC records from the file displaying in the
-MarcEditor</p>
+MarcEditor:</p>
 <figure><img src="../fig/marc_sample_data.png" alt="MarcEditor screen with file open" class="figure mx-auto d-block"></figure><p>The MarcEditor displays the records in what is called the ‘Mnemonic
 MARC Text File’ format (file extension *.mrk). Each line in the file
 represents a field in a MARC record:</p>
@@ -1029,7 +1043,7 @@ files are .mrk rather than the binary extension of .mrc</li>
 </div>
 </div>
 </div>
-</div></section><section id="aio-04-layout-of-the-MarcEditor"><p>Content from <a href="04-layout-of-the-MarcEditor.html">Layout of the MarcEditor</a></p>
+</section></section><section id="aio-04-layout-of-the-MarcEditor"><p>Content from <a href="04-layout-of-the-MarcEditor.html">Layout of the MarcEditor</a></p>
 <hr>
 <p> Last updated on 2023-04-25 | 
         
@@ -1298,7 +1312,7 @@ our records?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Field count outlines each field found in our records, the number of
@@ -1419,7 +1433,7 @@ correctly?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The 245 field number is formatted incorrectly. The MarcEditor relies
@@ -1448,7 +1462,7 @@ edit your MARC records</li>
 </div>
 </section></section><section id="aio-06-manipulating-MARC-data"><p>Content from <a href="06-manipulating-MARC-data.html">Manipulating MARC data</a></p>
 <hr>
-<p> Last updated on 2023-04-25 | 
+<p> Last updated on 2023-09-21 | 
         
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/06-manipulating-MARC-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 25 minutes </p>
@@ -1930,6 +1944,44 @@ expressions which will be covered in Lesson 09.</p>
 </div>
 </div>
 </div>
+</section><section id="saving-compiling-and-version-control"><h2 class="section-heading">Saving, Compiling and Version Control<a class="anchor" aria-label="anchor" href="#saving-compiling-and-version-control"></a>
+</h2>
+<hr class="half-width">
+<p>The MARC data that you manipulate in the MarcEditor is in a human and
+computer readable mnemonic <code>.mrk</code> file format that was broken
+from the original binary <code>.mrc</code> file. You will notice that
+the file name of the file you’re working on, displayed at top of the
+MarcEditor, has the file extension <code>.mrk</code>. If you look at the
+file in your file directory, the file icon color is blue whereas the
+binary <code>.mrc</code> MARC file icon is purple.</p>
+<div class="section level3">
+<h3 id="saving">Saving<a class="anchor" aria-label="anchor" href="#saving"></a>
+</h3>
+<p>When you save in the MarcEditor, you are saving your latest changes
+as a <code>.mrk</code> file. Using File → Save will save edits into your
+current <code>.mrk</code> file, overwriting the original. To keep a copy
+of your original <code>.mrk</code> data, select File → Save As and
+choose a new file name for your edited records.</p>
+</div>
+<div class="section level3">
+<h3 id="compiling">Compiling<a class="anchor" aria-label="anchor" href="#compiling"></a>
+</h3>
+<p>To save your edited records back into a MARC binary <code>.mrc</code>
+file (the file format typically required to load MARC records in
+external systems such as your ILS or LSP) use the compile feature.
+Select File → Compile File into MARC. Choose a new file name for your
+edited <code>.mrc</code> file. Using the same file name as your original
+<code>.mrc</code> file will overwrite the unedited file.</p>
+<p>Records can also be compiled outside of the MarcEditor using the
+MarcMaker tool. To use the MarcMaker, from the Main Menu select MARC
+Tools. In the MARC Tools window, under Select Operation choose
+MarcMaker. Under Select Data to Process, in the Open box, select the
+<code>.mrk</code> file you’d like to compile. In the Save As box,
+specify the location and file name for your new <code>.mrc</code> file.
+Set the character encoding options as required, and then click Execute.
+Once compiled, you will see a message under Results specifying the
+number of records in the new <code>.mrc</code> file.</p>
+</div>
 </section><section id="select-records-to-edit"><h2 class="section-heading">Select Records to Edit<a class="anchor" aria-label="anchor" href="#select-records-to-edit"></a>
 </h2>
 <hr class="half-width">
@@ -1945,14 +1997,14 @@ entered the Display Field, click on Import File. This will import the
 MARC (<code>.mrk</code>) file that you are currently working on. You can
 select another MARC (<code>.mrk</code>) file in the box Source MARC
 file.</p>
-<p>To select only the records you want to edit, enter your criteria in
+<figure><img src="../fig/selectRecordsForEdit.png" alt="MarcEdit empty Select Records for Edit dialog" class="figure mx-auto d-block"></figure><p>To select only the records you want to edit, enter your criteria in
 the Search box and click the magnifying glass icon. Records in your file
 where the contents of the selected Display Field match your search
 criteria will be selected. Click on Export Selected to export these
-records and edit them. When saving the exported records you can choose
-to save the file as a new record subset (Save As), or merge the edits
-back into your complete record set (Save).</p>
-<p><img src="../fig/selectRecordsForEdit.png" alt="MarcEdit empty Select Records for Edit dialog" class="figure"><img src="../fig/example_selectRecordsForEdit.png" alt="MarcEdit completed Select Records for Edit dialog" class="figure"></p>
+records and edit them.</p>
+<figure><img src="../fig/example_selectRecordsForEdit.png" alt="MarcEdit completed Select Records for Edit dialog" class="figure mx-auto d-block"></figure><p>When saving the exported records you can choose to save the file as a
+new record subset (Save As), or merge the edits back into your complete
+record set (Save).</p>
 <div id="lets-add-cutters-to-call-numbers-in-the-099" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
@@ -1987,23 +2039,6 @@ data with edits has been saved back into your main file. Click OK.</li>
 </div>
 </div>
 </div>
-</section><section id="save-and-compile"><h2 class="section-heading">Save and Compile<a class="anchor" aria-label="anchor" href="#save-and-compile"></a>
-</h2>
-<hr class="half-width">
-<p>The MARC data that you manipulate in the MarcEditor is a human and
-computer readable mnemonic view that was broken from the binary .mrc
-file. You will notice that the extension of your file that you are
-manipulating in the MarcEditor has the file extension of
-<code>.mrk</code>. If you look at the file in your file directory,
-sometimes the color is also blue whereas the .mrc or binary MARC file is
-purple.</p>
-<p>When you save or save as in the MarcEditor, you are saving your
-latest changes as a <code>.mrk</code> (in the friendly view that was
-broken from the binary <code>.mrc</code> file).</p>
-<p>When you compile, you are saving all of your latest changes and
-reforming that your record set into its binary .mrc format that can be
-used to load the records in external systems such as your ILS or
-LSP.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -2732,7 +2767,7 @@ are working as intended</li>
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.13.1" class="external-link">sandpaper (0.13.1)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.13.2" class="external-link">sandpaper (0.13.2)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.6.1" class="external-link">pegboard (0.6.1)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.3.0" class="external-link">varnish (0.3.0)</a>.</p>
 			</div>
@@ -2756,8 +2791,8 @@ are working as intended</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/instructor/aio.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/instructor/aio.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2023-09-19",
-  "datePublished": "2023-09-19"
+  "dateModified": "2023-09-21",
+  "datePublished": "2023-09-21"
 }
 
   </script><script>
