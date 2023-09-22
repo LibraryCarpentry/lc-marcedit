@@ -176,7 +176,8 @@
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#working-with-marc-files">Working with MARC files</a></li>
-<li><a href="#layout-in-the-marceditor">Layout in the MarcEditor</a></li>
+<li><a href="#marc-record-layout-in-the-marceditor">MARC Record layout in the MarcEditor</a></li>
+<li><a href="#setting-marceditor-preferences">Setting MarcEditor Preferences</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
         
@@ -295,7 +296,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Working with MARC files</h1>
-        <p> Last updated on 2023-09-21 | 
+        <p> Last updated on 2023-09-22 | 
         
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/03-working-with-MARC-files.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -327,8 +328,9 @@ file of MARC records in MARCedit?</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul><li>Explain the difference between mrc and mrk MARC file formats</li>
-<li>Successfully break and open a file of MARC records</li>
-<li>Explain encoding and its importance</li>
+<li>Successfully break and open a file of MARC records in the
+MarcEditor</li>
+<li>Explain character encoding and its importance</li>
 <li>Understand how to read a MARC record in the MarcEditor</li>
 </ul></div>
 </div>
@@ -482,7 +484,7 @@ MarcMaker) to create an updated .mrc file in an upcoming lesson.</p>
 </div>
 </div>
 </div>
-</section><section id="layout-in-the-marceditor"><h2 class="section-heading">Layout in the MarcEditor<a class="anchor" aria-label="anchor" href="#layout-in-the-marceditor"></a>
+</section><section id="marc-record-layout-in-the-marceditor"><h2 class="section-heading">MARC Record layout in the MarcEditor<a class="anchor" aria-label="anchor" href="#marc-record-layout-in-the-marceditor"></a>
 </h2>
 <hr class="half-width"><p>You should now see the MARC records from the file displaying in the
 MarcEditor:</p>
@@ -552,10 +554,39 @@ scroll bar as usual, but to see the next 100 records you need to use the
 Next/Previous page controls which are at the bottom left of the screen.
 The MarcEditor can handle very large files of MARC records, because it
 never tries to load all the records at the same time.</p>
-<p>You can adjust the number of records displayed per ‘page’ through the
-MarcEditor preferences which can be accessed through the Tools →
+</section><section id="setting-marceditor-preferences"><h2 class="section-heading">Setting MarcEditor Preferences<a class="anchor" aria-label="anchor" href="#setting-marceditor-preferences"></a>
+</h2>
+<hr class="half-width"><p>You can adjust the number of records displayed per ‘page’ through the
+MarcEditor preferences which can be accessed through the Edit →
 Preferences menu option from the MarcEditor, or through the ‘Settings’
 icon on the opening screen of MarcEdit.</p>
+<p>Within the MarcEditor preferences you can adjust the font and font
+size within the MarcEditor. You can also set your character encoding
+defaults. If you navigate to File Associations within the Preferences
+window, you can select Associate (<code>*.mrc</code>) files with the
+MarcBreaker and Associate (<code>*.mrk</code>) files with the
+MarcEditor. Setting these file associations will make it easy to break
+<code>.mrc</code> files and edit <code>.mrk</code> files.</p>
+<p>If you change your preferences for the MarcEditor, the tool used to
+work with MARC data, you can always go back to the default settings.</p>
+<div id="reset-settings-for-the-marceditor-in-preferences" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="reset-settings-for-the-marceditor-in-preferences" class="callout-inner">
+<h3 class="callout-title">Reset settings for the MarcEditor in
+Preferences<a class="anchor" aria-label="anchor" href="#reset-settings-for-the-marceditor-in-preferences"></a>
+</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal"><li>Click Edit → Preferences</li>
+<li>Select “MarcEditor” in the Preferences window in the left hand
+pane</li>
+<li>In the right hand pane, select Set Defaults for either font or font
+size</li>
+<li>Click Ok</li>
+</ol></div>
+</div>
+</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -636,7 +667,7 @@ is key to working with the records.</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/03-working-with-MARC-files.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/03-working-with-MARC-files.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2023-09-21",
+  "dateModified": "2023-09-22",
   "datePublished": "2023-09-22"
 }
 
