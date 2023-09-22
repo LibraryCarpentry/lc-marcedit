@@ -1,5 +1,5 @@
 ---
-title: Manipulating MARC data
+title: Manipulating MARC data basics
 teaching: 20
 exercises: 5
 ---
