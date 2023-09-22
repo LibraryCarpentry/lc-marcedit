@@ -7,8 +7,8 @@ exercises: 1
 ::::::::::::::::::::::::::::::::::::::: objectives
 
 - Explain the difference between mrc and mrk MARC file formats
-- Successfully break and open a file of MARC records
-- Explain encoding and its importance
+- Successfully break and open a file of MARC records in the MarcEditor
+- Explain character encoding and its importance
 - Understand how to read a MARC record in the MarcEditor
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -116,7 +116,7 @@ To transform our binary MARC file (.mrc) into MARC mnemonic human readable forma
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Layout in the MarcEditor
+## MARC Record layout in the MarcEditor
 You should now see the MARC records from the file displaying in the MarcEditor:
 
 ![](fig/marc_sample_data.png){alt='MarcEditor screen with file open'}
@@ -160,7 +160,25 @@ Understanding the layout of MARC data in the MarcEditor is key to using the prog
 
 The MarcEditor divides a file of MARC records into 'pages' of 100 records. You can scroll up and down the page of MARC records using the scroll bar as usual, but to see the next 100 records you need to use the Next/Previous page controls which are at the bottom left of the screen. The MarcEditor can handle very large files of MARC records, because it never tries to load all the records at the same time.
 
-You can adjust the number of records displayed per 'page' through the MarcEditor preferences which can be accessed through the Tools → Preferences menu option from the MarcEditor, or through the 'Settings' icon on the opening screen of MarcEdit.
+## Setting MarcEditor Preferences
+
+You can adjust the number of records displayed per 'page' through the MarcEditor preferences which can be accessed through the Edit → Preferences menu option from the MarcEditor, or through the 'Settings' icon on the opening screen of MarcEdit.
+
+Within the MarcEditor preferences you can adjust the font and font size within the MarcEditor. You can also set your character encoding defaults. If you navigate to File Associations within the Preferences window, you can select Associate (`*.mrc`) files with the MarcBreaker and Associate (`*.mrk`) files with the MarcEditor. Setting these file associations will make it easy to break `.mrc` files and edit `.mrk` files.
+
+If you change your preferences for the MarcEditor, the tool used to work with MARC data, you can always go back to the default settings.
+
+:::::::::::::::::::::::::::::::::::::::  checklist
+
+## Reset settings for the MarcEditor in Preferences
+
+1. Click Edit → Preferences
+2. Select "MarcEditor" in the Preferences window in the left hand pane
+3. In the right hand pane, select Set Defaults for either font or font size
+4. Click Ok
+  
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
