@@ -64,7 +64,7 @@ After downloading MarcEdit and once you launch the installation the first time, 
 
 ## Downloading the data
 
-For this lesson, you need to download our sample file from the Library Carpentries MarcEdit GitHub repository. Go to the GitHub [page for that marc\_sample\_data.mrc](https://github.com/LibraryCarpentry/lc-marcedit/blob/main/episodes/data/marc_sample_data.mrc). Then, click the download button on the right hand side. This MARC file follows the MARC21 standard and is encoded in UTF-8.
+For this lesson, you need to download our sample file from the Library Carpentries MarcEdit GitHub repository. Go to the GitHub [page](https://github.com/LibraryCarpentry/lc-marcedit/blob/main/episodes/data/marc_sample_data.mrc) to download the sample data file called marc\_sample\_data.mrc. Then, click the download button on the right hand side. This MARC file follows the MARC21 standard and is encoded in UTF-8.
 
 -  Click on [this link](https://github.com/LibraryCarpentry/lc-marcedit/blob/main/episodes/data/marc_sample_data.mrc)
 -  Click on download button ![](fig/downloadButton.png){alt='GitHub Download Button icon'}
