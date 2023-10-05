@@ -1,11 +1,12 @@
 ---
 title: Manipulating MARC data basics
-teaching: 20
-exercises: 5
+teaching: 40
+exercises: 6
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
+- Explain how to find, find all, and replace
 - Explain how to add, update, and remove fields, subfields, indicators, and fixed fields
 - Explain the functions RDA Helper and Select Records for Edit
 - Explain the difference between save and compile
@@ -29,6 +30,63 @@ exercises: 5
 ## Manipulating MARC data
 
 We've seen how we can manually and individually edit records in the MarcEditor, however, MarcEdit provides a number of more powerful ways to manipulate our MARC data. Fields, subfields, indicators can be added, removed, or changed. Fixed fields can be corrected. Fields and subfields specific to RDA can be added while AACR2 conventions are removed. It is possible to work with a subset of MARC data and then incorporate those changes into the original whole MARC data set. The variations sometime seem endless and give more weight to the nickname of MarcEdit, the swiss army knife of MARC data.
+
+### Find, Find All, and Replace
+
+Like many other applications, the MarcEditor offers the ability to Find, Find All, and Replace. 
+
+Find: Find will search as a keyword what you enter into the Find window search box. This option will only search the current page in the MarcEdit. Remember that the default settings splits the MARC records into 100 for each page. Find will only search those records on the page you are currently on. 
+
+Find All: Find all will search for your search terms entered in the Find window search box over all the pages, or all your MARC records.
+
+Replace: Replace works alongside Find or Find all. You have the option to Replace just those on the page or Replace all where the replace occurs on all pages in all records.
+
+If you want to Find or Find all a MARC field, you will need to include the equals sign before the MARC field. For example, if you type in the search box 856, Find or Find All will search for 856 as a keyword anywhere. If there is a title such as "The Jourey of the 856 people", this will then show up in your search results. If you search for =856, it will find anything with that string. If for example there is a title with "... =856 ..." then this will also appear in the search results. Typically the equals before the MARC tage will bring up that MARC tag. 
+
+:::::::::::::::::::::::::::::::::::::::::  checklist
+
+## Find, Find All, and Replace using the MARC field 856
+
+1.  Go to Edit->Find (or CTRL+F)
+2.  In the search box in the new window, type in 856
+3.  Click Find
+4.  What results to you see?
+5.  Close that window
+6.  Go to Edit->Find (or CTRL+F)
+7.  In the search box in the new window, type in =856
+8.  Click Find All
+9.  What results to you see
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Add a proxy to the MARC field 856
+
+1. Find those MARC fields 856 where there is a subfield 3 for Full text follow by a subfield u
+2. Add this proxy https://proxy.edu?url=
+
+:::::::::::::::  solution
+
+## Solution
+
+1. Click Edit->Replace
+2. In the search box for Find, type in =856  40$3Full text:$u
+3. In the search box for Replace, type in =856  40$3Full text:$uhttps://proxy.edu?url=
+4. Undo those changes.
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## Find and Replace
+
+Remember to always verify that the search results of the Find or Find All. Find or Find all will search that exact phrase or string that you put into the search box either on that page (Find) or in every record (Find all). 
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ### Add/Delete a MARC field
 
@@ -228,35 +286,6 @@ Sometimes it is necessary to change one or both indicators of a MARC field. To e
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## RDA Helper
-
-Records aren't created equal in that we encounter MARC data that follows different descriptive cataloging standards. There are a number of records cataloged according to the AACR2 standard or even AACR or earlier. Sometimes it is necessary to make sure these records follow the current RDA descriptive cataloging standard. MarcEdit lets you do this through the function called RDA Helper.
-
-To run the RDA Helper, go to Tools and select RDA Helper. In the window that opens, you can pick and choose how you would like to transform your records to align better with the RDA descriptive standard. For example, you can add the RDA fields 336, 337, and 338 for content, media, and carrier types. You can update the MARC field 040 to include the `$e` rda and delete the GMD statement. You can also evaluate the 260/264.
-
-![](fig/rdaHelper.png){alt='MarcEdit RDA Helper'}
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Run the RDA Helper on your MARC data
-
-1. Run the RDA Helper with these settings: Add 336, 337, 338; Modify the 040; Evaluate the 260/264; Always use the copyright symbol; Expand abbreviations; Remove the GMD.
-
-:::::::::::::::  solution
-
-## Solution
-
-1. Go to Tools in the upper menu in the MarcEditor
-2. Select RDA Helper
-3. Check off the settings listed above
-4. Click the OK button.
-5. Check your MARC data. Do you see the changes?
-  
-  
-
-:::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Working with MARC fixed fields
 
@@ -270,8 +299,7 @@ You can also batch insert an 006 or 008 into your records. To insert a fixed fie
 
 ## Batch Editing Fixed Fields in Multiple MARC Records
 
-Sometimes it is necessary to change a fixed field for all records in your MARC data.
-This is possible using the Replace function and regular expressions which will be covered in Lesson 09.
+Sometimes it is necessary to change a fixed field for all records in your MARC data. You can use the Edit Field function. For this, you will need to know the position of the fixed field. For this, you can consult the [OCLC Bibliographic Standards and Formats](https://www.oclc.org/bibformats/en.html) or [the Library of Congress Bibliographic Marc Standard](https://www.loc.gov/marc/bibliographic/). This is also possible using the Replace function and regular expressions which will be covered in Lesson 09.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -288,37 +316,6 @@ To save your edited records back into a MARC binary `.mrc` file (the file format
 
 Records can also be compiled outside of the MarcEditor using the MarcMaker tool. To use the MarcMaker, from the Main Menu select MARC Tools. In the MARC Tools window, under Select Operation choose MarcMaker. Under Select Data to Process, in the Open box, select the `.mrk` file you'd like to compile. In the Save As box, specify the location and file name for your new `.mrc` file. Set the character encoding options as required, and then click Execute. Once compiled, you will see a message under Results specifying the number of records in the new  `.mrc` file.
 
-## Select Records to Edit
-
-There are times when you need to work on a subset of your MARC data. The Select Records for Edit function allows you do this.
-
-Go to File and click on Select Records for Edit. In the window, you will see Display Field in the lower right hand corner. This is where you enter the MARC field you want to see displayed once you import your file. You can enter a MARC field and subfield or just a MARC field. The MARC field and/or subfield that you add in this box will provide the criteria you need to select records you want to edit. Once you have entered the Display Field, click on Import File. This will import the MARC (`.mrk`) file that you are currently working on. You can select another MARC (`.mrk`) file in the box Source MARC file.
-
-![](fig/selectRecordsForEdit.png){alt='MarcEdit empty Select Records for Edit dialog'}
-
-To select only the records you want to edit, enter your criteria in the Search box and click the magnifying glass icon. Records in your file where the contents of the selected Display Field match your search criteria will be selected. Click on Export Selected to export these records and edit them. 
-
-![](fig/example_selectRecordsForEdit.png){alt='MarcEdit completed Select Records for Edit dialog'}
-
-When saving the exported records you can choose to save the file as a new record subset (Save As), or merge the edits back into your complete record set (Save). 
-
-:::::::::::::::::::::::::::::::::::::::  checklist
-
-## Let's add cutters to call numbers in the 099
-
-1. Go to File → Select Records to Edit
-2. In the new window, type in `099$b` in the Field Display
-3. Click on Import File
-4. In the search box, type in "Display field not found" to locate all records missing `099$b`
-5. Click the magnifying glass icon. A pop up window will indicate the number of records selected that match your criteria. Click OK.
-6. Click on Export Selected. A pop up window indicate that your selected records have been extracted. Click OK.
-7. A new MarcEditor window will open. Note the temporary file name at the top of the editor window indicating this file is distinct from your main file. In the new MarcEditor, go to Tools → Call Number tools → Cuttering Tools → Generate Cutters.
-8. In the field box enter 099 and click Process
-9. Check your results by using Find All `=099`
-10. Select File → Save. A pop up window will indicate your extracted data with edits has been saved back into your main file. Click OK.
-  
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
