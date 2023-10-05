@@ -16,7 +16,13 @@
     <loc>https://librarycarpentry.github.io/lc-marcedit/05-profiling-your-MARC-data.html</loc>
   </url>
   <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/06-manipulating-MARC-data-basics.html</loc>
+  </url>
+  <url>
     <loc>https://librarycarpentry.github.io/lc-marcedit/06-manipulating-MARC-data.html</loc>
+  </url>
+  <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/07-manipulating-MARC-data-advanced.html</loc>
   </url>
   <url>
     <loc>https://librarycarpentry.github.io/lc-marcedit/07-tasks-and-automation.html</loc>
@@ -25,7 +31,16 @@
     <loc>https://librarycarpentry.github.io/lc-marcedit/08-integrations.html</loc>
   </url>
   <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/08-tasks-and-automation.html</loc>
+  </url>
+  <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/09-integrations.html</loc>
+  </url>
+  <url>
     <loc>https://librarycarpentry.github.io/lc-marcedit/09-regular-expressions.html</loc>
+  </url>
+  <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/10-regular-expressions.html</loc>
   </url>
   <url>
     <loc>https://librarycarpentry.github.io/lc-marcedit/404.html</loc>
@@ -64,7 +79,13 @@
     <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/05-profiling-your-MARC-data.html</loc>
   </url>
   <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/06-manipulating-MARC-data-basics.html</loc>
+  </url>
+  <url>
     <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/06-manipulating-MARC-data.html</loc>
+  </url>
+  <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/07-manipulating-MARC-data-advanced.html</loc>
   </url>
   <url>
     <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/07-tasks-and-automation.html</loc>
@@ -73,7 +94,16 @@
     <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/08-integrations.html</loc>
   </url>
   <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/08-tasks-and-automation.html</loc>
+  </url>
+  <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/09-integrations.html</loc>
+  </url>
+  <url>
     <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/09-regular-expressions.html</loc>
+  </url>
+  <url>
+    <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/10-regular-expressions.html</loc>
   </url>
   <url>
     <loc>https://librarycarpentry.github.io/lc-marcedit/instructor/404.html</loc>
