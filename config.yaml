@@ -64,10 +64,11 @@ episodes:
 - 03-working-with-MARC-files.md
 - 04-layout-of-the-MarcEditor.md
 - 05-profiling-your-MARC-data.md
-- 06-manipulating-MARC-data.md
-- 07-tasks-and-automation.md
-- 08-integrations.md
-- 09-regular-expressions.md
+- 06-manipulating-MARC-data-basics.md
+- 07-manipulating-MARC-data-advanced.md
+- 08-tasks-and-automation.md
+- 09-integrations.md
+- 10-regular-expressions.md
 
 # Information for Learners
 learners: 
