@@ -1,5 +1,5 @@
 ---
-title: Manipulating MARC data
+title: Manipulating MARC data basics
 teaching: 20
 exercises: 5
 ---
@@ -326,5 +326,4 @@ When saving the exported records you can choose to save the file as a new record
 - MarcEdit comes with an array of tools to manipulate data and validate MARC.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
 
