@@ -1311,7 +1311,7 @@ our records?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Field count outlines each field found in our records, the number of
@@ -1436,7 +1436,7 @@ correctly?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The 245 field number is formatted incorrectly. The MarcEditor relies
@@ -1496,6 +1496,7 @@ your MARC file?</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
+<li>Explain how to find, find all, and replace</li>
 <li>Explain how to add, update, and remove fields, subfields,
 indicators, and fixed fields</li>
 <li>Explain the functions RDA Helper and Select Records for Edit</li>
@@ -1521,6 +1522,105 @@ possible to work with a subset of MARC data and then incorporate those
 changes into the original whole MARC data set. The variations sometime
 seem endless and give more weight to the nickname of MarcEdit, the swiss
 army knife of MARC data.</p>
+<div class="section level3">
+<h3 id="find-find-all-and-replace">Find, Find All, and Replace<a class="anchor" aria-label="anchor" href="#find-find-all-and-replace"></a>
+</h3>
+<p>Like many other applications, the MarcEditor offers the ability to
+Find, Find All, and Replace.</p>
+<p>Find: Find will search as a keyword what you enter into the Find
+window search box. This option will only search the current page in the
+MarcEdit. Remember that the default settings splits the MARC records
+into 100 for each page. Find will only search those records on the page
+you are currently on.</p>
+<p>Find All: Find all will search for your search terms entered in the
+Find window search box over all the pages, or all your MARC records.</p>
+<p>Replace: Replace works alongside Find or Find all. You have the
+option to Replace just those on the page or Replace all where the
+replace occurs on all pages in all records.</p>
+<p>If you want to Find or Find all a MARC field, you will need to
+include the equals sign before the MARC field. For example, if you type
+in the search box 856, Find or Find All will search for 856 as a keyword
+anywhere. If there is a title such as “The Jourey of the 856 people”,
+this will then show up in your search results. If you search for =856,
+it will find anything with that string. If for example there is a title
+with “… =856 …” then this will also appear in the search results.
+Typically the equals before the MARC tage will bring up that MARC
+tag.</p>
+<div id="find-find-all-and-replace-using-the-marc-field-856" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="find-find-all-and-replace-using-the-marc-field-856" class="callout-inner">
+<h3 class="callout-title">Find, Find All, and Replace using the MARC
+field 856<a class="anchor" aria-label="anchor" href="#find-find-all-and-replace-using-the-marc-field-856"></a>
+</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal">
+<li>Go to Edit-&gt;Find (or CTRL+F)</li>
+<li>In the search box in the new window, type in 856</li>
+<li>Click Find</li>
+<li>What results to you see?</li>
+<li>Close that window</li>
+<li>Go to Edit-&gt;Find (or CTRL+F)</li>
+<li>In the search box in the new window, type in =856</li>
+<li>Click Find All</li>
+<li>What results to you see</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="add-a-proxy-to-the-marc-field-856" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="add-a-proxy-to-the-marc-field-856" class="callout-inner">
+<h3 class="callout-title">Add a proxy to the MARC field 856<a class="anchor" aria-label="anchor" href="#add-a-proxy-to-the-marc-field-856"></a>
+</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal">
+<li>Find those MARC fields 856 where there is a subfield 3 for Full text
+follow by a subfield u</li>
+<li>Add this proxy <a href="https://proxy.edu?url=" class="external-link uri">https://proxy.edu?url=</a>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  Show me the solution
+  </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li>Click Edit-&gt;Replace</li>
+<li>In the search box for Find, type in =856 40<span class="math inline">\(3Full text:\)</span>u</li>
+<li>In the search box for Replace, type in =856 40<span class="math inline">\(3Full text:\)</span>uhttps://proxy.edu?url=</li>
+<li>Undo those changes.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="find-and-replace" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="find-and-replace" class="callout-inner">
+<h3 class="callout-title">Find and Replace<a class="anchor" aria-label="anchor" href="#find-and-replace"></a>
+</h3>
+<div class="callout-content">
+<p>Remember to always verify that the search results of the Find or Find
+All. Find or Find all will search that exact phrase or string that you
+put into the search box either on that page (Find) or in every record
+(Find all).</p>
+</div>
+</div>
+</div>
+</div>
 <div class="section level3">
 <h3 id="adddelete-a-marc-field">Add/Delete a MARC field<a class="anchor" aria-label="anchor" href="#adddelete-a-marc-field"></a>
 </h3>
@@ -1568,14 +1668,14 @@ second indicator 4 to the MARC data.</li>
 </div>
 </div>
 </div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -1629,14 +1729,14 @@ a number<a class="anchor" aria-label="anchor" href="#delete-a-range-of-marc-fiel
 </div>
 </div>
 </div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3">
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Verify your file has multiple 9XX fields by using the Field Count
@@ -1715,14 +1815,14 @@ Library of Congress Organization Code, update the code to XYZ.</li>
 </div>
 </div>
 </div>
-<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4">
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -1793,14 +1893,14 @@ the <code>856$u</code>.</li>
 </div>
 </div>
 </div>
-<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
-  <h4 class="accordion-header" id="headingSolution4">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5">
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools → Build New Field</li>
@@ -1845,14 +1945,14 @@ fields 050 that have a first indicator blank and a second indicator
 </div>
 </div>
 </div>
-<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
-  <h4 class="accordion-header" id="headingSolution5">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
+  <h4 class="accordion-header" id="headingSolution6">
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -1865,58 +1965,6 @@ Leave the Field data box blank</li>
 <code>050  14</code>?</li>
 </ol>
 </div>
-</div>
-</div>
-</div>
-</div>
-</section><section id="rda-helper"><h2 class="section-heading">RDA Helper<a class="anchor" aria-label="anchor" href="#rda-helper"></a>
-</h2>
-<hr class="half-width">
-<p>Records aren’t created equal in that we encounter MARC data that
-follows different descriptive cataloging standards. There are a number
-of records cataloged according to the AACR2 standard or even AACR or
-earlier. Sometimes it is necessary to make sure these records follow the
-current RDA descriptive cataloging standard. MarcEdit lets you do this
-through the function called RDA Helper.</p>
-<p>To run the RDA Helper, go to Tools and select RDA Helper. In the
-window that opens, you can pick and choose how you would like to
-transform your records to align better with the RDA descriptive
-standard. For example, you can add the RDA fields 336, 337, and 338 for
-content, media, and carrier types. You can update the MARC field 040 to
-include the <code>$e</code> rda and delete the GMD statement. You can
-also evaluate the 260/264.</p>
-<figure><img src="fig/rdaHelper.png" alt="MarcEdit RDA Helper" class="figure mx-auto d-block"></figure><div id="run-the-rda-helper-on-your-marc-data" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="run-the-rda-helper-on-your-marc-data" class="callout-inner">
-<h3 class="callout-title">Run the RDA Helper on your MARC data<a class="anchor" aria-label="anchor" href="#run-the-rda-helper-on-your-marc-data"></a>
-</h3>
-<div class="callout-content">
-<ol style="list-style-type: decimal">
-<li>Run the RDA Helper with these settings: Add 336, 337, 338; Modify
-the 040; Evaluate the 260/264; Always use the copyright symbol; Expand
-abbreviations; Remove the GMD.</li>
-</ol>
-</div>
-</div>
-</div>
-<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
-  <h4 class="accordion-header" id="headingSolution6">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
-<div class="accordion-body">
-<ol style="list-style-type: decimal">
-<li>Go to Tools in the upper menu in the MarcEditor</li>
-<li>Select RDA Helper</li>
-<li>Check off the settings listed above</li>
-<li>Click the OK button.</li>
-<li>Check your MARC data. Do you see the changes?</li>
-</ol>
 </div>
 </div>
 </div>
@@ -1941,8 +1989,12 @@ Records<a class="anchor" aria-label="anchor" href="#batch-editing-fixed-fields-i
 </h3>
 <div class="callout-content">
 <p>Sometimes it is necessary to change a fixed field for all records in
-your MARC data. This is possible using the Replace function and regular
-expressions which will be covered in Lesson 09.</p>
+your MARC data. You can use the Edit Field function. For this, you will
+need to know the position of the fixed field. For this, you can consult
+the <a href="https://www.oclc.org/bibformats/en.html" class="external-link">OCLC Bibliographic
+Standards and Formats</a> or <a href="https://www.loc.gov/marc/bibliographic/" class="external-link">the Library of Congress
+Bibliographic Marc Standard</a>. This is also possible using the Replace
+function and regular expressions which will be covered in Lesson 09.</p>
 </div>
 </div>
 </div>
@@ -1983,64 +2035,6 @@ specify the location and file name for your new <code>.mrc</code> file.
 Set the character encoding options as required, and then click Execute.
 Once compiled, you will see a message under Results specifying the
 number of records in the new <code>.mrc</code> file.</p>
-</div>
-</section><section id="select-records-to-edit"><h2 class="section-heading">Select Records to Edit<a class="anchor" aria-label="anchor" href="#select-records-to-edit"></a>
-</h2>
-<hr class="half-width">
-<p>There are times when you need to work on a subset of your MARC data.
-The Select Records for Edit function allows you do this.</p>
-<p>Go to File and click on Select Records for Edit. In the window, you
-will see Display Field in the lower right hand corner. This is where you
-enter the MARC field you want to see displayed once you import your
-file. You can enter a MARC field and subfield or just a MARC field. The
-MARC field and/or subfield that you add in this box will provide the
-criteria you need to select records you want to edit. Once you have
-entered the Display Field, click on Import File. This will import the
-MARC (<code>.mrk</code>) file that you are currently working on. You can
-select another MARC (<code>.mrk</code>) file in the box Source MARC
-file.</p>
-<figure><img src="fig/selectRecordsForEdit.png" alt="MarcEdit empty Select Records for Edit dialog" class="figure mx-auto d-block"></figure><p>To select only the records you want to edit, enter your criteria in
-the Search box and click the magnifying glass icon. Records in your file
-where the contents of the selected Display Field match your search
-criteria will be selected. Click on Export Selected to export these
-records and edit them.</p>
-<figure><img src="fig/example_selectRecordsForEdit.png" alt="MarcEdit completed Select Records for Edit dialog" class="figure mx-auto d-block"></figure><p>When saving the exported records you can choose to save the file as a
-new record subset (Save As), or merge the edits back into your complete
-record set (Save).</p>
-<div id="lets-add-cutters-to-call-numbers-in-the-099" class="callout checklist">
-<div class="callout-square">
-<i class="callout-icon" data-feather="check-square"></i>
-</div>
-<div id="lets-add-cutters-to-call-numbers-in-the-099" class="callout-inner">
-<h3 class="callout-title">Let’s add cutters to call numbers in the
-099<a class="anchor" aria-label="anchor" href="#lets-add-cutters-to-call-numbers-in-the-099"></a>
-</h3>
-<div class="callout-content">
-<ol style="list-style-type: decimal">
-<li>Go to File → Select Records to Edit</li>
-<li>In the new window, type in <code>099$b</code> in the Field
-Display</li>
-<li>Click on Import File</li>
-<li>In the search box, type in “Display field not found” to locate all
-records missing <code>099$b</code>
-</li>
-<li>Click the magnifying glass icon. A pop up window will indicate the
-number of records selected that match your criteria. Click OK.</li>
-<li>Click on Export Selected. A pop up window indicate that your
-selected records have been extracted. Click OK.</li>
-<li>A new MarcEditor window will open. Note the temporary file name at
-the top of the editor window indicating this file is distinct from your
-main file. In the new MarcEditor, go to Tools → Call Number tools →
-Cuttering Tools → Generate Cutters.</li>
-<li>In the field box enter 099 and click Process</li>
-<li>Check your results by using Find All <code>=099</code>
-</li>
-<li>Select File → Save. A pop up window will indicate your extracted
-data with edits has been saved back into your main file. Click OK.</li>
-</ol>
-</div>
-</div>
-</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -2056,6 +2050,7 @@ those fields.</li>
 <li>MarcEdit comes with an array of tools to manipulate data and
 validate MARC.</li>
 </ul>
+</div>
 </div>
 </div>
 </div>
