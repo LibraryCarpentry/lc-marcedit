@@ -253,7 +253,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="07-manipulating-MARC-data-advanced.html">7. Manipulating MARC data basics</a>
+        <a href="07-manipulating-MARC-data-advanced.html">7. Manipulating MARC data advanced</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -634,7 +634,7 @@ changed in Preferences.<a class="anchor" aria-label="anchor" href="#name-three-o
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Click on the gear icon in the main window or go to Tools →
@@ -2058,12 +2058,12 @@ validate MARC.</li>
 </div>
 </div>
 </div>
-</section></section><section id="aio-07-manipulating-MARC-data-advanced"><p>Content from <a href="07-manipulating-MARC-data-advanced.html">Manipulating MARC data basics</a></p>
+</section></section><section id="aio-07-manipulating-MARC-data-advanced"><p>Content from <a href="07-manipulating-MARC-data-advanced.html">Manipulating MARC data advanced</a></p>
 <hr>
-<p> Last updated on 2023-10-05 | 
+<p> Last updated on 2023-10-06 | 
         
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/07-manipulating-MARC-data-advanced.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 25 minutes </p>
+<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 22 minutes </p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -2075,14 +2075,9 @@ validate MARC.</li>
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>How can MARC data be manipulated?</li>
-<li>How can fields, subfields, and/or indicators be added, changed, or
-removed?</li>
 <li>How can the RDA Helper be used?</li>
-<li>How can fixed fields be manipulated?</li>
 <li>How can Select Records for Edit be used to manipulate a subset of
 your MARC file?</li>
-<li>What is the difference between save and compile?</li>
 </ul>
 </div>
 </div>
@@ -2092,380 +2087,15 @@ your MARC file?</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Explain how to add, update, and remove fields, subfields,
-indicators, and fixed fields</li>
-<li>Explain the functions RDA Helper and Select Records for Edit</li>
-<li>Explain the difference between save and compile</li>
-<li>Successfully manipulate MARC data</li>
-<li>Successfully save your MARC data</li>
-<li>Successfully compile your MARC data</li>
+<li>Explain RDA Helper and Select Records for Edit advanced
+functions</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section id="manipulating-marc-data"><h2 class="section-heading">Manipulating MARC data<a class="anchor" aria-label="anchor" href="#manipulating-marc-data"></a>
-</h2>
-<hr class="half-width">
-<p>We’ve seen how we can manually and individually edit records in the
-MarcEditor, however, MarcEdit provides a number of more powerful ways to
-manipulate our MARC data. Fields, subfields, indicators can be added,
-removed, or changed. Fixed fields can be corrected. Fields and subfields
-specific to RDA can be added while AACR2 conventions are removed. It is
-possible to work with a subset of MARC data and then incorporate those
-changes into the original whole MARC data set. The variations sometime
-seem endless and give more weight to the nickname of MarcEdit, the swiss
-army knife of MARC data.</p>
-<div class="section level3">
-<h3 id="adddelete-a-marc-field">Add/Delete a MARC field<a class="anchor" aria-label="anchor" href="#adddelete-a-marc-field"></a>
-</h3>
-<p>To add or delete a MARC field, go to Tools in the upper menu in the
-MarcEditor and select Add/Delete Field. This will open a new Batch
-Editing Tools window. The Add/Delete Field functions are on the same
-menu level and you will need to select the action of either add or
-delete using the buttons on the right hand side.</p>
-<p>In the top middle section of the window, there are two data entry
-fields: Field and Field Data. Enter the MARC field number you want to
-add or delete in the Field dialogue box. Then enter the indicators,
-subfields, and data in Field Data dialogue box. Remember to include the
-dollar sign to indicate a subfield.</p>
-<p><img src="../fig/addDeleteField.png" alt="MarcEdit empty Add/Delete Field dialog" class="figure"><img src="../fig/example_addDelete.png" alt="MarcEdit completed Add/Delete Field dialog" class="figure"></p>
-<p>To add the field, click the Add Field button and to delete any
-matching fields, click the Delete Field button.</p>
-<p>For both the Add Field and Delete Field functions there are a number
-of different options that can be applied to control the updates.</p>
-<p>The options to Add a Field include, if the field you are adding
-already exists, it can be inserted first in the list of those MARC
-fields or last. MARC fields can be added only if that MARC field is not
-already present in that record or based on the presence of other
-criteria found in other MARC fields. For example, a MARC field
-<code>655  \4$aElectronic books</code> can be added to only those
-records that are eBooks based on the data in the LDR or 008.</p>
-<p>The options to Delete a Field include removing duplicates, removing
-MARC fields based on field position, removing MARC fields that do not
-match what is entered in the Field Data, or removing invalid UTF-8 MARC
-fields. For example, to ensure that only the field
-<code>655  \4$aElectronic books</code>. is present in the MARC data, the
-option Remove if field data does not match can be selected.</p>
-<div id="add-and-then-delete-a-marc-field" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="add-and-then-delete-a-marc-field" class="callout-inner">
-<h3 class="callout-title">Add and then delete a MARC field<a class="anchor" aria-label="anchor" href="#add-and-then-delete-a-marc-field"></a>
-</h3>
-<div class="callout-content">
-<ol style="list-style-type: decimal">
-<li>Add a 655 for electronic books with first indicators blank and
-second indicator 4 to the MARC data.</li>
-<li>Delete that 655 that you just added.</li>
-</ol>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
-<div class="accordion-body">
-<ol style="list-style-type: decimal">
-<li>Go to Tools in the upper menu in the MarcEditor</li>
-<li>Select Add/Delete Field (F7)</li>
-<li>In the Field box enter 655, in the Field Data box enter
-<code>\4$aElectronic books</code>.</li>
-<li>Click Add Field. You can also preview this change by clicking on the
-arrow on the right of Add Field and selecting Preview in the 7.5 version
-of MarcEdit</li>
-<li>Check your MARC data. Was this MARC field added?</li>
-<li>To delete this field, go back to Tools and select Add/Delete Field
-(F7)</li>
-<li>In the Field box enter 655</li>
-<li>In the Field Data box enter <code>\4$aElectronic books</code>.</li>
-<li>Click on the Delete Field button. You can also preview this change
-by clicking on the arrow on the right side and selecting Preview in the
-7.5 version of MarcEdit</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-<div id="metacharacter-syntax-in-the-marceditor" class="callout callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="metacharacter-syntax-in-the-marceditor" class="callout-inner">
-<h3 class="callout-title">Metacharacter syntax in the MarcEditor<a class="anchor" aria-label="anchor" href="#metacharacter-syntax-in-the-marceditor"></a>
-</h3>
-<div class="callout-content">
-<p>Within the batch editing tools, MarcEdit uses the X metacharacter to
-represent a numeric range for selecting and editing fields. For example,
-if you enter 24X, that edit will act on fields 240-249; if you enter
-5XX, that edit will act on fields 500-599.</p>
-</div>
-</div>
-</div>
-<div id="delete-a-range-of-marc-fields-that-begin-with-a-number" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="delete-a-range-of-marc-fields-that-begin-with-a-number" class="callout-inner">
-<h3 class="callout-title">Delete a range of MARC fields that begin with
-a number<a class="anchor" aria-label="anchor" href="#delete-a-range-of-marc-fields-that-begin-with-a-number"></a>
-</h3>
-<div class="callout-content">
-<ol style="list-style-type: decimal">
-<li>Verify your data contains multiple 9XX fields.</li>
-<li>Delete all 9XX fields.</li>
-</ol>
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
-<div class="accordion-body">
-<ol style="list-style-type: decimal">
-<li>Verify your file has multiple 9XX fields by using the Field Count
-report (Reports → Field Count), or by using Find (Edit → Find “=9” →
-Find All)</li>
-<li>Go to Tools in the upper menu in the MarcEditor</li>
-<li>Select Add/Delete Field (F7)</li>
-<li>In the Field box add 9XX</li>
-<li>Click on the Delete Field button. You can also preview this change
-by clicking on the arrow on the right side and selecting Preview in the
-7.5 version of MarcEdit</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section level3">
-<h3 id="add-delete-or-change-information-for-a-subfield-in-a-marc-field">Add, Delete, or Change information for a subfield in a MARC
-field<a class="anchor" aria-label="anchor" href="#add-delete-or-change-information-for-a-subfield-in-a-marc-field"></a>
-</h3>
-<p>To edit subfield data within a given field, go to Tools and select
-Edit Subfield Data. A new Batch Editing Tools window will open (notice
-that this is the same window that opened for Add/Delete a field, you can
-also navigate between the MarcEdit Batch Editing Tools using the labels
-on the left hand side of the window). From here you can add a new
-subfield, delete a subfield, or replace text in a subfield. Set your
-desired subfield edit conditions by selecting the appropriate option(s)
-from the Search Options list.</p>
-<p>To add a subfield, enter the MARC field and then the subfield. The
-text you would like to add in that subfield is entered in Replace With
-box. Select New subfield only from the Search Options below and then
-click Replace Text. Even though you are adding a subfield, you still
-click Replace Text. For adding a subfield, the information that goes in
-that field doesn’t go in the box called Field Data, see the example
-below.</p>
-<p>To delete a subfield, enter the MARC field and then the subfield.
-Select Delete Subfield from the Search Options and then click Remove
-Text.</p>
-<p>To replace text in a subfield, enter the MARC field, the subfield,
-the text (or information) that needs to be changed in the Field Data
-box. Enter your updated text in the Replace with box. Click on Replace
-Text.</p>
-<p><img src="../fig/editSubfield.png" alt="MarcEdit empty edit subfield dialog" class="figure"><img src="../fig/example_Subfield.png" alt="MarcEdit completed edit subfield dialog" class="figure"></p>
-<div id="ability-to-preview-and-special-undo" class="callout callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="ability-to-preview-and-special-undo" class="callout-inner">
-<h3 class="callout-title">Ability to Preview and Special Undo<a class="anchor" aria-label="anchor" href="#ability-to-preview-and-special-undo"></a>
-</h3>
-<div class="callout-content">
-<p>As of version 7.5, you can preview all of these changes before making
-them. If you complete a batch edit that produces unexpected or
-undesirable results, you can perform a Special Undo by selecting Edit →
-Special Undo. This will only on your most recent batch edit. If you
-perform an action after your batch edit, Special Undo will not undo your
-batch change but the action you just performed.</p>
-</div>
-</div>
-</div>
-<div id="add-and-then-delete-a-marc-subfield" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="add-and-then-delete-a-marc-subfield" class="callout-inner">
-<h3 class="callout-title">Add and then Delete a MARC subfield<a class="anchor" aria-label="anchor" href="#add-and-then-delete-a-marc-subfield"></a>
-</h3>
-<div class="callout-content">
-<ol style="list-style-type: decimal">
-<li>Change the <code>$5</code> for the MARC field 500 from FU to your
-own Library of Congress Organization Code. If you are unsure of your
-Library of Congress Organization Code, update the code to XYZ.</li>
-<li>Delete that <code>$5</code> that you just changed.</li>
-</ol>
-</div>
-</div>
-</div>
-<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
-<div class="accordion-body">
-<ol style="list-style-type: decimal">
-<li>Go to Tools in the upper menu in the MarcEditor</li>
-<li>Select Edit Subfield Data (F9)</li>
-<li>Add 500 in the Field box, 5 in the Subfield box, FU in the Field
-Data box, and your LC Organization Code in the Replace With box</li>
-<li>Click on the Replace Text button.</li>
-<li>Check your MARC data. Was FU changed to your LC Organization
-Code?</li>
-<li>To delete this subfield, go back to Tools and select Edit Subfield
-Data (F9)</li>
-<li>Enter 500 in the Field box, 5 in the Subfield box</li>
-<li>Click on the Remove Text button.</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-<div id="building-a-marc-field" class="callout callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="building-a-marc-field" class="callout-inner">
-<h3 class="callout-title">Building a MARC field<a class="anchor" aria-label="anchor" href="#building-a-marc-field"></a>
-</h3>
-<div class="callout-content">
-<p>Sometimes it is necessary to create a new MARC field based on the
-content of existing MARC fields. This is possible using the function
-called, Build New Field. <img src="../fig/buildNewField.png" alt="Build New Field Window" class="figure"></p>
-</div>
-</div>
-</div>
-<div id="lets-build-a-new-035-9a-using-the-data-from-the-001-and-static-data" class="callout checklist">
-<div class="callout-square">
-<i class="callout-icon" data-feather="check-square"></i>
-</div>
-<div id="lets-build-a-new-035-9a-using-the-data-from-the-001-and-static-data" class="callout-inner">
-<h3 class="callout-title">Let’s build a new <code>035 9\$a</code> using
-the data from the 001 and static data<a class="anchor" aria-label="anchor" href="#lets-build-a-new-035-9a-using-the-data-from-the-001-and-static-data"></a>
-</h3>
-<div class="callout-content">
-<ol style="list-style-type: decimal">
-<li>Go to Tools → Build New Field</li>
-<li>In the new window, in the field box, type in
-<code>=035  9\$a(LCMarcEdit){001}</code>
-</li>
-<li>Select the box to “Always add this field”</li>
-<li>Click Process</li>
-</ol>
-</div>
-</div>
-</div>
-<div id="use-the-build-new-field-to-add-a-proxy-to-the-856u" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="use-the-build-new-field-to-add-a-proxy-to-the-856u" class="callout-inner">
-<h3 class="callout-title">Use the Build New Field to add a proxy to the
-<code>856$u</code><a class="anchor" aria-label="anchor" href="#use-the-build-new-field-to-add-a-proxy-to-the-856u"></a>
-</h3>
-<div class="callout-content">
-<ol style="list-style-type: decimal">
-<li>For eResources, it is sometimes necessary to add your institution’s
-proxy information to the url in the <code>856$u</code>. Add
-<code>https://exampleproxy.edu/login?url=</code> prefix to the url in
-the <code>856$u</code>.</li>
-</ol>
-</div>
-</div>
-</div>
-<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
-  <h4 class="accordion-header" id="headingSolution4">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
-<div class="accordion-body">
-<ol style="list-style-type: decimal">
-<li>Go to Tools → Build New Field</li>
-<li>In the new window, in the field box, type in
-<code>=856  40\$uhttps://exampleproxy.edu/login?url={856$u}</code>
-</li>
-<li>Select the box to “Replace Existing Field”</li>
-<li>Click Process</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section level3">
-<h3 id="change-one-or-both-indicators-in-a-marc-field">Change one or both indicators in a MARC field<a class="anchor" aria-label="anchor" href="#change-one-or-both-indicators-in-a-marc-field"></a>
-</h3>
-<p>Sometimes it is necessary to change one or both indicators of a MARC
-field. To edit field indicators, go to Tools and select Edit Indicators.
-This will open a new Batch Editing Tools window. Enter the MARC field
-and the indicators that you would like to change. Enter the new
-indicators you want in the Replace With Indicators box. Here you will
-want to be careful of the combinations of indicators. If you leave the
-Indicators box blank and add indicators in the Replace With Indicators
-box, all the indicators for that MARC field will be changed to the
-indicators entered in the Replace With Indicators box.</p>
-<p><img src="../fig/editIndicators.png" alt="MarcEdit empty edit indicators dialog" class="figure"><img src="../fig/example_editIndicators.png" alt="MarcEdit completed edit indicators dialog" class="figure"></p>
-<div id="change-an-indicator-for-a-marc-field-in-your-marc-data" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="change-an-indicator-for-a-marc-field-in-your-marc-data" class="callout-inner">
-<h3 class="callout-title">Change an indicator for a MARC field in your
-MARC data<a class="anchor" aria-label="anchor" href="#change-an-indicator-for-a-marc-field-in-your-marc-data"></a>
-</h3>
-<div class="callout-content">
-<ol style="list-style-type: decimal">
-<li>Change the first indicator of the MARC field 050 to 1 for those MARC
-fields 050 that have a first indicator blank and a second indicator
-4.</li>
-</ol>
-</div>
-</div>
-</div>
-<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
-  <h4 class="accordion-header" id="headingSolution5">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
-<div class="accordion-body">
-<ol style="list-style-type: decimal">
-<li>Go to Tools in the upper menu in the MarcEditor</li>
-<li>Select Edit Indicators (F8)</li>
-<li>Add <code>050</code> in the Field box, <code>\4</code> in the
-Indicators box, and <code>14</code> in the Replace With Indicators box.
-Leave the Field data box blank</li>
-<li>Click on the Replace button.</li>
-<li>Check your MARC data. Were the <code>050 \4</code> updated to be
-<code>050  14</code>?</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section><section id="rda-helper"><h2 class="section-heading">RDA Helper<a class="anchor" aria-label="anchor" href="#rda-helper"></a>
+<section id="rda-helper"><h2 class="section-heading">RDA Helper<a class="anchor" aria-label="anchor" href="#rda-helper"></a>
 </h2>
 <hr class="half-width">
 <p>Records aren’t created equal in that we encounter MARC data that
@@ -2497,14 +2127,14 @@ abbreviations; Remove the GMD.</li>
 </div>
 </div>
 </div>
-<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
-  <h4 class="accordion-header" id="headingSolution6">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2516,69 +2146,6 @@ abbreviations; Remove the GMD.</li>
 </div>
 </div>
 </div>
-</div>
-</section><section id="working-with-marc-fixed-fields"><h2 class="section-heading">Working with MARC fixed fields<a class="anchor" aria-label="anchor" href="#working-with-marc-fixed-fields"></a>
-</h2>
-<hr class="half-width">
-<p>Working with fixed fields can be difficult. In the MarcEditor, you
-can edit one fixed field using the easy editing window. If you put your
-cursor on that fixed field, such as an 008 or 006, then go to Edit and
-select Field 006 or Field 008. This will open up a window where you can
-edit the fixed field for that specific MARC record.</p>
-<p>You can also batch insert an 006 or 008 into your records. To insert
-a fixed field go to Edit and select the appropriate Insert/Edit.</p>
-<figure><img src="../fig/fixedFields.png" alt="MarcEdit fixed fields editor" class="figure mx-auto d-block"></figure><div id="batch-editing-fixed-fields-in-multiple-marc-records" class="callout callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="batch-editing-fixed-fields-in-multiple-marc-records" class="callout-inner">
-<h3 class="callout-title">Batch Editing Fixed Fields in Multiple MARC
-Records<a class="anchor" aria-label="anchor" href="#batch-editing-fixed-fields-in-multiple-marc-records"></a>
-</h3>
-<div class="callout-content">
-<p>Sometimes it is necessary to change a fixed field for all records in
-your MARC data. This is possible using the Replace function and regular
-expressions which will be covered in Lesson 09.</p>
-</div>
-</div>
-</div>
-</section><section id="saving-compiling-and-version-control"><h2 class="section-heading">Saving, Compiling and Version Control<a class="anchor" aria-label="anchor" href="#saving-compiling-and-version-control"></a>
-</h2>
-<hr class="half-width">
-<p>The MARC data that you manipulate in the MarcEditor is in a human and
-computer readable mnemonic <code>.mrk</code> file format that was broken
-from the original binary <code>.mrc</code> file. You will notice that
-the file name of the file you’re working on, displayed at top of the
-MarcEditor, has the file extension <code>.mrk</code>. If you look at the
-file in your file directory, the file icon color is blue whereas the
-binary <code>.mrc</code> MARC file icon is purple.</p>
-<div class="section level3">
-<h3 id="saving">Saving<a class="anchor" aria-label="anchor" href="#saving"></a>
-</h3>
-<p>When you save in the MarcEditor, you are saving your latest changes
-as a <code>.mrk</code> file. Using File → Save will save edits into your
-current <code>.mrk</code> file, overwriting the original. To keep a copy
-of your original <code>.mrk</code> data, select File → Save As and
-choose a new file name for your edited records.</p>
-</div>
-<div class="section level3">
-<h3 id="compiling">Compiling<a class="anchor" aria-label="anchor" href="#compiling"></a>
-</h3>
-<p>To save your edited records back into a MARC binary <code>.mrc</code>
-file (the file format typically required to load MARC records in
-external systems such as your ILS or LSP) use the compile feature.
-Select File → Compile File into MARC. Choose a new file name for your
-edited <code>.mrc</code> file. Using the same file name as your original
-<code>.mrc</code> file will overwrite the unedited file.</p>
-<p>Records can also be compiled outside of the MarcEditor using the
-MarcMaker tool. To use the MarcMaker, from the Main Menu select MARC
-Tools. In the MARC Tools window, under Select Operation choose
-MarcMaker. Under Select Data to Process, in the Open box, select the
-<code>.mrk</code> file you’d like to compile. In the Save As box,
-specify the location and file name for your new <code>.mrc</code> file.
-Set the character encoding options as required, and then click Execute.
-Once compiled, you will see a message under Results specifying the
-number of records in the new <code>.mrc</code> file.</p>
 </div>
 </section><section id="select-records-to-edit"><h2 class="section-heading">Select Records to Edit<a class="anchor" aria-label="anchor" href="#select-records-to-edit"></a>
 </h2>
@@ -2646,9 +2213,8 @@ data with edits has been saved back into your main file. Click OK.</li>
 </h3>
 <div class="callout-content">
 <ul>
-<li>MarcEdit can be used to edit any part of the MARC data including the
-Leader, fixed fields, fields, indicators, subfields and the content in
-those fields.</li>
+<li>Advanced reports and functions are available in MarcEdit to apply
+global and selective edits</li>
 <li>MarcEdit comes with an array of tools to manipulate data and
 validate MARC.</li>
 </ul>
@@ -2824,7 +2390,7 @@ helper and removes 9XX fields<a class="anchor" aria-label="anchor" href="#create
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2885,7 +2451,7 @@ that in your Task.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -3389,8 +2955,8 @@ are working as intended</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/instructor/aio.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/instructor/aio.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2023-10-05",
-  "datePublished": "2023-10-05"
+  "dateModified": "2023-10-06",
+  "datePublished": "2023-10-06"
 }
 
   </script><script>
