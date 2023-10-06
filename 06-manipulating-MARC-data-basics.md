@@ -71,8 +71,8 @@ If you want to Find or Find all a MARC field, you will need to include the equal
 ## Solution
 
 1. Click Edit->Replace
-2. In the search box for Find, type in =856  40$3Full text:$u
-3. In the search box for Replace, type in =856  40$3Full text:$uhttps://proxy.edu?url=
+2. In the search box for Find, type in =856  40\$3Full text:\$u
+3. In the search box for Replace, type in =856  40\$3Full text:\$uhttps://proxy.edu?url=
 4. Undo those changes.
 
 :::::::::::::::::::::::::
