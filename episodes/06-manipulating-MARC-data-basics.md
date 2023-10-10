@@ -8,7 +8,6 @@ exercises: 6
 
 - Explain how to find, find all, and replace
 - Explain how to add, update, and remove fields, subfields, indicators, and fixed fields
-- Explain the functions RDA Helper and Select Records for Edit
 - Explain the difference between save and compile
 - Successfully manipulate MARC data
 - Successfully save your MARC data
@@ -20,9 +19,7 @@ exercises: 6
 
 - How can MARC data be manipulated?
 - How can fields, subfields, and/or indicators be added, changed, or removed?
-- How can the RDA Helper be used?
 - How can fixed fields be manipulated?
-- How can Select Records for Edit be used to manipulate a subset of your MARC file?
 - What is the difference between save and compile?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -125,8 +122,6 @@ The options to Delete a Field include removing duplicates, removing MARC fields 
 7. In the Field box enter 655
 8. In the Field Data box enter `\4$aElectronic books`.
 9. Click on the Delete Field button. You can also preview this change by clicking on the arrow on the right side and selecting Preview in the 7.5 version of MarcEdit
-  
-  
 
 :::::::::::::::::::::::::
 
@@ -213,47 +208,7 @@ This will only on your most recent batch edit. If you perform an action after yo
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::::  callout
 
-## Building a MARC field
-
-Sometimes it is necessary to create a new MARC field based on the content of existing MARC fields.
-This is possible using the function called, Build New Field.
-![](fig/buildNewField.png){alt='Build New Field Window'}
-
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::  checklist
-
-## Let's build a new `035 9\$a` using the data from the 001 and static data
-
-1. Go to Tools → Build New Field
-2. In the new window, in the field box, type in `=035  9\$a(LCMarcEdit){001}`
-3. Select the box to "Always add this field"
-4. Click Process
-  
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Use the Build New Field to add a proxy to the `856$u`
-
-1. For eResources, it is sometimes necessary to add your institution's proxy information to the url in the `856$u`. Add `https://exampleproxy.edu/login?url=` prefix to the url in the `856$u`.
-
-:::::::::::::::  solution
-
-## Solution
-
-1. Go to Tools → Build New Field
-2. In the new window, in the field box, type in `=856  40\$uhttps://exampleproxy.edu/login?url={856$u}`
-3. Select the box to "Replace Existing Field"
-4. Click Process
-  
-  
-
-:::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
