@@ -16,15 +16,15 @@ exercises: 3
 - How can the RDA Helper be used?
 - How can Select Records for Edit be used to manipulate a subset of your MARC file?
 
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::::  callout
 
 ## Building a MARC field
 
+:::::::::::::::::::::::::::::::::::::::::  callout
+
 Sometimes it is necessary to create a new MARC field based on the content of existing MARC fields.
 This is possible using the function called, Build New Field.
+
 ![](fig/buildNewField.png){alt='Build New Field Window'}
 
 
