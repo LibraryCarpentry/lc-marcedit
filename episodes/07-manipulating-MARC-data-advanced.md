@@ -1,63 +1,20 @@
 ---
 title: Manipulating MARC data advanced
-teaching: 25
-exercises: 3
+teaching: 20
+exercises: 2
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain Build New Field, RDA Helper and Select Records for Edit advanced functions
+- Explain RDA Helper and Select Records for Edit advanced functions
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- How can Build New Field be used to combine elements from existing MARC fields into a new field?
 - How can the RDA Helper be used?
 - How can Select Records for Edit be used to manipulate a subset of your MARC file?
 
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::::  callout
-
-## Building a MARC field
-
-Sometimes it is necessary to create a new MARC field based on the content of existing MARC fields.
-This is possible using the function called, Build New Field.
-![](fig/buildNewField.png){alt='Build New Field Window'}
-
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::  checklist
-
-## Let's build a new `035 9\$a` using the data from the 001 and static data
-
-1. Go to Tools → Build New Field
-2. In the new window, in the field box, type in `=035  9\$a(LCMarcEdit){001}`
-3. Select the box to "Always add this field"
-4. Click Process
-  
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Use the Build New Field to add a proxy to the `856$u`
-
-1. For eResources, it is sometimes necessary to add your institution's proxy information to the url in the `856$u`. Add `https://exampleproxy.edu/login?url=` prefix to the url in the `856$u`.
-
-:::::::::::::::  solution
-
-## Solution
-
-1. Go to Tools → Build New Field
-2. In the new window, in the field box, type in `=856  40\$uhttps://exampleproxy.edu/login?url={856$u}`
-3. Select the box to "Replace Existing Field"
-4. Click Process
-  
-:::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -85,6 +42,8 @@ To run the RDA Helper, go to Tools and select RDA Helper. In the window that ope
 4. Click the OK button.
 5. Check your MARC data. Do you see the changes?
   
+  
+
 :::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -93,8 +52,6 @@ To run the RDA Helper, go to Tools and select RDA Helper. In the window that ope
 ## Select Records to Edit
 
 There are times when you need to work on a subset of your MARC data. The Select Records for Edit function allows you do this.
-
-Before using the Select Records for Edit function, save your file to capture recent edits.
 
 Go to File and click on Select Records for Edit. In the window, you will see Display Field in the lower right hand corner. This is where you enter the MARC field you want to see displayed once you import your file. You can enter a MARC field and subfield or just a MARC field. The MARC field and/or subfield that you add in this box will provide the criteria you need to select records you want to edit. Once you have entered the Display Field, click on Import File. This will import the MARC (`.mrk`) file that you are currently working on. You can select another MARC (`.mrk`) file in the box Source MARC file.
 
