@@ -19,12 +19,15 @@ exercises: 3
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+## Build New Field
+
 :::::::::::::::::::::::::::::::::::::::::  callout
 
 ## Building a MARC field
 
 Sometimes it is necessary to create a new MARC field based on the content of existing MARC fields.
 This is possible using the function called, Build New Field.
+
 ![](fig/buildNewField.png){alt='Build New Field Window'}
 
 
