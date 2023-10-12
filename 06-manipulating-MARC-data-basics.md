@@ -8,7 +8,6 @@ exercises: 6
 
 - Explain how to find, find all, and replace
 - Explain how to add, update, and remove fields, subfields, indicators, and fixed fields
-- Explain the functions RDA Helper and Select Records for Edit
 - Explain the difference between save and compile
 - Successfully manipulate MARC data
 - Successfully save your MARC data
@@ -20,9 +19,7 @@ exercises: 6
 
 - How can MARC data be manipulated?
 - How can fields, subfields, and/or indicators be added, changed, or removed?
-- How can the RDA Helper be used?
 - How can fixed fields be manipulated?
-- How can Select Records for Edit be used to manipulate a subset of your MARC file?
 - What is the difference between save and compile?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -125,8 +122,6 @@ The options to Delete a Field include removing duplicates, removing MARC fields 
 7. In the Field box enter 655
 8. In the Field Data box enter `\4$aElectronic books`.
 9. Click on the Delete Field button. You can also preview this change by clicking on the arrow on the right side and selecting Preview in the 7.5 version of MarcEdit
-  
-  
 
 :::::::::::::::::::::::::
 
@@ -184,6 +179,7 @@ To replace text in a subfield, enter the MARC field, the subfield, the text (or 
 As of version 7.5, you can preview all of these changes before making them.
 If you complete a batch edit that produces unexpected or undesirable results, you can perform a Special Undo by selecting Edit → Special Undo.
 This will only on your most recent batch edit. If you perform an action after your batch edit, Special Undo will not undo your batch change but the action you just performed.
+Undo and Special Undo are different. Undo undoes a manual edit whereas Special Undo undoes a bulk edit. 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -206,50 +202,6 @@ This will only on your most recent batch edit. If you perform an action after yo
 6. To delete this subfield, go back to Tools and select Edit Subfield Data (F9)
 7. Enter 500 in the Field box, 5 in the Subfield box
 8. Click on the Remove Text button.
-  
-  
-
-:::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::::  callout
-
-## Building a MARC field
-
-Sometimes it is necessary to create a new MARC field based on the content of existing MARC fields.
-This is possible using the function called, Build New Field.
-![](fig/buildNewField.png){alt='Build New Field Window'}
-
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::  checklist
-
-## Let's build a new `035 9\$a` using the data from the 001 and static data
-
-1. Go to Tools → Build New Field
-2. In the new window, in the field box, type in `=035  9\$a(LCMarcEdit){001}`
-3. Select the box to "Always add this field"
-4. Click Process
-  
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Use the Build New Field to add a proxy to the `856$u`
-
-1. For eResources, it is sometimes necessary to add your institution's proxy information to the url in the `856$u`. Add `https://exampleproxy.edu/login?url=` prefix to the url in the `856$u`.
-
-:::::::::::::::  solution
-
-## Solution
-
-1. Go to Tools → Build New Field
-2. In the new window, in the field box, type in `=856  40\$uhttps://exampleproxy.edu/login?url={856$u}`
-3. Select the box to "Replace Existing Field"
-4. Click Process
   
   
 
@@ -289,9 +241,7 @@ Sometimes it is necessary to change one or both indicators of a MARC field. To e
 
 ## Working with MARC fixed fields
 
-Working with fixed fields can be difficult. In the MarcEditor, you can edit one fixed field using the easy editing window. If you put your cursor on that fixed field, such as an 008 or 006, then go to Edit and select Field 006 or Field 008. This will open up a window where you can edit the fixed field for that specific MARC record.
-
-You can also batch insert an 006 or 008 into your records. To insert a fixed field go to Edit and select the appropriate Insert/Edit.
+Working with fixed fields can be difficult. In the MarcEditor, you can edit one fixed field at a time using the easy editing window. If you put your cursor on that fixed field, such as an 008 or 006, then go to Edit and select Field 006 or Field 008. This will open up a window where you can edit the fixed field for that specific MARC record. To add one fixed field, put your cursor on the line where you want that fixed field inserted, go to Edit and then select Field 006 or 008. In the window, edit the fields for that specific record.
 
 ![](fig/fixedFields.png){alt='MarcEdit fixed fields editor'}
 
@@ -300,6 +250,8 @@ You can also batch insert an 006 or 008 into your records. To insert a fixed fie
 ## Batch Editing Fixed Fields in Multiple MARC Records
 
 Sometimes it is necessary to change a fixed field for all records in your MARC data. You can use the Edit Field function. For this, you will need to know the position of the fixed field. For this, you can consult the [OCLC Bibliographic Standards and Formats](https://www.oclc.org/bibformats/en.html) or [the Library of Congress Bibliographic Marc Standard](https://www.loc.gov/marc/bibliographic/). This is also possible using the Replace function and regular expressions which will be covered in Lesson 09.
+
+If you need to add a fixed field, you can use the Tools and select Add/Delete. You will need to have the 006 already formed. For example, you can add one 006 using the method explained above, copy that, and then use the Tools, Add field, to then add the 006. Remember that fixed fields don't have indicators.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -323,5 +275,3 @@ Records can also be compiled outside of the MarcEditor using the MarcMaker tool.
 - MarcEdit comes with an array of tools to manipulate data and validate MARC.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
