@@ -209,10 +209,6 @@ Undo and Special Undo are different. Undo undoes a manual edit whereas Special U
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
 ### Change one or both indicators in a MARC field
 
 Sometimes it is necessary to change one or both indicators of a MARC field. To edit field indicators, go to Tools and select Edit Indicators. This will open a new Batch Editing Tools window. Enter the MARC field and the indicators that you would like to change. Enter the new indicators you want in the Replace With Indicators box. Here you will want to be careful of the combinations of indicators. If you leave the Indicators box blank and add indicators in the Replace With Indicators box, all the indicators for that MARC field will be changed to the indicators entered in the Replace With Indicators box.
@@ -279,5 +275,3 @@ Records can also be compiled outside of the MarcEditor using the MarcMaker tool.
 - MarcEdit comes with an array of tools to manipulate data and validate MARC.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
