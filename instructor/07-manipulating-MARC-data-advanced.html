@@ -86,11 +86,11 @@
   Library Carpentry: MarcEdit
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 58%" class="percentage">
-    58%
+<aside class="col-md-12 lesson-progress"><div style="width: 57%" class="percentage">
+    57%
   </div>
   <div class="progress library">
-    <div class="progress-bar library" role="progressbar" style="width: 58%" aria-valuenow="58" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar library" role="progressbar" style="width: 57%" aria-valuenow="57" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -304,13 +304,13 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Manipulating MARC data advanced</h1>
-        <p> Last updated on 2023-10-06 | 
+        <p> Last updated on 2023-10-12 | 
         
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/07-manipulating-MARC-data-advanced.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
         
         
-        <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 22 minutes </p>
+        <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 28 minutes </p>
         
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -325,7 +325,9 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>How can the RDA Helper be used?</li>
+<ul><li>How can Build New Field be used to combine elements from existing
+MARC fields into a new field?</li>
+<li>How can the RDA Helper be used?</li>
 <li>How can Select Records for Edit be used to manipulate a subset of
 your MARC file?</li>
 </ul></div>
@@ -335,10 +337,77 @@ your MARC file?</li>
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Explain RDA Helper and Select Records for Edit advanced
-functions</li>
+<ul><li>Explain Build New Field, RDA Helper and Select Records for Edit
+advanced functions</li>
 </ul></div>
 </div>
+</div>
+</div>
+</div>
+<div id="building-a-marc-field" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="building-a-marc-field" class="callout-inner">
+<h3 class="callout-title">Building a MARC field<a class="anchor" aria-label="anchor" href="#building-a-marc-field"></a>
+</h3>
+<div class="callout-content">
+<p>Sometimes it is necessary to create a new MARC field based on the
+content of existing MARC fields. This is possible using the function
+called, Build New Field. <img src="../fig/buildNewField.png" alt="Build New Field Window" class="figure"></p>
+</div>
+</div>
+</div>
+<div id="lets-build-a-new-035-9a-using-the-data-from-the-001-and-static-data" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="lets-build-a-new-035-9a-using-the-data-from-the-001-and-static-data" class="callout-inner">
+<h3 class="callout-title">Let’s build a new <code>035 9\$a</code> using
+the data from the 001 and static data<a class="anchor" aria-label="anchor" href="#lets-build-a-new-035-9a-using-the-data-from-the-001-and-static-data"></a>
+</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal"><li>Go to Tools → Build New Field</li>
+<li>In the new window, in the field box, type in
+<code>=035  9\$a(LCMarcEdit){001}</code>
+</li>
+<li>Select the box to “Always add this field”</li>
+<li>Click Process</li>
+</ol></div>
+</div>
+</div>
+<div id="use-the-build-new-field-to-add-a-proxy-to-the-856u" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="use-the-build-new-field-to-add-a-proxy-to-the-856u" class="callout-inner">
+<h3 class="callout-title">Use the Build New Field to add a proxy to the
+<code>856$u</code><a class="anchor" aria-label="anchor" href="#use-the-build-new-field-to-add-a-proxy-to-the-856u"></a>
+</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal"><li>For eResources, it is sometimes necessary to add your institution’s
+proxy information to the url in the <code>856$u</code>. Add
+<code>https://exampleproxy.edu/login?url=</code> prefix to the url in
+the <code>856$u</code>.</li>
+</ol></div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  Show me the solution
+  </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<ol style="list-style-type: decimal"><li>Go to Tools → Build New Field</li>
+<li>In the new window, in the field box, type in
+<code>=856  40\$uhttps://exampleproxy.edu/login?url={856$u}</code>
+</li>
+<li>Select the box to “Replace Existing Field”</li>
+<li>Click Process</li>
+</ol></div>
 </div>
 </div>
 </div>
@@ -371,14 +440,14 @@ abbreviations; Remove the GMD.</li>
 </ol></div>
 </div>
 </div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Go to Tools in the upper menu in the MarcEditor</li>
 <li>Select RDA Helper</li>
@@ -393,6 +462,8 @@ abbreviations; Remove the GMD.</li>
 </h2>
 <hr class="half-width"><p>There are times when you need to work on a subset of your MARC data.
 The Select Records for Edit function allows you do this.</p>
+<p>Before using the Select Records for Edit function, save your file to
+capture recent edits.</p>
 <p>Go to File and click on Select Records for Edit. In the window, you
 will see Display Field in the lower right hand corner. This is where you
 enter the MARC field you want to see displayed once you import your
@@ -517,8 +588,8 @@ validate MARC.</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/instructor/07-manipulating-MARC-data-advanced.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/instructor/07-manipulating-MARC-data-advanced.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2023-10-06",
-  "datePublished": "2023-10-10"
+  "dateModified": "2023-10-12",
+  "datePublished": "2023-10-12"
 }
 
   </script><script>
