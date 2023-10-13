@@ -105,7 +105,7 @@ Go to File and click on Select Records for Edit. In the window, you will see Dis
 
 To select only the records you want to edit, enter your criteria in the Search box and click the magnifying glass icon. Records in your file where the contents of the selected Display Field match your search criteria will be selected. Click on Export Selected to export these records and edit them. 
 
-![](fig/example_selectRecordsForEdit.png){alt='MarcEdit completed Select Records for Edit dialog'}
+![](fig/selectRecordsForEditon245.png){alt='MarcEdit completed Select Records for Edit using the MARC field 245 dialog'}
 
 When saving the exported records you can choose to save the file as a new record subset (Save As), or merge the edits back into your complete record set (Save). 
 
