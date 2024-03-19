@@ -632,7 +632,7 @@ changed in Preferences.<a class="anchor" aria-label="anchor" href="#name-three-o
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Click on the gear icon in the main window or go to Tools →
@@ -737,12 +737,12 @@ MarcEditor</li>
 <section id="working-with-marc-files"><h2 class="section-heading">Working with MARC files<a class="anchor" aria-label="anchor" href="#working-with-marc-files"></a>
 </h2>
 <hr class="half-width">
-<div id="callout1" class="callout">
+<div id="marc-file-types" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="marc-file-types">MARC file types<a class="anchor" aria-label="anchor" href="#marc-file-types"></a>
+<div id="marc-file-types" class="callout-inner">
+<h3 class="callout-title">MARC file types<a class="anchor" aria-label="anchor" href="#marc-file-types"></a>
 </h3>
 <div class="callout-content">
 <p>MarcEdit recognizes the following MARC file types:</p>
@@ -839,12 +839,12 @@ to MARC21XML, rely on eXtensible stylesheets. MarcEdit comes with
 several default stylesheets which come from those maintained by the
 Library of Congress. If you are familiar with stylesheets, you can also
 create your own.</p>
-<div id="callout2" class="callout">
+<div id="character-encoding" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="character-encoding">Character Encoding<a class="anchor" aria-label="anchor" href="#character-encoding"></a>
+<div id="character-encoding" class="callout-inner">
+<h3 class="callout-title">Character Encoding<a class="anchor" aria-label="anchor" href="#character-encoding"></a>
 </h3>
 <div class="callout-content">
 <p>To ensure the integrity of your data you need to select the correct
@@ -961,12 +961,12 @@ codes and the subfield text.
 </tr>
 </table>
 <p>Records in the MarcEditor display are separated by a blank line.</p>
-<div id="callout3" class="callout">
+<div id="marc-syntax-in-the-marceditor" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="marc-syntax-in-the-marceditor">MARC syntax in the MarcEditor<a class="anchor" aria-label="anchor" href="#marc-syntax-in-the-marceditor"></a>
+<div id="marc-syntax-in-the-marceditor" class="callout-inner">
+<h3 class="callout-title">MARC syntax in the MarcEditor<a class="anchor" aria-label="anchor" href="#marc-syntax-in-the-marceditor"></a>
 </h3>
 <div class="callout-content">
 <p>Understanding the layout of MARC data in the MarcEditor is key to
@@ -1307,7 +1307,7 @@ our records?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Field count outlines each field found in our records, the number of
@@ -1430,7 +1430,7 @@ correctly?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The 245 field number is formatted incorrectly. The MarcEditor relies
@@ -1594,12 +1594,12 @@ text:$uhttps://proxy.edu?url=</li>
 </div>
 </div>
 </div>
-<div id="callout1" class="callout">
+<div id="find-and-replace" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="find-and-replace">Find and Replace<a class="anchor" aria-label="anchor" href="#find-and-replace"></a>
+<div id="find-and-replace" class="callout-inner">
+<h3 class="callout-title">Find and Replace<a class="anchor" aria-label="anchor" href="#find-and-replace"></a>
 </h3>
 <div class="callout-content">
 <p>Remember to always verify that the search results of the Find or Find
@@ -1685,12 +1685,12 @@ by clicking on the arrow on the right side and selecting Preview in the
 </div>
 </div>
 </div>
-<div id="callout2" class="callout">
+<div id="metacharacter-syntax-in-the-marceditor" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="metacharacter-syntax-in-the-marceditor">Metacharacter syntax in the MarcEditor<a class="anchor" aria-label="anchor" href="#metacharacter-syntax-in-the-marceditor"></a>
+<div id="metacharacter-syntax-in-the-marceditor" class="callout-inner">
+<h3 class="callout-title">Metacharacter syntax in the MarcEditor<a class="anchor" aria-label="anchor" href="#metacharacter-syntax-in-the-marceditor"></a>
 </h3>
 <div class="callout-content">
 <p>Within the batch editing tools, MarcEdit uses the X metacharacter to
@@ -1766,12 +1766,12 @@ the text (or information) that needs to be changed in the Field Data
 box. Enter your updated text in the Replace with box. Click on Replace
 Text.</p>
 <p><img src="fig/editSubfield.png" alt="MarcEdit empty edit subfield dialog" class="figure"><img src="fig/example_Subfield.png" alt="MarcEdit completed edit subfield dialog" class="figure"></p>
-<div id="callout3" class="callout">
+<div id="ability-to-preview-and-special-undo" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="ability-to-preview-and-special-undo">Ability to Preview and Special Undo<a class="anchor" aria-label="anchor" href="#ability-to-preview-and-special-undo"></a>
+<div id="ability-to-preview-and-special-undo" class="callout-inner">
+<h3 class="callout-title">Ability to Preview and Special Undo<a class="anchor" aria-label="anchor" href="#ability-to-preview-and-special-undo"></a>
 </h3>
 <div class="callout-content">
 <p>As of version 7.5, you can preview all of these changes before making
@@ -1890,12 +1890,12 @@ you can edit the fixed field for that specific MARC record. To add one
 fixed field, put your cursor on the line where you want that fixed field
 inserted, go to Edit and then select Field 006 or 008. In the window,
 edit the fields for that specific record.</p>
-<figure><img src="fig/fixedFields.png" alt="MarcEdit fixed fields editor" class="figure mx-auto d-block"></figure><div id="callout4" class="callout">
+<figure><img src="fig/fixedFields.png" alt="MarcEdit fixed fields editor" class="figure mx-auto d-block"></figure><div id="batch-editing-fixed-fields-in-multiple-marc-records" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="batch-editing-fixed-fields-in-multiple-marc-records">Batch Editing Fixed Fields in Multiple MARC
+<div id="batch-editing-fixed-fields-in-multiple-marc-records" class="callout-inner">
+<h3 class="callout-title">Batch Editing Fixed Fields in Multiple MARC
 Records<a class="anchor" aria-label="anchor" href="#batch-editing-fixed-fields-in-multiple-marc-records"></a>
 </h3>
 <div class="callout-content">
@@ -2011,12 +2011,12 @@ advanced functions</li>
 <section id="build-new-field"><h2 class="section-heading">Build New Field<a class="anchor" aria-label="anchor" href="#build-new-field"></a>
 </h2>
 <hr class="half-width">
-<div id="callout1" class="callout">
+<div id="building-a-marc-field" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="building-a-marc-field">Building a MARC field<a class="anchor" aria-label="anchor" href="#building-a-marc-field"></a>
+<div id="building-a-marc-field" class="callout-inner">
+<h3 class="callout-title">Building a MARC field<a class="anchor" aria-label="anchor" href="#building-a-marc-field"></a>
 </h3>
 <div class="callout-content">
 <p>Sometimes it is necessary to create a new MARC field based on the
@@ -2374,7 +2374,7 @@ helper and removes 9XX fields<a class="anchor" aria-label="anchor" href="#create
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2433,7 +2433,7 @@ that in your Task.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2454,12 +2454,12 @@ MARC field.</li>
 </div>
 </div>
 </div>
-<div id="callout1" class="callout">
+<div id="copying-functions-to-tasks" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="copying-functions-to-tasks">Copying Functions to Tasks<a class="anchor" aria-label="anchor" href="#copying-functions-to-tasks"></a>
+<div id="copying-functions-to-tasks" class="callout-inner">
+<h3 class="callout-title">Copying Functions to Tasks<a class="anchor" aria-label="anchor" href="#copying-functions-to-tasks"></a>
 </h3>
 <div class="callout-content">
 <p>It’s possible to copy many functions run in the MarcEditor to a Task
@@ -2670,12 +2670,12 @@ replace the captured string with <code>(OCoLC)</code>.</li>
 </div>
 </div>
 </div>
-<div id="callout1" class="callout">
+<div id="knowing-your-dataset" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="knowing-your-dataset">Knowing your dataset<a class="anchor" aria-label="anchor" href="#knowing-your-dataset"></a>
+<div id="knowing-your-dataset" class="callout-inner">
+<h3 class="callout-title">Knowing your dataset<a class="anchor" aria-label="anchor" href="#knowing-your-dataset"></a>
 </h3>
 <div class="callout-content">
 <p>Regular expressions are a powerful tool, but using them can sometimes
@@ -2805,12 +2805,12 @@ records have been extracted. Click OK.</li>
 </div>
 </div>
 </div>
-<div id="callout2" class="callout">
+<div id="inverting-your-selection" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="inverting-your-selection">Inverting your selection<a class="anchor" aria-label="anchor" href="#inverting-your-selection"></a>
+<div id="inverting-your-selection" class="callout-inner">
+<h3 class="callout-title">Inverting your selection<a class="anchor" aria-label="anchor" href="#inverting-your-selection"></a>
 </h3>
 <div class="callout-content">
 <p>When using the Select Records for Edit tool you can use the Invert
@@ -2911,7 +2911,7 @@ are working as intended</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.2" class="external-link">sandpaper (0.16.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.4" class="external-link">pegboard (0.7.4)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.1" class="external-link">varnish (1.0.1)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.3" class="external-link">sandpaper (0.16.3)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.4" class="external-link">pegboard (0.7.4)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.1" class="external-link">varnish (1.0.1)</a></p>
 			</div>
 		</footer>
 </div> <!-- / div.container -->
@@ -2934,8 +2934,8 @@ are working as intended</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/aio.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/aio.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2024-03-12",
-  "datePublished": "2024-03-12"
+  "dateModified": "2024-03-19",
+  "datePublished": "2024-03-19"
 }
 
   </script><script>
