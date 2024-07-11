@@ -162,7 +162,7 @@ The results list will show one record missing a 245 field. Click on Jump to Reco
 
 ## Solution
 
-1. The 245 field number is formatted incorrectly. The MarcEditor relies on a standard format to identify and take actions on fields. Remove the rouge space and update the field number to correct this record.
+1. The 245 field number is formatted incorrectly. The MarcEditor relies on a standard format to identify and take actions on fields. Remove the rogue space and update the field number to correct this record.
   
   
 
