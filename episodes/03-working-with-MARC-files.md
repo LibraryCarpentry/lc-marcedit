@@ -1,6 +1,6 @@
 ---
 title: Working with MARC files
-teaching: 20
+teaching: 17
 exercises: 1
 ---
 
@@ -40,7 +40,7 @@ MarcEdit recognizes the following MARC file types:
   </td>
   <td>mrc
   </td>
-  <td>File format typically used in an  ILS or LSP. Other file extensions provided by vendors (ex. marc, dat, bin) are equivalent. Binary is format consisting of a series of sequential bytes, each of which is eight bits in length.
+  <td>File format typically used in an  ILS or LSP. Other file extensions provided by vendors (ex. marc, dat, bin) are equivalent. Binary is a format consisting of a series of sequential bytes, each of which is eight bits in length.
   </td>
  </tr>
  <tr>
@@ -49,6 +49,14 @@ MarcEdit recognizes the following MARC file types:
   <td>mrk
   </td>
   <td>File format used by MarcEdit that is a human readable version of the binary file.
+  </td>
+ </tr>
+  <tr>
+  <td>OCLC DAT binary file
+  </td>
+  <td>dat
+  </td>
+  <td>File format used by OCLC, especially on export to a local computer. The export .dat file is a binary MARC21 UTF-8 file.
   </td>
  </tr>
  <tr>
@@ -164,7 +172,7 @@ The MarcEditor divides a file of MARC records into 'pages' of 100 records. You c
 
 You can adjust the number of records displayed per 'page' through the MarcEditor preferences which can be accessed through the Edit → Preferences menu option from the MarcEditor, or through the 'Settings' icon on the opening screen of MarcEdit.
 
-Within the MarcEditor preferences you can adjust the font and font size within the MarcEditor. You can also set your character encoding defaults. If you navigate to File Associations within the Preferences window, you can select Associate (`*.mrc`) files with the MarcBreaker and Associate (`*.mrk`) files with the MarcEditor. Setting these file associations will make it easy to break `.mrc` files and edit `.mrk` files.
+Within the MarcEditor preferences, you can adjust the font and font size within the MarcEditor. You can also set your character encoding defaults. If you navigate to File Associations within the Preferences window, you can select Associate (`*.mrc`) files with the MarcBreaker and Associate (`*.mrk`) files with the MarcEditor. Setting these file associations will make it easy to break `.mrc` files and edit `.mrk` files.
 
 If you change your preferences for the MarcEditor, the tool used to work with MARC data, you can always go back to the default settings.
 
@@ -173,10 +181,18 @@ If you change your preferences for the MarcEditor, the tool used to work with MA
 ## Reset settings for the MarcEditor in Preferences
 
 1. Click Edit → Preferences
-2. Select "MarcEditor" in the Preferences window in the left hand pane
-3. In the right hand pane, select Set Defaults for either font or font size
+2. Select "MarcEditor" in the Preferences window in the left-hand pane
+3. In the right-hand pane, select Set Defaults for either font or font size
 4. Click Ok
   
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## Behavior when you reset your preferences and other popup windows
+
+When you click Ok to reset preferences, there is a chance that the popup window for Preferences and/or even MarcEdit main menu will close. If the MarcEdit main menu closes, sometimes it will reopen. If it does not, then click on MarcEdit again on your desktop to reopen the application. It should be noted that not all popup windows will close automatically such as Find, Replace, or the MarcValidator. However, the Select Records for Edit temporary editor will close if you click Save. These idiosyncracies for each will be covered in their upcoming episodes.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
