@@ -6,16 +6,41 @@ exercises: 3
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain Build New Field, RDA Helper and Select Records for Edit advanced functions
+- Explain Edit Shortcuts, Build New Field, RDA Helper and Select Records for Edit advanced functions
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
+- How can the Edit Shortcuts features be used to manipulate data?
 - How can Build New Field be used to combine elements from existing MARC fields into a new field?
 - How can the RDA Helper be used?
 - How can Select Records for Edit be used to manipulate a subset of your MARC file?
 
+
+## Edit Shortcuts
+The Edit Shortcuts menu can be found by going to Edit in the menu in the MarcEditor and then selecting Edit Shortcuts. Edit Shortcuts have several powerful options.
+
+- Change Case: You can select to change the case of a MARC field or a MARC field and subfield to lower, upper, initial, or title case. You can also just capitalize the initial character.
+- Field Edits: You can clean smart characters or ISBD punctuation, correct mnemonic errors, generate paired ISBN-13 values, find fields missing a word, find records missing a field, find records with duplicate tags, insert a Generic LDR if it is missing, limit the number of fields, replace HTML entities, or swap a title.
+- Math Functions: Convert to decimal degrees.
+
+:::::::::::::::::::::::::::::::::::::::  checklist
+
+## Let's use Edit Shortcuts to make the 099$a upper case
+
+1. Go to Edit → Edit Shortcuts
+2. In the new window, in the field box, type in `099$a`
+3. Click OK
+  
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Use Find or Find All to Verify Results
+You can use Find or Find All to verify that the change did what you expected on your records in the file. If there is a result that didn't work as expected, then you can select "Special Undo". This is why it is import to profile your data before doing batch edits.
+
+:::::::::::::::::::::::::::::::::::::::::  callout
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -61,6 +86,33 @@ This is possible using the function called, Build New Field.
 4. Click Process
   
 :::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Beware the Build New Field Function
+In the example above, if your 856 contains other subfields such as $3, then these will not be retained because you are only building a new 856 that replaces the current one. Also the build new field works on the first iteration of the field. When working in particular with the MARC field 856, if you need to build a new field using all of the MARC fields 856 in your record, you can use the syntax [x] as in {856$u[x]}. This will ensure all of the MARC fields in the records will undergo the build operation you specify.
+
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## Advanced Subfield Edit Functions
+There are 3 advanced Edit Subfield features that are extremely useful. These are append, prepend, and change subfield. These aren't regular expressions but special characters built into the MarcEditor Edit Subfield tool.
+
+- Prepend data to a subfield: Special character ^b
+- Change subfield character: Special character ^c
+- Append data to a subfield: Special character ^e
+
+:::::::::::::::::::::::::::::::::::::::  checklist
+
+## Let's add the proxy to the 856$u using the prepend special character ^b
+
+1. Go to Tools → Edit Subfield Data
+2. In Field, Enter 856
+3. In Subfield, Enter u
+4. In Field Data, Enter ^b
+5. In Replace with, Enter "https://exampleproxy.edu/login?url="
+6. Click Replace
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
