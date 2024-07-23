@@ -40,7 +40,7 @@ For Windows, select [Windows Build Options -> Download MarcEdit 7.5 (All Users)]
 
 - The Consolidated Installation for MarcEdit 7.5 for Windows is the only one installation option that currently supports 32-bit systems.
 - If the installation is being done via distributed software or via a distribution client like Microsoft's SCCM, refer to the packaging tool available on GitHub [https://github.com/reeset/marcedit\_package\_builder](https://github.com/reeset/marcedit_package_builder).
-- Instructions for system administrators has been provided. Also information on managing MarcEdit installations are available [https://marcedit.reeset.net/managing-marcedit-installations](https://marcedit.reeset.net/managing-marcedit-installations).
+- Instructions for system administrators have been provided. Also, information on managing MarcEdit installations is available [https://marcedit.reeset.net/managing-marcedit-installations](https://marcedit.reeset.net/managing-marcedit-installations).
 
 
 ### Installing MarcEdit on Mac - [Video](https://www.youtube.com/watch?v=m8TQsNhpw8I)
@@ -60,7 +60,7 @@ After downloading MarcEdit and once you launch the installation the first time, 
   - My MARC Format is: Select MARC21
   - Default Recording Encoding: Select MARC21/UTF8
   - Make sure "Enforce Unicode Normalization" is checked
-  - XML Processing Enging: Select Choose for me
+  - XML Processing Engine: Select Choose for me
 
 ## Downloading the data
 
@@ -70,9 +70,26 @@ For this lesson, you need to download our sample file from the Library Carpentri
 -  Click on download button ![](fig/downloadButton.png){alt='GitHub Download Button icon'}
 -  The marc sample file will be saved to your local computer
 
+## Seeing file extensions
+For this lesson, it will be helpful to be able to see file extensions.
+
+### Enabling file extensions on a PC
+
+- Open File Explorer (open any folder)
+- Click on the caret next to View
+- Click Show
+- Select File name extensions
+
+### Enabling file extensions on a MAC
+
+- Open Finder
+- Select the Preferences
+- Click on the Advanced tab
+- Check the box "Show all filename extensions"
+
 ## Getting help
 
-Installation video demostrations are available for all users [https://youtu.be/FX0r7jIxeN4](https://youtu.be/FX0r7jIxeN4).
+Installation video demonstrations are available for all users [https://youtu.be/FX0r7jIxeN4](https://youtu.be/FX0r7jIxeN4).
 
 If you encounter problems installing or running MarcEdit, a good source of support is the [MarcEdit mailing list and user forum](https://listserv.gmu.edu/cgi-bin/wa?A0=marcedit-l). You can also fill out the [Help Form](https://marcedit.reeset.net/contact-me).
 Include your operating system when searching to find the most relevant answers for your issue.
