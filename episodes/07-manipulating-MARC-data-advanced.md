@@ -16,7 +16,7 @@ exercises: 3
 - How can Build New Field be used to combine elements from existing MARC fields into a new field?
 - How can the RDA Helper be used?
 - How can Select Records for Edit be used to manipulate a subset of your MARC file?
-
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Edit Shortcuts
 The Edit Shortcuts menu can be found by going to Edit in the menu in the MarcEditor and then selecting Edit Shortcuts. Edit Shortcuts have several powerful options.
@@ -35,18 +35,13 @@ The Edit Shortcuts menu can be found by going to Edit in the menu in the MarcEdi
   
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::::::::::: callout
 
 ## Use Find or Find All to Verify Results
-You can use Find or Find All to verify that the change did what you expected on your records in the file. If there is a result that didn't work as expected, then you can select "Special Undo". This is why it is import to profile your data before doing batch edits.
+You can use Find or Find All to verify that the change did what you expected on your records in the file. If there is a result that didn't work as expected, then you can select "Special Undo". This is why it is important to profile your data before doing batch edits.
 
-:::::::::::::::::::::::::::::::::::::::::  callout
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Build New Field
-
-:::::::::::::::::::::::::::::::::::::::::  callout
+::::::::::::::::::::::::::::::::::::::::: 
 
 ## Building a MARC field
 
@@ -55,8 +50,6 @@ This is possible using the function called, Build New Field.
 
 ![](fig/buildNewField.png){alt='Build New Field Window'}
 
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
@@ -89,12 +82,12 @@ This is possible using the function called, Build New Field.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::: callout
 
 ## Beware the Build New Field Function
 In the example above, if your 856 contains other subfields such as $3, then these will not be retained because you are only building a new 856 that replaces the current one. Also the build new field works on the first iteration of the field. When working in particular with the MARC field 856, if you need to build a new field using all of the MARC fields 856 in your record, you can use the syntax [x] as in {856$u[x]}. This will ensure all of the MARC fields in the records will undergo the build operation you specify.
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::::::::::::::::::::::::::::::::::::::::: 
 
 ## Advanced Subfield Edit Functions
 There are 3 advanced Edit Subfield features that are extremely useful. These are append, prepend, and change subfield. These aren't regular expressions but special characters built into the MarcEditor Edit Subfield tool.
