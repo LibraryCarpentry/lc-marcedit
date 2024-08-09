@@ -698,7 +698,7 @@ pane</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Click on the gear icon in the main window or go to Tools →
@@ -767,7 +767,7 @@ Tools → Preferences, or by using the keyboard shortcut Ctrl+Shift+P</li>
 </div>
 </section></section><section id="aio-03-working-with-MARC-files"><p>Content from <a href="03-working-with-MARC-files.html">Working with MARC files</a></p>
 <hr>
-<p>Last updated on 2023-09-22 |
+<p>Last updated on 2024-08-09 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/03-working-with-MARC-files.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -840,7 +840,7 @@ mrc
 </td>
 <td>
 File format typically used in an ILS or LSP. Other file extensions
-provided by vendors (ex. marc, dat, bin) are equivalent. Binary is
+provided by vendors (ex. marc, dat, bin) are equivalent. Binary is a
 format consisting of a series of sequential bytes, each of which is
 eight bits in length.
 </td>
@@ -855,6 +855,18 @@ mrk
 <td>
 File format used by MarcEdit that is a human readable version of the
 binary file.
+</td>
+</tr>
+<tr>
+<td>
+OCLC DAT binary file
+</td>
+<td>
+dat
+</td>
+<td>
+File format used by OCLC, especially on export to a local computer. The
+export .dat file is a binary MARC21 UTF-8 file.
 </td>
 </tr>
 <tr>
@@ -1065,7 +1077,7 @@ never tries to load all the records at the same time.</p>
 MarcEditor preferences which can be accessed through the Edit →
 Preferences menu option from the MarcEditor, or through the ‘Settings’
 icon on the opening screen of MarcEdit.</p>
-<p>Within the MarcEditor preferences you can adjust the font and font
+<p>Within the MarcEditor preferences, you can adjust the font and font
 size within the MarcEditor. You can also set your character encoding
 defaults. If you navigate to File Associations within the Preferences
 window, you can select Associate (<code>*.mrc</code>) files with the
@@ -1084,12 +1096,32 @@ work with MARC data, you can always go back to the default settings.</p>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
 <li>Click Edit → Preferences</li>
-<li>Select “MarcEditor” in the Preferences window in the left hand
+<li>Select “MarcEditor” in the Preferences window in the left-hand
 pane</li>
-<li>In the right hand pane, select Set Defaults for either font or font
-size</li>
+<li>In the right-hand pane, under Set MarcEditor Font Properties, select
+Set Defaults</li>
 <li>Click Ok</li>
 </ol>
+</div>
+</div>
+</div>
+<div id="behavior-when-you-reset-your-preferences-and-other-popup-windows" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="behavior-when-you-reset-your-preferences-and-other-popup-windows" class="callout-inner">
+<h3 class="callout-title">Behavior when you reset your preferences and other popup windows<a class="anchor" aria-label="anchor" href="#behavior-when-you-reset-your-preferences-and-other-popup-windows"></a>
+</h3>
+<div class="callout-content">
+<p>When you click Ok to reset preferences, there is a chance that the
+popup window for Preferences and/or even MarcEdit main menu will close.
+If the MarcEdit main menu closes, sometimes it will reopen. If it does
+not, then click on MarcEdit again on your desktop to reopen the
+application. It should be noted that not all popup windows will close
+automatically such as Find, Replace, or the MarcValidator. However, the
+Select Records for Edit temporary editor will close if you click Save.
+These idiosyncracies for each will be covered in their upcoming
+episodes.</p>
 </div>
 </div>
 </div>
@@ -1383,7 +1415,7 @@ our records?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Field count outlines each field found in our records, the number of
@@ -1505,7 +1537,7 @@ correctly?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The 245 field number is formatted incorrectly. The MarcEditor relies
@@ -1656,7 +1688,7 @@ follow by a subfield u</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Click Edit-&gt;Replace</li>
@@ -1737,7 +1769,7 @@ second indicator 4 to the MARC data.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -1795,7 +1827,7 @@ if you enter 24X, that edit will act on fields 240-249; if you enter
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Verify your file has multiple 9XX fields by using the Field Count
@@ -1881,7 +1913,7 @@ Library of Congress Organization Code, update the code to XYZ.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -1935,7 +1967,7 @@ fields 050 that have a first indicator blank and a second indicator
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>

@@ -364,7 +364,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Working with MARC files</h1>
-        <p>Last updated on 2023-09-22 |
+        <p>Last updated on 2024-08-09 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/03-working-with-MARC-files.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -433,7 +433,7 @@ mrc
 </td>
 <td>
 File format typically used in an ILS or LSP. Other file extensions
-provided by vendors (ex. marc, dat, bin) are equivalent. Binary is
+provided by vendors (ex. marc, dat, bin) are equivalent. Binary is a
 format consisting of a series of sequential bytes, each of which is
 eight bits in length.
 </td>
@@ -446,6 +446,16 @@ mrk
 <td>
 File format used by MarcEdit that is a human readable version of the
 binary file.
+</td>
+</tr><tr><td>
+OCLC DAT binary file
+</td>
+<td>
+dat
+</td>
+<td>
+File format used by OCLC, especially on export to a local computer. The
+export .dat file is a binary MARC21 UTF-8 file.
 </td>
 </tr><tr><td>
 MARC UTF-8 Text File
@@ -628,7 +638,7 @@ never tries to load all the records at the same time.</p>
 MarcEditor preferences which can be accessed through the Edit →
 Preferences menu option from the MarcEditor, or through the ‘Settings’
 icon on the opening screen of MarcEdit.</p>
-<p>Within the MarcEditor preferences you can adjust the font and font
+<p>Within the MarcEditor preferences, you can adjust the font and font
 size within the MarcEditor. You can also set your character encoding
 defaults. If you navigate to File Associations within the Preferences
 window, you can select Associate (<code>*.mrc</code>) files with the
@@ -646,12 +656,32 @@ work with MARC data, you can always go back to the default settings.</p>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Click Edit → Preferences</li>
-<li>Select “MarcEditor” in the Preferences window in the left hand
+<li>Select “MarcEditor” in the Preferences window in the left-hand
 pane</li>
-<li>In the right hand pane, select Set Defaults for either font or font
-size</li>
+<li>In the right-hand pane, under Set MarcEditor Font Properties, select
+Set Defaults</li>
 <li>Click Ok</li>
 </ol></div>
+</div>
+</div>
+<div id="behavior-when-you-reset-your-preferences-and-other-popup-windows" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="behavior-when-you-reset-your-preferences-and-other-popup-windows" class="callout-inner">
+<h3 class="callout-title">Behavior when you reset your preferences and other popup windows<a class="anchor" aria-label="anchor" href="#behavior-when-you-reset-your-preferences-and-other-popup-windows"></a>
+</h3>
+<div class="callout-content">
+<p>When you click Ok to reset preferences, there is a chance that the
+popup window for Preferences and/or even MarcEdit main menu will close.
+If the MarcEdit main menu closes, sometimes it will reopen. If it does
+not, then click on MarcEdit again on your desktop to reopen the
+application. It should be noted that not all popup windows will close
+automatically such as Find, Replace, or the MarcValidator. However, the
+Select Records for Edit temporary editor will close if you click Save.
+These idiosyncracies for each will be covered in their upcoming
+episodes.</p>
+</div>
 </div>
 </div>
 <div id="keypoints1" class="callout keypoints">
@@ -733,7 +763,7 @@ is key to working with the records.</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/03-working-with-MARC-files.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/03-working-with-MARC-files.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2023-09-22",
+  "dateModified": "2024-08-09",
   "datePublished": "2024-08-09"
 }
 
