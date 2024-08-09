@@ -182,7 +182,7 @@ If you change your preferences for the MarcEditor, the tool used to work with MA
 
 1. Click Edit → Preferences
 2. Select "MarcEditor" in the Preferences window in the left-hand pane
-3. In the right-hand pane, select Set Defaults for either font or font size
+3. In the right-hand pane, under Set MarcEditor Font Properties, select Set Defaults
 4. Click Ok
   
 
