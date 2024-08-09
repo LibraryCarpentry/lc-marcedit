@@ -38,7 +38,7 @@ At this time, MarcEdit supports integrations with the ILS Alma and Koha. The ILS
 For the OCLC API integration, you need to [request an API key and check if your institution is eligible](https://www.oclc.org/developer/support/eligibility.en.html) for this service. If your institution is eligible, then you can request a key through [OCLC's developer network](tps://www.oclc.org/developer/develop/authentication/how-to-request-a-wskey.en.html). You can also go to Preferences from the main menu in MarcEdit, click on OCLC API Integration and then click on the "Request an OCLC Key". It is recommended to consult OCLC's help page on [setting up MarcEdit OCLC integration]([https://help.oclc.org/Librarian_Toolbox/OCLC_APIs/Troubleshooting/How_do_I_set_up_MarcEdit_OCLC_Integration%3F?sl=en](https://help.oclc.org/Librarian_Toolbox/OCLC_APIs/Troubleshooting/How_do_I_set_up_MarcEdit_OCLC_Integration%3F)) as well as Terry Reese's information from his blog.
 
 ### Integration with a Z39.50 Database
-Many systems rely on the Z39.50 protocol. It could be the case that your current ILS relies on it for Interlibrary loan. For this type of integration, you need the following information below. You can find this information at the Library of Congress [Gateway to Library Catalogs](https://www.loc.gov/z3950/) of [zbrary](https://www.z-brary.com/).
+Many systems rely on the Z39.50 protocol to search and exchange data. It could be the case that your current ILS relies on it for Interlibrary loan. For this type of integration, you need the following information below. You can find this information at the Library of Congress [Gateway to Library Catalogs](https://www.loc.gov/z3950/) of [zbrary](https://www.z-brary.com/).
 
 <table>
   <tr>
