@@ -1575,7 +1575,7 @@ edit your MARC records</li>
 </div>
 </section></section><section id="aio-06-manipulating-MARC-data-basics"><p>Content from <a href="06-manipulating-MARC-data-basics.html">Manipulating MARC data basics</a></p>
 <hr>
-<p>Last updated on 2023-10-12 |
+<p>Last updated on 2024-08-09 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/06-manipulating-MARC-data-basics.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 46 minutes</p>
@@ -1623,37 +1623,58 @@ indicators, and fixed fields</li>
 <hr class="half-width">
 <p>We’ve seen how we can manually and individually edit records in the
 MarcEditor, however, MarcEdit provides a number of more powerful ways to
-manipulate our MARC data. Fields, subfields, indicators can be added,
-removed, or changed. Fixed fields can be corrected. Fields and subfields
-specific to RDA can be added while AACR2 conventions are removed. It is
-possible to work with a subset of MARC data and then incorporate those
-changes into the original whole MARC data set. The variations sometime
-seem endless and give more weight to the nickname of MarcEdit, the swiss
-army knife of MARC data.</p>
+manipulate our MARC data. Fields, subfields, and indicators can be
+added, removed, or changed. Fixed fields can be corrected. Fields and
+subfields specific to RDA can be added while AACR2 conventions are
+removed. It is possible to work with a subset of MARC data and then
+incorporate those changes into the original whole MARC data set. The
+variations sometimes seem endless and give more weight to the nickname
+of MarcEdit, the Swiss army knife of MARC data.</p>
 <div class="section level3">
 <h3 id="find-find-all-and-replace">Find, Find All, and Replace<a class="anchor" aria-label="anchor" href="#find-find-all-and-replace"></a>
 </h3>
 <p>Like many other applications, the MarcEditor offers the ability to
 Find, Find All, and Replace.</p>
-<p>Find: Find will search as a keyword what you enter into the Find
-window search box. This option will only search the current page in the
-MarcEdit. Remember that the default settings splits the MARC records
-into 100 for each page. Find will only search those records on the page
-you are currently on.</p>
-<p>Find All: Find all will search for your search terms entered in the
-Find window search box over all the pages, or all your MARC records.</p>
-<p>Replace: Replace works alongside Find or Find all. You have the
-option to Replace just those on the page or Replace all where the
-replace occurs on all pages in all records.</p>
-<p>If you want to Find or Find all a MARC field, you will need to
-include the equals sign before the MARC field. For example, if you type
-in the search box 856, Find or Find All will search for 856 as a keyword
-anywhere. If there is a title such as “The Jourey of the 856 people”,
-this will then show up in your search results. If you search for =856,
-it will find anything with that string. If for example there is a title
-with “… =856 …” then this will also appear in the search results.
-Typically the equals before the MARC tage will bring up that MARC
-tag.</p>
+<p><strong>Find</strong>: Find will perform a keyword search for your
+search terms entered in the Find window search box. Each time you click
+“Find”, you will be brought to the next instance of your search terms on
+the current page of the MarcEditor. Remember that the default settings
+split the MARC records into 100 for each page. Find will only search
+those records on the page you are currently on.</p>
+<p><strong>Find All</strong>: Find all will search for your search terms
+entered in the Find window search box over all the pages, or all your
+MARC records. When you click “Find All” a new window will open listing
+each instance of your search terms. Double clicking a result will take
+you to the result in the MarcEditor.</p>
+<p><strong>Replace</strong>: Replace works alongside Find or Find all.
+You have the option to Replace just those on the page or Replace all
+where the replace occurs on all pages in all records.</p>
+<div id="find-textreplace-text-and-find-all-results-popup-windows" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="find-textreplace-text-and-find-all-results-popup-windows" class="callout-inner">
+<h3 class="callout-title">Find Text/Replace Text and Find All Results Popup Windows<a class="anchor" aria-label="anchor" href="#find-textreplace-text-and-find-all-results-popup-windows"></a>
+</h3>
+<div class="callout-content">
+<p>The popup window for the Find Text/Replace Text function and the
+secondary popup window for your Find All search results will not close
+automatically. You will need to close these windows when you are done
+performing your find/replace actions.</p>
+</div>
+</div>
+</div>
+<p>If you want to Find or Find all for a specific MARC field, you will
+need to include the equals sign before the MARC field. For example, if
+you type in the search box 856, Find or Find All will search for 856 as
+a keyword anywhere. If there is a title such as “The Journey of 856
+people”, this will then show up in your search results. If you search
+for =856, it will find anything with that string. If for example there
+is a title with “… =856 …” then this will also appear in the search
+results. Typically the equals before the MARC tage will bring up that
+MARC tag. By extension, if you want to find a specific MARC field that
+have specific indicators, you will need to include 2 spaces after the
+MARC field as in =856 40.</p>
 <div id="find-find-all-and-replace-using-the-marc-field-856" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
@@ -1666,12 +1687,12 @@ tag.</p>
 <li>Go to Edit-&gt;Find (or CTRL+F)</li>
 <li>In the search box in the new window, type in 856</li>
 <li>Click Find</li>
-<li>What results to you see?</li>
+<li>What results do you see?</li>
 <li>Close that window</li>
 <li>Go to Edit-&gt;Find (or CTRL+F)</li>
 <li>In the search box in the new window, type in =856</li>
 <li>Click Find All</li>
-<li>What results to you see</li>
+<li>What results do you see</li>
 </ol>
 </div>
 </div>
@@ -1686,7 +1707,7 @@ tag.</p>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
 <li>Find those MARC fields 856 where there is a subfield 3 for Full text
-follow by a subfield u</li>
+followed by a subfield u</li>
 <li>Add this proxy <a href="https://proxy.edu?url=" class="external-link uri">https://proxy.edu?url=</a>
 </li>
 </ol>
@@ -1719,10 +1740,13 @@ text:$uhttps://proxy.edu?url=</li>
 <h3 class="callout-title">Find and Replace<a class="anchor" aria-label="anchor" href="#find-and-replace"></a>
 </h3>
 <div class="callout-content">
-<p>Remember to always verify that the search results of the Find or Find
-All. Find or Find all will search that exact phrase or string that you
-put into the search box either on that page (Find) or in every record
-(Find all).</p>
+<p>Remember to always verify the search results of the Find or Find All
+and profile your data before making changes. Find or Find all will
+search for the exact phrase or string that you put into the search box
+either on that page (Find) or in every record (Find all). In the example
+above, if your records contain MARC fields 856 with different $3 data
+(for example: =856 40$3Online Access:$u) the replace above will not add
+the proxy to those 856 fields. You will need to do another replace.</p>
 </div>
 </div>
 </div>
@@ -1734,7 +1758,7 @@ put into the search box either on that page (Find) or in every record
 MarcEditor and select Add/Delete Field. This will open a new Batch
 Editing Tools window. The Add/Delete Field functions are on the same
 menu level and you will need to select the action of either add or
-delete using the buttons on the right hand side.</p>
+delete using the buttons on the right-hand side.</p>
 <p>In the top middle section of the window, there are two data entry
 fields: Field and Field Data. Enter the MARC field number you want to
 add or delete in the Field dialogue box. Then enter the indicators,
@@ -1863,7 +1887,7 @@ field<a class="anchor" aria-label="anchor" href="#add-delete-or-change-informati
 Edit Subfield Data. A new Batch Editing Tools window will open (notice
 that this is the same window that opened for Add/Delete a field, you can
 also navigate between the MarcEdit Batch Editing Tools using the labels
-on the left hand side of the window). From here you can add a new
+on the left-hand side of the window). From here you can add a new
 subfield, delete a subfield, or replace text in a subfield. Set your
 desired subfield edit conditions by selecting the appropriate option(s)
 from the Search Options list.</p>
@@ -1893,7 +1917,7 @@ Text.</p>
 <p>As of version 7.5, you can preview all of these changes before making
 them. If you complete a batch edit that produces unexpected or
 undesirable results, you can perform a Special Undo by selecting Edit →
-Special Undo. This will only on your most recent batch edit. If you
+Special Undo. This will only act on your most recent batch edit. If you
 perform an action after your batch edit, Special Undo will not undo your
 batch change but the action you just performed. Undo and Special Undo
 are different. Undo undoes a manual edit whereas Special Undo undoes a
@@ -2004,7 +2028,7 @@ put your cursor on that fixed field, such as an 008 or 006, then go to
 Edit and select Field 006 or Field 008. This will open up a window where
 you can edit the fixed field for that specific MARC record. To add one
 fixed field, put your cursor on the line where you want that fixed field
-inserted, go to Edit and then select Field 006 or 008. In the window,
+inserted, go to Edit, and then select Field 006 or 008. In the window,
 edit the fields for that specific record.</p>
 <figure><img src="../fig/fixedFields.png" alt="MarcEdit fixed fields editor" class="figure mx-auto d-block"></figure><div id="batch-editing-fixed-fields-in-multiple-marc-records" class="callout">
 <div class="callout-square">
@@ -2029,14 +2053,14 @@ fields don’t have indicators.</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="saving-compiling-and-version-control">Saving, Compiling and Version Control<a class="anchor" aria-label="anchor" href="#saving-compiling-and-version-control"></a>
-<a class="anchor" aria-label="anchor" href="#saving-compiling-and-version-control"></a>
+</section><section><h2 class="section-heading" id="saving-and-compiling">Saving and Compiling<a class="anchor" aria-label="anchor" href="#saving-and-compiling"></a>
+<a class="anchor" aria-label="anchor" href="#saving-and-compiling"></a>
 </h2>
 <hr class="half-width">
 <p>The MARC data that you manipulate in the MarcEditor is in a human and
-computer readable mnemonic <code>.mrk</code> file format that was broken
+computer-readable mnemonic <code>.mrk</code> file format that was broken
 from the original binary <code>.mrc</code> file. You will notice that
-the file name of the file you’re working on, displayed at top of the
+the file name of the file you’re working on, displayed at the top of the
 MarcEditor, has the file extension <code>.mrk</code>. If you look at the
 file in your file directory, the file icon color is blue whereas the
 binary <code>.mrc</code> MARC file icon is purple.</p>
@@ -2187,7 +2211,7 @@ the <code>856$u</code>.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools → Build New Field</li>
@@ -2239,7 +2263,7 @@ abbreviations; Remove the GMD.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
