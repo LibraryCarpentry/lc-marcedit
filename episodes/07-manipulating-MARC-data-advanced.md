@@ -85,7 +85,9 @@ This is possible using the function called, Build New Field.
 :::::::::::::::::::::::::::::::::::::::::::::::::: callout
 
 ## Beware the Build New Field Function
-In the example above, if your 856 contains other subfields such as $3, then these will not be retained because you are only building a new 856 that replaces the current one. Also the build new field works on the first iteration of the field. When working in particular with the MARC field 856, if you need to build a new field using all of the MARC fields 856 in your record, you can use the syntax [x] as in {856$u[x]}. This will ensure all of the MARC fields in the records will undergo the build operation you specify.
+In the example above, if your 856 contains other subfields such as $3, then these will not be retained because you are only building a new 856 that replaces the current one. To retain $3 data, you would need to include this parameter in your function. This would look like `=856 40{856$3}\$uhttps://exampleproxy.edu/login?url={856$u}`
+
+Also note, the build new field works on the first iteration of the field. When working in particular with the MARC field 856, if you need to build a new field using all of the MARC fields 856 in your record, you can use the syntax [x] as in {856$u[x]}. This will ensure all of the MARC fields in the records will undergo the build operation you specify.
 
 ::::::::::::::::::::::::::::::::::::::::: 
 
