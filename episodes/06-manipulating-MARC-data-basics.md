@@ -32,7 +32,7 @@ We've seen how we can manually and individually edit records in the MarcEditor, 
 
 Like many other applications, the MarcEditor offers the ability to Find, Find All, and Replace. 
 
-**Find**: Find will search as a keyword that you enter into the Find window search box. This option will only search the current page in the MarcEdit. Remember that the default settings split the MARC records into 100 for each page. Find will only search those records on the page you are currently on. 
+**Find**: Find will perform a keyword search for your search terms entered in the Find window search box. Each time you click "Find", you will be brought to the next instance of your search terms on the current page of the MarcEditor. Remember that the default settings split the MARC records into 100 for each page. Find will only search those records on the page you are currently on. 
 
 **Find All**: Find all will search for your search terms entered in the Find window search box over all the pages, or all your MARC records.
 
