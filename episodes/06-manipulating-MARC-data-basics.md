@@ -87,7 +87,7 @@ If you want to Find or Find all for a specific MARC field, you will need to incl
 
 ## Find and Replace
 
-Remember to always verify the search results of the Find or Find All and profile your data before making changes. Find or Find all will search that exact phrase or string that you put into the search box either on that page (Find) or in every record (Find all). In the example above, if you have other MARC fields 856 that have a different syntax that =856  40\$3Full text:\$u and those urls also need a proxy, the replace above will not take that into account. You will need to do another replace.
+Remember to always verify the search results of the Find or Find All and profile your data before making changes. Find or Find all will search for the exact phrase or string that you put into the search box either on that page (Find) or in every record (Find all). In the example above, if your records contain MARC fields 856 with different \$3 data (for example: =856 40\$3Online Access:\$u) the replace above will not add the proxy to those 856 fields. You will need to do another replace.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
