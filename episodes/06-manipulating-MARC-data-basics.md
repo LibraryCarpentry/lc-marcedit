@@ -41,7 +41,7 @@ Like many other applications, the MarcEditor offers the ability to Find, Find Al
 :::::::::::::::::::::::::::::::::::::::::  callout
 
 ## Find or Find All Search Results Popup Window
-The popup window that has the results or your Find or Find All search will not close automatically. You will need to close this window.
+The popup window for the Find Text/Replace Text function and the secondary popup window for your Find All search results  will not close automatically. You will need to close these windows when you are done performing your find/replace actions.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
