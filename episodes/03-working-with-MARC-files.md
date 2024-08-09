@@ -40,7 +40,7 @@ MarcEdit recognizes the following MARC file types:
   </td>
   <td>mrc
   </td>
-  <td>File format typically used in an  ILS or LSP. Other file extensions provided by vendors (ex. marc, dat, bin) are equivalent. Binary is a format consisting of a series of sequential bytes, each of which is eight bits in length.
+  <td>File format typically used in an ILS or LSP. Other file extensions provided by vendors (ex. marc, dat, bin) are equivalent. Binary is a format consisting of a series of sequential bytes, each of which is eight bits in length.
   </td>
  </tr>
  <tr>
