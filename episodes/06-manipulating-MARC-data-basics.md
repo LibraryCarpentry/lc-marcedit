@@ -26,19 +26,26 @@ exercises: 6
 
 ## Manipulating MARC data
 
-We've seen how we can manually and individually edit records in the MarcEditor, however, MarcEdit provides a number of more powerful ways to manipulate our MARC data. Fields, subfields, indicators can be added, removed, or changed. Fixed fields can be corrected. Fields and subfields specific to RDA can be added while AACR2 conventions are removed. It is possible to work with a subset of MARC data and then incorporate those changes into the original whole MARC data set. The variations sometime seem endless and give more weight to the nickname of MarcEdit, the swiss army knife of MARC data.
+We've seen how we can manually and individually edit records in the MarcEditor, however, MarcEdit provides a number of more powerful ways to manipulate our MARC data. Fields, subfields, and indicators can be added, removed, or changed. Fixed fields can be corrected. Fields and subfields specific to RDA can be added while AACR2 conventions are removed. It is possible to work with a subset of MARC data and then incorporate those changes into the original whole MARC data set. The variations sometimes seem endless and give more weight to the nickname of MarcEdit, the Swiss army knife of MARC data.
 
 ### Find, Find All, and Replace
 
 Like many other applications, the MarcEditor offers the ability to Find, Find All, and Replace. 
 
-Find: Find will search as a keyword what you enter into the Find window search box. This option will only search the current page in the MarcEdit. Remember that the default settings splits the MARC records into 100 for each page. Find will only search those records on the page you are currently on. 
+**Find**: Find will perform a keyword search for your search terms entered in the Find window search box. Each time you click "Find", you will be brought to the next instance of your search terms on the current page of the MarcEditor. Remember that the default settings split the MARC records into 100 for each page. Find will only search those records on the page you are currently on. 
 
-Find All: Find all will search for your search terms entered in the Find window search box over all the pages, or all your MARC records.
+**Find All**: Find all will search for your search terms entered in the Find window search box over all the pages, or all your MARC records. When you click "Find All" a new window will open listing each instance of your search terms. Double clicking a result will take you to the result in the MarcEditor.
 
-Replace: Replace works alongside Find or Find all. You have the option to Replace just those on the page or Replace all where the replace occurs on all pages in all records.
+**Replace**: Replace works alongside Find or Find all. You have the option to Replace just those on the page or Replace all where the replace occurs on all pages in all records.
 
-If you want to Find or Find all a MARC field, you will need to include the equals sign before the MARC field. For example, if you type in the search box 856, Find or Find All will search for 856 as a keyword anywhere. If there is a title such as "The Jourey of the 856 people", this will then show up in your search results. If you search for =856, it will find anything with that string. If for example there is a title with "... =856 ..." then this will also appear in the search results. Typically the equals before the MARC tage will bring up that MARC tag. 
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## Find Text/Replace Text and Find All Results Popup Windows
+The popup window for the Find Text/Replace Text function and the secondary popup window for your Find All search results  will not close automatically. You will need to close these windows when you are done performing your find/replace actions.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If you want to Find or Find all for a specific MARC field, you will need to include the equals sign before the MARC field. For example, if you type in the search box 856, Find or Find All will search for 856 as a keyword anywhere. If there is a title such as "The Journey of 856 people", this will then show up in your search results. If you search for =856, it will find anything with that string. If for example there is a title with "... =856 ..." then this will also appear in the search results. Typically the equals before the MARC tage will bring up that MARC tag. By extension, if you want to find a specific MARC field that have specific indicators, you will need to include 2 spaces after the MARC field as in =856  40.
 
 :::::::::::::::::::::::::::::::::::::::::  checklist
 
@@ -47,12 +54,12 @@ If you want to Find or Find all a MARC field, you will need to include the equal
 1.  Go to Edit->Find (or CTRL+F)
 2.  In the search box in the new window, type in 856
 3.  Click Find
-4.  What results to you see?
+4.  What results do you see?
 5.  Close that window
 6.  Go to Edit->Find (or CTRL+F)
 7.  In the search box in the new window, type in =856
 8.  Click Find All
-9.  What results to you see
+9.  What results do you see
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -60,7 +67,7 @@ If you want to Find or Find all a MARC field, you will need to include the equal
 
 ## Add a proxy to the MARC field 856
 
-1. Find those MARC fields 856 where there is a subfield 3 for Full text follow by a subfield u
+1. Find those MARC fields 856 where there is a subfield 3 for Full text followed by a subfield u
 2. Add this proxy https://proxy.edu?url=
 
 :::::::::::::::  solution
@@ -80,14 +87,14 @@ If you want to Find or Find all a MARC field, you will need to include the equal
 
 ## Find and Replace
 
-Remember to always verify that the search results of the Find or Find All. Find or Find all will search that exact phrase or string that you put into the search box either on that page (Find) or in every record (Find all). 
+Remember to always verify the search results of the Find or Find All and profile your data before making changes. Find or Find all will search for the exact phrase or string that you put into the search box either on that page (Find) or in every record (Find all). In the example above, if your records contain MARC fields 856 with different \$3 data (for example: =856 40\$3Online Access:\$u) the replace above will not add the proxy to those 856 fields. You will need to do another replace.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ### Add/Delete a MARC field
 
-To add or delete a MARC field, go to Tools in the upper menu in the MarcEditor and select Add/Delete Field. This will open a new Batch Editing Tools window. The Add/Delete Field functions are on the same menu level and you will need to select the action of either add or delete using the buttons on the right hand side.
+To add or delete a MARC field, go to Tools in the upper menu in the MarcEditor and select Add/Delete Field. This will open a new Batch Editing Tools window. The Add/Delete Field functions are on the same menu level and you will need to select the action of either add or delete using the buttons on the right-hand side.
 
 In the top middle section of the window, there are two data entry fields: Field and Field Data. Enter the MARC field number you want to add or delete in the Field dialogue box. Then enter the indicators, subfields, and data in Field Data dialogue box. Remember to include the dollar sign to indicate a subfield.
 
@@ -161,7 +168,7 @@ Within the batch editing tools, MarcEdit uses the X metacharacter to represent a
 
 ### Add, Delete, or Change information for a subfield in a MARC field
 
-To edit subfield data within a given field, go to Tools and select Edit Subfield Data. A new Batch Editing Tools window will open (notice that this is the same window that opened for Add/Delete a field, you can also navigate between the MarcEdit Batch Editing Tools using the labels on the left hand side of the window). From here you can add a new subfield, delete a subfield, or replace text in a subfield. Set your desired subfield edit conditions by selecting the appropriate option(s) from the Search Options list.
+To edit subfield data within a given field, go to Tools and select Edit Subfield Data. A new Batch Editing Tools window will open (notice that this is the same window that opened for Add/Delete a field, you can also navigate between the MarcEdit Batch Editing Tools using the labels on the left-hand side of the window). From here you can add a new subfield, delete a subfield, or replace text in a subfield. Set your desired subfield edit conditions by selecting the appropriate option(s) from the Search Options list.
 
 To add a subfield, enter the MARC field and then the subfield. The text you would like to add in that subfield is entered in Replace With box. Select New subfield only from the Search Options below and then click Replace Text. Even though you are adding a subfield, you still click Replace Text. For adding a subfield, the information that goes in that field doesn't go in the box called Field Data, see the example below.
 
@@ -178,7 +185,7 @@ To replace text in a subfield, enter the MARC field, the subfield, the text (or 
 
 As of version 7.5, you can preview all of these changes before making them.
 If you complete a batch edit that produces unexpected or undesirable results, you can perform a Special Undo by selecting Edit → Special Undo.
-This will only on your most recent batch edit. If you perform an action after your batch edit, Special Undo will not undo your batch change but the action you just performed.
+This will only act on your most recent batch edit. If you perform an action after your batch edit, Special Undo will not undo your batch change but the action you just performed.
 Undo and Special Undo are different. Undo undoes a manual edit whereas Special Undo undoes a bulk edit. 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -241,7 +248,7 @@ Sometimes it is necessary to change one or both indicators of a MARC field. To e
 
 ## Working with MARC fixed fields
 
-Working with fixed fields can be difficult. In the MarcEditor, you can edit one fixed field at a time using the easy editing window. If you put your cursor on that fixed field, such as an 008 or 006, then go to Edit and select Field 006 or Field 008. This will open up a window where you can edit the fixed field for that specific MARC record. To add one fixed field, put your cursor on the line where you want that fixed field inserted, go to Edit and then select Field 006 or 008. In the window, edit the fields for that specific record.
+Working with fixed fields can be difficult. In the MarcEditor, you can edit one fixed field at a time using the easy editing window. If you put your cursor on that fixed field, such as an 008 or 006, then go to Edit and select Field 006 or Field 008. This will open up a window where you can edit the fixed field for that specific MARC record. To add one fixed field, put your cursor on the line where you want that fixed field inserted, go to Edit, and then select Field 006 or 008. In the window, edit the fields for that specific record.
 
 ![](fig/fixedFields.png){alt='MarcEdit fixed fields editor'}
 
@@ -256,9 +263,9 @@ If you need to add a fixed field, you can use the Tools and select Add/Delete. Y
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Saving, Compiling and Version Control
+## Saving and Compiling
 
-The MARC data that you manipulate in the MarcEditor is in a human and computer readable mnemonic `.mrk` file format that was broken from the original binary `.mrc` file. You will notice that the file name of the file you're working on, displayed at top of the MarcEditor, has the file extension `.mrk`. If you look at the file in your file directory, the file icon color is blue whereas the binary `.mrc` MARC file icon is purple. 
+The MARC data that you manipulate in the MarcEditor is in a human and computer-readable mnemonic `.mrk` file format that was broken from the original binary `.mrc` file. You will notice that the file name of the file you're working on, displayed at the top of the MarcEditor, has the file extension `.mrk`. If you look at the file in your file directory, the file icon color is blue whereas the binary `.mrc` MARC file icon is purple. 
 
 ### Saving
 When you save in the MarcEditor, you are saving your latest changes as a `.mrk` file. Using File → Save will save edits into your current `.mrk` file, overwriting the original. To keep a copy of your original `.mrk` data, select File → Save As and choose a new file name for your edited records. 
