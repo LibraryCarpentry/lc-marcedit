@@ -1,27 +1,52 @@
 ---
 title: Manipulating MARC data advanced
-teaching: 25
+teaching: 40
 exercises: 3
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain Build New Field, RDA Helper and Select Records for Edit advanced functions
+- Explain Edit Shortcuts, Build New Field, RDA Helper, and Select Records for Edit advanced functions
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
+- How can the Edit Shortcuts features be used to manipulate data?
 - How can Build New Field be used to combine elements from existing MARC fields into a new field?
 - How can the RDA Helper be used?
 - How can Select Records for Edit be used to manipulate a subset of your MARC file?
-
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Build New Field
+## Edit Shortcuts
+The Edit Shortcuts menu can be found by going to Edit in the menu in the MarcEditor and then selecting Edit Shortcuts. Edit Shortcuts have several powerful options.
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+- Change Case: You can select to change the case of a MARC field or a MARC field and subfield to lower, upper, initial, or title case. You can also capitalize the initial character.
+- Field Edits: You can clean smart characters or ISBD punctuation, correct mnemonic errors, generate paired ISBN-13 values, find fields missing a word, find records missing a field, find records with duplicate tags, insert a Generic LDR if it is missing, limit the number of fields, replace HTML entities, or swap a title.
+- Math Functions: Convert to decimal degrees.
+
+:::::::::::::::::::::::::::::::::::::::  checklist
+
+## Let's use Edit Shortcuts to make the 099$a upper case
+
+1. Go to Edit → Edit Shortcuts
+2. In the new window, in the field box, type in `099$a`
+3. Click OK
+  
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::::::::::: callout
+
+## Use Find or Find All to Verify Results
+You can use Find or Find All to verify that the change did what you expected on your records in the file. If a result didn't work as expected, you can select "Special Undo". This is why it is important to profile your data before doing batch edits.
+
+::::::::::::::::::::::::::::::::::::::::: 
+
+   :::::::::::::::::::::::::::::::::::::: instructor
+   
+   This is a good moment to review the [Profiling Your MARC data](https://librarycarpentry.org/lc-marcedit/05-profiling-your-MARC-data.html) 
+   
+   :::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Building a MARC field
 
@@ -30,8 +55,6 @@ This is possible using the function called, Build New Field.
 
 ![](fig/buildNewField.png){alt='Build New Field Window'}
 
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
@@ -64,9 +87,42 @@ This is possible using the function called, Build New Field.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::::::::::::::::::::::: callout
+## Beware the Build New Field Function
+In the example above, if your 856 contains other subfields such as \$3, then these will not be retained because you are only building a new 856 that replaces the current one. To retain \$3 data, you would need to include this parameter in your function. This would look like `=856 40{856$3}\$uhttps://exampleproxy.edu/login?url={856$u}`
+
+Also note, the build new field works on the first iteration of the field. When working in particular with the MARC field 856, if you need to build a new field using all of the MARC fields 856 in your record, you can use the syntax [x] as in {856$u[x]}. This will ensure all of the MARC fields in the records will undergo the build operation you specify.
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+   :::::::::::::::::::::::::::::::::::::: instructor
+   
+    This is a good time to re-iterate that MarcEdit has different ways to accomplish similar tasks. You can use Find All & Replace, Build New Field, or use the advanced subfield edit functions below. It's worth highlighting how these differ. In the example above, if there are records with the MARC field 856 that have a \$3 or other subfields besides \$u, then those subfields will not appear in the newly built MARC field 856. The Find All and Replace will only work on finding and replacing exactly what you entered in the Find All field. This is why it's important to profile data or use the Find All to review changes. For the Build New Field function, it is worth selecting the option to always create a new field and then check that new field to see if the build did what was expected. If it did, then you can use "Special Undo", and build the new field again with the option to "Replace Existing Field". 
+   
+   :::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Advanced Subfield Edit Functions
+There are 3 advanced Edit Subfield features that are extremely useful. These are append, prepend, and change subfield. These aren't regular expressions but special characters built into the MarcEditor Edit Subfield tool.
+
+- Prepend data to a subfield: Special character ^b
+- Change subfield character: Special character ^c
+- Append data to a subfield: Special character ^e
+
+:::::::::::::::::::::::::::::::::::::::  checklist
+
+## Let's add the proxy to the 856$u using the prepend special character ^b
+
+1. Go to Tools → Edit Subfield Data
+2. In Field, Enter 856
+3. In Subfield, Enter u
+4. In Field Data, Enter ^b
+5. In Replace with, Enter "https://exampleproxy.edu/login?url="
+6. Click Replace
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 ## RDA Helper
 
-Records aren't created equal in that we encounter MARC data that follows different descriptive cataloging standards. There are a number of records cataloged according to the AACR2 standard or even AACR or earlier. Sometimes it is necessary to make sure these records follow the current RDA descriptive cataloging standard. MarcEdit lets you do this through the function called RDA Helper.
+Records aren't created equal in that we encounter MARC data that follows different descriptive cataloging standards. There are many records cataloged according to the AACR2 standard or even AACR or earlier. Sometimes it is necessary to make sure these records follow the current RDA descriptive cataloging standard. MarcEdit lets you do this through the function called RDA Helper.
 
 To run the RDA Helper, go to Tools and select RDA Helper. In the window that opens, you can pick and choose how you would like to transform your records to align better with the RDA descriptive standard. For example, you can add the RDA fields 336, 337, and 338 for content, media, and carrier types. You can update the MARC field 040 to include the `$e` rda and delete the GMD statement. You can also evaluate the 260/264.
 
