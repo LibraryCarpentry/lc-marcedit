@@ -153,17 +153,23 @@ To run the RDA Helper, go to Tools and select RDA Helper. In the window that ope
 
 There are times when you need to work on a subset of your MARC data. The Select Records for Edit function allows you do this.
 
-Before using the Select Records for Edit function, save your file to capture recent edits.
+Before using the Select Records for Edit function, save your file (Ctrl + S) to capture recent edits.
+
+:::::::::::::::::::::::::::::::::::::: instructor
+
+Note: For this functionality, a good demo is to update the display field to 338$a and look for "online resource".
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
 
 Go to File and click on Select Records for Edit. In the window, you will see Display Field in the lower right hand corner. This is where you enter the MARC field you want to see displayed once you import your file. You can enter a MARC field and subfield or just a MARC field. The MARC field and/or subfield that you add in this box will provide the criteria you need to select records you want to edit. Once you have entered the Display Field, click on Import File. This will import the MARC (`.mrk`) file that you are currently working on. You can select another MARC (`.mrk`) file in the box Source MARC file.
 
 ![](fig/selectRecordsForEdit.png){alt='MarcEdit empty Select Records for Edit dialog'}
 
-To select only the records you want to edit, enter your criteria in the Search box and click the magnifying glass icon. Records in your file where the contents of the selected Display Field match your search criteria will be selected. Click on Export Selected to export these records and edit them. 
+Records can be selected individually by clicking the checkbox. However, to select only the records you want to edit in bulk, enter your criteria in the Search box and click the magnifying glass icon. Records in your file where the contents of the selected Display Field match your search criteria will be selected. Click on Export Selected to export these records and edit them. 
 
 ![](fig/selectRecordsForEditon245.png){alt='MarcEdit completed Select Records for Edit using the MARC field 245 dialog'}
 
-When saving the exported records you can choose to save the file as a new record subset (Save As), or merge the edits back into your complete record set (Save). 
+When saving the exported records you can choose to save the file as a new record subset (Save As), or merge the edits back into your complete record set (Save). When selecting (Save) to merge edits back into your complete record set, the temporary record set will close. Reopen your complete record set .mrk file to continue editing.
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
@@ -176,11 +182,11 @@ When saving the exported records you can choose to save the file as a new record
 5. Click the magnifying glass icon. A pop up window will indicate the number of records selected that match your criteria. Click OK.
 6. Click on Export Selected. A pop up window indicate that your selected records have been extracted. Click OK.
 7. A new MarcEditor window will open. Note the temporary file name at the top of the editor window indicating this file is distinct from your main file. In the new MarcEditor, go to Tools → Call Number tools → Cuttering Tools → Generate Cutters.
-8. In the field box enter 099 and click Process
+8. In the field box enter 099, select Cutter order (1xx,2xx), and click Process
 9. Check your results by using Find All `=099`
 10. Select File → Save. A pop up window will indicate your extracted data with edits has been saved back into your main file. Click OK.
   
-
+For more information on the Cuttering Tool, watch Terry Reese's YouTube video [Automatically Generating Cutter for Call Numbers](https://www.youtube.com/watch?v=F75qwnXKRMY&t=0s) 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
