@@ -83,7 +83,7 @@ You can add a new task by clicking on the plus button. You can add any type of f
 
 Click on save at the left bottom corner of the Task List window to save your Task. From there you can close the Task Manager window. To run a task, go to Tools → Assigned Tasks → Current Tasks.
 
-If you have created many Tasks, it does help to assign them to groups to more easily find what you need. If you don't use Groups, the Task Manager will list all of your Tasks in the order they were created and it might be difficult to a specific task, especially on small screens such as laptops. Tasks can also be reordered in the Task Manager by selecting a task and then moving it in the list using the up and down arrows.
+If you have created many Tasks, it does help to assign them to groups to more easily find what you need. If you don't use Groups, the Task Manager will list all of your Tasks in the order they were created and it might be difficult to find a specific task, especially on small screens such as laptops. Tasks can also be reordered in the Task Manager by selecting a task and then moving it in the list using the up and down arrows.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
