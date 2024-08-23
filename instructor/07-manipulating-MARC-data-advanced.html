@@ -118,11 +118,11 @@
   Library Carpentry: MarcEdit
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 54%" class="percentage">
-    54%
+<aside class="col-md-12 lesson-progress"><div style="width: 51%" class="percentage">
+    51%
   </div>
   <div class="progress library">
-    <div class="progress-bar library" role="progressbar" style="width: 54%" aria-valuenow="54" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar library" role="progressbar" style="width: 51%" aria-valuenow="51" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -270,7 +270,9 @@
 
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#build-new-field">Build New Field</a></li>
+        <ul><li><a href="#edit-shortcuts">Edit Shortcuts</a></li>
+<li><a href="#building-a-marc-field">Building a MARC field</a></li>
+<li><a href="#advanced-subfield-edit-functions">Advanced Subfield Edit Functions</a></li>
 <li><a href="#rda-helper">RDA Helper</a></li>
 <li><a href="#select-records-to-edit">Select Records to Edit</a></li>
         </ul></div><!--/div.accordion-body-->
@@ -364,13 +366,13 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Manipulating MARC data advanced</h1>
-        <p>Last updated on 2023-10-13 |
+        <p>Last updated on 2024-08-23 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/07-manipulating-MARC-data-advanced.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
 
 
-        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 28 minutes</p>
+        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 43 minutes</p>
 
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -385,7 +387,8 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>How can Build New Field be used to combine elements from existing
+<ul><li>How can the Edit Shortcuts features be used to manipulate data?</li>
+<li>How can Build New Field be used to combine elements from existing
 MARC fields into a new field?</li>
 <li>How can the RDA Helper be used?</li>
 <li>How can Select Records for Edit be used to manipulate a subset of
@@ -397,30 +400,67 @@ your MARC file?</li>
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Explain Build New Field, RDA Helper and Select Records for Edit
-advanced functions</li>
+<ul><li>Explain Edit Shortcuts, Build New Field, RDA Helper, and Select
+Records for Edit advanced functions</li>
 </ul></div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="build-new-field">Build New Field<a class="anchor" aria-label="anchor" href="#build-new-field"></a>
-<a class="anchor" aria-label="anchor" href="#build-new-field"></a></h2>
-<hr class="half-width"><div id="building-a-marc-field" class="callout">
+<section><h2 class="section-heading" id="edit-shortcuts">Edit Shortcuts<a class="anchor" aria-label="anchor" href="#edit-shortcuts"></a>
+<a class="anchor" aria-label="anchor" href="#edit-shortcuts"></a></h2>
+<hr class="half-width"><p>The Edit Shortcuts menu can be found by going to Edit in the menu in
+the MarcEditor and then selecting Edit Shortcuts. Edit Shortcuts have
+several powerful options.</p>
+<ul><li>Change Case: You can select to change the case of a MARC field or a
+MARC field and subfield to lower, upper, initial, or title case. You can
+also capitalize the initial character.</li>
+<li>Field Edits: You can clean smart characters or ISBD punctuation,
+correct mnemonic errors, generate paired ISBN-13 values, find fields
+missing a word, find records missing a field, find records with
+duplicate tags, insert a Generic LDR if it is missing, limit the number
+of fields, replace HTML entities, or swap a title.</li>
+<li>Math Functions: Convert to decimal degrees.</li>
+</ul><div id="lets-use-edit-shortcuts-to-make-the-099a-upper-case" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="lets-use-edit-shortcuts-to-make-the-099a-upper-case" class="callout-inner">
+<h3 class="callout-title">Let’s use Edit Shortcuts to make the 099$a upper case<a class="anchor" aria-label="anchor" href="#lets-use-edit-shortcuts-to-make-the-099a-upper-case"></a>
+</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal"><li>Go to Edit → Edit Shortcuts</li>
+<li>In the new window, in the field box, type in <code>099$a</code>
+</li>
+<li>Click OK</li>
+</ol></div>
+</div>
+</div>
+<div id="use-find-or-find-all-to-verify-results" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="building-a-marc-field" class="callout-inner">
-<h3 class="callout-title">Building a MARC field<a class="anchor" aria-label="anchor" href="#building-a-marc-field"></a>
+<div id="use-find-or-find-all-to-verify-results" class="callout-inner">
+<h3 class="callout-title">Use Find or Find All to Verify Results<a class="anchor" aria-label="anchor" href="#use-find-or-find-all-to-verify-results"></a>
 </h3>
 <div class="callout-content">
-<p>Sometimes it is necessary to create a new MARC field based on the
+<p>You can use Find or Find All to verify that the change did what you
+expected on your records in the file. If a result didn’t work as
+expected, you can select “Special Undo”. This is why it is important to
+profile your data before doing batch edits.</p>
+</div>
+</div>
+</div>
+<p>:::::::::::::::::::::::::::::::::::::: instructor</p>
+<p>This is a good moment to review the <a href="https://librarycarpentry.org/lc-marcedit/05-profiling-your-MARC-data.html" class="external-link">Profiling
+Your MARC data</a></p>
+<p>:::::::::::::::::::::::::::::::::::::::::::::::::</p>
+</section><section><h2 class="section-heading" id="building-a-marc-field">Building a MARC field<a class="anchor" aria-label="anchor" href="#building-a-marc-field"></a>
+<a class="anchor" aria-label="anchor" href="#building-a-marc-field"></a></h2>
+<hr class="half-width"><p>Sometimes it is necessary to create a new MARC field based on the
 content of existing MARC fields. This is possible using the function
 called, Build New Field.</p>
-<figure><img src="../fig/buildNewField.png" alt="Build New Field Window" class="figure mx-auto d-block"></figure></div>
-</div>
-</div>
-<div id="lets-build-a-new-035-9a-using-the-data-from-the-001-and-static-data" class="callout checklist">
+<figure><img src="../fig/buildNewField.png" alt="Build New Field Window" class="figure mx-auto d-block"></figure><div id="lets-build-a-new-035-9a-using-the-data-from-the-001-and-static-data" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
 </div>
@@ -471,11 +511,66 @@ the <code>856$u</code>.</li>
 </div>
 </div>
 </div>
+<div id="beware-the-build-new-field-function" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="beware-the-build-new-field-function" class="callout-inner">
+<h3 class="callout-title">Beware the Build New Field Function<a class="anchor" aria-label="anchor" href="#beware-the-build-new-field-function"></a>
+</h3>
+<div class="callout-content">
+<p>In the example above, if your 856 contains other subfields such as
+$3, then these will not be retained because you are only building a new
+856 that replaces the current one. To retain $3 data, you would need to
+include this parameter in your function. This would look like
+<code>=856 40{856$3}\$uhttps://exampleproxy.edu/login?url={856$u}</code></p>
+<p>Also note, the build new field works on the first iteration of the
+field. When working in particular with the MARC field 856, if you need
+to build a new field using all of the MARC fields 856 in your record,
+you can use the syntax [x] as in {856$u[x]}. This will ensure all of the
+MARC fields in the records will undergo the build operation you
+specify.</p>
+</div>
+</div>
+</div>
+<p>:::::::::::::::::::::::::::::::::::::: instructor</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">This</span> is a good time to re-iterate that MarcEdit has different ways to accomplish similar tasks. You can use Find All <span class="kw">&amp;</span> <span class="ex">Replace,</span> Build New Field, or use the advanced subfield edit functions below. It<span class="st">'s worth highlighting how these differ. In the example above, if there are records with the MARC field 856 that have a \$3 or other subfields besides \$u, then those subfields will not appear in the newly built MARC field 856. The Find All and Replace will only work on finding and replacing exactly what you entered in the Find All field. This is why it'</span>s important to profile data or use the Find All to review changes. For the Build New Field function, it is worth selecting the option to always create a new field and then check that new field to see if the build did what was expected. If it did, then you can use <span class="st">"Special Undo"</span>, and build the new field again with the option to <span class="st">"Replace Existing Field"</span>. </span></code></pre>
+</div>
+<p>:::::::::::::::::::::::::::::::::::::::::::::::::</p>
+</section><section><h2 class="section-heading" id="advanced-subfield-edit-functions">Advanced Subfield Edit Functions<a class="anchor" aria-label="anchor" href="#advanced-subfield-edit-functions"></a>
+<a class="anchor" aria-label="anchor" href="#advanced-subfield-edit-functions"></a></h2>
+<hr class="half-width"><p>There are 3 advanced Edit Subfield features that are extremely
+useful. These are append, prepend, and change subfield. These aren’t
+regular expressions but special characters built into the MarcEditor
+Edit Subfield tool.</p>
+<ul><li>Prepend data to a subfield: Special character ^b</li>
+<li>Change subfield character: Special character ^c</li>
+<li>Append data to a subfield: Special character ^e</li>
+</ul><div id="lets-add-the-proxy-to-the-856u-using-the-prepend-special-character-b" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<div id="lets-add-the-proxy-to-the-856u-using-the-prepend-special-character-b" class="callout-inner">
+<h3 class="callout-title">Let’s add the proxy to the 856$u using the prepend special character ^b<a class="anchor" aria-label="anchor" href="#lets-add-the-proxy-to-the-856u-using-the-prepend-special-character-b"></a>
+</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal"><li>Go to Tools → Edit Subfield Data</li>
+<li>In Field, Enter 856</li>
+<li>In Subfield, Enter u</li>
+<li>In Field Data, Enter ^b</li>
+<li>In Replace with, Enter “<a href="https://exampleproxy.edu/login?url=" class="external-link uri">https://exampleproxy.edu/login?url=</a>”</li>
+<li>Click Replace</li>
+</ol></div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="rda-helper">RDA Helper<a class="anchor" aria-label="anchor" href="#rda-helper"></a>
 <a class="anchor" aria-label="anchor" href="#rda-helper"></a></h2>
 <hr class="half-width"><p>Records aren’t created equal in that we encounter MARC data that
-follows different descriptive cataloging standards. There are a number
-of records cataloged according to the AACR2 standard or even AACR or
+follows different descriptive cataloging standards. There are many
+records cataloged according to the AACR2 standard or even AACR or
 earlier. Sometimes it is necessary to make sure these records follow the
 current RDA descriptive cataloging standard. MarcEdit lets you do this
 through the function called RDA Helper.</p>
@@ -644,8 +739,8 @@ validate MARC.</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/instructor/07-manipulating-MARC-data-advanced.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/instructor/07-manipulating-MARC-data-advanced.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2023-10-13",
-  "datePublished": "2024-08-20"
+  "dateModified": "2024-08-23",
+  "datePublished": "2024-08-23"
 }
 
   </script><script>
