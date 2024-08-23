@@ -58,6 +58,12 @@ The difference between these two actions lists might seem confusing at first. Ta
 
 Tasks don't have to be categorized in groups or be linked to keyboard shortcuts. This is up to the users and their preference for how they organize their task workspace.
 
+:::::::::::::::::::::::::::::::::::::: instructor
+
+Note: “Task Actions” and “Manage Existing Tasks” menu options are different on a Mac.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
 ## Create a New Task
 
 To create a task in the MarcEditor, Go to Tools in the top level menu and then Manage Tasks. In the Task Actions menu, select "New Task" from the dropdown menu and then click Select. In the dialogue box, enter the name of your task and click OK. This opens the Edit Task List window where you will see the name you gave your task, a description, tasks, and actions.
@@ -77,7 +83,7 @@ You can add a new task by clicking on the plus button. You can add any type of f
 
 Click on save at the left bottom corner of the Task List window to save your Task. From there you can close the Task Manager window. To run a task, go to Tools → Assigned Tasks → Current Tasks.
 
-If you have created many Tasks, it does help to assign them to groups to more easily find what you need. If you don't use Groups, the Task Manager will list all of your Tasks in alphabetical order and it might be difficult to see them, especially on small screens such as laptops.
+If you have created many Tasks, it does help to assign them to groups to more easily find what you need. If you don't use Groups, the Task Manager will list all of your Tasks in the order they were created and it might be difficult to a specific task, especially on small screens such as laptops. Tasks can also be reordered in the Task Manager by selecting a task and then moving it in the list using the up and down arrows.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -110,6 +116,17 @@ If you have created many Tasks, it does help to assign them to groups to more ea
 ## Managing your Tasks
 
 To edit an existing task, go to Tools → Manage Tasks. In the Task Manger select the task you want to edit, this will highlight the task. Under Task Actions choose Edit Task and click Select. This will open the Edit Task List window. Just like when creating a new task, you can add, delete, or edit functions in your task. Use the up and down arrows to the right to reorder your functions.
+
+:::::::::::::::::::::::::::::::::::::: instructor
+
+Note: If learners need instructions on deleting their existing proxies for the next challenge, suggest they use a find and replace, for example:
+
+1. Click Edit->Replace
+2. In the search box for Find, type in =856 40$3Full text:$uhttps://proxy.edu?url= *note the proxy they added may not be this exact string
+3. In the search box for Replace, type in =856 40$3Full text:$u
+4. Click Replace all
+   
+:::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
