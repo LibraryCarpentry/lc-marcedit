@@ -21,6 +21,17 @@ exercises: 3
 
 ## Getting Started with MarcEdit
 
+:::::::::::::::::::::::::::::::::::::: instructor
+
+Note: A number of differences have been noted in the Top Level Menu design and features for Mac users in this lesson:
+- Help is in the top menu bar, not in the window
+- Preferences gearbox is located on the bottom right hand corner of the main window
+- Add a shortcut is not available on a Mac
+- Quicklinks are not available on a Mac
+- File association settings are not available on a Mac
+  
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
 ## Top Level Menu Features
 
 When you launch MarcEdit, the main window opens. From here, you can access the suite of MarcEdit tools, features, plug-ins, quick links, or help.
