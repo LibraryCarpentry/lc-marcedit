@@ -170,6 +170,19 @@ The results list will show one record missing a 245 field. Click on Jump to Reco
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+## Validation and Log Reports
+
+- Validate ISBNs: When you select this report, a popup window will appear. Enter the MARC field where the ISBNs are. The report will see if these are correct. For example, if an ISBN is followed by text such ebook without a space, then the report will highlight this. However, if there is a space between the ISBN and any text, this is considered valid as in this example, 9780190856939 (ebook). You will need to close the popup windows.
+- Validate ISSNs: When you select this report, a popup window will appear. Enter the MARC field where the ISSNs are. The behavior is similar to the ISBN report. The report will provide a result of errors or a message that no invalid ISSNs were found.
+- Validate Headings: Unlike in Connexion or OCLC's WorldShare, validating headings does not create hyperlinks. This report will compare headings to several online services. These online services are listed in the Service Status when you click on Validate Headings and select Service Status. Results will appear in a popup window. 
+- Manage log files: There is no version control such as Git in MarcEdit. However, if you click on Manage Log Files -> View Current Log, you will see the entire list of actions that you have done on your file.
+
+## MarcValidator Report
+The MarcValidator report has a couple of options of which 2 are highlighted here. Note that if you are working with a large file, it will take longer to prep the file. Once it is prepped, there is a message that says "MarcEditor file has been prepped and is awaiting validation". You can view results grouped by errors or remove invalid records automatically from your file.
+
+- Check MARC Usings Rules File: The Rules file, called marcrules.txt, includes all the valid MARC fields, their valid indicators, and whether that field can be repeated. The Rules file can be modified. Once you open the MarcValidator, in the popup window, you will see the option to "Edit the Rules File". You will need to respect spaces and entry conventions by following what is already present in that text file.
+- Validate Record Structure: This report checks if the MARC syntax is valid and includes a check for HTML, tabs, and smart characters.
+
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - MarcEditor provides many different tools and reports to profile and edit your MARC records
