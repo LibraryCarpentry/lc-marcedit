@@ -1436,7 +1436,7 @@ our records?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Field count outlines each field found in our records, the number of
@@ -1554,7 +1554,7 @@ correctly?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The 245 field number is formatted incorrectly. The MarcEditor relies
@@ -2241,7 +2241,7 @@ the <code>856$u</code>.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools → Build New Field</li>
@@ -2349,7 +2349,7 @@ abbreviations; Remove the GMD.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2374,7 +2374,7 @@ The Select Records for Edit function allows you do this.</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Note: For this functionality, a good demo is to update the display
 field to 338$a and look for “online resource”.</p>
@@ -2457,7 +2457,7 @@ validate MARC.</li>
 </div>
 </section></section><section id="aio-08-tasks-and-automation"><p>Content from <a href="08-tasks-and-automation.html">Tasks and Automation</a></p>
 <hr>
-<p>Last updated on 2023-10-05 |
+<p>Last updated on 2024-08-26 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/08-tasks-and-automation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 22 minutes</p>
@@ -2569,6 +2569,19 @@ and importing, and assigning keyboard shortcuts to tasks.</p>
 <p>Tasks don’t have to be categorized in groups or be linked to keyboard
 shortcuts. This is up to the users and their preference for how they
 organize their task workspace.</p>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
+<p>Note: “Task Actions” and “Manage Existing Tasks” menu options are
+different on a Mac.</p>
+</div>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="create-a-new-task">Create a New Task<a class="anchor" aria-label="anchor" href="#create-a-new-task"></a>
 </h2>
 <hr class="half-width">
@@ -2601,9 +2614,11 @@ save your Task. From there you can close the Task Manager window. To run
 a task, go to Tools → Assigned Tasks → Current Tasks.</p>
 <p>If you have created many Tasks, it does help to assign them to groups
 to more easily find what you need. If you don’t use Groups, the Task
-Manager will list all of your Tasks in alphabetical order and it might
-be difficult to see them, especially on small screens such as
-laptops.</p>
+Manager will list all of your Tasks in the order they were created and
+it might be difficult to find a specific task, especially on small
+screens such as laptops. Tasks can also be reordered in the Task Manager
+by selecting a task and then moving it in the list using the up and down
+arrows.</p>
 <div id="create-and-run-a-new-task-that-runs-the-rda-helper-and-removes-9xx-fields" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -2653,6 +2668,27 @@ Under Task Actions choose Edit Task and click Select. This will open the
 Edit Task List window. Just like when creating a new task, you can add,
 delete, or edit functions in your task. Use the up and down arrows to
 the right to reorder your functions.</p>
+<div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
+  <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
+</button>
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div class="accordion-body">
+<p>Note: If learners need instructions on deleting their existing
+proxies for the next challenge, suggest they use a find and replace, for
+example:</p>
+<ol style="list-style-type: decimal">
+<li>Click Edit-&gt;Replace</li>
+<li>In the search box for Find, type in =856 40<span class="math inline">\(3Full text:\)</span>uhttps://proxy.edu?url= *note
+the proxy they added may not be this exact string</li>
+<li>In the search box for Replace, type in =856 40<span class="math inline">\(3Full text:\)</span>u</li>
+<li>Click Replace all</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
 <div id="add-a-proxy-to-the-856-40u-in-your-task" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
