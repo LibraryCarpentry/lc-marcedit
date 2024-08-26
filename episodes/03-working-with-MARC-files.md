@@ -192,9 +192,17 @@ If you change your preferences for the MarcEditor, the tool used to work with MA
 
 ## Behavior when you reset your preferences and other popup windows
 
-When you click Ok to reset preferences, there is a chance that the popup window for Preferences and/or even MarcEdit main menu will close. If the MarcEdit main menu closes, sometimes it will reopen. If it does not, then click on MarcEdit again on your desktop to reopen the application. It should be noted that not all popup windows will close automatically such as Find, Replace, or the MarcValidator. However, the Select Records for Edit temporary editor will close if you click Save. These idiosyncracies for each will be covered in their upcoming episodes.
+When you click Ok to reset preferences, there is a chance that the popup window for Preferences and/or even MarcEdit main menu will close. If the MarcEdit main menu closes, sometimes it will reopen. If it does not, then click on MarcEdit again on your desktop to reopen the application. 
+
+It should be noted that not all MarcEdit popup windows will close automatically such as Find, Replace, or the MarcValidator. However, the Select Records for Edit temporary editor will close if you click Save. These idiosyncracies for each will be covered in their upcoming episodes.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::: instructor
+
+Note: Some preference updates will force MarcEdit to restart and others will not. Also note that in order for some preference changes to display (such as updating the MarcEditor font settings), you will need to close and reopen the MarcEditor, which would require saving your file if you haven't done so. Emphasize popup window inconsistencies for learners, especially the need to close windows after use for actions such as Find and Replace. If learners do not close popup windows as they move through exercises, they are more likely to lose their place or get confused.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
