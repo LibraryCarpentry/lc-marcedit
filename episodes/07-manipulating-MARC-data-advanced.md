@@ -40,13 +40,14 @@ The Edit Shortcuts menu can be found by going to Edit in the menu in the MarcEdi
 ## Use Find or Find All to Verify Results
 You can use Find or Find All to verify that the change did what you expected on your records in the file. If a result didn't work as expected, you can select "Special Undo". This is why it is important to profile your data before doing batch edits.
 
-::::::::::::::::::::::::::::::::::::::::: 
-
    :::::::::::::::::::::::::::::::::::::: instructor
    
    This is a good moment to review the [Profiling Your MARC data](https://librarycarpentry.org/lc-marcedit/05-profiling-your-MARC-data.html) 
    
    :::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::: 
+
 
 ## Building a MARC field
 
@@ -92,13 +93,14 @@ This is possible using the function called, Build New Field.
 In the example above, if your 856 contains other subfields such as \$3, then these will not be retained because you are only building a new 856 that replaces the current one. To retain \$3 data, you would need to include this parameter in your function. This would look like `=856 40{856$3}\$uhttps://exampleproxy.edu/login?url={856$u}`
 
 Also note, the build new field works on the first iteration of the field. When working in particular with the MARC field 856, if you need to build a new field using all of the MARC fields 856 in your record, you can use the syntax [x] as in {856$u[x]}. This will ensure all of the MARC fields in the records will undergo the build operation you specify.
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
    :::::::::::::::::::::::::::::::::::::: instructor
    
     This is a good time to re-iterate that MarcEdit has different ways to accomplish similar tasks. You can use Find All & Replace, Build New Field, or use the advanced subfield edit functions below. It's worth highlighting how these differ. In the example above, if there are records with the MARC field 856 that have a \$3 or other subfields besides \$u, then those subfields will not appear in the newly built MARC field 856. The Find All and Replace will only work on finding and replacing exactly what you entered in the Find All field. This is why it's important to profile data or use the Find All to review changes. For the Build New Field function, it is worth selecting the option to always create a new field and then check that new field to see if the build did what was expected. If it did, then you can use "Special Undo", and build the new field again with the option to "Replace Existing Field". 
    
-   :::::::::::::::::::::::::::::::::::::::::::::::::
+    :::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 ## Advanced Subfield Edit Functions
 There are 3 advanced Edit Subfield features that are extremely useful. These are append, prepend, and change subfield. These aren't regular expressions but special characters built into the MarcEditor Edit Subfield tool.
@@ -154,12 +156,6 @@ To run the RDA Helper, go to Tools and select RDA Helper. In the window that ope
 There are times when you need to work on a subset of your MARC data. The Select Records for Edit function allows you do this.
 
 Before using the Select Records for Edit function, save your file (Ctrl + S) to capture recent edits.
-
-:::::::::::::::::::::::::::::::::::::: instructor
-
-Note: For this functionality, a good demo is to update the display field to 338$a and look for "online resource".
-
-:::::::::::::::::::::::::::::::::::::::::::::::::
 
 Go to File and click on Select Records for Edit. In the window, you will see Display Field in the lower right hand corner. This is where you enter the MARC field you want to see displayed once you import your file. You can enter a MARC field and subfield or just a MARC field. The MARC field and/or subfield that you add in this box will provide the criteria you need to select records you want to edit. Once you have entered the Display Field, click on Import File. This will import the MARC (`.mrk`) file that you are currently working on. You can select another MARC (`.mrk`) file in the box Source MARC file.
 
