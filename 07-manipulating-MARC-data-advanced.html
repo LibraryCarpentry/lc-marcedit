@@ -366,7 +366,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Manipulating MARC data advanced</h1>
-        <p>Last updated on 2024-08-26 |
+        <p>Last updated on 2024-09-05 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/07-manipulating-MARC-data-advanced.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -446,10 +446,6 @@ profile your data before doing batch edits.</p>
 </div>
 </div>
 </div>
-<p>:::::::::::::::::::::::::::::::::::::: instructor</p>
-<p>This is a good moment to review the <a href="https://librarycarpentry.org/lc-marcedit/05-profiling-your-MARC-data.html" class="external-link">Profiling
-Your MARC data</a></p>
-<p>:::::::::::::::::::::::::::::::::::::::::::::::::</p>
 </section><section><h2 class="section-heading" id="building-a-marc-field">Building a MARC field<a class="anchor" aria-label="anchor" href="#building-a-marc-field"></a></h2>
 <hr class="half-width"><p>Sometimes it is necessary to create a new MARC field based on the
 content of existing MARC fields. This is possible using the function
@@ -525,13 +521,6 @@ specify.</p>
 </div>
 </div>
 </div>
-<p>:::::::::::::::::::::::::::::::::::::: instructor</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">This</span> is a good time to re-iterate that MarcEdit has different ways to accomplish similar tasks. You can use Find All <span class="kw">&amp;</span> <span class="ex">Replace,</span> Build New Field, or use the advanced subfield edit functions below. It<span class="st">'s worth highlighting how these differ. In the example above, if there are records with the MARC field 856 that have a \$3 or other subfields besides \$u, then those subfields will not appear in the newly built MARC field 856. The Find All and Replace will only work on finding and replacing exactly what you entered in the Find All field. This is why it'</span>s important to profile data or use the Find All to review changes. For the Build New Field function, it is worth selecting the option to always create a new field and then check that new field to see if the build did what was expected. If it did, then you can use <span class="st">"Special Undo"</span>, and build the new field again with the option to <span class="st">"Replace Existing Field"</span>. </span></code></pre>
-</div>
-<p>:::::::::::::::::::::::::::::::::::::::::::::::::</p>
 </section><section><h2 class="section-heading" id="advanced-subfield-edit-functions">Advanced Subfield Edit Functions<a class="anchor" aria-label="anchor" href="#advanced-subfield-edit-functions"></a></h2>
 <hr class="half-width"><p>There are 3 advanced Edit Subfield features that are extremely
 useful. These are append, prepend, and change subfield. These aren’t
@@ -604,7 +593,6 @@ abbreviations; Remove the GMD.</li>
 The Select Records for Edit function allows you do this.</p>
 <p>Before using the Select Records for Edit function, save your file
 (Ctrl + S) to capture recent edits.</p>
-
 <p>Go to File and click on Select Records for Edit. In the window, you
 will see Display Field in the lower right hand corner. This is where you
 enter the MARC field you want to see displayed once you import your
@@ -732,7 +720,7 @@ validate MARC.</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/07-manipulating-MARC-data-advanced.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/07-manipulating-MARC-data-advanced.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2024-08-26",
+  "dateModified": "2024-09-05",
   "datePublished": "2024-09-05"
 }
 
