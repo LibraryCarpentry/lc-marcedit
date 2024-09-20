@@ -12,7 +12,7 @@ site: sandpaper::sandpaper_site
 
 ## Prerequisites
 
-This lesson requires a basic knowledge of the MARC21 standard.
+This lesson requires a [basic knowledge](https://www.loc.gov/marc/96principl.html) of the [MARC21 standard](https://www.loc.gov/marc/).
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
