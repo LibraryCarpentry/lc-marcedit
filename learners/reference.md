@@ -4,7 +4,6 @@ title: 'Glossary'
 
 ## Glossary
 
-{:auto\_ids}
 [Dublic Core]{#dc}
 :   A common metadata standard used for describing a wide range of resources across domains. It includes 15 essential elements like title, creator, subject, and date.
 
