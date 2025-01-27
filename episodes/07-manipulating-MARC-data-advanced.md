@@ -25,11 +25,18 @@ The Edit Shortcuts menu can be found by going to Edit in the menu in the MarcEdi
 - Field Edits: You can clean smart characters or ISBD punctuation, correct mnemonic errors, generate paired ISBN-13 values, find fields missing a word, find records missing a field, find records with duplicate tags, insert a Generic LDR if it is missing, limit the number of fields, replace HTML entities, or swap a title.
 - Math Functions: Convert to decimal degrees.
 
+:::::::::::::::::::::::::::::::::::::: instructor
+
+Note: With version 7.7, the Field Edits have an additional menu level. Cleaning smart characters, ISBD punctuation, and limiting number of fields is now under Data Cleanup Tools. Find records missing a field, with duplicate tags or missing a word are now under the menu option Find Data Tools.
+  
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 :::::::::::::::::::::::::::::::::::::::  checklist
 
 ## Let's use Edit Shortcuts to make the 099$a upper case
 
-1. Go to Edit → Edit Shortcuts
+1. Go to Edit → Edit Shortcuts -> Change Case -> Upper Case
 2. In the new window, in the field box, type in `099$a`
 3. Click OK
   
