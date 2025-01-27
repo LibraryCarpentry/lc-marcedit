@@ -10,7 +10,7 @@ You need to install the latest version of MarcEdit and download a data file to f
 
 MarcEdit is a free, open-source application. You can download MarcEdit from
 [https://marcedit.reeset.net/downloads](https://marcedit.reeset.net/downloads).
-This lesson has been tested with the following versions: MarcEdit 7 (specifically 7.6.3) for Windows and MarcEdit 3 for MacOS. It should be highlighted that MarcEdit is frequently updated and these instructions might have been tested on a slightly earlier version. 
+This lesson has been tested with the following versions: MarcEdit 7 (specifically 7.6.3 and 7.7.10) for Windows and MarcEdit 3 for MacOS. It should be highlighted that MarcEdit is frequently updated and these instructions might have been tested on a slightly earlier version. 
 
 #### Plug-Ins and Packages
 
@@ -95,3 +95,13 @@ If you encounter problems installing or running MarcEdit, a good source of suppo
 Include your operating system when searching to find the most relevant answers for your issue.
 
 You may also want to check the [Videos](https://www.youtube.com/playlist?list=PLrHRsJ91nVFScJLS91SWR5awtFfpewMWg) or the [MarcEdit Knowledge Base](https://marcedit.reeset.net/archives/category/knowledge_base).
+
+## Updating MarcEdit
+
+MarcEdit is continually being improved. Fixes and sometimes new functionality are released several times per year. There is no set schedule as to when an update is available. However, it is recommended to subscribe to the MarcEdit listserv where information is posted on new updates and/or versions.
+
+:::::::::::::::::::::::::::::::::::::: instructor
+
+Note: Typically updates will not remove funtionality. However, some updates will re-arrange tools and functions slightly differently from time to time. For example, from 7.6 to 7.7, the Edit Shortcuts menu went from one level to choose from to a mix of 2 and one. 
+  
+:::::::::::::::::::::::::::::::::::::::::::::::::
