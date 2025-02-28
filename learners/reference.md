@@ -7,7 +7,7 @@ title: 'Glossary'
 [Dublic Core]{#dc}
 :   A common metadata standard used for describing a wide range of resources across domains. It includes 15 essential elements like title, creator, subject, and date.
 
-[FAST \(Faceted Application of Subject Terminology\)]{#fast}
+[FAST (Faceted Application of Subject Terminology)]{#fast}
 :   A simplified subject heading system derived from the Library of Congress Subject Headings (LCSH), designed for faster and more consistent application.
 
 [LSP \(Library Services Platform\)]{#lsp}
