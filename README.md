@@ -14,15 +14,15 @@ Lesson Maintainers communication is via Slack.
 ## License
 
 All Software, Data, and Library Carpentry instructional material is made available under the [Creative Commons Attribution
-license](https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/LICENSE.md).
+license](https://github.com/LibraryCarpentry/lc-marcedit/blob/main/LICENSE.md).
 
 ## Contributing
 
-There are many ways to discuss and contribute to Library Carpentry lessons. Visit the lesson [discussion page](https://librarycarpentry.org/lc-marcedit/discuss/index.html) to learn more. Also see [Contributing](https://github.com/LibraryCarpentry/lc-marcedit/blob/gh-pages/CONTRIBUTING.md).
+There are many ways to discuss and contribute to Library Carpentry lessons. Visit the lesson [discussion page](https://librarycarpentry.github.io/lc-marcedit/discuss.html) to learn more. Also see [Contributing](https://github.com/LibraryCarpentry/lc-marcedit/blob/main/CONTRIBUTING.md).
 
 ## Code of Conduct
 
-All participants should agree to abide by The Carpentries [Code of Conduct](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html).
+All participants should agree to abide by The Carpentries [Code of Conduct](https://docs.carpentries.org/policies/coc/).
 
 ## Authors
 
