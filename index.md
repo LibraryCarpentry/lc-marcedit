@@ -17,6 +17,7 @@ By the end of this lesson, learners will be able to:
 3. Use MarcEdit tools to apply basic edits to their data files
 4. Automate editing steps in MarcEdit by creating tasks and tasklists
 
+
 ::::::::::::::::::::::::::::::::::::::::::  prereq
 
 ## Prerequisites
