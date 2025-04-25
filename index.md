@@ -8,6 +8,15 @@ site: sandpaper::sandpaper_site
 
 <!-- this is an html comment -->
 
+## Learning Objectives
+
+By the end of this lesson, learners will be able to:
+
+1. Work with .mrk files in MarcEdit and convert between .mrc and .mrk files
+2. Use MarcEdit reporting functionality to get an overview of their data files and identify errors
+3. Use MarcEdit tools to apply basic edits to their data files
+4. Automate editing steps in MarcEdit by creating tasks and tasklists
+
 ::::::::::::::::::::::::::::::::::::::::::  prereq
 
 ## Prerequisites
