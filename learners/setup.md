@@ -64,7 +64,7 @@ After downloading MarcEdit and once you launch the installation the first time, 
 
 ## Downloading the data
 
-For this lesson, you need to download our sample file from the Library Carpentries MarcEdit GitHub repository. Go to the GitHub [page](https://github.com/LibraryCarpentry/lc-marcedit/blob/main/episodes/data/marc_sample_data.mrc) to download the sample data file called marc\_sample\_data.mrc. Then, click the download button on the right hand side. This MARC file follows the MARC21 standard and is encoded in UTF-8.
+For this lesson, you need to download our sample file from the Library Carpentries MarcEdit GitHub repository. Go to the GitHub [page](https://github.com/LibraryCarpentry/lc-marcedit/blob/main/episodes/data/marc_sample_data.mrc) to download the sample data file called marc\_sample\_data.mrc. Then, click the download button on the right hand side. This MARC file follows the MARC21 standard and is encoded in UTF-8. The sample file comes from MARC 21 records downloaded from the Open Textbook Library and the University of Florida's original catalog data. "Open Textbook Library records are in the public domain and available under a Creative Commons CC0 license." [Open Textbook Library](https://open.umn.edu/opentextbooks/discovery). The book catalog in MARC 21 format from the University of Florida has been released in the public domain under a CC0 license. [Creative Commons](https://wiki.creativecommons.org/wiki/CC0_use_for_data#University_of_Florida_Library)
 
 -  Click on [this link](https://github.com/LibraryCarpentry/lc-marcedit/blob/main/episodes/data/marc_sample_data.mrc)
 -  Click on download button ![](fig/downloadButton.png){alt='GitHub Download Button icon'}
