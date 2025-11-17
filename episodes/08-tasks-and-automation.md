@@ -1,7 +1,7 @@
 ---
 title: Tasks and Automation
 teaching: 20
-exercises: 2
+exercises: 5
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
