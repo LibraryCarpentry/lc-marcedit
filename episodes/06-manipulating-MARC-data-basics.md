@@ -1,7 +1,7 @@
 ---
 title: Manipulating MARC data basics
 teaching: 40
-exercises: 6
+exercises: 10
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
