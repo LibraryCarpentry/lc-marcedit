@@ -1,7 +1,7 @@
 ---
 title: Getting Started with MarcEdit
 teaching: 17
-exercises: 3
+exercises: 5
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
