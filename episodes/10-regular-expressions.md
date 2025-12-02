@@ -1,7 +1,7 @@
 ---
 title: Regular Expressions
 teaching: 30
-exercises: 4
+exercises: 20
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
