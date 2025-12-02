@@ -19,7 +19,7 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Integrations
+## MarcEdit and 3rd Party Integrations
 
 MarcEdit can interface (or integrate) with other applications. Integrations with other cataloguing utilities, such as vendor ILS and LSP systems and OCLC WorldCat, support advanced actions, including downloading records, pushing new records or record updates, and setting holdings (OCLC WorldCat). Currently, MarcEdit can integrate with the ILS Alma, Koha, or a local ILS if you can connect to the host database. MarcEdit can be set up to integrate with OCLC's APIs for metadata and connect to OCLC or the Library of Congress (UTF-8 or MARC8) Z39.50 services.
 

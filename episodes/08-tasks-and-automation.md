@@ -19,13 +19,13 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Tasks and Automation
+## Understanding Automation in MarcEdit
 
 When working with MARC records regularly, you will likely encounter record sets where the data needs the same or very similar approach. A good example is electronic resource records where the resource URL in the 856 field will require the addition of an institution-specific proxy stem. Another example is adding RDA content, carrier, and media terms and codes to your records. Because MARC records typically need to meet cataloguing community standards and local best practices, it is necessary to manipulate MARC data to fit these standards and practices. In the previous lessons learned how to apply one change at a time. In this lesson, we will learn how to string together and automate these changes so they can be re-used in the future.
 
 In the MarcEditor, tasks are the tool that enable such automation. A task is a series of changes to MARC data that occur in the sequence they are entered in the task. One can think of tasks as a mini script of sorts that string together different MarcEditor functions that manipulate MARC data in some way. All tasks are created, managed, and run in the MarcEditor. In this way, tasks are another way to manipulate your data and are an extension of the other tools offered in the MarcEditor.
 
-## What are Tasks?
+### What are Tasks?
 
 A task is a series of MarcEdit functions to manipulate data. In the previous lessons, we ran one function at a time. Tasks string a set of functions together so you can run them as a group. Tasks run each function one after another. As such, it is important to think about how you order the functions in your task. For instance, if you want to add your institutions' proxy and the MARC data already has a proxy that you need to delete, your task has to account for that and remove the old proxy before adding a new one.
 
@@ -64,7 +64,7 @@ Note: “Task Actions” and “Manage Existing Tasks” menu options are differ
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Create a New Task
+### Create a New Task
 
 To create a task in the MarcEditor, Go to Tools in the top level menu and then Manage Tasks. In the Task Actions menu, select "New Task" from the dropdown menu and then click Select. In the dialogue box, enter the name of your task and click OK. This opens the Edit Task List window where you will see the name you gave your task, a description, tasks, and actions.
 
@@ -87,11 +87,11 @@ If you have created many Tasks, it does help to assign them to groups to more ea
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Create and run a new Task that runs the RDA helper and removes 9XX fields
+### Create and run a new Task that runs the RDA helper and removes 9XX fields
 
 :::::::::::::::  solution
 
-## Solution
+### Solution
 
 1. Go to Tools in the upper menu in the MarcEditor
 2. Select Manage Tasks
@@ -113,7 +113,7 @@ If you have created many Tasks, it does help to assign them to groups to more ea
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Managing your Tasks
+### Managing your Tasks
 
 To edit an existing task, go to Tools → Manage Tasks. In the Task Manger select the task you want to edit, this will highlight the task. Under Task Actions choose Edit Task and click Select. This will open the Edit Task List window. Just like when creating a new task, you can add, delete, or edit functions in your task. Use the up and down arrows to the right to reorder your functions.
 
@@ -130,13 +130,13 @@ Note: If learners need instructions on deleting their existing proxies for the n
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Add a proxy to the `856 40$u` in your Task
+### Add a proxy to the `856 40$u` in your Task
 
 1. After you run your Task, your MARC records should have your institution's proxy before the URL. Remember to check your data first to see if there are any proxy stems present. You will need to remove any existing proxies before running your Task. If the MARC data has different types of electronic URLs (resource, related resource, etc.) as noted in the MARC field 856 indicators, you will need to account for that in your Task.
 
 :::::::::::::::  solution
 
-## Solution
+### Solution
 
 1. Go to Tools in the upper menu in the MarcEditor
 2. Select Manage Tasks
@@ -157,7 +157,7 @@ Note: If learners need instructions on deleting their existing proxies for the n
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## Copying Functions to Tasks
+### Copying Functions to Tasks
 
 It's possible to copy many functions run in the MarcEditor to a Task for easy reuse. To copy a function, look for the "Copy Task" button in the Batch Editing Tools and Replace Text windows. By clicking "Copy Task" after you've designed and run a function successfully, you can save that function. To add the function to a Task, go to Tools → Manage Tasks. In the Task Manger, under Task Actions choose New Task and click Select. Once in the Edit Task List window, right click and select "Paste Task Action". You can also add the function to an existing Task by selecting Edit Task, instead of New Task.
 

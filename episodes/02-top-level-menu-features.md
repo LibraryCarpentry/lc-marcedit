@@ -19,7 +19,7 @@ exercises: 3
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Getting Started with MarcEdit
+## Top Level Menu Features in MarcEdit
 
 :::::::::::::::::::::::::::::::::::::: instructor
 
@@ -31,8 +31,6 @@ Note: A number of differences have been noted in the Top Level Menu design and f
 - File association settings are not available on a Mac
   
 :::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Top Level Menu Features
 
 When you launch MarcEdit, the main window opens. From here, you can access the suite of MarcEdit tools, features, plug-ins, quick links, or help.
 
@@ -54,13 +52,13 @@ The Tools menu allows you to access a number of different basic and advanced fea
 
 One thing you'll notice is that there are both shortcuts, linked icons, and menu options that lead to the same features or tools. For example, to update your preferences, you can go to Tools → Preferences, use the keyboard shortcut of Ctrl+Shift+P, or click on the gearbox in the upper left-hand corner of the main window.
 
-#### Preferences
+### Preferences
 
 In MarcEdit, Preferences allow you to configure the main window and various tools, such as the MarcEditor (the tool used to manipulate MARC data). For example, you can change the font, and font size, or select your most frequently used tools to display as shortcuts in the main window. In Preferences, you can also configure settings for other tools beyond the main window menu such as the MarcEditor where you can update the default character encoding for records that are opened in this tool (such as MARC8 or UTF-8), integrations with OCLC, or accessibility settings.
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
-## Let's add a shortcut to our main window
+### Let's add a shortcut to our main window
 
 1. Click on the gearbox in the top left corner or go to Tools → Preferences
 2. Select "Main Window" in the Preferences window in the left-hand pane
@@ -72,11 +70,11 @@ In MarcEdit, Preferences allow you to configure the main window and various tool
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Name three other tools or features that can be changed in Preferences.
+### Name three other tools or features that can be changed in Preferences.
 
 :::::::::::::::  solution
 
-## Solution
+### Solution
 
 1. Click on the gear icon in the main window or go to Tools → Preferences
 2. In the left-hand pane, look at the names there

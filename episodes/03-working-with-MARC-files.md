@@ -21,9 +21,9 @@ exercises: 1
 - How does the MarcEditor display MARC records?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-## Working with MARC files
+## Understanding MARC 21 in MarcEdit
 :::::::::::::::::::::::::::::::::::::::::  callout
-## MARC file types
+### MARC file types
 MarcEdit recognizes the following MARC file types:
 
 <table>
@@ -97,7 +97,7 @@ The conversions from one encoding standard to another, as in MARC21 to MARC21XML
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## Character Encoding
+### Character Encoding
 
 To ensure the integrity of your data you need to select the correct character encoding for your dataset. MarcEdit does not automatically detect character encoding, however, UTF8 is set as the default encoding scheme. You can update the encoding scheme when using the MarcBreaker, or you can update the default in Preferences → MarEditor → Default Encoding. For more information on character encoding and translating from one encoding to another, see [The MarcEdit Field Guide](https://marcedit.reeset.net/learning_marcedit/9-2/dealing-with-character-encodings-in-marcedit/)
 
@@ -106,11 +106,11 @@ To ensure the integrity of your data you need to select the correct character en
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
-## Break a MARC Binary File
+### Break a MARC Binary File
 
 To transform our binary MARC file (.mrc) into MARC mnemonic human readable format (.mrk), you use the MarcBreaker.
 
-##### Break a MARC (.mrc) file to use in the MarcEditor
+#### Break a MARC (.mrc) file to use in the MarcEditor
 
 1. Launch MarcEdit and from the main window click on the MARC Tools Icon.
 2. In the MARC Tools window, Select Operation → MARCBreaker.
@@ -124,7 +124,7 @@ To transform our binary MARC file (.mrc) into MARC mnemonic human readable forma
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## MARC Record layout in the MarcEditor
+### MARC Record layout in the MarcEditor
 You should now see the MARC records from the file displaying in the MarcEditor:
 
 ![](fig/marc_sample_data.png){alt='MarcEditor screen with file open'}
@@ -159,7 +159,7 @@ Records in the MarcEditor display are separated by a blank line.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## MARC syntax in the MarcEditor
+### MARC syntax in the MarcEditor
 
 Understanding the layout of MARC data in the MarcEditor is key to using the program's tools successfully. For instance, in some tools it is important to specify a field's indicators directly preceeding the first subfield. Throughout this workshop we will highlight how different tools rely on this syntax to apply edits. 
 
@@ -168,7 +168,7 @@ Understanding the layout of MARC data in the MarcEditor is key to using the prog
 
 The MarcEditor divides a file of MARC records into 'pages' of 100 records. You can scroll up and down the page of MARC records using the scroll bar as usual, but to see the next 100 records you need to use the Next/Previous page controls which are at the bottom left of the screen. The MarcEditor can handle very large files of MARC records, because it never tries to load all the records at the same time.
 
-## Setting MarcEditor Preferences
+### Setting MarcEditor Preferences
 
 You can adjust the number of records displayed per 'page' through the MarcEditor preferences which can be accessed through the Edit → Preferences menu option from the MarcEditor, or through the 'Settings' icon on the opening screen of MarcEdit.
 
@@ -178,7 +178,7 @@ If you change your preferences for the MarcEditor, the tool used to work with MA
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
-## Reset settings for the MarcEditor in Preferences
+### Reset settings for the MarcEditor in Preferences
 
 1. Click Edit → Preferences
 2. Select "MarcEditor" in the Preferences window in the left-hand pane
@@ -190,7 +190,7 @@ If you change your preferences for the MarcEditor, the tool used to work with MA
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## Behavior when you reset your preferences and other popup windows
+### Behavior when you reset your preferences and other popup windows
 
 When you click Ok to reset preferences, there is a chance that the popup window for Preferences and/or even MarcEdit main menu will close. If the MarcEdit main menu closes, sometimes it will reopen. If it does not, then click on MarcEdit again on your desktop to reopen the application. 
 
