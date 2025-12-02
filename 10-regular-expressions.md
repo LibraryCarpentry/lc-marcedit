@@ -1,6 +1,6 @@
 ---
 title: Regular Expressions
-teaching: 15
+teaching: 30
 exercises: 20
 ---
 

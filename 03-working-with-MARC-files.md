@@ -1,7 +1,7 @@
 ---
 title: Working with MARC files
 teaching: 17
-exercises: 1
+exercises: 2
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
