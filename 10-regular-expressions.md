@@ -20,23 +20,21 @@ exercises: 20
 
 
 
-## Regular Expressions
+## Regular Expressions in MarcEdit
 
 Regular expressions, often referred to as regex, are a tool you can use to match, capture and manipulate data across your MARC record file. Regular expressions are comprised of a sequence of literal characters and metacharacters which are formulated to match a particular pattern found in your data that you want to manipulate. A detailed introduction to working with regular expressions can be found in the [Library Carpentry lesson Introduction to Working with Data (Regular Expressions)](https://librarycarpentry.org/lc-data-intro/index.html). In this lesson we will focus on the application of regex in the MarcEditor.
-
-## Regular Expressions in MarcEdit
 
 MarcEdit uses the .NET regular expression syntax. Visit the .Net [Regular Expression Language - Quick Reference](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference) for a breakdown of the syntax used for regex metacharacters in MarcEdit. You can also download the [.Net Regex metacharacter reference sheet](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf) to support the creation of your own regular expressions in MarcEdit.
 
 Many MarcEdit functions support the use of regular expressions for data selection and manipulation. They include: Find and Replace, Edit Field, Copy Field, Swap Field, Build New Field, Delete Field, Record Validation, and both the Extract and Delete Selected Records tool. The intent of this lesson is to demonstrate where and how you can leverage regular expressions to work with your MARC data.
 
-## Edit Field Data
+### Edit Field Data
 
 With regular expressions you can easily locate variations in your data and replace them with a single value. In our file the OCLC identifier in the 035 field uses the prefixes `on`, `ocn`, and `ocm`, but our library formats the OCLC with the `(OCoLC)` prefix. Instead of running three Edit Field Data functions to update these prefixes, we can use a regular expression in the Edit Field Data tool to replace these prefixes with the `(OCoLC)` prefix in a single edit.
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
-## Update 035 OCLC prefixes
+### Update 035 OCLC prefixes
 
 1. Select Tools → Edit Field Data
 2. Enter the following values:
@@ -51,7 +49,7 @@ With regular expressions you can easily locate variations in your data and repla
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## Knowing your dataset
+### Knowing your dataset
 
 Regular expressions are a powerful tool, but using them can sometimes lead to unexpected and undesirable results if you do not know your dataset. In the Edit Field Data exercise above, any 035 field containing the string `on`, `ocn`, or `ocm` would have had these values replaced with `(OCoLC)`.
 
@@ -62,13 +60,13 @@ Reviewing your dataset before employing regular expressions is a good best pract
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Find and Replace
+### Find and Replace
 
 The Find and Replace tool is another useful way to identify and manipulate data in the MarcEditor with the support of regular expressions. In our file the local call numbers in the `090` field are formatted without a space between the class and subclass (ex. `LD1780` and not `LD 1780`). To update the call number to follow our local policy we need to isolate the components of the call number so we can add a space between them. We can do this with a regular expression by employing groups.
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
-## Add a space between 090 class and subclass
+### Add a space between 090 class and subclass
 
 1. Select Edit → Find
 2. Enter `=090` in the Find box and click Find All
@@ -90,7 +88,7 @@ The Find and Replace tool is another useful way to identify and manipulate data 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Select Records for Edit
+### Select Records for Edit
 
 The Select Records for Edit tool, introduced in lesson 6, allows you to isolate and then work with a subset of your records. Regular expressions can be a powerful tool to help you isolate the subset of records you want to work with.
 
@@ -100,7 +98,7 @@ Working with fixed fields, where character position and coded values impart spec
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
-## Isolate continuing resource records
+### Isolate continuing resource records
 
 1. From the top level menu select File → Select Records for Edit
 2. The file you are working on will be selected by default in the Source MARC file box. To import the Leader for review, enter LDR in the Display Field Box and Click Import.
@@ -116,7 +114,7 @@ Working with fixed fields, where character position and coded values impart spec
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## Inverting your selection
+### Inverting your selection
 
 When using the Select Records for Edit tool you can use the Invert Selections option to select all records that DID NOT meet your criteria. This option can be helpful when you want to select all records except for those that meet a specific criteria.
 
@@ -125,7 +123,7 @@ When using the Select Records for Edit tool you can use the Invert Selections op
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
-## Edit selected records
+### Edit selected records
 
 Now that we've isolated our continuing resource records, we can add a field for the electronic journals genre form (`655  \4$aElectronic journals`) to the electronic records in our subset.
 
