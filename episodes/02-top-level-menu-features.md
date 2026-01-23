@@ -44,8 +44,8 @@ The Tools menu allows you to access a number of different basic and advanced fea
 
 - Delimited Text Translator
 - Export, including tools to export either MARC records or records reformatted as a text delimited csv (comma-separated value) or tsv (tab-separated value) file
-- The MarcEdit regular expression store
 - OAI Harvester
+- The MarcEdit regular expression store
 - Utilities, including a verify URL tool
 - MARC Processing Tools, including MARCsplit, MARCcompare, MARCjoin, MARCmerge, find duplicate records, RDA Helper, or MARCValidator
 - Preferences
