@@ -34,7 +34,7 @@ Each top level menu heading contains so many gems. Below are some highlights of 
 
 File
 
-- Save, Save As, Open, Recent: This is where you'll find those important functions of saving, saving as, opening up a recent file, or opening a new file.
+- Save, Save As, Open, Recent: This is where you will find those important functions of saving, saving as, opening up a recent file, or opening a new file.
 - Select Records for Edit: This is where you can select a subset of your data to work with.
 - Compile File: This is the same function as MarcMaker, meaning that the readable MARC data file (.mrk) being edited in the MarcEditor will be converted to a MARC binary file (.mrc).
 
