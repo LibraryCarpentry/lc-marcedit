@@ -575,7 +575,7 @@ manipulation of MARC files</li>
 </div>
 </section></section><section id="aio-02-top-level-menu-features"><p>Content from <a href="02-top-level-menu-features.html">Getting Started with MarcEdit</a></p>
 <hr>
-<p>Last updated on 2025-12-02 |
+<p>Last updated on 2026-01-23 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/02-top-level-menu-features.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -627,26 +627,25 @@ Plug-ins, and Help.</p>
 <p>The Tools menu allows you to access a number of different basic and
 advanced features. Features to highlight include:</p>
 <ul>
-<li>Preferences</li>
-<li>The MarcEdit regular expression store</li>
-<li>OAI Harvester</li>
-<li>Export either MARC records or records reformatted as a text
-delimited csv (comma-separated value) or tsv (tab-separated value)
-file</li>
-<li>MARC Processing Tools: MARCsplit, MARCcompare, MARCjoin, MARCmerge,
-find duplicate records, RDA Helper, or MARCValidator</li>
 <li>Delimited Text Translator</li>
-<li>Utilities that include a verify URL tool</li>
+<li>Export, including tools to export either MARC records or records
+reformatted as a text delimited csv (comma-separated value) or tsv
+(tab-separated value) file</li>
+<li>OAI Harvester</li>
+<li>The MarcEdit regular expression store</li>
+<li>Utilities, including a verify URL tool</li>
+<li>MARC Processing Tools, including MARCsplit, MARCcompare, MARCjoin,
+MARCmerge, find duplicate records, RDA Helper, or MARCValidator</li>
+<li>Preferences</li>
 </ul>
 <p>One thing you’ll notice is that there are both shortcuts, linked
 icons, and menu options that lead to the same features or tools. For
 example, to update your preferences, you can go to Tools → Preferences,
 use the keyboard shortcut of Ctrl+Shift+P, or click on the gearbox in
 the upper left-hand corner of the main window.</p>
-</div>
-<div class="section level3">
-<h3 id="preferences">Preferences<a class="anchor" aria-label="anchor" href="#preferences"></a>
-</h3>
+<div class="section level4">
+<h4 id="preferences">Preferences<a class="anchor" aria-label="anchor" href="#preferences"></a>
+</h4>
 <p>In MarcEdit, Preferences allow you to configure the main window and
 various tools, such as the MarcEditor (the tool used to manipulate MARC
 data). For example, you can change the font, and font size, or select
@@ -656,6 +655,7 @@ beyond the main window menu such as the MarcEditor where you can update
 the default character encoding for records that are opened in this tool
 (such as MARC8 or UTF-8), integrations with OCLC, or accessibility
 settings.</p>
+
 <div id="lets-add-a-shortcut-to-our-main-window" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
@@ -699,11 +699,25 @@ changed in Preferences.</h3>
 <li>Click on the gear icon in the main window or go to Tools →
 Preferences</li>
 <li>In the left-hand pane, look at the names there</li>
-<li>Tools or features that can be changed in Preferences: Main Window,
-Bibframe, MarcEditor, MARCEngine, Ease of Use, File Associations,
-Language, Locations, Other, Updates, Configure Watcher, ILS Integration,
-OCLC API Integration.</li>
+<li>Tools or features that can be changed in Preferences:
+<ul>
+<li>Main Window</li>
+<li>Bibframe</li>
+<li>MarcEditor</li>
+<li>MARCEngine</li>
+<li>Ease of Use</li>
+<li>File Associations</li>
+<li>Language</li>
+<li>Locations</li>
+<li>Other</li>
+<li>Updates</li>
+<li>Configure Watcher</li>
+<li>ILS Integration</li>
+<li>OCLC API Integration.</li>
+</ul>
+</li>
 </ol>
+</div>
 </div>
 </div>
 </div>
@@ -751,8 +765,8 @@ in MarcEdit.</p>
 <li>MarcEdit offers the ability to add shortcuts to the main window</li>
 <li>MarcEdit allows you to set preferences for features and tools such
 as the main window or the MarcEditor</li>
-<li>Preferences can be accessed using the gearbox icon and selecting
-Tools → Preferences, or by using the keyboard shortcut Ctrl+Shift+P</li>
+<li>Preferences can be accessed using the gearbox icon, selecting Tools
+→ Preferences, or by using the keyboard shortcut Ctrl+Shift+P</li>
 </ul>
 </div>
 </div>
@@ -1408,7 +1422,7 @@ our records?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Field count outlines each field found in our records, the number of
@@ -1531,7 +1545,7 @@ correctly?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The 245 field number is formatted incorrectly. The MarcEditor relies
@@ -2276,7 +2290,7 @@ the <code>856$u</code>.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools → Build New Field</li>
@@ -2381,7 +2395,7 @@ abbreviations; Remove the GMD.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2646,7 +2660,7 @@ helper and removes 9XX fields</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2707,7 +2721,7 @@ that in your Task.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -3332,7 +3346,7 @@ are working as intended</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.18.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.0.9)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.18.4" class="external-link">sandpaper (0.18.4)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.9" class="external-link">varnish (1.0.9)</a></p>
 		</div>
 		</footer>
 </div> <!-- / div.container -->
