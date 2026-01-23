@@ -108,7 +108,7 @@ You should be able to add multiple Z39.50 connections.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- Understand what integrations are and why they're useful
+- Understand what integrations are and why they are useful
 - Understand where to set up an integration
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::

@@ -29,8 +29,8 @@ System requirements for MarcEdit 7/MarcEdit MacOS 3 [https://marcedit.reeset.net
 
 #### Determining if your system is 32 or 64-bit
 
-- MacOS: Select the About This Mac option in the Apple menu. On the About This Mac window, click the Systems Report below the information in the Overview. Click on Hardware. In the Hardware Overview in the top left column, you will see the processor name to determine if it's a 32-bit or 64-bit CPU.
-- Windows: In the Start menu, type in About to get About Your PC. In Device Specifications, the system type will tell you if it's a 32 or 64-bit CPU.
+- MacOS: Select the About This Mac option in the Apple menu. On the About This Mac window, click the Systems Report below the information in the Overview. Click on Hardware. In the Hardware Overview in the top left column, you will see the processor name to determine if it is a 32-bit or 64-bit CPU.
+- Windows: In the Start menu, type in About to get About Your PC. In Device Specifications, the system type will tell you if it is a 32 or 64-bit CPU.
 
 ### Installing MarcEdit On Windows - [Video](https://www.youtube.com/watch?v=FX0r7jIxeN4)
 
