@@ -42,19 +42,25 @@ In the main window top-level menu, there are three options: Tools, Plug-ins, and
 
 The Tools menu allows you to access a number of different basic and advanced features. Features to highlight include:
 
-- Preferences
-- The MarcEdit regular expression store
-- OAI Harvester
-- Export either MARC records or records reformatted as a text delimited csv (comma-separated value) or tsv (tab-separated value) file
-- MARC Processing Tools: MARCsplit, MARCcompare, MARCjoin, MARCmerge, find duplicate records, RDA Helper, or MARCValidator
 - Delimited Text Translator
-- Utilities that include a verify URL tool
+- Export, including tools to export either MARC records or records reformatted as a text delimited csv (comma-separated value) or tsv (tab-separated value) file
+- OAI Harvester
+- The MarcEdit regular expression store
+- Utilities, including a verify URL tool
+- MARC Processing Tools, including MARCsplit, MARCcompare, MARCjoin, MARCmerge, find duplicate records, RDA Helper, or MARCValidator
+- Preferences
 
 One thing you will notice is that there are both shortcuts, linked icons, and menu options that lead to the same features or tools. For example, to update your preferences, you can go to Tools → Preferences, use the keyboard shortcut of Ctrl+Shift+P, or click on the gearbox in the upper left-hand corner of the main window.
 
-### Preferences
+#### Preferences
 
 In MarcEdit, Preferences allow you to configure the main window and various tools, such as the MarcEditor (the tool used to manipulate MARC data). For example, you can change the font, and font size, or select your most frequently used tools to display as shortcuts in the main window. In Preferences, you can also configure settings for other tools beyond the main window menu such as the MarcEditor where you can update the default character encoding for records that are opened in this tool (such as MARC8 or UTF-8), integrations with OCLC, or accessibility settings.
+
+:::::::::::::::::::::::::::::::::::::: instructor
+
+Note: The following exercise is simply to demonstrate adding a shortcut to the main window. RDA Helper is used as an example, but any available and commonly used tool could be used here.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
@@ -78,7 +84,20 @@ In MarcEdit, Preferences allow you to configure the main window and various tool
 
 1. Click on the gear icon in the main window or go to Tools → Preferences
 2. In the left-hand pane, look at the names there
-3. Tools or features that can be changed in Preferences: Main Window, Bibframe, MarcEditor, MARCEngine, Ease of Use, File Associations, Language, Locations, Other, Updates, Configure Watcher, ILS Integration, OCLC API Integration.
+3. Tools or features that can be changed in Preferences:
+    - Main Window
+    - Bibframe
+    - MarcEditor
+    - MARCEngine
+    - Ease of Use
+    - File Associations
+    - Language
+    - Locations
+    - Other
+    - Updates
+    - Configure Watcher
+    - ILS Integration
+    - OCLC API Integration.
   
   
 
@@ -102,7 +121,7 @@ MarcEdit remembers what you did last. You can see this history in the Quick Link
 
 - MarcEdit offers the ability to add shortcuts to the main window
 - MarcEdit allows you to set preferences for features and tools such as the main window or the MarcEditor
-- Preferences can be accessed using the gearbox icon and selecting Tools → Preferences, or by using the keyboard shortcut Ctrl+Shift+P
+- Preferences can be accessed using the gearbox icon, selecting Tools → Preferences, or by using the keyboard shortcut Ctrl+Shift+P
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
