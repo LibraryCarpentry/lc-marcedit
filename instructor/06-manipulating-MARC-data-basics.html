@@ -365,7 +365,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Manipulating MARC data basics</h1>
-        <p>Last updated on 2025-12-02 |
+        <p>Last updated on 2026-02-09 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/06-manipulating-MARC-data-basics.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -411,7 +411,7 @@ indicators, and fixed fields</li>
 </div>
 </div>
 <section><h2 class="section-heading" id="manipulating-marc-data">Manipulating MARC data<a class="anchor" aria-label="anchor" href="#manipulating-marc-data"></a></h2>
-<hr class="half-width"><p>We’ve seen how we can manually and individually edit records in the
+<hr class="half-width"><p>We have seen how we can manually and individually edit records in the
 MarcEditor, however, MarcEdit provides a number of more powerful ways to
 manipulate our MARC data. Fields, subfields, and indicators can be
 added, removed, or changed. Fixed fields can be corrected. Fields and
@@ -506,7 +506,7 @@ followed by a subfield u</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Click Edit-&gt;Replace</li>
 <li>In the search box for Find, type in =856 40$3Full text:$u</li>
@@ -585,7 +585,7 @@ second indicator 4 to the MARC data.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Go to Tools in the upper menu in the MarcEditor</li>
 <li>Select Add/Delete Field (F7)</li>
@@ -640,7 +640,7 @@ a number</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Verify your file has multiple 9XX fields by using the Field Count
 report (Reports → Field Count), or by using Find (Edit → Find “=9” →
@@ -672,7 +672,7 @@ text you would like to add in that subfield is entered in Replace With
 box. Select New subfield only from the Search Options below and then
 click Replace Text. Even though you are adding a subfield, you still
 click Replace Text. For adding a subfield, the information that goes in
-that field doesn’t go in the box called Field Data, see the example
+that field does not go in the box called Field Data, see the example
 below.</p>
 <p>To delete a subfield, enter the MARC field and then the subfield.
 Select Delete Subfield from the Search Options and then click Remove
@@ -721,7 +721,7 @@ Library of Congress Organization Code, update the code to XYZ.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Go to Tools in the upper menu in the MarcEditor</li>
 <li>Select Edit Subfield Data (F9)</li>
@@ -771,7 +771,7 @@ fields 050 that have a first indicator blank and a second indicator
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Go to Tools in the upper menu in the MarcEditor</li>
 <li>Select Edit Indicators (F8)</li>
@@ -815,7 +815,7 @@ function and regular expressions which will be covered in Lesson 09.</p>
 Add/Delete. You will need to have the 006 already formed. For example,
 you can add one 006 using the method explained above, copy that, and
 then use the Tools, Add field, to then add the 006. Remember that fixed
-fields don’t have indicators.</p>
+fields do not have indicators.</p>
 </div>
 </div>
 </div>
@@ -823,9 +823,9 @@ fields don’t have indicators.</p>
 <hr class="half-width"><p>The MARC data that you manipulate in the MarcEditor is in a human and
 computer-readable mnemonic <code>.mrk</code> file format that was broken
 from the original binary <code>.mrc</code> file. You will notice that
-the file name of the file you’re working on, displayed at the top of the
-MarcEditor, has the file extension <code>.mrk</code>. If you look at the
-file in your file directory, the file icon color is blue whereas the
+the file name of the file you are working on, displayed at the top of
+the MarcEditor, has the file extension <code>.mrk</code>. If you look at
+the file in your file directory, the file icon color is blue whereas the
 binary <code>.mrc</code> MARC file icon is purple.</p>
 <div class="section level3">
 <h3 id="saving">Saving<a class="anchor" aria-label="anchor" href="#saving"></a></h3>
@@ -847,7 +847,7 @@ edited <code>.mrc</code> file. Using the same file name as your original
 MarcMaker tool. To use the MarcMaker, from the Main Menu select MARC
 Tools. In the MARC Tools window, under Select Operation choose
 MarcMaker. Under Select Data to Process, in the Open box, select the
-<code>.mrk</code> file you’d like to compile. In the Save As box,
+<code>.mrk</code> file you would like to compile. In the Save As box,
 specify the location and file name for your new <code>.mrc</code> file.
 Set the character encoding options as required, and then click Execute.
 Once compiled, you will see a message under Results specifying the
@@ -906,7 +906,7 @@ validate MARC.</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.18.4" class="external-link">sandpaper (0.18.4)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.9" class="external-link">varnish (1.0.9)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.18.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.0.9)</a></p>
 		</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -928,8 +928,8 @@ validate MARC.</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/instructor/06-manipulating-MARC-data-basics.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/instructor/06-manipulating-MARC-data-basics.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2025-12-02",
-  "datePublished": "2026-01-27"
+  "dateModified": "2026-02-09",
+  "datePublished": "2026-02-09"
 }
 
   </script><script>
