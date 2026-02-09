@@ -200,7 +200,7 @@ It should be noted that not all MarcEdit popup windows will close automatically 
 
 :::::::::::::::::::::::::::::::::::::: instructor
 
-Note: Some preference updates will force MarcEdit to restart and others will not. Also note that in order for some preference changes to display (such as updating the MarcEditor font settings), you will need to close and reopen the MarcEditor, which would require saving your file if you haven't done so. Emphasize popup window inconsistencies for learners, especially the need to close windows after use for actions such as Find and Replace. If learners do not close popup windows as they move through exercises, they are more likely to lose their place or get confused.
+Note: Some preference updates will force MarcEdit to restart and others will not. Also note that in order for some preference changes to display (such as updating the MarcEditor font settings), you will need to close and reopen the MarcEditor, which would require saving your file if you have not done so. Emphasize popup window inconsistencies for learners, especially the need to close windows after use for actions such as Find and Replace. If learners do not close popup windows as they move through exercises, they are more likely to lose their place or get confused.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 

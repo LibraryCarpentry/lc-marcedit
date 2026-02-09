@@ -26,7 +26,7 @@ exercises: 10
 
 ## Manipulating MARC data
 
-We've seen how we can manually and individually edit records in the MarcEditor, however, MarcEdit provides a number of more powerful ways to manipulate our MARC data. Fields, subfields, and indicators can be added, removed, or changed. Fixed fields can be corrected. Fields and subfields specific to RDA can be added while AACR2 conventions are removed. It is possible to work with a subset of MARC data and then incorporate those changes into the original whole MARC data set. The variations sometimes seem endless and give more weight to the nickname of MarcEdit, the Swiss army knife of MARC data.
+We have seen how we can manually and individually edit records in the MarcEditor, however, MarcEdit provides a number of more powerful ways to manipulate our MARC data. Fields, subfields, and indicators can be added, removed, or changed. Fixed fields can be corrected. Fields and subfields specific to RDA can be added while AACR2 conventions are removed. It is possible to work with a subset of MARC data and then incorporate those changes into the original whole MARC data set. The variations sometimes seem endless and give more weight to the nickname of MarcEdit, the Swiss army knife of MARC data.
 
 ### Find, Find All, and Replace
 
@@ -170,7 +170,7 @@ Within the batch editing tools, MarcEdit uses the X metacharacter to represent a
 
 To edit subfield data within a given field, go to Tools and select Edit Subfield Data. A new Batch Editing Tools window will open (notice that this is the same window that opened for Add/Delete a field, you can also navigate between the MarcEdit Batch Editing Tools using the labels on the left-hand side of the window). From here you can add a new subfield, delete a subfield, or replace text in a subfield. Set your desired subfield edit conditions by selecting the appropriate option(s) from the Search Options list.
 
-To add a subfield, enter the MARC field and then the subfield. The text you would like to add in that subfield is entered in Replace With box. Select New subfield only from the Search Options below and then click Replace Text. Even though you are adding a subfield, you still click Replace Text. For adding a subfield, the information that goes in that field doesn't go in the box called Field Data, see the example below.
+To add a subfield, enter the MARC field and then the subfield. The text you would like to add in that subfield is entered in Replace With box. Select New subfield only from the Search Options below and then click Replace Text. Even though you are adding a subfield, you still click Replace Text. For adding a subfield, the information that goes in that field does not go in the box called Field Data, see the example below.
 
 To delete a subfield, enter the MARC field and then the subfield. Select Delete Subfield from the Search Options and then click Remove Text.
 
@@ -258,14 +258,14 @@ Working with fixed fields can be difficult. In the MarcEditor, you can edit one 
 
 Sometimes it is necessary to change a fixed field for all records in your MARC data. You can use the Edit Field function. For this, you will need to know the position of the fixed field. For this, you can consult the [OCLC Bibliographic Standards and Formats](https://www.oclc.org/bibformats/en.html) or [the Library of Congress Bibliographic Marc Standard](https://www.loc.gov/marc/bibliographic/). This is also possible using the Replace function and regular expressions which will be covered in Lesson 09.
 
-If you need to add a fixed field, you can use the Tools and select Add/Delete. You will need to have the 006 already formed. For example, you can add one 006 using the method explained above, copy that, and then use the Tools, Add field, to then add the 006. Remember that fixed fields don't have indicators.
+If you need to add a fixed field, you can use the Tools and select Add/Delete. You will need to have the 006 already formed. For example, you can add one 006 using the method explained above, copy that, and then use the Tools, Add field, to then add the 006. Remember that fixed fields do not have indicators.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Saving and Compiling
 
-The MARC data that you manipulate in the MarcEditor is in a human and computer-readable mnemonic `.mrk` file format that was broken from the original binary `.mrc` file. You will notice that the file name of the file you're working on, displayed at the top of the MarcEditor, has the file extension `.mrk`. If you look at the file in your file directory, the file icon color is blue whereas the binary `.mrc` MARC file icon is purple. 
+The MARC data that you manipulate in the MarcEditor is in a human and computer-readable mnemonic `.mrk` file format that was broken from the original binary `.mrc` file. You will notice that the file name of the file you are working on, displayed at the top of the MarcEditor, has the file extension `.mrk`. If you look at the file in your file directory, the file icon color is blue whereas the binary `.mrc` MARC file icon is purple. 
 
 ### Saving
 When you save in the MarcEditor, you are saving your latest changes as a `.mrk` file. Using File → Save will save edits into your current `.mrk` file, overwriting the original. To keep a copy of your original `.mrk` data, select File → Save As and choose a new file name for your edited records. 
@@ -273,7 +273,7 @@ When you save in the MarcEditor, you are saving your latest changes as a `.mrk` 
 ### Compiling
 To save your edited records back into a MARC binary `.mrc` file (the file format typically required to load MARC records in external systems such as your ILS or LSP) use the compile feature. Select File → Compile File into MARC. Choose a new file name for your edited `.mrc` file. Using the same file name as your original `.mrc` file will overwrite the unedited file. 
 
-Records can also be compiled outside of the MarcEditor using the MarcMaker tool. To use the MarcMaker, from the Main Menu select MARC Tools. In the MARC Tools window, under Select Operation choose MarcMaker. Under Select Data to Process, in the Open box, select the `.mrk` file you'd like to compile. In the Save As box, specify the location and file name for your new `.mrc` file. Set the character encoding options as required, and then click Execute. Once compiled, you will see a message under Results specifying the number of records in the new  `.mrc` file.
+Records can also be compiled outside of the MarcEditor using the MarcMaker tool. To use the MarcMaker, from the Main Menu select MARC Tools. In the MARC Tools window, under Select Operation choose MarcMaker. Under Select Data to Process, in the Open box, select the `.mrk` file you would like to compile. In the Save As box, specify the location and file name for your new `.mrc` file. Set the character encoding options as required, and then click Execute. Once compiled, you will see a message under Results specifying the number of records in the new  `.mrc` file.
 
 
 :::::::::::::::::::::::::::::::::::::::: keypoints

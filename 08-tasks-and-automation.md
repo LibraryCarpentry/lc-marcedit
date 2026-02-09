@@ -27,7 +27,7 @@ In the MarcEditor, tasks are the tool that enable such automation. A task is a s
 
 ### What are Tasks?
 
-A task is a series of MarcEdit functions to manipulate data. In the previous lessons, we ran one function at a time. Tasks string a set of functions together so you can run them as a group. Tasks run each function one after another. As such, it is important to think about how you order the functions in your task. For instance, if you want to add your institutions' proxy and the MARC data already has a proxy that you need to delete, your task has to account for that and remove the old proxy before adding a new one.
+A task is a series of MarcEdit functions to manipulate data. In the previous lessons, we ran one function at a time. Tasks string a set of functions together so you can run them as a group. Tasks run each function one after another. As such, it is important to think about how you order the functions in your task. For instance, if you want to add your institution's proxy and the MARC data already has a proxy that you need to delete, your task has to account for that and remove the old proxy before adding a new one.
 
 Tasks are managed through the Task Manager in the MarcEditor. To access the Task Manager, go to Tools and then Manage Tasks in the top level menu. This will open the Task Manager window.
 
@@ -56,7 +56,7 @@ Manage Existing Tasks include:
 
 The difference between these two actions lists might seem confusing at first. Task Actions allow you to work with a particular task in terms of creating and managing one specific task at a time. The Manage Existing Tasks menu allows you to create and manage groups, exporting and importing, and assigning keyboard shortcuts to tasks.
 
-Tasks don't have to be categorized in groups or be linked to keyboard shortcuts. This is up to the users and their preference for how they organize their task workspace.
+Tasks do not have to be categorized in groups or be linked to keyboard shortcuts. This is up to the users and their preference for how they organize their task workspace.
 
 :::::::::::::::::::::::::::::::::::::: instructor
 
@@ -83,7 +83,7 @@ You can add a new task by clicking on the plus button. You can add any type of f
 
 Click on save at the left bottom corner of the Task List window to save your Task. From there you can close the Task Manager window. To run a task, go to Tools → Assigned Tasks → Current Tasks.
 
-If you have created many Tasks, it does help to assign them to groups to more easily find what you need. If you don't use Groups, the Task Manager will list all of your Tasks in the order they were created and it might be difficult to find a specific task, especially on small screens such as laptops. Tasks can also be reordered in the Task Manager by selecting a task and then moving it in the list using the up and down arrows.
+If you have created many Tasks, it does help to assign them to groups to more easily find what you need. If you do not use Groups, the Task Manager will list all of your Tasks in the order they were created and it might be difficult to find a specific task, especially on small screens such as laptops. Tasks can also be reordered in the Task Manager by selecting a task and then moving it in the list using the up and down arrows.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -159,7 +159,7 @@ Note: If learners need instructions on deleting their existing proxies for the n
 
 ### Copying Functions to Tasks
 
-It's possible to copy many functions run in the MarcEditor to a Task for easy reuse. To copy a function, look for the "Copy Task" button in the Batch Editing Tools and Replace Text windows. By clicking "Copy Task" after you've designed and run a function successfully, you can save that function. To add the function to a Task, go to Tools → Manage Tasks. In the Task Manger, under Task Actions choose New Task and click Select. Once in the Edit Task List window, right click and select "Paste Task Action". You can also add the function to an existing Task by selecting Edit Task, instead of New Task.
+It is possible to copy many functions run in the MarcEditor to a Task for easy reuse. To copy a function, look for the "Copy Task" button in the Batch Editing Tools and Replace Text windows. By clicking "Copy Task" after you have designed and run a function successfully, you can save that function. To add the function to a Task, go to Tools → Manage Tasks. In the Task Manger, under Task Actions choose New Task and click Select. Once in the Edit Task List window, right click and select "Paste Task Action". You can also add the function to an existing Task by selecting Edit Task, instead of New Task.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::

@@ -27,7 +27,7 @@ The MarcEditor provides multiple reporting options and tools to help you profile
 
 ### Overview reports
 
-The `Material Type Report` can be used to identify the types of resources described in your MARC file. This report is helpful when you're uncertain of what resources are represented in your file, or to locate potential errors.
+The `Material Type Report` can be used to identify the types of resources described in your MARC file. This report is helpful when you are uncertain of what resources are represented in your file, or to locate potential errors.
 
 :::::::::::::::::::::::::::::::::::::: instructor
 
@@ -92,7 +92,7 @@ To run the Field Count Reports
 ## Solution
 
 1. Field count outlines each field found in our records, the number of times it occurs, and how many records it occurs in. Field count can also tell us the number of records in our file (536).
-2. Non-repeatable field 245 occurs more times than the number of records it's found in. At least one record contains multiple 245 fields. Field 245 appears in one less record than other required fields.
+2. Non-repeatable field 245 occurs more times than the number of records it is found in. At least one record contains multiple 245 fields. Field 245 appears in one less record than other required fields.
   
   
 
@@ -163,7 +163,7 @@ The results list will show one record missing a 245 field. Click on Jump to Reco
 
 ## Correct the missing 245 field
 
-1. What's the issue with this record? Is the 245 formatted correctly?
+1. What is the issue with this record? Is the 245 formatted correctly?
 
 :::::::::::::::  solution
 

@@ -34,7 +34,7 @@ Note: With version 7.7, the Field Edits have an additional menu level. Cleaning 
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
-## Let's use Edit Shortcuts to make the 099$a upper case
+## Let us use Edit Shortcuts to make the 099$a upper case
 
 1. Go to Edit → Edit Shortcuts -> Change Case -> Upper Case
 2. In the new window, in the field box, type in `099$a`
@@ -45,7 +45,7 @@ Note: With version 7.7, the Field Edits have an additional menu level. Cleaning 
 :::::::::::::::::::::::::::::::::::::::::::::::::: callout
 
 ## Use Find or Find All to Verify Results
-You can use Find or Find All to verify that the change did what you expected on your records in the file. If a result didn't work as expected, you can select "Special Undo". This is why it is important to profile your data before doing batch edits.
+You can use Find or Find All to verify that the change did what you expected on your records in the file. If a result did not work as expected, you can select "Special Undo". This is why it is important to profile your data before doing batch edits.
 
 ::::::::::::::::::::::::::::::::::::::::: 
 
@@ -60,7 +60,7 @@ This is possible using the function called, Build New Field.
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
-## Let's build a new `035 9\$a` using the data from the 001 and static data
+## Let us build a new `035 9\$a` using the data from the 001 and static data
 
 1. Go to Tools → Build New Field
 2. In the new window, in the field box, type in `=035  9\$a(LCMarcEdit){001}`
@@ -99,7 +99,7 @@ Also note, the build new field works on the first iteration of the field. When w
 
 
 ## Advanced Subfield Edit Functions
-There are 3 advanced Edit Subfield features that are extremely useful. These are append, prepend, and change subfield. These aren't regular expressions but special characters built into the MarcEditor Edit Subfield tool.
+There are 3 advanced Edit Subfield features that are extremely useful. These are append, prepend, and change subfield. These are not regular expressions but special characters built into the MarcEditor Edit Subfield tool.
 
 - Prepend data to a subfield: Special character ^b
 - Change subfield character: Special character ^c
@@ -107,7 +107,7 @@ There are 3 advanced Edit Subfield features that are extremely useful. These are
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
-## Let's add the proxy to the 856$u using the prepend special character ^b
+## Let us add the proxy to the 856$u using the prepend special character ^b
 
 1. Go to Tools → Edit Subfield Data
 2. In Field, Enter 856
@@ -120,7 +120,7 @@ There are 3 advanced Edit Subfield features that are extremely useful. These are
 
 ## RDA Helper
 
-Records aren't created equal in that we encounter MARC data that follows different descriptive cataloging standards. There are many records cataloged according to the AACR2 standard or even AACR or earlier. Sometimes it is necessary to make sure these records follow the current RDA descriptive cataloging standard. MarcEdit lets you do this through the function called RDA Helper.
+Records are not created equal in that we encounter MARC data that follows different descriptive cataloging standards. There are many records cataloged according to the AACR2 standard or even AACR or earlier. Sometimes it is necessary to make sure these records follow the current RDA descriptive cataloging standard. MarcEdit lets you do this through the function called RDA Helper.
 
 To run the RDA Helper, go to Tools and select RDA Helper. In the window that opens, you can pick and choose how you would like to transform your records to align better with the RDA descriptive standard. For example, you can add the RDA fields 336, 337, and 338 for content, media, and carrier types. You can update the MARC field 040 to include the `$e` rda and delete the GMD statement. You can also evaluate the 260/264.
 
@@ -165,7 +165,7 @@ When saving the exported records you can choose to save the file as a new record
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
-## Let's add cutters to call numbers in the 099
+## Let us add cutters to call numbers in the 099
 
 1. Go to File → Select Records to Edit
 2. In the new window, type in `099$b` in the Field Display
