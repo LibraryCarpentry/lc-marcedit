@@ -4,7 +4,7 @@ title: 'Glossary'
 
 ## Glossary
 
-[Dublic Core]{#dc}
+[Dublin Core]{#dc}
 :   A common metadata standard used for describing a wide range of resources across domains. It includes 15 essential elements like title, creator, subject, and date.
 
 [FAST (Faceted Application of Subject Terminology)]{#fast}
