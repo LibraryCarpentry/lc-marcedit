@@ -64,7 +64,7 @@ MarcEdit recognizes the following MARC file types:
   </td>
   <td>mrk8
   </td>
-  <td>Legacy file format for MARC mnemonic files saved with UTF8 encoding.
+  <td>Legacy file format for MARC mnemonic files saved with UTF-8 encoding.
   </td>
  </tr>
  <tr>
@@ -72,11 +72,11 @@ MarcEdit recognizes the following MARC file types:
   </td>
   <td>xml
   </td>
-  <td>A MARC file expressed in the eXtensible Markup format or a text-based format for representing structured information.
+  <td>A MARC file expressed in the eXtensible Markup Language format or a text-based format for representing structured information.
   </td>
  </tr>
  </table>
-To work with a MARC file in the MARCEditor your file needs to be in MARC mnemonic format. If you only have a binary file, then that file needs to be converted to the mnemonic format.
+To work with a MARC file in the MARCEditor your file needs to be in MARC mnemonic format (.mrk). If you only have a binary file (.mrc), then that file needs to be converted to the mnemonic format.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -99,7 +99,7 @@ The conversions from one encoding standard to another, as in MARC21 to MARC21XML
 
 ### Character Encoding
 
-To ensure the integrity of your data you need to select the correct character encoding for your dataset. MarcEdit does not automatically detect character encoding, however, UTF8 is set as the default encoding scheme. You can update the encoding scheme when using the MarcBreaker, or you can update the default in Preferences → MarEditor → Default Encoding. For more information on character encoding and translating from one encoding to another, see [The MarcEdit Field Guide](https://marcedit.reeset.net/learning_marcedit/9-2/dealing-with-character-encodings-in-marcedit/)
+To ensure the integrity of your data you need to select the correct character encoding for your dataset. MarcEdit does not automatically detect character encoding, however, UTF-8 is set as the default encoding scheme. You can update the encoding scheme when using the MarcBreaker, or you can update the default in Preferences → MarEditor → Default Encoding. For more information on character encoding and translating from one encoding to another, see [The MarcEdit Field Guide](https://marcedit.reeset.net/learning_marcedit/9-2/dealing-with-character-encodings-in-marcedit/)
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
