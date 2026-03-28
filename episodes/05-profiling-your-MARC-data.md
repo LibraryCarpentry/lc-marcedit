@@ -1,13 +1,15 @@
 ---
-title: Profiling Your MARC data
+title: Profiling your MARC data
 teaching: 10
 exercises: 5
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Access reports for getting an overview of your MARC data
-- Find tools to locate errors in your MARC records by using the MARCedit Edit toolbar
+- Access and run reports for your MARC data
+- Access and run validation for your MARC data
+- Find tools to locate errors in your MARC records by using the MARCedit Edit toolbar and shortcuts
+- Introduction to Find and Find All
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -16,6 +18,7 @@ exercises: 5
 - How do I use different reports to get an overview of my MARC file?
 - How do I locate errors in my records?
 - How do I use the Edit Shortcuts tool to identify and fix common errors?
+- How do I validate the structure and content of my MARC file?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -59,7 +62,7 @@ To run the Find Records by Type Reports
 
 1. Click Reports
 2. Select Material Type Report
-3. Select material type of records you want to review from the drop-down list. For this exercise select Continuing Resources.
+3. Select the material type of the records you want to review from the drop-down list. For this exercise, select Continuing Resources.
   A window will open displaying the Leader of each record. Double click on a result to be brought to that record in the MarcEditor.
 4. Click Close to exit the results window
 
@@ -84,15 +87,17 @@ To run the Field Count Reports
 
 ## Locate errors using the Field Count Report
 
-1. What do the field count results tell us about our records?
-2. Looking at fields 100-300 do any of the results indicate errors in our records?
+1. What do the Field Count report results tell us about our records?
+2. Looking at fields 100-300, do any of the results indicate errors in our records?
 
 :::::::::::::::  solution
 
 ## Solution
 
-1. Field count outlines each field found in our records, the number of times it occurs, and how many records it occurs in. Field count can also tell us the number of records in our file (536).
+1. Field Count outlines each field found in our records, the number of times it occurs, and how many records it occurs in. Field count can also tell us the number of records in our file (536).
 2. Non-repeatable field 245 occurs more times than the number of records it is found in. At least one record contains multiple 245 fields. Field 245 appears in one less record than other required fields.
+3. For the record, missing a MARC field 245 or McGregor Smith Scout Reservation Master Plan by Erik Schofield, you need to change =2 4 \0$a to =245  \0$a
+4. For the record, with two MARC fields 245 or Fundo Mandorpampa Ecological Center by Timothy Christian Grey, you need to remove the duplicate MARC field 245.
   
   
 
@@ -104,7 +109,7 @@ To run the Field Count Reports
 
 Other useful tools for profiling your data can be found under the Edit tab.
 
-Like many applications, the MarcEditor provides a `Find` function. Find is particularly useful for locating and reviewing all instances of a MARC field within your data, or locating a particular text string within your data.
+Like many applications, the MarcEditor provides a `Find` function. Find is particularly useful for locating and reviewing all instances of a MARC field within your data, or locating a particular text string within your data. In this episode, we will briefly look at Find, Find All and Edit shortcuts. In the next episode, we will return to Find and Find All in more depth.
 
 We can use Find to locate and review the 245 field. 
 
@@ -135,10 +140,17 @@ The `Find Records With Duplicate Tags` function allows us to easily locate recor
 1. Click Edit
 2. Select Edit Shortcuts
 3. Select Field Edits
-4. Click Find Records With Duplicate Tags
-5. In the dialogue box enter 245 and click OK
+4. Select Find Data Tools
+5. Click Find Records With Duplicate Tags
+6. In the dialogue box enter 245 and click OK
 
 The results list includes two records with duplicate 245 fields, # 8 and # 28. Click on Jump to Record # to be taken to the record in the MarcEditor. Once on the record you can manually delete the incorrect 245 field.
+
+:::::::::::::::::::::::::::::::::::::: instructor
+
+Note: In previous versions of MarcEdit, there is no step number 4. The user can go from Field Edits to the list of options. With the newer version, Field Edits now has options along with 2 more levels for Data Clean-up Tools and Find Data Tools.
+  
+:::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -179,20 +191,24 @@ The results list will show one record missing a 245 field. Click on Jump to Reco
 
 ## Validation and Log Reports
 
-- Validate ISBNs: When you select this report, a popup window will appear. Enter the MARC field where the ISBNs are. The report will see if these are correct. For example, if an ISBN is followed by text such ebook without a space, then the report will highlight this. However, if there is a space between the ISBN and any text, this is considered valid as in this example, 9780190856939 (ebook). You will need to close the popup windows.
-- Validate ISSNs: When you select this report, a popup window will appear. Enter the MARC field where the ISSNs are. The behavior is similar to the ISBN report. The report will provide a result of errors or a message that no invalid ISSNs were found.
-- Validate Headings: Unlike in Connexion or OCLC's WorldShare, validating headings does not create hyperlinks. This report will compare headings to several online services. These online services are listed in the Service Status when you click on Validate Headings and select Service Status. Results will appear in a popup window. 
-- Manage log files: There is no version control such as Git in MarcEdit. However, if you click on Manage Log Files -> View Current Log, you will see the entire list of actions that you have done on your file.
+There are a number of validation and log reports available.
+
+- **Validate ISBNs**: When you select this report, a popup window will appear. Enter the MARC field where the ISBNs are. The report will see if these are correct. For example, if an ISBN is followed by text such ebook without a space, then the report will highlight this. However, if there is a space between the ISBN and any text, this is considered valid as in this example, 9780190856939 (ebook). You will need to close the popup windows.
+- **Validate ISSNs**: When you select this report, a popup window will appear. Enter the MARC field where the ISSNs are. The behavior is similar to the ISBN report. The report will provide a result of errors or a message that no invalid ISSNs were found.
+- **Validate Headings**: Unlike in Connexion or OCLC's WorldShare, validating headings does not create hyperlinks. This report will compare headings to several online services. These online services are listed in the Service Status when you click on Validate Headings and select Service Status. Results will appear in a popup window. 
+- **Manage log files**: There is no version control such as Git in MarcEdit. However, if you click on Manage Log Files -> View Current Log, you will see the entire list of actions that you have done on your file.
 
 ## MarcValidator Report
 The MarcValidator report has a couple of options of which 2 are highlighted here. Note that if you are working with a large file, it will take longer to prep the file. Once it is prepped, there is a message that says "MarcEditor file has been prepped and is awaiting validation". You can view results grouped by errors or remove invalid records automatically from your file.
 
-- Check MARC Usings Rules File: The Rules file, called marcrules.txt, includes all the valid MARC fields, their valid indicators, and whether that field can be repeated. The Rules file can be modified. Once you open the MarcValidator, in the popup window, you will see the option to "Edit the Rules File". You will need to respect spaces and entry conventions by following what is already present in that text file.
-- Validate Record Structure: This report checks if the MARC syntax is valid and includes a check for HTML, tabs, and smart characters.
+- **Check MARC Usings Rules File**https://docs.google.com/document/d/1xJodlYalJ9yVs7ZKVl7B9dy1MikqrFEBwWiFJ0vwg4E/edit?usp=sharing: The Rules file, called marcrules.txt, includes all the valid MARC fields, their valid indicators, and whether that field can be repeated. The Rules file can be modified. Once you open the MarcValidator, in the popup window, you will see the option to "Edit the Rules File". You will need to respect spaces and entry conventions by following what is already present in that text file.
+- **Validate Record Structure**: This report checks if the MARC syntax is valid and includes a check for HTML, tabs, and smart characters.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- MarcEditor provides many different tools and reports to profile and edit your MARC records
+- MarcEditor provides different reports to profile your MARC records.
+- MarcEditor provides a way to validate both the content and the structure of your MARC records.
+- MarcEditor provides both shortcuts and a robust find or find all to search for patterns in your MARC records or certain patterns in your MARC records like duplicate or missing MARC fields.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
