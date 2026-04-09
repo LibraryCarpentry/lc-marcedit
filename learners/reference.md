@@ -7,6 +7,9 @@ title: 'Glossary'
 [Dublin Core]{#dc}
 :   A common metadata standard used for describing a wide range of resources across domains. It includes 15 essential elements like title, creator, subject, and date.
 
+[Character Encoding]{#ce}
+:   A standardized system of numerical codes used to represent text characters—including letters, numbers, punctuation, and diacritics—within a MARC record. It functions as the "translation key" that allows a computer system to interpret binary data into human-readable text. The two common encoding schemes are 1. MARC-8: The legacy 8-bit encoding standard used to represent Latin, Greek, Arabic, Hebrew, and East Asian characters via escape sequences. 2. UTF-8 (Unicode): The modern, universal standard that assigns a unique code point to every character in every language, facilitating global data exchange.
+
 [FAST (Faceted Application of Subject Terminology)]{#fast}
 :   A simplified subject heading system derived from the Library of Congress Subject Headings (LCSH), designed for faster and more consistent application.
 
