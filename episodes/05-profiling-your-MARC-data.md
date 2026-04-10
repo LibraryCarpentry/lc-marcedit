@@ -109,9 +109,13 @@ To run the Field Count Reports
 
 Other useful tools for profiling your data can be found under the Edit tab.
 
-Like many applications, the MarcEditor provides a `Find` function. Find is particularly useful for locating and reviewing all instances of a MARC field within your data, or locating a particular text string within your data. In this episode, we will briefly look at Find, Find All and Edit shortcuts. In the next episode, we will return to Find and Find All in more depth.
+Like many applications, the MarcEditor provides a `Find/Find All` function. Find is particularly useful for locating and reviewing all instances of a MARC field within your data, or locating a particular text string within your data. 
 
-We can use Find to locate and review the 245 field. 
+**Find**: Find will perform a keyword search for your search terms entered in the Find window search box. Each time you click "Find", you will be brought to the next instance of your search terms on the current page of the MarcEditor. Remember that the default settings split the MARC records into 100 for each page. Find will only search those records on the page you are currently on. 
+
+**Find All**: Find all will search for your search terms entered in the Find window search box over all the pages, or all your MARC records. When you click "Find All" a new window will open listing each instance of your search terms. Double clicking a result will take you to the result in the MarcEditor.
+
+We can use Find All to locate and review the 245 field. 
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
