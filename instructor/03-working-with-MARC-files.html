@@ -363,7 +363,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Working with MARC files</h1>
-        <p>Last updated on 2026-02-09 |
+        <p>Last updated on 2026-04-10 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/03-working-with-MARC-files.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -464,7 +464,7 @@ MARC UTF-8 Text File
 mrk8
 </td>
 <td>
-Legacy file format for MARC mnemonic files saved with UTF8 encoding.
+Legacy file format for MARC mnemonic files saved with UTF-8 encoding.
 </td>
 </tr><tr><td>
 MARCXML file
@@ -473,12 +473,12 @@ MARCXML file
 xml
 </td>
 <td>
-A MARC file expressed in the eXtensible Markup format or a text-based
-format for representing structured information.
+A MARC file expressed in the eXtensible Markup Language format or a
+text-based format for representing structured information.
 </td>
 </tr></table><p>To work with a MARC file in the MARCEditor your file needs to be in
-MARC mnemonic format. If you only have a binary file, then that file
-needs to be converted to the mnemonic format.</p>
+MARC mnemonic format (.mrk). If you only have a binary file (.mrc), then
+that file needs to be converted to the mnemonic format.</p>
 </div>
 </div>
 </div>
@@ -500,7 +500,7 @@ binary file.</li>
 <li>JSON to XML: This converts a JSON file to XML.</li>
 <li>XML to JSON: This converts an XML file to JSON.</li>
 </ul><p>The conversions from one encoding standard to another, as in MARC21
-to MARC21XML, rely on eXtensible stylesheets. MarcEdit comes with
+to MARC21XML, rely on extensible stylesheets. MarcEdit comes with
 several default stylesheets which come from those maintained by the
 Library of Congress. If you are familiar with stylesheets, you can also
 create your own.</p>
@@ -514,12 +514,12 @@ create your own.</p>
 <div class="callout-content">
 <p>To ensure the integrity of your data you need to select the correct
 character encoding for your dataset. MarcEdit does not automatically
-detect character encoding, however, UTF8 is set as the default encoding
+detect character encoding, however, UTF-8 is set as the default encoding
 scheme. You can update the encoding scheme when using the MarcBreaker,
-or you can update the default in Preferences → MarEditor → Default
+or you can update the default in Preferences → MarcEditor → Default
 Encoding. For more information on character encoding and translating
 from one encoding to another, see <a href="https://marcedit.reeset.net/learning_marcedit/9-2/dealing-with-character-encodings-in-marcedit/" class="external-link">The
-MarcEdit Field Guide</a></p>
+MarcEdit Field Guide</a>.</p>
 </div>
 </div>
 </div>
@@ -540,7 +540,7 @@ Icon.</li>
 <li>In the MARC Tools window, Select Operation → MARCBreaker.</li>
 <li>In the field, Select Data to Process, click the file folder image to
 the right of the Open box to browse for the sample MARC data file
-(.mrc). Double click the found file to select it.</li>
+(marc_sample_data.mrc). Double click the found file to select it.</li>
 <li>Next, you will need save your file in the MARC mnemonic format
 (.mrk) by clicking the file folder to the right of the Save As box.
 Select the location and name you would like to give your new file.</li>
@@ -549,8 +549,8 @@ encoding.</li>
 <li>Click execute.</li>
 <li>Once you click execute the newly created .mrk file will be available
 to open in the MarcEditor. Under Results at the bottom of the window you
-will see a count of the records in your file. Click Edit Records to open
-the .mrk file in the MarcEditor.</li>
+will see a count of the records in your file (536). Click Edit Records
+to open the .mrk file in the MarcEditor.</li>
 </ol><p><strong>Note:</strong> When you break a .mrc file and create a new
 .mrk file for editing in the MarcEditor, you are making a copy of your
 data in a new file format. As a result, any edits you make to the .mrk
@@ -620,9 +620,9 @@ codes and the subfield text.
 <div class="callout-content">
 <p>Understanding the layout of MARC data in the MarcEditor is key to
 using the program’s tools successfully. For instance, in some tools it
-is important to specify a field’s indicators directly preceeding the
-first subfield. Throughout this workshop we will highlight how different
-tools rely on this syntax to apply edits.</p>
+is important to specify a field’s indicators directly before the first
+subfield. Throughout this workshop we will highlight how different tools
+rely on this syntax to apply edits.</p>
 </div>
 </div>
 </div>
@@ -639,8 +639,8 @@ never tries to load all the records at the same time.</p>
 MarcEditor preferences which can be accessed through the Edit →
 Preferences menu option from the MarcEditor, or through the ‘Settings’
 icon on the opening screen of MarcEdit.</p>
-<p>Within the MarcEditor preferences, you can adjust the font and font
-size within the MarcEditor. You can also set your character encoding
+<p>Within the MarcEditor Preferences, you can adjust the font and font
+size used in the MarcEditor. You can also set your character encoding
 defaults. If you navigate to File Associations within the Preferences
 window, you can select Associate (<code>*.mrc</code>) files with the
 MarcBreaker and Associate (<code>*.mrk</code>) files with the
@@ -716,13 +716,12 @@ confused.</p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul><li>MarcEdit can work with a variety of file formats</li>
-<li>The MARC Tools Icon allow you to convert data from one file format
+<li>The MARC Tools Icon allows you to convert data from one file format
 to another</li>
-<li>The MarcEditor works with a MarcEdit specific mnemonic format of
-MARC records (.mrk)</li>
-<li>It is necessary to break a MARC binary file to work with that MARC
-data in the MarcEditor. The extension of these easily readable MARC
-files are .mrk rather than the binary extension of .mrc</li>
+<li>The MarcEditor works with an easy-to-read MarcEdit specific mnemonic
+format of MARC records (.mrk). If starting with a MARC binary file
+(.mrc), you must use the MarcBreaker to convert the binary file to a
+mnemonic file.</li>
 <li>Understanding the layout (syntax) of MARC records in the MarcEditor
 is key to working with the records.</li>
 </ul></div>
@@ -789,8 +788,8 @@ is key to working with the records.</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/instructor/03-working-with-MARC-files.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/instructor/03-working-with-MARC-files.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2026-02-09",
-  "datePublished": "2026-04-07"
+  "dateModified": "2026-04-10",
+  "datePublished": "2026-04-10"
 }
 
   </script><script>
