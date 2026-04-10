@@ -32,16 +32,12 @@ We have seen how we can manually and individually edit records in the MarcEditor
 
 As we saw in lesson 5, MarcEdit's Find/Find All functionality supports reviewing your data. We can pair this functionality with Replace to start manipulating our data in bulk.
 
-**Find**: Find will perform a keyword search for your search terms entered in the Find window search box. Each time you click "Find", you will be brought to the next instance of your search terms on the current page of the MarcEditor. Remember that the default settings split the MARC records into 100 for each page. Find will only search those records on the page you are currently on. 
-
-**Find All**: Find all will search for your search terms entered in the Find window search box over all the pages, or all your MARC records. When you click "Find All" a new window will open listing each instance of your search terms. Double clicking a result will take you to the result in the MarcEditor.
-
-**Replace**: Replace works alongside Find or Find all. You have the option to Replace just those on the page or Replace all where the replace occurs on all pages in all records.
+**Replace**: Replace works alongside Find/Find all. You have the option to Replace just those matching strings on the page or Replace all where the replace occurs on all pages in all records.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
 ## Find Text/Replace Text and Find All Results Popup Windows
-The popup window for the Find Text/Replace Text function and the secondary popup window for your Find All search results  will not close automatically. You will need to close these windows when you are done performing your find/replace actions.
+The popup window for the Find Text/Replace Text function and the secondary popup window for your Find All search results will not close automatically. You will need to close these windows when you are done performing your find/replace actions.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
