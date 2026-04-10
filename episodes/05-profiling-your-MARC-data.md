@@ -128,8 +128,7 @@ To use the Find function
 3. In the "Find what:" dialogue box enter =245
 4. Click Find All
 
-**Note:**  When using `Find` to locate instances of a specific field, make sure to include the preceding = before the field number. Including the = ensures only matches on field number will be returned.
-
+**Note:**  When using `Find` to locate instances of a specific field, make sure to include the preceding = before the field number. If there is a title such as "The Journey of 245 people", this will then show up in your search results if you search 245. If you search for =245, it will find anything with that string. If for example there is a contents note with "... =856 ..." then this will also appear in the search results. Typically the equals before the MARC tage will bring up that MARC tag. By extension, if you want to find a specific MARC field that have specific indicators, you will need to include 2 spaces after the MARC field as in =245  00.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
