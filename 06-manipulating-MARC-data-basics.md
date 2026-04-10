@@ -30,22 +30,16 @@ We have seen how we can manually and individually edit records in the MarcEditor
 
 ### Find, Find All, and Replace
 
-Like many other applications, the MarcEditor offers the ability to Find, Find All, and Replace. 
+As we saw in lesson 5, MarcEdit's Find/Find All functionality supports reviewing your data. We can pair this functionality with Replace to start manipulating our data in bulk.
 
-**Find**: Find will perform a keyword search for your search terms entered in the Find window search box. Each time you click "Find", you will be brought to the next instance of your search terms on the current page of the MarcEditor. Remember that the default settings split the MARC records into 100 for each page. Find will only search those records on the page you are currently on. 
-
-**Find All**: Find all will search for your search terms entered in the Find window search box over all the pages, or all your MARC records. When you click "Find All" a new window will open listing each instance of your search terms. Double clicking a result will take you to the result in the MarcEditor.
-
-**Replace**: Replace works alongside Find or Find all. You have the option to Replace just those on the page or Replace all where the replace occurs on all pages in all records.
+**Replace**: Replace works alongside Find/Find all. You have the option to Replace just those matching strings on the page or Replace all where the replace occurs on all pages in all records.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
 ## Find Text/Replace Text and Find All Results Popup Windows
-The popup window for the Find Text/Replace Text function and the secondary popup window for your Find All search results  will not close automatically. You will need to close these windows when you are done performing your find/replace actions.
+The popup window for the Find Text/Replace Text function and the secondary popup window for your Find All search results will not close automatically. You will need to close these windows when you are done performing your find/replace actions.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
-If you want to Find or Find all for a specific MARC field, you will need to include the equals sign before the MARC field. For example, if you type in the search box 856, Find or Find All will search for 856 as a keyword anywhere. If there is a title such as "The Journey of 856 people", this will then show up in your search results. If you search for =856, it will find anything with that string. If for example there is a title with "... =856 ..." then this will also appear in the search results. Typically the equals before the MARC tage will bring up that MARC tag. By extension, if you want to find a specific MARC field that have specific indicators, you will need to include 2 spaces after the MARC field as in =856  40.
 
 :::::::::::::::::::::::::::::::::::::::::  checklist
 
@@ -59,25 +53,25 @@ If you want to Find or Find all for a specific MARC field, you will need to incl
 6.  Go to Edit->Find (or CTRL+F)
 7.  In the search box in the new window, type in =856
 8.  Click Find All
-9.  What results do you see
+9.  Our results show a list of 282 instances of =856. Note that the first results include an insitituion specific proxy =856  40\$3Full text:\$uhttps://proxy.ufl.edu?url=. We will need to remove this proxy string if we want to use these records in a different institutional catalog.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Add a proxy to the MARC field 856
+## Remove a proxy from the MARC field 856
 
-1. Find those MARC fields 856 where there is a subfield 3 for Full text followed by a subfield u
-2. Add this proxy https://proxy.edu?url=
+1. Find those instances of https://proxy.ufl.edu?url= in the record set
+2. Remove the proxy string
 
 :::::::::::::::  solution
 
 ## Solution
 
 1. Click Edit->Replace
-2. In the search box for Find, type in =856  40\$3Full text:\$u
-3. In the search box for Replace, type in =856  40\$3Full text:\$uhttps://proxy.edu?url=
-4. Undo those changes.
+2. In the search box for Find, type in \$uhttps://proxy.ufl.edu?url=
+3. In the search box for Replace, type in \$u
+4. Click Replace All
 
 :::::::::::::::::::::::::
 
@@ -87,7 +81,7 @@ If you want to Find or Find all for a specific MARC field, you will need to incl
 
 ## Find and Replace
 
-Remember to always verify the search results of the Find or Find All and profile your data before making changes. Find or Find all will search for the exact phrase or string that you put into the search box either on that page (Find) or in every record (Find all). In the example above, if your records contain MARC fields 856 with different \$3 data (for example: =856 40\$3Online Access:\$u) the replace above will not add the proxy to those 856 fields. You will need to do another replace.
+Remember to always verify the search results of the Find or Find All and profile your data before making changes. Find or Find all will search for the exact phrase or string that you put into the search box either on that page (Find) or in every record (Find all). In the example above, if your records contain MARC fields 856 with different \$u data (for example: =856 40\$3Online Access:\$uhttps://proxy.ucla.edu?url=) the replace above will not remove the proxy from the 856 fields. You will need to do another replace.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
