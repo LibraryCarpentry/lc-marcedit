@@ -201,7 +201,7 @@ There are a number of validation and log reports available.
 ## MarcValidator Report
 The MarcValidator report has a couple of options of which 2 are highlighted here. Note that if you are working with a large file, it will take longer to prep the file. Once it is prepped, there is a message that says "MarcEditor file has been prepped and is awaiting validation". You can view results grouped by errors or remove invalid records automatically from your file.
 
-- **Check MARC Usings Rules File**https://docs.google.com/document/d/1xJodlYalJ9yVs7ZKVl7B9dy1MikqrFEBwWiFJ0vwg4E/edit?usp=sharing: The Rules file, called marcrules.txt, includes all the valid MARC fields, their valid indicators, and whether that field can be repeated. The Rules file can be modified. Once you open the MarcValidator, in the popup window, you will see the option to "Edit the Rules File". You will need to respect spaces and entry conventions by following what is already present in that text file.
+- **Check MARC Usings Rules File**: [The Rules file](https://docs.google.com/document/d/1xJodlYalJ9yVs7ZKVl7B9dy1MikqrFEBwWiFJ0vwg4E/edit?usp=sharing), called marcrules.txt, includes all the valid MARC fields, their valid indicators, and whether that field can be repeated. The Rules file can be modified. Once you open the MarcValidator, in the popup window, you will see the option to "Edit the Rules File". You will need to respect spaces and entry conventions by following what is already present in that text file.
 - **Validate Record Structure**: This report checks if the MARC syntax is valid and includes a check for HTML, tabs, and smart characters.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
