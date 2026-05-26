@@ -43,8 +43,8 @@ Many systems rely on the Z39.50 protocol to search and exchange data. It could b
 
 <table>
   <tr>
-    <td><strong>Field</strong></td>
-    <td><strong>Value</strong></td>
+    <th><strong>Field</strong></th>
+    <th><strong>Value</strong></th>
   </tr>
   <tr>
     <td>Name</td>
@@ -76,8 +76,8 @@ For [OCLC](https://help.oclc.org/Metadata_Services/Z3950_Cataloging/Get_started/
 
 <table>
   <tr>
-    <td><strong>Field</strong></td>
-    <td><strong>Value</strong></td>
+    <th><strong>Field</strong></th>
+    <th><strong>Value</strong></th>
   </tr>
   <tr>
     <td>Name</td>
