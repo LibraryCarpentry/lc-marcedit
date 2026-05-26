@@ -1,6 +1,6 @@
 ---
 title: Tasks and Automation
-teaching: 20
+teaching: 25
 exercises: 5
 ---
 
@@ -125,35 +125,73 @@ Note: If learners need instructions on deleting their existing proxies for the n
 2. In the search box for Find, type in =856 40$3Full text:$uhttps://proxy.edu?url= *note the proxy they added may not be this exact string
 3. In the search box for Replace, type in =856 40$3Full text:$u
 4. Click Replace all
+
+The example below relies on the function Edit Subfield Data. Instructors can show both ways if there is time.
    
 :::::::::::::::::::::::::::::::::::::::::::::::::
+
+Before adding a function to a new or existing task, it is recommended to make sure that function works as intended and the data in your records fit the scenario and assumptions of your function. For the challenge below, we will look at the steps to make sure the new function works as intended.
+
+In the challenge below, we want to add a proxy to the url/uri in the MARC field 856 subfield u. We need to ensure that there are not already proxies present. Proxies from other institutions are often found in records. Sometimes, you may need to change your own proxy. 
+
+First we need to know if there are other proxies present in the MARC21 field 856 subfield u. Also, we need to account for different access methods (Resource, Version of the Resource, etc.). For a full list, you can consult the [Library of Congress documentation on the MARC field 856](https://www.loc.gov/marc/bibliographic/bd856.html).
+
+Follow these steps familiar from the previous lesson on Find all:
+1. Go to Edit -> Find (or press CTRL+F)
+2. In the new Find window, type in =856
+3. Select "Find all"
+
+You will see that there are resources and version of the resources as indicated by the second indicator 0 or 1. Some have proxies or the string https://proxy.ufl.edu?url=. We want to remove this before we proceed.
+
+Follow these steps to remove that proxy using the Tools -> Edit Subfield Data that we saw previously.
+1. Go to Tools -> Edit Subfield Data
+2. Field: 856
+3. Subfield: u
+4. Field Data: https://proxy.ufl.edu?url=
+5. Replace with: LEAVE BLANK
+6. Click Replace
+
+It is recommended to verify before proceeding. Go to Edit -> Find or press CTRL+F. In the new window, type in =856. Verify that the proxy is now gone from that subfield u in the MARC field 856. If you see other anamolies, you can repeat the process above to remove other unwanted data from the MARC field 856 subfield u.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
 ### Add a proxy to the `856 40$u` in your Task
 
-1. After you run your Task, your MARC records should have your institution's proxy before the URL. Remember to check your data first to see if there are any proxy stems present. You will need to remove any existing proxies before running your Task. If the MARC data has different types of electronic URLs (resource, related resource, etc.) as noted in the MARC field 856 indicators, you will need to account for that in your Task.
+1. After you run your Task, your MARC records should have your institution's proxy before the URL. Check your function first in the MarcEditor to see if it works as intended. Looking at your data will also help to determine if you need to account for other scenarios such as the presence of different proxies from multiple institutions.
 
 :::::::::::::::  solution
 
 ### Solution
 
-1. Go to Tools in the upper menu in the MarcEditor
-2. Select Manage Tasks
-3. Select the Task you just created. The selected Task will be highlighted.
-4. In Task Actions, select Edit Task and click Select.
-5. Select the plus button and select "Add a Replace All Task"
-6. Replace the `856  40$u` with `856  40$u[your proxy]`. Remember to add 2 spaces after the MARC field.
-7. Save
-8. Close out of the Task Manager
-9. Run your Task again
-10. Check your MARC data. Do you see the changes?
+1. Verify that your function works before you add this to your existing task
+2. Go to Tools in the upper menu in the MarcEditor
+3. Select Manage Tasks
+4. Select the Task you just created. The selected Task will be highlighted.
+5. In Task Actions, select Edit Task and click Select.
+6. Select the plus button and select "Add a Replace All Task"
+7. Replace the `856  40$u` with `856  40$u[your proxy]`. Remember to add 2 spaces after the MARC field.
+8. Save
+9. Close out of the Task Manager
+10. Run your Task again
+11. Check your MARC data. Do you see the changes?
   
-  
-
-:::::::::::::::::::::::::
+ :::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::: instructor
+
+Note: There are multiple ways to do this. You can Edit Subfield Data, use the Find and Replace, or use an advanced subfield edit funciton that was seen in the previous lesson as advanced subfield edit functions.
+
+1. Click Tools -> Edit Subfield Data
+2. Field: 856
+3. Subfield: u
+4. Field Data: ^b
+5. Replace with: YOUR PROXY
+6. Click Replace
+   
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
