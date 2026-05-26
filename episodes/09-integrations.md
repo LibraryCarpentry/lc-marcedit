@@ -1,7 +1,7 @@
 ---
 title: Integrations
-teaching: 15
-exercises: 0
+teaching: 20
+exercises: 1
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
@@ -9,6 +9,7 @@ exercises: 0
 - Explain what integrations are
 - Explain how integrations support advanced record actions
 - Illustrate integrations with OCLC
+- Set up an integration with the Library of Congress' Z39.50 service
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -104,7 +105,34 @@ For [OCLC](https://help.oclc.org/Metadata_Services/Z3950_Cataloging/Get_started/
   </tr>
 </table>
 
-You should be able to add multiple Z39.50 connections.
+You can add multiple Z39.50 connections. To do this, go to the main menu, click on Tools, then Utilities, then Z39.50/SRU Client. In the new window, click on Actions in the upper left hand corner and select "Add new Z39.50 Server". 
+
+::::::::::::::::::::::::::::::::::::::: challenge
+Add a connection to the Library of Congress' Z39.50 using the information below. What is the main entry if you search for the record number 983545.
+
+- Name: Library of Congress
+- Host: lx2.loc.gov
+- Database: LCDB
+- Port: 210
+- Syntax: MARC21
+- Username/Password: Leave Blank
+
+::::::::::::::: solution
+Solution
+
+- Go to Tools in the main menu
+- Click on Tools -> Utilities -> Z39.50/SRU Client
+- In the new window, click on Actions -> Add new Z39.50 Client
+- Use the information above to fill out the fields
+- Click Save
+- Make sure the Query Database has "Library of Congress"
+- Make sure the Search box is set to "Record Number"
+- In that Search box, put in 983545
+- 1 result with the Main Entry of "Querelae & opprobira ventribuli, sive."
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
