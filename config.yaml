@@ -1,0 +1,90 @@
+#------------------------------------------------------------
+# Values for this lesson.
+#------------------------------------------------------------
+
+# Which carpentry is this (swc, dc, lc, or cp)?
+# swc: Software Carpentry
+# dc: Data Carpentry
+# lc: Library Carpentry
+# cp: Carpentries (to use for instructor training for instance)
+# incubator: The Carpentries Incubator
+carpentry: 'lc'
+
+# Overall title for pages.
+title: 'Library Carpentry: MarcEdit'
+
+# Date the lesson was created (YYYY-MM-DD, this is empty by default)
+created: '2019-08-17'
+
+# Comma-separated list of keywords for the lesson
+keywords: 'software, data, lesson, The Carpentries, MARC, MARC21, metadata, data manipulation, marcedit, data profiling'
+
+# Life cycle stage of the lesson
+# possible values: pre-alpha, alpha, beta, stable
+life_cycle: 'beta'
+
+# License of the lesson materials (recommended CC-BY 4.0)
+license: 'CC-BY 4.0'
+
+# Link to the source repository for this lesson
+source: 'https://github.com/librarycarpentry/lc-marcedit'
+
+# Default branch of your lesson
+branch: 'main'
+
+# Who to contact if there are any issues
+contact: 'team@carpentries.org'
+
+# Navigation ------------------------------------------------
+#
+# Use the following menu items to specify the order of
+# individual pages in each dropdown section. Leave blank to
+# include all pages in the folder.
+#
+# Example -------------
+#
+# episodes:
+# - introduction.md
+# - first-steps.md
+#
+# learners:
+# - setup.md
+#
+# instructors:
+# - instructor-notes.md
+#
+# profiles:
+# - one-learner.md
+# - another-learner.md
+
+# Order of episodes in your lesson
+episodes: 
+- 01-introduction.md
+- 02-top-level-menu-features.md
+- 03-working-with-MARC-files.md
+- 04-layout-of-the-MarcEditor.md
+- 05-profiling-your-MARC-data.md
+- 06-manipulating-MARC-data-basics.md
+- 07-manipulating-MARC-data-advanced.md
+- 08-tasks-and-automation.md
+- 09-integrations.md
+- 10-regular-expressions.md
+
+# Information for Learners
+learners: 
+
+# Information for Instructors
+instructors: 
+
+# Learner Profiles
+profiles: 
+
+# Customisation ---------------------------------------------
+#
+# This space below is where custom yaml items (e.g. pinning
+# sandpaper and varnish versions) should live
+
+
+url: 'https://librarycarpentry.github.io/lc-marcedit'
+analytics: carpentries
+lang: en
