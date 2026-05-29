@@ -99,9 +99,16 @@ To add the field, click the Add Field button and to delete any matching fields, 
 
 For both the Add Field and Delete Field functions there are a number of different options that can be applied to control the updates.
 
-The options to Add a Field include, if the field you are adding already exists, it can be inserted first in the list of those MARC fields or last. MARC fields can be added only if that MARC field is not already present in that record or based on the presence of other criteria found in other MARC fields. For example, a MARC field `655  \4$aElectronic books` can be added to only those records that are eBooks based on the data in the LDR or 008.
+The options to Add a Field include: 
+- Inserting the new field before or after existing fields of the same type. For example, if you are adding a new 500 note field, you can at it before or after the existing 500 fields.
+- Limiting the addition of the new field to records where the field is not present or where the field and field contents are not duplicated.
+- Limiting the addition of the new field based on the presence of other criteria found in other MARC fields. For example, you can add a MARC field `655  \4$aElectronic books` to only those records that are eBooks based on the data in the LDR or 008.
 
-The options to Delete a Field include removing duplicates, removing MARC fields based on field position, removing MARC fields that do not match what is entered in the Field Data, or removing invalid UTF-8 MARC fields. For example, to ensure that only the field `655  \4$aElectronic books`. is present in the MARC data, the option Remove if field data does not match can be selected.
+The options to Delete a Field include:
+- Removing fields that duplicate the
+- Removing MARC fields based on field position
+- Removing MARC fields that do not match what is entered in the Field Data. For example, to ensure that only the field `655  \4$aElectronic books`. is present in the MARC data, the option Remove if field data does not match can be selected.
+- Removing invalid UTF-8 MARC fields. 
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -178,9 +185,8 @@ To replace text in a subfield, enter the MARC field, the subfield, the text (or 
 ## Ability to Preview and Special Undo
 
 As of version 7.5, you can preview all of these changes before making them.
-If you complete a batch edit that produces unexpected or undesirable results, you can perform a Special Undo by selecting Edit → Special Undo.
-This will only act on your most recent batch edit. If you perform an action after your batch edit, Special Undo will not undo your batch change but the action you just performed.
-Undo and Special Undo are different. Undo undoes a manual edit whereas Special Undo undoes a bulk edit. 
+If you complete a batch edit that produces unexpected or undesirable results, you can perform a Special Undo by selecting Edit → Special Undo. Special Undo will return your file to the state it was before your last batch edit, meaning if you have performed any manual edits after your batch edit, Special Undo will also undo your manual edits. You can only use special undo once, meaning you cannot undo two batch edits.
+Undo and Special Undo are different. Undo undoes manual edits whereas Special Undo undoes a single batch edit and any manual edits completed following the batch edit. 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -272,7 +278,8 @@ Records can also be compiled outside of the MarcEditor using the MarcMaker tool.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- MarcEdit can be used to edit any part of the MARC data including the Leader, fixed fields, fields, indicators, subfields and the content in those fields.
-- MarcEdit comes with an array of tools to manipulate data and validate MARC.
+- MarcEdit can be used to add, delete, or edit any part of the MARC data including the Leader, fixed fields, fields, indicators, subfields and the content in those fields.
+- MarcEdit comes with an array of tools and comprehensive options to manipulate data and validate MARC.
+- MarcEdit provides methods to undo, save and compile your work done in the MarcEditor.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
