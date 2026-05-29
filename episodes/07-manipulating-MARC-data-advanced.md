@@ -6,7 +6,12 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain Edit Shortcuts, Build New Field, RDA Helper, and Select Records for Edit advanced functions
+-  Change the case of field data
+-  Create a new field by combining existing field data and static values
+-  Explain the functions of the RDA Helper
+-  Select records to edit based on the presence of a field
+-  Add Cutters to call numbers for a subset of records
+-  Verify editing results using Find or Find All
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
