@@ -28,6 +28,11 @@ The MarcEditor has a robust set of features available via the top level menu. Fe
 
 ![](fig/topLevelFeatures_marcEditor.png){alt='MarcEdit top level menu'}
 
+:::::::::::::::::::::::::::::::::::::: instructor
+
+Note: A number of differences have been noted in the MarcEditor Top Level Menu design and features for Mac users in this lesson.
+  
+:::::::::::::::::::::::::::::::::::::::::::::::::
 ### MarcEditor Top Level Menu Features
 
 Each top level menu heading contains many options. Below are some highlights of those features that are frequently used when working with a set of MARC data.
