@@ -7,6 +7,8 @@ exercises: 20
 ::::::::::::::::::::::::::::::::::::::: objectives
 
 - Understand what regular expressions are and how they can support advanced editing in the MarcEditor
+- Bring data and format consistency to fields with varying values by applying edits using a regular expression
+- Select a subset of records to edit based on the values in multiple fields using a regular expression
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
