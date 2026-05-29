@@ -90,7 +90,7 @@
 </div>
     </div>
   </div>
-  <hr></header><nav class="navbar navbar-expand-xl bottom-nav library" aria-label="Main Navigation"><div class="container-fluid nav-container">
+</header><nav class="navbar navbar-expand-xl bottom-nav library" aria-label="Main Navigation"><div class="container-fluid nav-container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
       <span class="navbar-toggler-icon"></span>
       <span class="menu-title">Menu</span>
@@ -208,8 +208,7 @@
             </div>
 <!--/div.col -->
 
-            <hr>
-</div>
+          </div>
 <!--/div.mobile-row -->
 
           <div class="accordion accordion-flush" id="accordion-chapters-toggle">
@@ -2331,7 +2330,7 @@ the <code>856$u</code>.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools → Build New Field</li>
@@ -2436,7 +2435,7 @@ abbreviations; Remove the GMD.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2821,7 +2820,7 @@ tools</li>
 </div>
 </section></section><section id="aio-09-integrations"><p>Content from <a href="09-integrations.html">Integrations</a></p>
 <hr>
-<p>Last updated on 2026-02-09 |
+<p>Last updated on 2026-05-29 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/09-integrations.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2849,6 +2848,8 @@ tools</li>
 <li>Explain what integrations are</li>
 <li>Explain how integrations support advanced record actions</li>
 <li>Illustrate integrations with OCLC</li>
+<li>Set up an integration with the Library of Congress’ Z39.50
+service</li>
 </ul>
 </div>
 </div>
@@ -2912,12 +2913,12 @@ loan. For this type of integration, you need the following information
 below. You can find this information at the Library of Congress <a href="https://www.loc.gov/z3950/" class="external-link">Gateway to Library Catalogs</a> of <a href="https://www.z-brary.com/" class="external-link">zbrary</a>.</p>
 <table class="table">
 <tr>
-<td>
+<th>
 <strong>Field</strong>
-</td>
-<td>
+</th>
+<th>
 <strong>Value</strong>
-</td>
+</th>
 </tr>
 <tr>
 <td>
@@ -2973,12 +2974,12 @@ Enter a username
 this information looks like the following.</p>
 <table class="table">
 <tr>
-<td>
+<th>
 <strong>Field</strong>
-</td>
-<td>
+</th>
+<th>
 <strong>Value</strong>
-</td>
+</th>
 </tr>
 <tr>
 <td>
@@ -3030,7 +3031,56 @@ Connexion Username of 3 numbers - 3 numbers - 3 numbers as in
 </td>
 </tr>
 </table>
-<p>You should be able to add multiple Z39.50 connections.</p>
+<p>You can add multiple Z39.50 connections. To do this, go to the main
+menu, click on Tools, then Utilities, then Z39.50/SRU Client. In the new
+window, click on Actions in the upper left hand corner and select “Add
+new Z39.50 Server”.</p>
+<div id="challenge1" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>Add a connection to the Library of Congress’ Z39.50 using the
+information below. What is the main entry if you search for the record
+number 983545.</p>
+<ul>
+<li>Name: Library of Congress</li>
+<li>Host: lx2.loc.gov</li>
+<li>Database: LCDB</li>
+<li>Port: 210</li>
+<li>Syntax: MARC21</li>
+<li>Username/Password: Leave Blank</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<p>Solution</p>
+<ul>
+<li>Go to Tools in the main menu</li>
+<li>Click on Tools -&gt; Utilities -&gt; Z39.50/SRU Client</li>
+<li>In the new window, click on Actions -&gt; Add new Z39.50 Client</li>
+<li>Use the information above to fill out the fields</li>
+<li>Click Save</li>
+<li>Make sure the Query Database has “Library of Congress”</li>
+<li>Make sure the Search box is set to “Record Number”</li>
+<li>In that Search box, put in 983545</li>
+<li>1 result with the Main Entry of “Querelae &amp; opprobira
+ventribuli, sive.”</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -3387,7 +3437,7 @@ are working as intended</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.0)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.20.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.1)</a></p>
 		</div>
 		</footer>
 </div> <!-- / div.container -->
@@ -3410,8 +3460,8 @@ are working as intended</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/aio.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/aio.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2026-05-19",
-  "datePublished": "2026-05-19"
+  "dateModified": "2026-05-29",
+  "datePublished": "2026-05-29"
 }
 
   </script><script>
