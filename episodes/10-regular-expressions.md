@@ -7,6 +7,8 @@ exercises: 20
 ::::::::::::::::::::::::::::::::::::::: objectives
 
 - Understand what regular expressions are and how they can support advanced editing in the MarcEditor
+- Bring data and format consistency to fields with varying values by applying edits using a regular expression
+- Select a subset of records to edit based on the values in multiple fields using a regular expression
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -66,17 +68,17 @@ The Find and Replace tool is another useful way to identify and manipulate data 
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
-### Add a space between 090 class and subclass
+### Add a space between 099 class and subclass
 
 1. Select Edit → Find
-2. Enter `=090` in the Find box and click Find All
-  Review the list of `090` fields, what observations can you make about the call numbers in this field?
+2. Enter `=099` in the Find box and click Find All
+  Review the list of `099` fields, what observations can you make about the call numbers in this field?
   Review shows us that not all call numbers begin with letters. We do not want to add a space to these call numbers and need to account for this in our regular expression.
 3. In the Find window, click Replace to bring up the Replace Text functions
-4. In the Find box enter the regular expression `(=090  \\\\\$a[A-Z]+)(\d.*)`
+4. In the Find box enter the regular expression `(=099   \\\\\$a[A-Z]+)(\d.*)`
   This regular expression uses two sets of `()` to capture groups and then manipulate them.
 
-- Broken down, the first group `(=090  \\\\\$a[A-Z]+)` will match the literal string `=090  \\$a` (the additional backslashes are used to escape the regex metacharacters `\` and `$` so that they will be read as literals) followed by any single capital letter in the range A to Z (`[A-Z]`) one or more times (`+`). By specifying that the regular expression must locate a capital letter at the start of the call number, the regular expression will not edit the call numbers that begin with a digit.
+- Broken down, the first group `(=099   \\\\\$a[A-Z]+)` will match the literal string `=099   \\$a` (the additional backslashes are used to escape the regex metacharacters `\` and `$` so that they will be read as literals) followed by any single capital letter in the range A to Z (`[A-Z]`) one or more times (`+`). By specifying that the regular expression must locate a capital letter at the start of the call number, the regular expression will not edit the call numbers that begin with a digit.
 - The second group `(\d.*)` will match any digit (`\d`) followed by any character (`.`) zero or more times (`*`)
 
 5. In the Replace box enter `$1 $2`
@@ -85,6 +87,15 @@ The Find and Replace tool is another useful way to identify and manipulate data 
 7. Click drop down menu → Preview Results
 8. Verify your results look as expected, close preview tab and then click Process
   
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+### Using a Regex Tester
+
+While the MarcEditor provides a way to preview the results of your regular expression, you can also use a regex tester such as [Regex101](https://regex101.com/). A live regex tester allows you to copy in sample data and then build a regular expression to manipulate that test data. The tester is especially helpful because it provides an explanation of how the regular expression is working on your data, as well as built in quick references for common regex syntax and functions.
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
