@@ -766,7 +766,7 @@ as the main window or the MarcEditor</li>
 </div>
 </section></section><section id="aio-03-working-with-MARC-files"><p>Content from <a href="03-working-with-MARC-files.html">Working with MARC files</a></p>
 <hr>
-<p>Last updated on 2026-04-10 |
+<p>Last updated on 2026-06-02 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/03-working-with-MARC-files.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1150,7 +1150,7 @@ is key to working with the records.</li>
 </div>
 </section></section><section id="aio-04-layout-of-the-MarcEditor"><p>Content from <a href="04-layout-of-the-MarcEditor.html">Layout of the MarcEditor</a></p>
 <hr>
-<p>Last updated on 2026-03-27 |
+<p>Last updated on 2026-06-02 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/04-layout-of-the-MarcEditor.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1296,7 +1296,7 @@ data.</li>
 </div>
 </section></section><section id="aio-05-profiling-your-MARC-data"><p>Content from <a href="05-profiling-your-MARC-data.html">Profiling your MARC data</a></p>
 <hr>
-<p>Last updated on 2026-04-10 |
+<p>Last updated on 2026-06-02 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/05-profiling-your-MARC-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1437,7 +1437,7 @@ our records?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Field Count outlines each field found in our records, the number of
@@ -1464,13 +1464,22 @@ duplicate MARC field 245.</li>
 </h3>
 <p>Other useful tools for profiling your data can be found under the
 Edit tab.</p>
-<p>Like many applications, the MarcEditor provides a <code>Find</code>
-function. Find is particularly useful for locating and reviewing all
-instances of a MARC field within your data, or locating a particular
-text string within your data. In this episode, we will briefly look at
-Find, Find All and Edit shortcuts. In the next episode, we will return
-to Find and Find All in more depth.</p>
-<p>We can use Find to locate and review the 245 field.</p>
+<p>Like many applications, the MarcEditor provides a
+<code>Find/Find All</code> function. Find is particularly useful for
+locating and reviewing all instances of a MARC field within your data,
+or locating a particular text string within your data.</p>
+<p><strong>Find</strong>: Find will perform a keyword search for your
+search terms entered in the Find window search box. Each time you click
+“Find”, you will be brought to the next instance of your search terms on
+the current page of the MarcEditor. Remember that the default settings
+split the MARC records into 100 for each page. Find will only search
+those records on the page you are currently on.</p>
+<p><strong>Find All</strong>: Find all will search for your search terms
+entered in the Find window search box over all the pages, or all your
+MARC records. When you click “Find All” a new window will open listing
+each instance of your search terms. Double clicking a result will take
+you to the result in the MarcEditor.</p>
+<p>We can use Find All to locate and review the 245 field.</p>
 <div id="run-find-function" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
@@ -1489,8 +1498,14 @@ function)</li>
 </ol>
 <p><strong>Note:</strong> When using <code>Find</code> to locate
 instances of a specific field, make sure to include the preceding =
-before the field number. Including the = ensures only matches on field
-number will be returned.</p>
+before the field number. If there is a title such as “The Journey of 245
+people”, this will then show up in your search results if you search
+245. If you search for =245, it will find anything with that string. If
+for example there is a contents note with “… =856 …” then this will also
+appear in the search results. Typically the equals before the MARC tage
+will bring up that MARC tag. By extension, if you want to find a
+specific MARC field that have specific indicators, you will need to
+include 2 spaces after the MARC field as in =245 00.</p>
 </div>
 </div>
 </div>
@@ -1571,7 +1586,7 @@ correctly?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The 245 field number is formatted incorrectly. The MarcEditor relies
@@ -1656,7 +1671,7 @@ MARC records like duplicate or missing MARC fields.</li>
 </div>
 </section></section><section id="aio-06-manipulating-MARC-data-basics"><p>Content from <a href="06-manipulating-MARC-data-basics.html">Manipulating MARC data basics</a></p>
 <hr>
-<p>Last updated on 2026-02-09 |
+<p>Last updated on 2026-06-02 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/06-manipulating-MARC-data-basics.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1712,22 +1727,12 @@ of MarcEdit, the Swiss army knife of MARC data.</p>
 <div class="section level3">
 <h3 id="find-find-all-and-replace">Find, Find All, and Replace<a class="anchor" aria-label="anchor" href="#find-find-all-and-replace"></a>
 </h3>
-<p>Like many other applications, the MarcEditor offers the ability to
-Find, Find All, and Replace.</p>
-<p><strong>Find</strong>: Find will perform a keyword search for your
-search terms entered in the Find window search box. Each time you click
-“Find”, you will be brought to the next instance of your search terms on
-the current page of the MarcEditor. Remember that the default settings
-split the MARC records into 100 for each page. Find will only search
-those records on the page you are currently on.</p>
-<p><strong>Find All</strong>: Find all will search for your search terms
-entered in the Find window search box over all the pages, or all your
-MARC records. When you click “Find All” a new window will open listing
-each instance of your search terms. Double clicking a result will take
-you to the result in the MarcEditor.</p>
-<p><strong>Replace</strong>: Replace works alongside Find or Find all.
-You have the option to Replace just those on the page or Replace all
-where the replace occurs on all pages in all records.</p>
+<p>As we saw in lesson 5, MarcEdit’s Find/Find All functionality
+supports reviewing your data. We can pair this functionality with
+Replace to start manipulating our data in bulk.</p>
+<p><strong>Replace</strong>: Replace works alongside Find/Find all. You
+have the option to Replace just those matching strings on the page or
+Replace all where the replace occurs on all pages in all records.</p>
 <div id="find-textreplace-text-and-find-all-results-popup-windows" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1744,17 +1749,6 @@ performing your find/replace actions.</p>
 </div>
 </div>
 </div>
-<p>If you want to Find or Find all for a specific MARC field, you will
-need to include the equals sign before the MARC field. For example, if
-you type in the search box 856, Find or Find All will search for 856 as
-a keyword anywhere. If there is a title such as “The Journey of 856
-people”, this will then show up in your search results. If you search
-for =856, it will find anything with that string. If for example there
-is a title with “… =856 …” then this will also appear in the search
-results. Typically the equals before the MARC tage will bring up that
-MARC tag. By extension, if you want to find a specific MARC field that
-have specific indicators, you will need to include 2 spaces after the
-MARC field as in =856 40.</p>
 <div id="find-find-all-and-replace-using-the-marc-field-856" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
@@ -1773,24 +1767,26 @@ field 856</h3>
 <li>Go to Edit-&gt;Find (or CTRL+F)</li>
 <li>In the search box in the new window, type in =856</li>
 <li>Click Find All</li>
-<li>What results do you see</li>
+<li>Our results show a list of 282 instances of =856. Note that the
+first results include an insitituion specific proxy =856 40$3Full
+text:$uhttps://proxy.ufl.edu?url=. We will need to remove this proxy
+string if we want to use these records in a different institutional
+catalog.</li>
 </ol>
 </div>
 </div>
 </div>
-<div id="add-a-proxy-to-the-marc-field-856" class="callout challenge">
+<div id="remove-a-proxy-from-the-marc-field-856" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="add-a-proxy-to-the-marc-field-856" class="callout-inner">
-<h3 class="callout-title">Add a proxy to the MARC field 856</h3>
+<div id="remove-a-proxy-from-the-marc-field-856" class="callout-inner">
+<h3 class="callout-title">Remove a proxy from the MARC field 856</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
-<li>Find those MARC fields 856 where there is a subfield 3 for Full text
-followed by a subfield u</li>
-<li>Add this proxy <a href="https://proxy.edu?url=" class="external-link uri">https://proxy.edu?url=</a>
-</li>
+<li>Find those instances of <a href="https://proxy.ufl.edu?url=" class="external-link uri">https://proxy.ufl.edu?url=</a> in the record set</li>
+<li>Remove the proxy string</li>
 </ol>
 </div>
 </div>
@@ -1804,10 +1800,10 @@ followed by a subfield u</li>
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Click Edit-&gt;Replace</li>
-<li>In the search box for Find, type in =856 40$3Full text:$u</li>
-<li>In the search box for Replace, type in =856 40$3Full
-text:$uhttps://proxy.edu?url=</li>
-<li>Undo those changes.</li>
+<li>In the search box for Find, type in
+$uhttps://proxy.ufl.edu?url=</li>
+<li>In the search box for Replace, type in $u</li>
+<li>Click Replace All</li>
 </ol>
 </div>
 </div>
@@ -1825,9 +1821,10 @@ text:$uhttps://proxy.edu?url=</li>
 and profile your data before making changes. Find or Find all will
 search for the exact phrase or string that you put into the search box
 either on that page (Find) or in every record (Find all). In the example
-above, if your records contain MARC fields 856 with different $3 data
-(for example: =856 40$3Online Access:$u) the replace above will not add
-the proxy to those 856 fields. You will need to do another replace.</p>
+above, if your records contain MARC fields 856 with different $u data
+(for example: =856 40$3Online Access:$uhttps://proxy.ucla.edu?url=) the
+replace above will not remove the proxy from the 856 fields. You will
+need to do another replace.</p>
 </div>
 </div>
 </div>
@@ -1850,19 +1847,22 @@ dollar sign to indicate a subfield.</p>
 matching fields, click the Delete Field button.</p>
 <p>For both the Add Field and Delete Field functions there are a number
 of different options that can be applied to control the updates.</p>
-<p>The options to Add a Field include, if the field you are adding
-already exists, it can be inserted first in the list of those MARC
-fields or last. MARC fields can be added only if that MARC field is not
-already present in that record or based on the presence of other
-criteria found in other MARC fields. For example, a MARC field
-<code>655  \4$aElectronic books</code> can be added to only those
-records that are eBooks based on the data in the LDR or 008.</p>
-<p>The options to Delete a Field include removing duplicates, removing
-MARC fields based on field position, removing MARC fields that do not
-match what is entered in the Field Data, or removing invalid UTF-8 MARC
-fields. For example, to ensure that only the field
+<p>The options to Add a Field include: - Inserting the new field before
+or after existing fields of the same type. For example, if you are
+adding a new 500 note field, you can at it before or after the existing
+500 fields. - Limiting the addition of the new field to records where
+the field is not present or where the field and field contents are not
+duplicated. - Limiting the addition of the new field based on the
+presence of other criteria found in other MARC fields. For example, you
+can add a MARC field <code>655  \4$aElectronic books</code> to only
+those records that are eBooks based on the data in the LDR or 008.</p>
+<p>The options to Delete a Field include: - Removing fields that
+duplicate the - Removing MARC fields based on field position - Removing
+MARC fields that do not match what is entered in the Field Data. For
+example, to ensure that only the field
 <code>655  \4$aElectronic books</code>. is present in the MARC data, the
-option Remove if field data does not match can be selected.</p>
+option Remove if field data does not match can be selected. - Removing
+invalid UTF-8 MARC fields.</p>
 <div id="add-and-then-delete-a-marc-field" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1999,11 +1999,13 @@ Text.</p>
 <p>As of version 7.5, you can preview all of these changes before making
 them. If you complete a batch edit that produces unexpected or
 undesirable results, you can perform a Special Undo by selecting Edit →
-Special Undo. This will only act on your most recent batch edit. If you
-perform an action after your batch edit, Special Undo will not undo your
-batch change but the action you just performed. Undo and Special Undo
-are different. Undo undoes a manual edit whereas Special Undo undoes a
-bulk edit.</p>
+Special Undo. Special Undo will return your file to the state it was
+before your last batch edit, meaning if you have performed any manual
+edits after your batch edit, Special Undo will also undo your manual
+edits. You can only use special undo once, meaning you cannot undo two
+batch edits. Undo and Special Undo are different. Undo undoes manual
+edits whereas Special Undo undoes a single batch edit and any manual
+edits completed following the batch edit.</p>
 </div>
 </div>
 </div>
@@ -2181,11 +2183,13 @@ number of records in the new <code>.mrc</code> file.</p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>MarcEdit can be used to edit any part of the MARC data including the
-Leader, fixed fields, fields, indicators, subfields and the content in
-those fields.</li>
-<li>MarcEdit comes with an array of tools to manipulate data and
-validate MARC.</li>
+<li>MarcEdit can be used to add, delete, or edit any part of the MARC
+data including the Leader, fixed fields, fields, indicators, subfields
+and the content in those fields.</li>
+<li>MarcEdit comes with an array of tools and comprehensive options to
+manipulate data and validate MARC.</li>
+<li>MarcEdit provides methods to undo, save and compile your work done
+in the MarcEditor.</li>
 </ul>
 </div>
 </div>
@@ -2193,7 +2197,7 @@ validate MARC.</li>
 </div>
 </section></section><section id="aio-07-manipulating-MARC-data-advanced"><p>Content from <a href="07-manipulating-MARC-data-advanced.html">Manipulating MARC data advanced</a></p>
 <hr>
-<p>Last updated on 2026-02-09 |
+<p>Last updated on 2026-06-02 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/07-manipulating-MARC-data-advanced.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2222,8 +2226,13 @@ your MARC file?</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Explain Edit Shortcuts, Build New Field, RDA Helper, and Select
-Records for Edit advanced functions</li>
+<li>Change the case of field data</li>
+<li>Create a new field by combining existing field data and static
+values</li>
+<li>Explain the functions of the RDA Helper</li>
+<li>Select records to edit based on the presence of a field</li>
+<li>Add Cutters to call numbers for a subset of records</li>
+<li>Verify editing results using Find or Find All</li>
 </ul>
 </div>
 </div>
@@ -2330,7 +2339,7 @@ the <code>856$u</code>.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools → Build New Field</li>
@@ -2435,7 +2444,7 @@ abbreviations; Remove the GMD.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2700,7 +2709,7 @@ helper and removes 9XX fields</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2761,7 +2770,7 @@ that in your Task.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2820,7 +2829,7 @@ tools</li>
 </div>
 </section></section><section id="aio-09-integrations"><p>Content from <a href="09-integrations.html">Integrations</a></p>
 <hr>
-<p>Last updated on 2026-05-29 |
+<p>Last updated on 2026-06-02 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/09-integrations.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2847,7 +2856,6 @@ tools</li>
 <ul>
 <li>Explain what integrations are</li>
 <li>Explain how integrations support advanced record actions</li>
-<li>Illustrate integrations with OCLC</li>
 <li>Set up an integration with the Library of Congress’ Z39.50
 service</li>
 </ul>
@@ -3062,7 +3070,7 @@ number 983545.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Solution</p>
 <ul>
@@ -3098,7 +3106,7 @@ ventribuli, sive.”</li>
 </div>
 </section></section><section id="aio-10-regular-expressions"><p>Content from <a href="10-regular-expressions.html">Regular Expressions</a></p>
 <hr>
-<p>Last updated on 2025-12-02 |
+<p>Last updated on 2026-06-02 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/10-regular-expressions.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -3128,6 +3136,10 @@ expressions?</li>
 <ul>
 <li>Understand what regular expressions are and how they can support
 advanced editing in the MarcEditor</li>
+<li>Bring data and format consistency to fields with varying values by
+applying edits using a regular expression</li>
+<li>Select a subset of records to edit based on the values in multiple
+fields using a regular expression</li>
 </ul>
 </div>
 </div>
@@ -3225,32 +3237,32 @@ field are formatted without a space between the class and subclass (ex.
 number to follow our local policy we need to isolate the components of
 the call number so we can add a space between them. We can do this with
 a regular expression by employing groups.</p>
-<div id="add-a-space-between-090-class-and-subclass" class="callout checklist">
+<div id="add-a-space-between-099-class-and-subclass" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
 </div>
 <span class="callout-header">Checklist</span>
-<div id="add-a-space-between-090-class-and-subclass" class="callout-inner">
-<h3 class="callout-title">Add a space between 090 class and
+<div id="add-a-space-between-099-class-and-subclass" class="callout-inner">
+<h3 class="callout-title">Add a space between 099 class and
 subclass</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
 <li>Select Edit → Find</li>
-<li>Enter <code>=090</code> in the Find box and click Find All Review
-the list of <code>090</code> fields, what observations can you make
+<li>Enter <code>=099</code> in the Find box and click Find All Review
+the list of <code>099</code> fields, what observations can you make
 about the call numbers in this field? Review shows us that not all call
 numbers begin with letters. We do not want to add a space to these call
 numbers and need to account for this in our regular expression.</li>
 <li>In the Find window, click Replace to bring up the Replace Text
 functions</li>
 <li>In the Find box enter the regular expression
-<code>(=090  \\\\\$a[A-Z]+)(\d.*)</code> This regular expression uses
+<code>(=099   \\\\\$a[A-Z]+)(\d.*)</code> This regular expression uses
 two sets of <code>()</code> to capture groups and then manipulate
 them.</li>
 </ol>
 <ul>
-<li>Broken down, the first group <code>(=090  \\\\\$a[A-Z]+)</code> will
-match the literal string <code>=090  \\$a</code> (the additional
+<li>Broken down, the first group <code>(=099   \\\\\$a[A-Z]+)</code>
+will match the literal string <code>=099   \\$a</code> (the additional
 backslashes are used to escape the regex metacharacters <code>\</code>
 and <code>$</code> so that they will be read as literals) followed by
 any single capital letter in the range A to Z (<code>[A-Z]</code>) one
@@ -3276,6 +3288,24 @@ two captured groups with a space between them.</li>
 <li>Verify your results look as expected, close preview tab and then
 click Process</li>
 </ol>
+</div>
+</div>
+</div>
+<div id="using-a-regex-tester" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="using-a-regex-tester" class="callout-inner">
+<h3 class="callout-title">Using a Regex Tester</h3>
+<div class="callout-content">
+<p>While the MarcEditor provides a way to preview the results of your
+regular expression, you can also use a regex tester such as <a href="https://regex101.com/" class="external-link">Regex101</a>. A live regex tester allows
+you to copy in sample data and then build a regular expression to
+manipulate that test data. The tester is especially helpful because it
+provides an explanation of how the regular expression is working on your
+data, as well as built in quick references for common regex syntax and
+functions.</p>
 </div>
 </div>
 </div>

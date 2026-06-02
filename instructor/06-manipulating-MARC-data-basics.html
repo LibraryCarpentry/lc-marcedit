@@ -357,7 +357,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Manipulating MARC data basics</h1>
-        <p>Last updated on 2026-02-09 |
+        <p>Last updated on 2026-06-02 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/06-manipulating-MARC-data-basics.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -414,22 +414,12 @@ variations sometimes seem endless and give more weight to the nickname
 of MarcEdit, the Swiss army knife of MARC data.</p>
 <div class="section level3">
 <h3 id="find-find-all-and-replace">Find, Find All, and Replace<a class="anchor" aria-label="anchor" href="#find-find-all-and-replace"></a></h3>
-<p>Like many other applications, the MarcEditor offers the ability to
-Find, Find All, and Replace.</p>
-<p><strong>Find</strong>: Find will perform a keyword search for your
-search terms entered in the Find window search box. Each time you click
-“Find”, you will be brought to the next instance of your search terms on
-the current page of the MarcEditor. Remember that the default settings
-split the MARC records into 100 for each page. Find will only search
-those records on the page you are currently on.</p>
-<p><strong>Find All</strong>: Find all will search for your search terms
-entered in the Find window search box over all the pages, or all your
-MARC records. When you click “Find All” a new window will open listing
-each instance of your search terms. Double clicking a result will take
-you to the result in the MarcEditor.</p>
-<p><strong>Replace</strong>: Replace works alongside Find or Find all.
-You have the option to Replace just those on the page or Replace all
-where the replace occurs on all pages in all records.</p>
+<p>As we saw in lesson 5, MarcEdit’s Find/Find All functionality
+supports reviewing your data. We can pair this functionality with
+Replace to start manipulating our data in bulk.</p>
+<p><strong>Replace</strong>: Replace works alongside Find/Find all. You
+have the option to Replace just those matching strings on the page or
+Replace all where the replace occurs on all pages in all records.</p>
 <div id="find-textreplace-text-and-find-all-results-popup-windows" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -446,17 +436,6 @@ performing your find/replace actions.</p>
 </div>
 </div>
 </div>
-<p>If you want to Find or Find all for a specific MARC field, you will
-need to include the equals sign before the MARC field. For example, if
-you type in the search box 856, Find or Find All will search for 856 as
-a keyword anywhere. If there is a title such as “The Journey of 856
-people”, this will then show up in your search results. If you search
-for =856, it will find anything with that string. If for example there
-is a title with “… =856 …” then this will also appear in the search
-results. Typically the equals before the MARC tage will bring up that
-MARC tag. By extension, if you want to find a specific MARC field that
-have specific indicators, you will need to include 2 spaces after the
-MARC field as in =856 40.</p>
 <div id="find-find-all-and-replace-using-the-marc-field-856" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
@@ -474,22 +453,24 @@ field 856</h3>
 <li>Go to Edit-&gt;Find (or CTRL+F)</li>
 <li>In the search box in the new window, type in =856</li>
 <li>Click Find All</li>
-<li>What results do you see</li>
+<li>Our results show a list of 282 instances of =856. Note that the
+first results include an insitituion specific proxy =856 40$3Full
+text:$uhttps://proxy.ufl.edu?url=. We will need to remove this proxy
+string if we want to use these records in a different institutional
+catalog.</li>
 </ol></div>
 </div>
 </div>
-<div id="add-a-proxy-to-the-marc-field-856" class="callout challenge">
+<div id="remove-a-proxy-from-the-marc-field-856" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="add-a-proxy-to-the-marc-field-856" class="callout-inner">
-<h3 class="callout-title">Add a proxy to the MARC field 856</h3>
+<div id="remove-a-proxy-from-the-marc-field-856" class="callout-inner">
+<h3 class="callout-title">Remove a proxy from the MARC field 856</h3>
 <div class="callout-content">
-<ol style="list-style-type: decimal"><li>Find those MARC fields 856 where there is a subfield 3 for Full text
-followed by a subfield u</li>
-<li>Add this proxy <a href="https://proxy.edu?url=" class="external-link uri">https://proxy.edu?url=</a>
-</li>
+<ol style="list-style-type: decimal"><li>Find those instances of <a href="https://proxy.ufl.edu?url=" class="external-link uri">https://proxy.ufl.edu?url=</a> in the record set</li>
+<li>Remove the proxy string</li>
 </ol></div>
 </div>
 </div>
@@ -501,10 +482,10 @@ followed by a subfield u</li>
 <div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Click Edit-&gt;Replace</li>
-<li>In the search box for Find, type in =856 40$3Full text:$u</li>
-<li>In the search box for Replace, type in =856 40$3Full
-text:$uhttps://proxy.edu?url=</li>
-<li>Undo those changes.</li>
+<li>In the search box for Find, type in
+$uhttps://proxy.ufl.edu?url=</li>
+<li>In the search box for Replace, type in $u</li>
+<li>Click Replace All</li>
 </ol></div>
 </div>
 </div>
@@ -521,9 +502,10 @@ text:$uhttps://proxy.edu?url=</li>
 and profile your data before making changes. Find or Find all will
 search for the exact phrase or string that you put into the search box
 either on that page (Find) or in every record (Find all). In the example
-above, if your records contain MARC fields 856 with different $3 data
-(for example: =856 40$3Online Access:$u) the replace above will not add
-the proxy to those 856 fields. You will need to do another replace.</p>
+above, if your records contain MARC fields 856 with different $u data
+(for example: =856 40$3Online Access:$uhttps://proxy.ucla.edu?url=) the
+replace above will not remove the proxy from the 856 fields. You will
+need to do another replace.</p>
 </div>
 </div>
 </div>
@@ -545,19 +527,22 @@ dollar sign to indicate a subfield.</p>
 matching fields, click the Delete Field button.</p>
 <p>For both the Add Field and Delete Field functions there are a number
 of different options that can be applied to control the updates.</p>
-<p>The options to Add a Field include, if the field you are adding
-already exists, it can be inserted first in the list of those MARC
-fields or last. MARC fields can be added only if that MARC field is not
-already present in that record or based on the presence of other
-criteria found in other MARC fields. For example, a MARC field
-<code>655  \4$aElectronic books</code> can be added to only those
-records that are eBooks based on the data in the LDR or 008.</p>
-<p>The options to Delete a Field include removing duplicates, removing
-MARC fields based on field position, removing MARC fields that do not
-match what is entered in the Field Data, or removing invalid UTF-8 MARC
-fields. For example, to ensure that only the field
+<p>The options to Add a Field include: - Inserting the new field before
+or after existing fields of the same type. For example, if you are
+adding a new 500 note field, you can at it before or after the existing
+500 fields. - Limiting the addition of the new field to records where
+the field is not present or where the field and field contents are not
+duplicated. - Limiting the addition of the new field based on the
+presence of other criteria found in other MARC fields. For example, you
+can add a MARC field <code>655  \4$aElectronic books</code> to only
+those records that are eBooks based on the data in the LDR or 008.</p>
+<p>The options to Delete a Field include: - Removing fields that
+duplicate the - Removing MARC fields based on field position - Removing
+MARC fields that do not match what is entered in the Field Data. For
+example, to ensure that only the field
 <code>655  \4$aElectronic books</code>. is present in the MARC data, the
-option Remove if field data does not match can be selected.</p>
+option Remove if field data does not match can be selected. - Removing
+invalid UTF-8 MARC fields.</p>
 <div id="add-and-then-delete-a-marc-field" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -685,11 +670,13 @@ Text.</p>
 <p>As of version 7.5, you can preview all of these changes before making
 them. If you complete a batch edit that produces unexpected or
 undesirable results, you can perform a Special Undo by selecting Edit →
-Special Undo. This will only act on your most recent batch edit. If you
-perform an action after your batch edit, Special Undo will not undo your
-batch change but the action you just performed. Undo and Special Undo
-are different. Undo undoes a manual edit whereas Special Undo undoes a
-bulk edit.</p>
+Special Undo. Special Undo will return your file to the state it was
+before your last batch edit, meaning if you have performed any manual
+edits after your batch edit, Special Undo will also undo your manual
+edits. You can only use special undo once, meaning you cannot undo two
+batch edits. Undo and Special Undo are different. Undo undoes manual
+edits whereas Special Undo undoes a single batch edit and any manual
+edits completed following the batch edit.</p>
 </div>
 </div>
 </div>
@@ -851,11 +838,13 @@ number of records in the new <code>.mrc</code> file.</p>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ul><li>MarcEdit can be used to edit any part of the MARC data including the
-Leader, fixed fields, fields, indicators, subfields and the content in
-those fields.</li>
-<li>MarcEdit comes with an array of tools to manipulate data and
-validate MARC.</li>
+<ul><li>MarcEdit can be used to add, delete, or edit any part of the MARC
+data including the Leader, fixed fields, fields, indicators, subfields
+and the content in those fields.</li>
+<li>MarcEdit comes with an array of tools and comprehensive options to
+manipulate data and validate MARC.</li>
+<li>MarcEdit provides methods to undo, save and compile your work done
+in the MarcEditor.</li>
 </ul></div>
 </div>
 </div>
@@ -920,7 +909,7 @@ validate MARC.</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/instructor/06-manipulating-MARC-data-basics.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/instructor/06-manipulating-MARC-data-basics.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2026-02-09",
+  "dateModified": "2026-06-02",
   "datePublished": "2026-06-02"
 }
 
