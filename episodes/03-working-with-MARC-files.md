@@ -21,6 +21,14 @@ exercises: 2
 - How does the MarcEditor display MARC records?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::: instructor
+
+Note: A number of differences have been noted in setting preferences for Mac users in this lesson:
+
+- Preferences gearbox is located on the bottom right hand corner of the main window
+- File association settings are not available on a Mac
+  
+:::::::::::::::::::::::::::::::::::::::::::::::::
 ## Understanding MARC 21 in MarcEdit
 :::::::::::::::::::::::::::::::::::::::::  callout
 ### MARC file types
