@@ -8,7 +8,6 @@ exercises: 1
 
 - Explain what integrations are
 - Explain how integrations support advanced record actions
-- Illustrate integrations with OCLC
 - Set up an integration with the Library of Congress' Z39.50 service
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
