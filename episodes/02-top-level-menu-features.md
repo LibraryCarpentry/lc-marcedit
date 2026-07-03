@@ -25,10 +25,9 @@ exercises: 5
 
 Note: A number of differences have been noted in the Top Level Menu design and features for Mac users in this lesson:
 - Help is in the top menu bar, not in the window
-- Preferences gearbox is located on the bottom right hand corner of the main window
-- Add a shortcut is not available on a Mac
 - Quicklinks are not available on a Mac
-- File association settings are not available on a Mac
+- Preferences gearbox is located on the bottom right hand corner of the main window
+- The following Preferences options are not available on a Mac: Main Window settings (no ability to set Default Programs), File Associations settings (no ability to specify .mrk files are opened in the MarcEditor and .mrc files are opened with the MarcBreaker), MarcEditor --> Set MarcEditor Font Properties --> Set Defaults (not ability to restore default font settings in the MarcEditor)
   
 :::::::::::::::::::::::::::::::::::::::::::::::::
 
