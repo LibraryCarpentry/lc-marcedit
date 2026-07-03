@@ -6,8 +6,8 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain what the MarcEdit software does
-- Explain how the MarcEdit software can help work with library bibliographic data and library MARC files
+- Understand what the MarcEdit software does
+- Understand how the MarcEdit software can be used to work with library bibliographic data and MARC files
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -20,17 +20,15 @@ exercises: 0
 
 ## What is MarcEdit?
 
-MarcEdit is a suite of tools created and maintained by Terry Reese. The tools together form the MarcEdit software. These tools provide numerous functions which can be used to create, edit, and manipulate library metadata, particularly, though not limited to, records in a variety of MARC formats and standards. In this way, the MarcEdit software is MARC agnostic and can work with Unimarc or MARC21. MarcEdit can be used to:
+MarcEdit is a suite of tools created and maintained by Terry Reese. The tools together form the MarcEdit software. These tools provide numerous functions. Functions can be used to create, edit, and manipulate library metadata. These tools can be used on records in a variety of MARC formats and standards as seen in this [description of features](https://marcedit.reeset.net/features). In this way, the MarcEdit software is MARC agnostic and can work with UNIMARC or MARC 21. MarcEdit can be used to:
 
 - make small, single, edits to individual MARC records
 - make edits across many MARC records at a single time
 - automate common edits/processes
 - validate your data against defined MARC rules
 - convert data between different formats
-- enhance your data
+- enhance your data to improve the quality, usefulness, or value by adding, refining, or enriching the data
 - pull data from external sources
-
-The features offered by the suite of MarcEdit tools continue to evolve, with new features added as the software is updated by Terry Reese. [A comprehensive list of features](https://marcedit.reeset.net/features) is available on the MarcEdit website.
 
 Although the ability to create, view and edit MARC records is built into many pieces of library and bibliographic management software, MarcEdit is particularly flexible and powerful for manipulating MARC data in bulk. With MarcEdit's wide-ranging functionality and integration into other library software and services, it is a very powerful toolkit for anyone working with bibliographic data.
 
@@ -54,7 +52,7 @@ If you have a list of changes to make, MarcEdit allows you to package these toge
 
 MarcEdit can integrate with OCLC's WorldCat and Ex Libris' Alma library system platform. Thanks to these integrations, you can retrieve records from external services, manipulate the records, and then push the changes back to the system integration of your choice.
 
-Using MarcEdit you can harvest [OAI or Open Archives Initiative for Harvesting Metadata Protocol](https://www.openarchives.org/pmh/) Dublin Core or MARC21 records. Though not necessarily an integration, harvested records can also be manipulated.
+Using MarcEdit you can harvest [OAI or Open Archives Initiative for Harvesting Metadata Protocol](https://www.openarchives.org/pmh/) Dublin Core or MARC 21 records. Though not necessarily an integration, harvested records can also be manipulated.
 
 ### Regular Expressions
 
@@ -62,19 +60,13 @@ MarcEdit allows for the use of regular expressions in many of its MARC data mani
 
 ## Getting help
 
-If you encounter problems installing MarcEdit or using a MarcEdit feature, a good source of support is the [MarcEdit mailing list](https://listserv.gmu.edu/cgi-bin/wa?A0=marcedit-l). [The MarcEdit website has a list of places where you can get help using the software](https://marcedit.reeset.net/help) including:
-
-- [The MarcEdit Knowledgebase](https://marcedit.reeset.net/archives/category/knowledge_base)
-- [The MarcEdit 101 Webinar](https://marcedit.reeset.net/marcedit-101-workshop)
-- [A set of video tutorials on YouTube](https://www.youtube.com/playlist?list=PLrHRsJ91nVFScJLS91SWR5awtFfpewMWg)
-
-
+As seen in the Summary and Setup, if you encounter problems installing MarcEdit or using a MarcEdit feature, there are a number of helpful sources you can reference. The [MarcEdit mailing list](https://listserv.gmu.edu/cgi-bin/wa?A0=marcedit-l) is an excellent mailing list. You can post questions and receive answers fairly quickly and often from the creator of MarcEdit, Terry Reese. 
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- MarcEdit is a tool for working with bibliographic metadata, specifically in the MARC format
-- MarcEdit can be used to open, review and edit MARC files
-- MarcEdit provides advanced features and integrations to support the manipulation of MARC files
+- MarcEdit is a tool for working with bibliographic metadata, specifically in the MARC 21 format
+- MarcEdit can be used to open, review and edit MARC 21 files
+- MarcEdit provides advanced features and integrations to support the manipulation of MARC 21 files
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
