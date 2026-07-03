@@ -6,9 +6,9 @@ exercises: 1
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain what integrations are
-- Explain how integrations support advanced record actions
-- Set up an integration with the Library of Congress' Z39.50 service
+- Understand what integrations are and why they are useful
+- Understand where to set up an integration
+- Set up a Z39.50 service and search for a MARC record
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -38,7 +38,9 @@ At this time, MarcEdit supports integrations with the ILS Alma and Koha. The ILS
 For the OCLC API integration, you need to [check if your institution is eligible and request an API key](https://www.oclc.org/developer/support/eligibility.en.html) for this service. If your institution is eligible, you can request a key through [OCLC's developer network](https://www.oclc.org/developer/develop/authentication/how-to-request-a-wskey.en.html). You can also go to Preferences from the main menu in MarcEdit, click on OCLC API Integration and then click on the "Request an OCLC Key". It is recommended to consult OCLC's help page on [setting up MarcEdit OCLC integration]([https://help.oclc.org/Librarian_Toolbox/OCLC_APIs/Troubleshooting/How_do_I_set_up_MarcEdit_OCLC_Integration%3F?sl=en](https://help.oclc.org/Librarian_Toolbox/OCLC_APIs/Troubleshooting/How_do_I_set_up_MarcEdit_OCLC_Integration%3F)) as well as Terry Reese's information from his blog.
 
 ### Integration with a Z39.50 Database
-Many systems rely on the Z39.50 protocol to search and exchange data. It could be the case that your current ILS relies on it for Interlibrary loan. For this type of integration, you need the following information below. You can find this information at the Library of Congress [Gateway to Library Catalogs](https://www.loc.gov/z3950/) of [zbrary](https://www.z-brary.com/).
+Many systems rely on the Z39.50 protocol to search and exchange data. It could be the case that your current ILS relies on it for Interlibrary loan or copy cataloging. [zbrary](https://www.z-brary.com/) provide a directory of available Z39.50 databases along with the required information.
+
+The required information for setting up a new Z39.50 Database is outlined below:
 
 <table>
   <tr>
@@ -107,7 +109,9 @@ For [OCLC](https://help.oclc.org/Metadata_Services/Z3950_Cataloging/Get_started/
 You can add multiple Z39.50 connections. To do this, go to the main menu, click on Tools, then Utilities, then Z39.50/SRU Client. In the new window, click on Actions in the upper left hand corner and select "Add new Z39.50 Server". 
 
 ::::::::::::::::::::::::::::::::::::::: challenge
-Add a connection to the Library of Congress' Z39.50 using the information below. What is the main entry if you search for the record number 983545.
+## Add an integration with a Z39.50 Database
+
+Add a connection to the Library of Congress' Z39.50 using the information below. What is the main entry if you search for the record number 983545?
 
 - Name: Library of Congress
 - Host: lx2.loc.gov
@@ -117,17 +121,17 @@ Add a connection to the Library of Congress' Z39.50 using the information below.
 - Username/Password: Leave Blank
 
 ::::::::::::::: solution
-Solution
+## Solution
 
-- Go to Tools in the main menu
-- Click on Tools -> Utilities -> Z39.50/SRU Client
-- In the new window, click on Actions -> Add new Z39.50 Client
-- Use the information above to fill out the fields
-- Click Save
-- Make sure the Query Database has "Library of Congress"
-- Make sure the Search box is set to "Record Number"
-- In that Search box, put in 983545
-- 1 result with the Main Entry of "Querelae & opprobira ventribuli, sive."
+1. Go to Tools in the main menu
+2. Click on Tools -> Utilities -> Z39.50/SRU Client
+3. In the new window, click on Actions -> Add new Z39.50 Client
+4. Use the information above to fill out the fields
+5. Click Save
+6. Make sure the Query Database has "Library of Congress"
+7. Make sure the Search box is set to "Record Number"
+8. In that Search box, put in 983545
+9. 1 result with the Main Entry of "Querelae & opprobira ventribuli, sive."
 
 :::::::::::::::::::::::::
 
@@ -135,8 +139,8 @@ Solution
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- Understand what integrations are and why they are useful
-- Understand where to set up an integration
+- Integrations allow you to connect to external catalogue applications that can support search, exchange, and editing of MARC data
+- Some integrations are free, while others require institutional subscriptions before they can be configured and used
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
