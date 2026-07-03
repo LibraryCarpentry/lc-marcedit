@@ -7,7 +7,7 @@ exercises: 0
 ::::::::::::::::::::::::::::::::::::::: objectives
 
 - Understand what the MarcEdit software does
-- Understand how the MarcEdit software can help work with library bibliographic data and library MARC files
+- Understand how the MarcEdit software can be used to work with library bibliographic data and MARC files
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -20,7 +20,7 @@ exercises: 0
 
 ## What is MarcEdit?
 
-MarcEdit is a suite of tools created and maintained by Terry Reese. The tools together form the MarcEdit software. These tools provide numerous functions. Functions can be used to create, edit, and manipulate library metadata These tools apply to records in a variety of MARC formats and standards as seen in this [description of features](https://marcedit.reeset.net/features). In this way, the MarcEdit software is MARC agnostic and can work with UNIMARC or MARC 21. MarcEdit can be used to:
+MarcEdit is a suite of tools created and maintained by Terry Reese. The tools together form the MarcEdit software. These tools provide numerous functions. Functions can be used to create, edit, and manipulate library metadata. These tools can be used on records in a variety of MARC formats and standards as seen in this [description of features](https://marcedit.reeset.net/features). In this way, the MarcEdit software is MARC agnostic and can work with UNIMARC or MARC 21. MarcEdit can be used to:
 
 - make small, single, edits to individual MARC records
 - make edits across many MARC records at a single time
@@ -60,7 +60,7 @@ MarcEdit allows for the use of regular expressions in many of its MARC data mani
 
 ## Getting help
 
-As seen in the Summary and Setup, if you encounter problems installing MarcEdit or using a MarcEdit feature, there are a number of helpful sources. The [MarcEdit mailing list](https://listserv.gmu.edu/cgi-bin/wa?A0=marcedit-l) is an excellent mailing list. You can post questions and receive answers fairly quickly and often from the creator of MarcEdit, Terry Reese. 
+As seen in the Summary and Setup, if you encounter problems installing MarcEdit or using a MarcEdit feature, there are a number of helpful sources you can reference. The [MarcEdit mailing list](https://listserv.gmu.edu/cgi-bin/wa?A0=marcedit-l) is an excellent mailing list. You can post questions and receive answers fairly quickly and often from the creator of MarcEdit, Terry Reese. 
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
