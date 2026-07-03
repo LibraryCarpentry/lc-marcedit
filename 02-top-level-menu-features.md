@@ -6,9 +6,9 @@ exercises: 5
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Locate top-level menu features
-- Explain the top-level menu features
-
+- Launch MarcEdit and locate top-level menu features
+- Understand the functionality offered by the top-level menu features
+- Navigate the top-level menu and update the shortcuts displayed
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
@@ -38,7 +38,14 @@ When you launch MarcEdit, the main window opens. From here, you can access the s
 
 In the main window top-level menu, there are three options: Tools, Plug-ins, and Help.
 
-### Tools
+:::::::::::::::::::::::::::::::::::::: instructor
+
+Note: For this lesson, it is important to note that because of the frequent updates, screenshots are not included in this lesson. As a result, it is important for the instructor to show the top level menu and its components.
+  
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+#### Tools
 
 The Tools menu allows you to access a number of different basic and advanced features. Features to highlight include:
 
@@ -64,7 +71,7 @@ Note: The following exercise is simply to demonstrate adding a shortcut to the m
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
-### Let us add a shortcut to our main window
+##### Add a shortcut to our main window
 
 1. Click on the gearbox in the top left corner or go to Tools → Preferences
 2. Select "Main Window" in the Preferences window in the left-hand pane
@@ -76,11 +83,11 @@ Note: The following exercise is simply to demonstrate adding a shortcut to the m
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-### Name three other tools or features that can be changed in Preferences.
+##### Name three other tools or features that can be changed in Preferences.
 
 :::::::::::::::  solution
 
-### Solution
+##### Solution
 
 1. Click on the gear icon in the main window or go to Tools → Preferences
 2. In the left-hand pane, look at the names there
@@ -105,15 +112,22 @@ Note: The following exercise is simply to demonstrate adding a shortcut to the m
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-### Plug-Ins
+#### Plug-Ins
 
-There are a number of useful plugins that can be added to MarcEdit to extend its functionality. An example is the MARC to [KBART or Knowledge bases and related tools](https://www.niso.org/standards-committees/kbart/kbart-frequently-asked-questions) converter. You can find more information on plugins on the [MarcEdit Plugin page](https://marcedit.reeset.net/managing-plugins-in-marcedit). To enable these and see the list in the MarcEdit main menu, click on Plug-ins and then select Plugin Manager. In the popup Plugin Manager window, you can select any of the plug-ins and then click Save. It should be noted that administrative permissions are not needed to enable plug-ins. When you click Save, only that Plugin Manager window closes and there is no need to close and reopen the MarcEdit application.
+Packages and plug-ins were introduced briefly in the Summary and Setup episode. To re-iterate, you do not need to download any additional packages or plug-ins for this lesson. However, there are a number of useful plug-ins that can be added to MarcEdit to extend its functionality. An example is the MARC to [KBART or Knowledge bases and related tools](https://www.niso.org/standards-committees/kbart/kbart-frequently-asked-questions) converter. You can find more information on plug-ins on the [MarcEdit Plugin page](https://marcedit.reeset.net/managing-plugins-in-marcedit). To enable these and see the list in the MarcEdit main menu, click on Plug-ins and then select Plugin Manager. In the popup Plugin Manager window, you can select any of the plug-ins and then click Save. It should be noted that administrative permissions are not needed to enable plug-ins. When you click Save, only that Plugin Manager window closes and there is no need to close and reopen the MarcEdit application.
 
-### Help
+:::::::::::::::::::::::::::::::::::::: instructor
+
+Note: The Mac version has plugins with no hyphen. The Plugin Manager is used to add additional plug-ins (Windows) or plugins (Mac).
+  
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+#### Help
 
 This top-level menu Help allows you to find information on updates, about your current MarcEdit installation, and links out to video tutorials or online help.
 
-### History
+## History of Last Actions
 
 MarcEdit remembers what you did last. You can see this history in the Quick Links section which is a drop-down of features and tools you frequently use. Although not related to a history of what you did last in MarcEdit, the "What would you like to do?" box in the upper right-hand corner is convenient for quickly finding tools and features in MarcEdit.
 
