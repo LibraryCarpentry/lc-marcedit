@@ -6,9 +6,9 @@ exercises: 5
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Locate top-level menu features
-- Understand the top-level menu features
-
+- Launch MarcEdit and locate top-level menu features
+- Understand the functionality offered by the top-level menu features
+- Navigate the top-level menu and update the shortcuts displayed
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
