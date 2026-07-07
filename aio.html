@@ -557,7 +557,7 @@ manipulation of MARC 21 files</li>
 </div>
 </section></section><section id="aio-02-top-level-menu-features"><p>Content from <a href="02-top-level-menu-features.html">Getting Started with MarcEdit</a></p>
 <hr>
-<p>Last updated on 2026-07-03 |
+<p>Last updated on 2026-07-07 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/02-top-level-menu-features.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -762,7 +762,7 @@ as the main window or the MarcEditor</li>
 </div>
 </section></section><section id="aio-03-working-with-MARC-files"><p>Content from <a href="03-working-with-MARC-files.html">Working with MARC files</a></p>
 <hr>
-<p>Last updated on 2026-06-02 |
+<p>Last updated on 2026-07-07 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/03-working-with-MARC-files.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -790,11 +790,12 @@ file of MARC records in MARCedit?</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Explain the difference between mrc and mrk MARC file formats</li>
-<li>Successfully break and open a file of MARC records in the
+<li>Understand the difference between mrc and mrk MARC file formats</li>
+<li>Use the MarcBreaker to break and open a file of MARC records in the
 MarcEditor</li>
 <li>Explain character encoding and its importance</li>
-<li>Understand how to read a MARC record in the MarcEditor</li>
+<li>Understand how MARC records and fields are formatted in the
+MarcEditor</li>
 </ul>
 </div>
 </div>
@@ -893,25 +894,22 @@ that file needs to be converted to the mnemonic format.</p>
 </div>
 </div>
 </div>
-<div class="section level3">
-<h3 id="marc-tools">MARC Tools<a class="anchor" aria-label="anchor" href="#marc-tools"></a>
-</h3>
+</section><section><h2 class="section-heading" id="marc-tools">MARC Tools<a class="anchor" aria-label="anchor" href="#marc-tools"></a>
+</h2>
+<hr class="half-width">
 <p>To work with MARC data files or convert between metadata formats for
 library bibliographic data recognized by MarcEdit, click on the MARC
 Tools icon that has the crossed hammer and spanner in the upper left
-hand corner of the main menu. The available features are:</p>
+hand corner of the main menu. The key features are:</p>
 <ul>
 <li>MarcBreaker: This “breaks” the MARC binary file into a readable
 (mnemonic) format that can be edited in the MarcEditor.</li>
 <li>MarcMaker: This takes the readable (mnemonic) format MARC data file
 and creates the MARC binary file.</li>
-<li>MARC21 to MARC21XML: This converts a MARC21 file to MARC21XML.</li>
-<li>MARC21XML to MARC21: This converts a MARC21XML file to a MARC21
-binary file.</li>
-<li>MARC to JSON: This converts a MARC21 file to a JSON file.</li>
-<li>JSON to MARC: This converts a JSON file to a MARC21 file.</li>
-<li>JSON to XML: This converts a JSON file to XML.</li>
-<li>XML to JSON: This converts an XML file to JSON.</li>
+<li>MARC Tools also provides the option to convert between many other
+popular metadata formats used in libraries, such as: MARC 21 and
+MARCXML, MARC 21 and JSON, XML and JSON, MARC 21 and Dublin Core, and
+MARC 21 and MODS.</li>
 </ul>
 <p>The conversions from one encoding standard to another, as in MARC21
 to MARC21XML, rely on extensible stylesheets. MarcEdit comes with
@@ -926,13 +924,15 @@ create your own.</p>
 <div id="character-encoding" class="callout-inner">
 <h3 class="callout-title">Character Encoding</h3>
 <div class="callout-content">
-<p>To ensure the integrity of your data you need to select the correct
-character encoding for your dataset. MarcEdit does not automatically
-detect character encoding, however, UTF-8 is set as the default encoding
-scheme. You can update the encoding scheme when using the MarcBreaker,
-or you can update the default in Preferences → MarcEditor → Default
-Encoding. For more information on character encoding and translating
-from one encoding to another, see <a href="https://marcedit.reeset.net/learning_marcedit/9-2/dealing-with-character-encodings-in-marcedit/" class="external-link">The
+<p>Character encoding is a standardized system of numerical codes used
+to represent text characters —including letters, numbers, punctuation,
+and diacritics— within a MARC record. To ensure the integrity of your
+data you need to select the correct character encoding for your dataset.
+MarcEdit does not automatically detect character encoding, however,
+UTF-8 is set as the default encoding scheme. You can update the encoding
+scheme when using the MarcBreaker, or you can update the default in
+Preferences → MarcEditor → Default Encoding. For more information on
+character encoding and translating from one encoding to another, see <a href="https://marcedit.reeset.net/learning_marcedit/9-2/dealing-with-character-encodings-in-marcedit/" class="external-link">The
 MarcEdit Field Guide</a>.</p>
 </div>
 </div>
@@ -973,18 +973,17 @@ to open the .mrk file in the MarcEditor.</li>
 data in a new file format. As a result, any edits you make to the .mrk
 file in the MarcEditor will not automatically be reflected in the
 original .mrc file. We will cover saving and compiling (using the
-MarcMaker) to create an updated .mrc file in an upcoming lesson.</p>
+MarcMaker) to create an updated .mrc file in lesson 6.</p>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div class="section level3">
-<h3 id="marc-record-layout-in-the-marceditor">MARC Record layout in the MarcEditor<a class="anchor" aria-label="anchor" href="#marc-record-layout-in-the-marceditor"></a>
-</h3>
+</section><section><h2 class="section-heading" id="marc-record-layout-in-the-marceditor">MARC Record layout in the MarcEditor<a class="anchor" aria-label="anchor" href="#marc-record-layout-in-the-marceditor"></a>
+</h2>
+<hr class="half-width">
 <p>You should now see the MARC records from the file displaying in the
 MarcEditor:</p>
-<figure><img src="fig/marc_sample_data.png" alt="MarcEditor screen with file open" class="figure mx-auto d-block"></figure><p>The MarcEditor displays the records in what is called the ‘Mnemonic
+<figure><img src="fig/marc_sample_data.png" alt="MarcEditor screen with file open displaying MARC records from sample data in human readable format" class="figure mx-auto d-block"></figure><p>The MarcEditor displays the records in what is called the ‘Mnemonic
 MARC Text File’ format (file extension *.mrk). Each line in the file
 represents a field in a MARC record:</p>
 <pre><code>=245  14$aThe Lord of the Rings /$c J.R.R. Tolkien.</code></pre>
@@ -1062,10 +1061,9 @@ scroll bar as usual, but to see the next 100 records you need to use the
 Next/Previous page controls which are at the bottom left of the screen.
 The MarcEditor can handle very large files of MARC records, because it
 never tries to load all the records at the same time.</p>
-</div>
-<div class="section level3">
-<h3 id="setting-marceditor-preferences">Setting MarcEditor Preferences<a class="anchor" aria-label="anchor" href="#setting-marceditor-preferences"></a>
-</h3>
+</section><section><h2 class="section-heading" id="setting-marceditor-preferences">Setting MarcEditor Preferences<a class="anchor" aria-label="anchor" href="#setting-marceditor-preferences"></a>
+</h2>
+<hr class="half-width">
 <p>You can adjust the number of records displayed per ‘page’ through the
 MarcEditor preferences which can be accessed through the Edit →
 Preferences menu option from the MarcEditor, or through the ‘Settings’
@@ -1108,15 +1106,15 @@ Set Defaults</li>
 <h3 class="callout-title">Behavior when you reset your preferences and
 other popup windows</h3>
 <div class="callout-content">
-<p>When you click Ok to reset preferences, there is a chance that the
-popup window for Preferences and/or even MarcEdit main menu will close.
-If the MarcEdit main menu closes, sometimes it will reopen. If it does
-not, then click on MarcEdit again on your desktop to reopen the
-application.</p>
+<p>Depending on the change you make, when you click Ok to reset
+preferences, the popup window for Preferences and/or even MarcEdit main
+menu may close. If the MarcEdit main menu closes, sometimes it will
+reopen. If it does not, then click on MarcEdit again on your desktop to
+reopen the application.</p>
 <p>It should be noted that not all MarcEdit popup windows will close
 automatically such as Find, Replace, or the MarcValidator. However, the
 Select Records for Edit temporary editor will close if you click Save.
-These idiosyncracies for each will be covered in their upcoming
+These idiosyncrasies for each will be covered in their upcoming
 episodes.</p>
 </div>
 </div>
@@ -1133,14 +1131,13 @@ episodes.</p>
 <li>MarcEdit can work with a variety of file formats</li>
 <li>The MARC Tools Icon allows you to convert data from one file format
 to another</li>
-<li>The MarcEditor works with an easy-to-read MarcEdit specific mnemonic
+<li>The MarcEditor works with an easy-to-read MarcEdit-specific mnemonic
 format of MARC records (.mrk). If starting with a MARC binary file
 (.mrc), you must use the MarcBreaker to convert the binary file to a
 mnemonic file.</li>
 <li>Understanding the layout (syntax) of MARC records in the MarcEditor
 is key to working with the records.</li>
 </ul>
-</div>
 </div>
 </div>
 </div>
@@ -1433,7 +1430,7 @@ our records?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Field Count outlines each field found in our records, the number of
@@ -1582,7 +1579,7 @@ correctly?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The 245 field number is formatted incorrectly. The MarcEditor relies
@@ -1792,7 +1789,7 @@ catalog.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Click Edit-&gt;Replace</li>
@@ -1880,7 +1877,7 @@ second indicator 4 to the MARC data.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -1939,7 +1936,7 @@ a number</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Verify your file has multiple 9XX fields by using the Field Count
@@ -2027,7 +2024,7 @@ Library of Congress Organization Code, update the code to XYZ.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2082,7 +2079,7 @@ fields 050 that have a first indicator blank and a second indicator
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2537,7 +2534,7 @@ validate MARC.</li>
 </div>
 </section></section><section id="aio-08-tasks-and-automation"><p>Content from <a href="08-tasks-and-automation.html">Tasks and Automation</a></p>
 <hr>
-<p>Last updated on 2026-02-09 |
+<p>Last updated on 2026-07-07 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/08-tasks-and-automation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2552,7 +2549,7 @@ validate MARC.</li>
 <h3 class="card-title">Questions</h3>
 <ul>
 <li>What are tasks?</li>
-<li>How do you manage and create new tasks?</li>
+<li>How do you create new tasks and manage existing tasks?</li>
 <li>How do you run tasks?</li>
 </ul>
 </div>
@@ -2563,8 +2560,10 @@ validate MARC.</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Explain how to create, manage, edit, and run tasks</li>
-<li>Successfully create and run a new task</li>
+<li>Understand how to create, manage, edit, and run tasks in the Marc
+Editor</li>
+<li>Identify use cases for task creation</li>
+<li>Create and run a new task</li>
 </ul>
 </div>
 </div>
@@ -2593,9 +2592,9 @@ manipulate MARC data in some way. All tasks are created, managed, and
 run in the MarcEditor. In this way, tasks are another way to manipulate
 your data and are an extension of the other tools offered in the
 MarcEditor.</p>
-<div class="section level3">
-<h3 id="what-are-tasks">What are Tasks?<a class="anchor" aria-label="anchor" href="#what-are-tasks"></a>
-</h3>
+</section><section><h2 class="section-heading" id="what-are-tasks">What are Tasks?<a class="anchor" aria-label="anchor" href="#what-are-tasks"></a>
+</h2>
+<hr class="half-width">
 <p>A task is a series of MarcEdit functions to manipulate data. In the
 previous lessons, we ran one function at a time. Tasks string a set of
 functions together so you can run them as a group. Tasks run each
@@ -2649,10 +2648,9 @@ and importing, and assigning keyboard shortcuts to tasks.</p>
 keyboard shortcuts. This is up to the users and their preference for how
 they organize their task workspace.</p>
 
-</div>
-<div class="section level3">
-<h3 id="create-a-new-task">Create a New Task<a class="anchor" aria-label="anchor" href="#create-a-new-task"></a>
-</h3>
+</section><section><h2 class="section-heading" id="create-a-new-task">Create a New Task<a class="anchor" aria-label="anchor" href="#create-a-new-task"></a>
+</h2>
+<hr class="half-width">
 <p>To create a task in the MarcEditor, Go to Tools in the top level menu
 and then Manage Tasks. In the Task Actions menu, select “New Task” from
 the dropdown menu and then click Select. In the dialogue box, enter the
@@ -2729,10 +2727,9 @@ the appropriate RDA fields?</li>
 </div>
 </div>
 </div>
-</div>
-<div class="section level3">
-<h3 id="managing-your-tasks">Managing your Tasks<a class="anchor" aria-label="anchor" href="#managing-your-tasks"></a>
-</h3>
+</section><section><h2 class="section-heading" id="managing-your-tasks">Managing your Tasks<a class="anchor" aria-label="anchor" href="#managing-your-tasks"></a>
+</h2>
+<hr class="half-width">
 <p>To edit an existing task, go to Tools → Manage Tasks. In the Task
 Manger select the task you want to edit, this will highlight the task.
 Under Task Actions choose Edit Task and click Select. This will open the
@@ -2749,15 +2746,13 @@ the right to reorder your functions.</p>
 <h3 class="callout-title">Add a proxy to the <code>856 40$u</code> in
 your Task</h3>
 <div class="callout-content">
-<ol style="list-style-type: decimal">
-<li>After you run your Task, your MARC records should have your
+<p>After you run your Task, your MARC records should have your
 institution’s proxy before the URL. Remember to check your data first to
 see if there are any proxy stems present. You will need to remove any
 existing proxies before running your Task. If the MARC data has
 different types of electronic URLs (resource, related resource, etc.) as
 noted in the MARC field 856 indicators, you will need to account for
-that in your Task.</li>
-</ol>
+that in your Task.</p>
 </div>
 </div>
 </div>
@@ -2822,10 +2817,9 @@ tools</li>
 </div>
 </div>
 </div>
-</div>
 </section></section><section id="aio-09-integrations"><p>Content from <a href="09-integrations.html">Integrations</a></p>
 <hr>
-<p>Last updated on 2026-06-02 |
+<p>Last updated on 2026-07-07 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/09-integrations.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2850,10 +2844,9 @@ tools</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Explain what integrations are</li>
-<li>Explain how integrations support advanced record actions</li>
-<li>Set up an integration with the Library of Congress’ Z39.50
-service</li>
+<li>Understand what integrations are and why they are useful</li>
+<li>Understand where to set up an integration</li>
+<li>Set up a Z39.50 service and search for a MARC record</li>
 </ul>
 </div>
 </div>
@@ -2913,8 +2906,11 @@ from his blog.</p>
 </h3>
 <p>Many systems rely on the Z39.50 protocol to search and exchange data.
 It could be the case that your current ILS relies on it for Interlibrary
-loan. For this type of integration, you need the following information
-below. You can find this information at the Library of Congress <a href="https://www.loc.gov/z3950/" class="external-link">Gateway to Library Catalogs</a> of <a href="https://www.z-brary.com/" class="external-link">zbrary</a>.</p>
+loan or copy cataloging. <a href="https://www.z-brary.com/" class="external-link">zbrary</a>
+provide a directory of available Z39.50 databases along with the
+required information.</p>
+<p>The required information for setting up a new Z39.50 Database is
+outlined below:</p>
 <table class="table">
 <tr>
 <th>
@@ -3039,17 +3035,17 @@ Connexion Username of 3 numbers - 3 numbers - 3 numbers as in
 menu, click on Tools, then Utilities, then Z39.50/SRU Client. In the new
 window, click on Actions in the upper left hand corner and select “Add
 new Z39.50 Server”.</p>
-<div id="challenge1" class="callout challenge">
+<div id="add-an-integration-with-a-z39.50-database" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="add-an-integration-with-a-z39.50-database" class="callout-inner">
+<h3 class="callout-title">Add an integration with a Z39.50 Database</h3>
 <div class="callout-content">
 <p>Add a connection to the Library of Congress’ Z39.50 using the
 information below. What is the main entry if you search for the record
-number 983545.</p>
+number 983545?</p>
 <ul>
 <li>Name: Library of Congress</li>
 <li>Host: lx2.loc.gov</li>
@@ -3068,8 +3064,7 @@ number 983545.</p>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
-<p>Solution</p>
-<ul>
+<ol style="list-style-type: decimal">
 <li>Go to Tools in the main menu</li>
 <li>Click on Tools -&gt; Utilities -&gt; Z39.50/SRU Client</li>
 <li>In the new window, click on Actions -&gt; Add new Z39.50 Client</li>
@@ -3080,7 +3075,7 @@ number 983545.</p>
 <li>In that Search box, put in 983545</li>
 <li>1 result with the Main Entry of “Querelae &amp; opprobira
 ventribuli, sive.”</li>
-</ul>
+</ol>
 </div>
 </div>
 </div>
@@ -3093,8 +3088,10 @@ ventribuli, sive.”</li>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>Understand what integrations are and why they are useful</li>
-<li>Understand where to set up an integration</li>
+<li>Integrations allow you to connect to external catalogue applications
+that can support search, exchange, and editing of MARC data</li>
+<li>Some integrations are free, while others require institutional
+subscriptions before they can be configured and used</li>
 </ul>
 </div>
 </div>
@@ -3102,7 +3099,7 @@ ventribuli, sive.”</li>
 </div>
 </section></section><section id="aio-10-regular-expressions"><p>Content from <a href="10-regular-expressions.html">Regular Expressions</a></p>
 <hr>
-<p>Last updated on 2026-06-02 |
+<p>Last updated on 2026-07-07 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/10-regular-expressions.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -3154,9 +3151,9 @@ to working with regular expressions can be found in the <a href="https://library
 Carpentry lesson Introduction to Working with Data (Regular
 Expressions)</a>. In this lesson we will focus on the application of
 regex in the MarcEditor.</p>
-<p>MarcEdit uses the .NET regular expression syntax. Visit the .Net <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference" class="external-link">Regular
+<p>MarcEdit uses the .NET regular expression syntax. Visit the .NET <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference" class="external-link">Regular
 Expression Language - Quick Reference</a> for a breakdown of the syntax
-used for regex metacharacters in MarcEdit. You can also download the <a href="https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf" class="external-link">.Net
+used for regex metacharacters in MarcEdit. You can also download the <a href="https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf" class="external-link">.NET
 Regex metacharacter reference sheet</a> to support the creation of your
 own regular expressions in MarcEdit.</p>
 <p>Many MarcEdit functions support the use of regular expressions for
@@ -3165,9 +3162,9 @@ Field, Copy Field, Swap Field, Build New Field, Delete Field, Record
 Validation, and both the Extract and Delete Selected Records tool. The
 intent of this lesson is to demonstrate where and how you can leverage
 regular expressions to work with your MARC data.</p>
-<div class="section level3">
-<h3 id="edit-field-data">Edit Field Data<a class="anchor" aria-label="anchor" href="#edit-field-data"></a>
-</h3>
+</section><section><h2 class="section-heading" id="edit-field-data">Edit Field Data<a class="anchor" aria-label="anchor" href="#edit-field-data"></a>
+</h2>
+<hr class="half-width">
 <p>With regular expressions you can easily locate variations in your
 data and replace them with a single value. In our file the OCLC
 identifier in the 035 field uses the prefixes <code>on</code>,
@@ -3185,14 +3182,14 @@ the <code>(OCoLC)</code> prefix in a single edit.</p>
 <h3 class="callout-title">Update 035 OCLC prefixes</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
-<li>Select Tools → Edit Field Data</li>
+<li>Select Tools → Edit Field Data.</li>
 <li>Enter the following values: Field: <code>035</code> Find:
 <code>on|ocn|ocm</code> Replace: <code>(OCoLC)</code>
 </li>
-<li>Check Use Regular Expressions box</li>
-<li>Click drop down menu → Preview Results</li>
+<li>Check Use Regular Expressions box.</li>
+<li>Click drop down menu → Preview Results.</li>
 <li>Verify your results look as expected, close preview tab and then
-click Process In this regular expression we use the pipe
+click Process. In this regular expression we use the pipe
 (<code>|</code>) metacharacter to specify that we are looking for the
 string <code>on</code> OR <code>ocn</code> OR <code>ocm</code>. We then
 replace the captured string with <code>(OCoLC)</code>.</li>
@@ -3221,10 +3218,9 @@ trial and error.</p>
 </div>
 </div>
 </div>
-</div>
-<div class="section level3">
-<h3 id="find-and-replace">Find and Replace<a class="anchor" aria-label="anchor" href="#find-and-replace"></a>
-</h3>
+</section><section><h2 class="section-heading" id="find-and-replace">Find and Replace<a class="anchor" aria-label="anchor" href="#find-and-replace"></a>
+</h2>
+<hr class="half-width">
 <p>The Find and Replace tool is another useful way to identify and
 manipulate data in the MarcEditor with the support of regular
 expressions. In our file the local call numbers in the <code>090</code>
@@ -3243,16 +3239,16 @@ a regular expression by employing groups.</p>
 subclass</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
-<li>Select Edit → Find</li>
-<li>Enter <code>=099</code> in the Find box and click Find All Review
+<li>Select Edit → Find.</li>
+<li>Enter <code>=099</code> in the Find box and click Find All. Review
 the list of <code>099</code> fields, what observations can you make
 about the call numbers in this field? Review shows us that not all call
 numbers begin with letters. We do not want to add a space to these call
 numbers and need to account for this in our regular expression.</li>
 <li>In the Find window, click Replace to bring up the Replace Text
-functions</li>
+functions.</li>
 <li>In the Find box enter the regular expression
-<code>(=099   \\\\\$a[A-Z]+)(\d.*)</code> This regular expression uses
+<code>(=099   \\\\\$a[A-Z]+)(\d.*)</code>. This regular expression uses
 two sets of <code>()</code> to capture groups and then manipulate
 them.</li>
 </ol>
@@ -3268,10 +3264,10 @@ the regular expression will not edit the call numbers that begin with a
 digit.</li>
 <li>The second group <code>(\d.*)</code> will match any digit
 (<code>\d</code>) followed by any character (<code>.</code>) zero or
-more times (<code>*</code>)</li>
+more times (<code>*</code>).</li>
 </ul>
 <ol start="5" style="list-style-type: decimal">
-<li>In the Replace box enter <code>$1 $2</code> This regular expression
+<li>In the Replace box enter <code>$1 $2</code>. This regular expression
 refers back to the groups we defined and captured in the Find box.
 <code>$1</code> refers to the group defined in the first set of
 brackets, and <code>$2</code> refers to the group defined in the second
@@ -3279,10 +3275,10 @@ set of brackets. If we had defined additional groups they would be
 referred to chronologically as <code>$3</code>, <code>$4</code> etc. The
 regular expression <code>$1 $2</code> will output the contents of the
 two captured groups with a space between them.</li>
-<li>Check the Use regular expressions box</li>
-<li>Click drop down menu → Preview Results</li>
+<li>Check the Use regular expressions box.</li>
+<li>Click drop down menu → Preview Results.</li>
 <li>Verify your results look as expected, close preview tab and then
-click Process</li>
+click Process.</li>
 </ol>
 </div>
 </div>
@@ -3305,10 +3301,9 @@ functions.</p>
 </div>
 </div>
 </div>
-</div>
-<div class="section level3">
-<h3 id="select-records-for-edit">Select Records for Edit<a class="anchor" aria-label="anchor" href="#select-records-for-edit"></a>
-</h3>
+</section><section><h2 class="section-heading" id="select-records-for-edit">Select Records for Edit<a class="anchor" aria-label="anchor" href="#select-records-for-edit"></a>
+</h2>
+<hr class="half-width">
 <p>The Select Records for Edit tool, introduced in lesson 6, allows you
 to isolate and then work with a subset of your records. Regular
 expressions can be a powerful tool to help you isolate the subset of
@@ -3383,7 +3378,7 @@ field for the electronic journals genre form
 (<code>655  \4$aElectronic journals</code>) to the electronic records in
 our subset.</p>
 <ol style="list-style-type: decimal">
-<li>From the top level menu select Tools → Add/Delete Fields</li>
+<li>From the top level menu select Tools → Add/Delete Fields.</li>
 <li>In the Batch Editing window, enter 655 in the Field box and enter
 <code>\4$aElectronic journals</code> in the Field Data Box. Under
 General Options select Use Regular Expression, and under Add Field
@@ -3400,7 +3395,7 @@ What box.</li>
 <li>This regular expression looks for the string <code>=856</code> OR
 the string <code>=338</code> followed by any character (<code>.</code>)
 one or more times (<code>+</code>), followed by the string online
-resource</li>
+resource.</li>
 </ul>
 <ol start="4" style="list-style-type: decimal">
 <li>Click Add Field. Review your data, were the new fields added
@@ -3432,7 +3427,6 @@ MarcEdit and the MarcEditor</li>
 <li>Knowing your data is essential to ensuring your regular expressions
 are working as intended</li>
 </ul>
-</div>
 </div>
 </div>
 </div>

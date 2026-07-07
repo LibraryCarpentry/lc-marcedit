@@ -228,6 +228,9 @@
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#understanding-marc-21-in-marcedit">Understanding MARC 21 in MarcEdit</a></li>
+<li><a href="#marc-tools">MARC Tools</a></li>
+<li><a href="#marc-record-layout-in-the-marceditor">MARC Record layout in the MarcEditor</a></li>
+<li><a href="#setting-marceditor-preferences">Setting MarcEditor Preferences</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -355,7 +358,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Working with MARC files</h1>
-        <p>Last updated on 2026-06-02 |
+        <p>Last updated on 2026-07-07 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/03-working-with-MARC-files.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -388,11 +391,12 @@ file of MARC records in MARCedit?</li>
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Explain the difference between mrc and mrk MARC file formats</li>
-<li>Successfully break and open a file of MARC records in the
+<ul><li>Understand the difference between mrc and mrk MARC file formats</li>
+<li>Use the MarcBreaker to break and open a file of MARC records in the
 MarcEditor</li>
 <li>Explain character encoding and its importance</li>
-<li>Understand how to read a MARC record in the MarcEditor</li>
+<li>Understand how MARC records and fields are formatted in the
+MarcEditor</li>
 </ul></div>
 </div>
 </div>
@@ -490,23 +494,19 @@ that file needs to be converted to the mnemonic format.</p>
 </div>
 </div>
 </div>
-<div class="section level3">
-<h3 id="marc-tools">MARC Tools<a class="anchor" aria-label="anchor" href="#marc-tools"></a></h3>
-<p>To work with MARC data files or convert between metadata formats for
+</section><section><h2 class="section-heading" id="marc-tools">MARC Tools<a class="anchor" aria-label="anchor" href="#marc-tools"></a></h2>
+<hr class="half-width"><p>To work with MARC data files or convert between metadata formats for
 library bibliographic data recognized by MarcEdit, click on the MARC
 Tools icon that has the crossed hammer and spanner in the upper left
-hand corner of the main menu. The available features are:</p>
+hand corner of the main menu. The key features are:</p>
 <ul><li>MarcBreaker: This “breaks” the MARC binary file into a readable
 (mnemonic) format that can be edited in the MarcEditor.</li>
 <li>MarcMaker: This takes the readable (mnemonic) format MARC data file
 and creates the MARC binary file.</li>
-<li>MARC21 to MARC21XML: This converts a MARC21 file to MARC21XML.</li>
-<li>MARC21XML to MARC21: This converts a MARC21XML file to a MARC21
-binary file.</li>
-<li>MARC to JSON: This converts a MARC21 file to a JSON file.</li>
-<li>JSON to MARC: This converts a JSON file to a MARC21 file.</li>
-<li>JSON to XML: This converts a JSON file to XML.</li>
-<li>XML to JSON: This converts an XML file to JSON.</li>
+<li>MARC Tools also provides the option to convert between many other
+popular metadata formats used in libraries, such as: MARC 21 and
+MARCXML, MARC 21 and JSON, XML and JSON, MARC 21 and Dublin Core, and
+MARC 21 and MODS.</li>
 </ul><p>The conversions from one encoding standard to another, as in MARC21
 to MARC21XML, rely on extensible stylesheets. MarcEdit comes with
 several default stylesheets which come from those maintained by the
@@ -520,13 +520,15 @@ create your own.</p>
 <div id="character-encoding" class="callout-inner">
 <h3 class="callout-title">Character Encoding</h3>
 <div class="callout-content">
-<p>To ensure the integrity of your data you need to select the correct
-character encoding for your dataset. MarcEdit does not automatically
-detect character encoding, however, UTF-8 is set as the default encoding
-scheme. You can update the encoding scheme when using the MarcBreaker,
-or you can update the default in Preferences → MarcEditor → Default
-Encoding. For more information on character encoding and translating
-from one encoding to another, see <a href="https://marcedit.reeset.net/learning_marcedit/9-2/dealing-with-character-encodings-in-marcedit/" class="external-link">The
+<p>Character encoding is a standardized system of numerical codes used
+to represent text characters —including letters, numbers, punctuation,
+and diacritics— within a MARC record. To ensure the integrity of your
+data you need to select the correct character encoding for your dataset.
+MarcEdit does not automatically detect character encoding, however,
+UTF-8 is set as the default encoding scheme. You can update the encoding
+scheme when using the MarcBreaker, or you can update the default in
+Preferences → MarcEditor → Default Encoding. For more information on
+character encoding and translating from one encoding to another, see <a href="https://marcedit.reeset.net/learning_marcedit/9-2/dealing-with-character-encodings-in-marcedit/" class="external-link">The
 MarcEdit Field Guide</a>.</p>
 </div>
 </div>
@@ -564,17 +566,15 @@ to open the .mrk file in the MarcEditor.</li>
 data in a new file format. As a result, any edits you make to the .mrk
 file in the MarcEditor will not automatically be reflected in the
 original .mrc file. We will cover saving and compiling (using the
-MarcMaker) to create an updated .mrc file in an upcoming lesson.</p>
+MarcMaker) to create an updated .mrc file in lesson 6.</p>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div class="section level3">
-<h3 id="marc-record-layout-in-the-marceditor">MARC Record layout in the MarcEditor<a class="anchor" aria-label="anchor" href="#marc-record-layout-in-the-marceditor"></a></h3>
-<p>You should now see the MARC records from the file displaying in the
+</section><section><h2 class="section-heading" id="marc-record-layout-in-the-marceditor">MARC Record layout in the MarcEditor<a class="anchor" aria-label="anchor" href="#marc-record-layout-in-the-marceditor"></a></h2>
+<hr class="half-width"><p>You should now see the MARC records from the file displaying in the
 MarcEditor:</p>
-<figure><img src="../fig/marc_sample_data.png" alt="MarcEditor screen with file open" class="figure mx-auto d-block"></figure><p>The MarcEditor displays the records in what is called the ‘Mnemonic
+<figure><img src="../fig/marc_sample_data.png" alt="MarcEditor screen with file open displaying MARC records from sample data in human readable format" class="figure mx-auto d-block"></figure><p>The MarcEditor displays the records in what is called the ‘Mnemonic
 MARC Text File’ format (file extension *.mrk). Each line in the file
 represents a field in a MARC record:</p>
 <pre><code>=245  14$aThe Lord of the Rings /$c J.R.R. Tolkien.</code></pre>
@@ -640,10 +640,8 @@ scroll bar as usual, but to see the next 100 records you need to use the
 Next/Previous page controls which are at the bottom left of the screen.
 The MarcEditor can handle very large files of MARC records, because it
 never tries to load all the records at the same time.</p>
-</div>
-<div class="section level3">
-<h3 id="setting-marceditor-preferences">Setting MarcEditor Preferences<a class="anchor" aria-label="anchor" href="#setting-marceditor-preferences"></a></h3>
-<p>You can adjust the number of records displayed per ‘page’ through the
+</section><section><h2 class="section-heading" id="setting-marceditor-preferences">Setting MarcEditor Preferences<a class="anchor" aria-label="anchor" href="#setting-marceditor-preferences"></a></h2>
+<hr class="half-width"><p>You can adjust the number of records displayed per ‘page’ through the
 MarcEditor preferences which can be accessed through the Edit →
 Preferences menu option from the MarcEditor, or through the ‘Settings’
 icon on the opening screen of MarcEdit.</p>
@@ -683,15 +681,15 @@ Set Defaults</li>
 <h3 class="callout-title">Behavior when you reset your preferences and
 other popup windows</h3>
 <div class="callout-content">
-<p>When you click Ok to reset preferences, there is a chance that the
-popup window for Preferences and/or even MarcEdit main menu will close.
-If the MarcEdit main menu closes, sometimes it will reopen. If it does
-not, then click on MarcEdit again on your desktop to reopen the
-application.</p>
+<p>Depending on the change you make, when you click Ok to reset
+preferences, the popup window for Preferences and/or even MarcEdit main
+menu may close. If the MarcEdit main menu closes, sometimes it will
+reopen. If it does not, then click on MarcEdit again on your desktop to
+reopen the application.</p>
 <p>It should be noted that not all MarcEdit popup windows will close
 automatically such as Find, Replace, or the MarcValidator. However, the
 Select Records for Edit temporary editor will close if you click Save.
-These idiosyncracies for each will be covered in their upcoming
+These idiosyncrasies for each will be covered in their upcoming
 episodes.</p>
 </div>
 </div>
@@ -726,14 +724,13 @@ confused.</p>
 <ul><li>MarcEdit can work with a variety of file formats</li>
 <li>The MARC Tools Icon allows you to convert data from one file format
 to another</li>
-<li>The MarcEditor works with an easy-to-read MarcEdit specific mnemonic
+<li>The MarcEditor works with an easy-to-read MarcEdit-specific mnemonic
 format of MARC records (.mrk). If starting with a MARC binary file
 (.mrc), you must use the MarcBreaker to convert the binary file to a
 mnemonic file.</li>
 <li>Understanding the layout (syntax) of MARC records in the MarcEditor
 is key to working with the records.</li>
 </ul></div>
-</div>
 </div>
 </div>
 </section></div> <!-- / div.lesson-content -->
@@ -796,7 +793,7 @@ is key to working with the records.</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/instructor/03-working-with-MARC-files.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/instructor/03-working-with-MARC-files.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2026-06-02",
+  "dateModified": "2026-07-07",
   "datePublished": "2026-07-07"
 }
 

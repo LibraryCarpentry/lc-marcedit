@@ -355,7 +355,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Integrations</h1>
-        <p>Last updated on 2026-06-02 |
+        <p>Last updated on 2026-07-07 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/09-integrations.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -385,10 +385,9 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Explain what integrations are</li>
-<li>Explain how integrations support advanced record actions</li>
-<li>Set up an integration with the Library of Congress’ Z39.50
-service</li>
+<ul><li>Understand what integrations are and why they are useful</li>
+<li>Understand where to set up an integration</li>
+<li>Set up a Z39.50 service and search for a MARC record</li>
 </ul></div>
 </div>
 </div>
@@ -440,8 +439,11 @@ from his blog.</p>
 <h3 id="integration-with-a-z39-50-database">Integration with a Z39.50 Database<a class="anchor" aria-label="anchor" href="#integration-with-a-z39-50-database"></a></h3>
 <p>Many systems rely on the Z39.50 protocol to search and exchange data.
 It could be the case that your current ILS relies on it for Interlibrary
-loan. For this type of integration, you need the following information
-below. You can find this information at the Library of Congress <a href="https://www.loc.gov/z3950/" class="external-link">Gateway to Library Catalogs</a> of <a href="https://www.z-brary.com/" class="external-link">zbrary</a>.</p>
+loan or copy cataloging. <a href="https://www.z-brary.com/" class="external-link">zbrary</a>
+provide a directory of available Z39.50 databases along with the
+required information.</p>
+<p>The required information for setting up a new Z39.50 Database is
+outlined below:</p>
 <table class="table"><tr><th>
 <strong>Field</strong>
 </th>
@@ -534,17 +536,17 @@ Connexion Username of 3 numbers - 3 numbers - 3 numbers as in
 menu, click on Tools, then Utilities, then Z39.50/SRU Client. In the new
 window, click on Actions in the upper left hand corner and select “Add
 new Z39.50 Server”.</p>
-<div id="challenge1" class="callout challenge">
+<div id="add-an-integration-with-a-z39.50-database" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="add-an-integration-with-a-z39.50-database" class="callout-inner">
+<h3 class="callout-title">Add an integration with a Z39.50 Database</h3>
 <div class="callout-content">
 <p>Add a connection to the Library of Congress’ Z39.50 using the
 information below. What is the main entry if you search for the record
-number 983545.</p>
+number 983545?</p>
 <ul><li>Name: Library of Congress</li>
 <li>Host: lx2.loc.gov</li>
 <li>Database: LCDB</li>
@@ -561,8 +563,7 @@ number 983545.</p>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
-<p>Solution</p>
-<ul><li>Go to Tools in the main menu</li>
+<ol style="list-style-type: decimal"><li>Go to Tools in the main menu</li>
 <li>Click on Tools -&gt; Utilities -&gt; Z39.50/SRU Client</li>
 <li>In the new window, click on Actions -&gt; Add new Z39.50 Client</li>
 <li>Use the information above to fill out the fields</li>
@@ -572,7 +573,7 @@ number 983545.</p>
 <li>In that Search box, put in 983545</li>
 <li>1 result with the Main Entry of “Querelae &amp; opprobira
 ventribuli, sive.”</li>
-</ul></div>
+</ol></div>
 </div>
 </div>
 </div>
@@ -583,8 +584,10 @@ ventribuli, sive.”</li>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ul><li>Understand what integrations are and why they are useful</li>
-<li>Understand where to set up an integration</li>
+<ul><li>Integrations allow you to connect to external catalogue applications
+that can support search, exchange, and editing of MARC data</li>
+<li>Some integrations are free, while others require institutional
+subscriptions before they can be configured and used</li>
 </ul></div>
 </div>
 </div>
@@ -649,7 +652,7 @@ ventribuli, sive.”</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/instructor/09-integrations.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/instructor/09-integrations.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2026-06-02",
+  "dateModified": "2026-07-07",
   "datePublished": "2026-07-07"
 }
 
