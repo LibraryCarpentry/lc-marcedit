@@ -6,15 +6,16 @@ exercises: 5
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to create, manage, edit, and run tasks
-- Successfully create and run a new task
+- Understand how to create, manage, edit, and run tasks in the Marc Editor
+- Identify use cases for task creation
+- Create and run a new task
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
 - What are tasks?
-- How do you manage and create new tasks?
+- How do you create new tasks and manage existing tasks?
 - How do you run tasks?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -25,7 +26,7 @@ When working with MARC records regularly, you will likely encounter record sets 
 
 In the MarcEditor, tasks are the tool that enable such automation. A task is a series of changes to MARC data that occur in the sequence they are entered in the task. One can think of tasks as a mini script of sorts that string together different MarcEditor functions that manipulate MARC data in some way. All tasks are created, managed, and run in the MarcEditor. In this way, tasks are another way to manipulate your data and are an extension of the other tools offered in the MarcEditor.
 
-### What are Tasks?
+## What are Tasks?
 
 A task is a series of MarcEdit functions to manipulate data. In the previous lessons, we ran one function at a time. Tasks string a set of functions together so you can run them as a group. Tasks run each function one after another. As such, it is important to think about how you order the functions in your task. For instance, if you want to add your institution's proxy and the MARC data already has a proxy that you need to delete, your task has to account for that and remove the old proxy before adding a new one.
 
@@ -64,7 +65,7 @@ Note: “Task Actions” and “Manage Existing Tasks” menu options are differ
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 
-### Create a New Task
+## Create a New Task
 
 To create a task in the MarcEditor, Go to Tools in the top level menu and then Manage Tasks. In the Task Actions menu, select "New Task" from the dropdown menu and then click Select. In the dialogue box, enter the name of your task and click OK. This opens the Edit Task List window where you will see the name you gave your task, a description, tasks, and actions.
 
@@ -113,7 +114,7 @@ If you have created many Tasks, it does help to assign them to groups to more ea
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-### Managing your Tasks
+## Managing your Tasks
 
 To edit an existing task, go to Tools → Manage Tasks. In the Task Manger select the task you want to edit, this will highlight the task. Under Task Actions choose Edit Task and click Select. This will open the Edit Task List window. Just like when creating a new task, you can add, delete, or edit functions in your task. Use the up and down arrows to the right to reorder your functions.
 
@@ -132,7 +133,7 @@ Note: If learners need instructions on deleting their existing proxies for the n
 
 ### Add a proxy to the `856 40$u` in your Task
 
-1. After you run your Task, your MARC records should have your institution's proxy before the URL. Remember to check your data first to see if there are any proxy stems present. You will need to remove any existing proxies before running your Task. If the MARC data has different types of electronic URLs (resource, related resource, etc.) as noted in the MARC field 856 indicators, you will need to account for that in your Task.
+After you run your Task, your MARC records should have your institution's proxy before the URL. Remember to check your data first to see if there are any proxy stems present. You will need to remove any existing proxies before running your Task. If the MARC data has different types of electronic URLs (resource, related resource, etc.) as noted in the MARC field 856 indicators, you will need to account for that in your Task.
 
 :::::::::::::::  solution
 

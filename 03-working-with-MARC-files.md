@@ -6,10 +6,10 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain the difference between mrc and mrk MARC file formats
-- Successfully break and open a file of MARC records in the MarcEditor
+- Understand the difference between mrc and mrk MARC file formats
+- Use the MarcBreaker to break and open a file of MARC records in the MarcEditor
 - Explain character encoding and its importance
-- Understand how to read a MARC record in the MarcEditor
+- Understand how MARC records and fields are formatted in the MarcEditor
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -88,18 +88,13 @@ To work with a MARC file in the MARCEditor your file needs to be in MARC mnemoni
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-### MARC Tools
+## MARC Tools
 
-To work with MARC data files or convert between metadata formats for library bibliographic data recognized by MarcEdit, click on the MARC Tools icon that has the crossed hammer and spanner in the upper left hand corner of the main menu. The available features are:
+To work with MARC data files or convert between metadata formats for library bibliographic data recognized by MarcEdit, click on the MARC Tools icon that has the crossed hammer and spanner in the upper left hand corner of the main menu. The key features are:
 
 - MarcBreaker: This "breaks" the MARC binary file into a readable (mnemonic) format that can be edited in the MarcEditor.
 - MarcMaker: This takes the readable (mnemonic) format MARC data file and creates the MARC binary file.
-- MARC21 to MARC21XML: This converts a MARC21 file to MARC21XML.
-- MARC21XML to MARC21: This converts a MARC21XML file to a MARC21 binary file.
-- MARC to JSON: This converts a MARC21 file to a JSON file.
-- JSON to MARC: This converts a JSON file to a MARC21 file.
-- JSON to XML: This converts a JSON file to XML.
-- XML to JSON: This converts an XML file to JSON.
+- MARC Tools also provides the option to convert between many other popular metadata formats used in libraries, such as: MARC 21 and MARCXML, MARC 21 and JSON, XML and JSON, MARC 21 and Dublin Core, and MARC 21 and MODS.
 
 The conversions from one encoding standard to another, as in MARC21 to MARC21XML, rely on extensible stylesheets. MarcEdit comes with several default stylesheets which come from those maintained by the Library of Congress. If you are familiar with stylesheets, you can also create your own.
 
@@ -107,7 +102,7 @@ The conversions from one encoding standard to another, as in MARC21 to MARC21XML
 
 ### Character Encoding
 
-To ensure the integrity of your data you need to select the correct character encoding for your dataset. MarcEdit does not automatically detect character encoding, however, UTF-8 is set as the default encoding scheme. You can update the encoding scheme when using the MarcBreaker, or you can update the default in Preferences → MarcEditor → Default Encoding. For more information on character encoding and translating from one encoding to another, see [The MarcEdit Field Guide](https://marcedit.reeset.net/learning_marcedit/9-2/dealing-with-character-encodings-in-marcedit/).
+Character encoding is a standardized system of numerical codes used to represent text characters —including letters, numbers, punctuation, and diacritics— within a MARC record. To ensure the integrity of your data you need to select the correct character encoding for your dataset. MarcEdit does not automatically detect character encoding, however, UTF-8 is set as the default encoding scheme. You can update the encoding scheme when using the MarcBreaker, or you can update the default in Preferences → MarcEditor → Default Encoding. For more information on character encoding and translating from one encoding to another, see [The MarcEdit Field Guide](https://marcedit.reeset.net/learning_marcedit/9-2/dealing-with-character-encodings-in-marcedit/).
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -128,14 +123,14 @@ To transform our binary MARC file (.mrc) into MARC mnemonic human readable forma
 6. Click execute.
 7. Once you click execute the newly created .mrk file will be available to open in the MarcEditor. Under Results at the bottom of the window you will see a count of the records in your file (536). Click Edit Records to open the .mrk file in the MarcEditor.
 
-**Note:** When you break a .mrc file and create a new .mrk file for editing in the MarcEditor, you are making a copy of your data in a new file format. As a result, any edits you make to the .mrk file in the MarcEditor will not automatically be reflected in the original .mrc file. We will cover saving and compiling (using the MarcMaker) to create an updated .mrc file in an upcoming lesson.
+**Note:** When you break a .mrc file and create a new .mrk file for editing in the MarcEditor, you are making a copy of your data in a new file format. As a result, any edits you make to the .mrk file in the MarcEditor will not automatically be reflected in the original .mrc file. We will cover saving and compiling (using the MarcMaker) to create an updated .mrc file in lesson 6.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-### MARC Record layout in the MarcEditor
+## MARC Record layout in the MarcEditor
 You should now see the MARC records from the file displaying in the MarcEditor:
 
-![](fig/marc_sample_data.png){alt='MarcEditor screen with file open'}
+![](fig/marc_sample_data.png){alt='MarcEditor screen with file open displaying MARC records from sample data in human readable format'}
 
 The MarcEditor displays the records in what is called the 'Mnemonic MARC Text File' format (file extension \*.mrk). Each line in the file represents a field in a MARC record:
 
@@ -176,7 +171,7 @@ Understanding the layout of MARC data in the MarcEditor is key to using the prog
 
 The MarcEditor divides a file of MARC records into 'pages' of 100 records. You can scroll up and down the page of MARC records using the scroll bar as usual, but to see the next 100 records you need to use the Next/Previous page controls which are at the bottom left of the screen. The MarcEditor can handle very large files of MARC records, because it never tries to load all the records at the same time.
 
-### Setting MarcEditor Preferences
+## Setting MarcEditor Preferences
 
 You can adjust the number of records displayed per 'page' through the MarcEditor preferences which can be accessed through the Edit → Preferences menu option from the MarcEditor, or through the 'Settings' icon on the opening screen of MarcEdit.
 
@@ -200,9 +195,9 @@ If you change your preferences for the MarcEditor, the tool used to work with MA
 
 ### Behavior when you reset your preferences and other popup windows
 
-When you click Ok to reset preferences, there is a chance that the popup window for Preferences and/or even MarcEdit main menu will close. If the MarcEdit main menu closes, sometimes it will reopen. If it does not, then click on MarcEdit again on your desktop to reopen the application. 
+Depending on the change you make, when you click Ok to reset preferences, the popup window for Preferences and/or even MarcEdit main menu may close. If the MarcEdit main menu closes, sometimes it will reopen. If it does not, then click on MarcEdit again on your desktop to reopen the application. 
 
-It should be noted that not all MarcEdit popup windows will close automatically such as Find, Replace, or the MarcValidator. However, the Select Records for Edit temporary editor will close if you click Save. These idiosyncracies for each will be covered in their upcoming episodes.
+It should be noted that not all MarcEdit popup windows will close automatically such as Find, Replace, or the MarcValidator. However, the Select Records for Edit temporary editor will close if you click Save. These idiosyncrasies for each will be covered in their upcoming episodes.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -216,7 +211,7 @@ Note: Some preference updates will force MarcEdit to restart and others will not
 
 - MarcEdit can work with a variety of file formats
 - The MARC Tools Icon allows you to convert data from one file format to another
-- The MarcEditor works with an easy-to-read MarcEdit specific mnemonic format of MARC records (.mrk). If starting with a MARC binary file (.mrc), you must use the MarcBreaker to convert the binary file to a mnemonic file.
+- The MarcEditor works with an easy-to-read MarcEdit-specific mnemonic format of MARC records (.mrk). If starting with a MARC binary file (.mrc), you must use the MarcBreaker to convert the binary file to a mnemonic file.
 - Understanding the layout (syntax) of MARC records in the MarcEditor is key to working with the records.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
