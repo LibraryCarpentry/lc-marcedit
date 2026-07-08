@@ -4,14 +4,23 @@ title: 'Glossary'
 
 ## Glossary
 
+[AACR2 (Anglo-American Cataloguing Rules, Second Edition)]{#aacr2}
+:    A descriptive cataloging standard released in 1978 that provides guidelines and instructions on formulating bibliographic data for libraries and cultural heritage organizations. The predecessor to RDA.
+
+[API (Application Programming Interface)]{#api}
+:    A software intermediary that allows different computer applications to talk to one another and share data automatically.
+
 [Dublin Core]{#dc}
 :   A common metadata standard used for describing a wide range of resources across domains. It includes 15 essential elements like title, creator, subject, and date.
 
-[Marc Record Character Encoding]{#marc-ce}
+[MARC Record Character Encoding]{#marc-ce}
 :   A standardized system of numerical codes used to represent text characters—including letters, numbers, punctuation, and diacritics—within a MARC record. It functions as the "translation key" that allows a computer system to interpret binary data into human-readable text. The two common encoding schemes are 1. MARC-8: The legacy 8-bit encoding standard used to represent Latin, Greek, Arabic, Hebrew, and East Asian characters via escape sequences. 2. UTF-8 (Unicode): The modern, universal standard that assigns a unique code point to every character in every language, facilitating global data exchange.
 
 [FAST (Faceted Application of Subject Terminology)]{#fast}
 :   A simplified subject heading system derived from the Library of Congress Subject Headings (LCSH), designed for faster and more consistent application.
+
+[ILS (Integrated Library System]{#ils}
+:   Enterprise software that unifies library management functions such as cataloging, circulation, acquisitions, and user services, enabling more efficient and flexible library operations. Typically hosted on local or vendor servers and built to manage physical library collections. The predecessor to LSPs. Examples include SirsiDynx's Symphony and Evergreen, an open source ILS.
 
 [LSP (Library Services Platform)]{#lsp}
 :   A cloud-based, integrated system that unifies library management functions such as cataloging, circulation, acquisitions, and user services, enabling more efficient and flexible library operations. Examples include Ex Libris's Alma, OCLC's WorldShare, and open source solutions like Folio.
@@ -26,7 +35,7 @@ title: 'Glossary'
 :   A framework for facilitating metadata harvesting using the OAI-PMH (Protocol for Metadata Harvesting) standard, enabling interoperability between digital repositories.
 
 [RDA (Resource Description and Access)]{#rda}
-:   A descriptive cataloging standard that provides guidelines and instructions on formulating bibliographic data for libraries and cultural heritage organizations.
+:   A descriptive cataloging standard released in 2010 that provides guidelines and instructions on formulating bibliographic data for libraries and cultural heritage organizations.
 
 [Regex (Regular Expressions)]{#regex}
 :   A sequence of characters that defines a search pattern, commonly used for string matching and manipulation in text processing.
