@@ -146,7 +146,7 @@ The `Find Records With Duplicate Tags` function allows us to easily locate recor
 5. Click Find Records With Duplicate Tags
 6. In the dialogue box enter 245 and click OK
 
-The results list includes two records with duplicate 245 fields, # 8 and # 28. Click on Jump to Record # to be taken to the record in the MarcEditor. Once on the record you can manually delete the incorrect 245 field.
+The results list includes two records with duplicate 245 fields, # 8 and # 28. Click on Jump to Record # to be taken to the record in the MarcEditor. Once on the record you can manually delete the duplicated 245 field.
 
 :::::::::::::::::::::::::::::::::::::: instructor
 
