@@ -9,7 +9,7 @@ exercises: 5
 - Understand and run reports for your MARC data
 - Understand and run validation for your MARC data
 - Understand where to find tools in the MARCedit Edit toolbar and shortcuts
-- Explain the difference between to Find and Find All
+- Explain the difference between Find and Find All
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
