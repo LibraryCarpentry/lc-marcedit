@@ -97,7 +97,6 @@ To run the Field Count Reports
 
 1. Field Count outlines each field found in our records, the number of times it occurs, and how many records it occurs in. Field count can also tell us the number of records in our file (536).
 2. The non-repeatable field 245 occurs more times than the number of records in the file. In other words, at least one record contains multiple 245 fields. Field 245 appears in one less record than other required fields.
-3. Fix the missing MARC field 245 for the title 'McGregor Smith Scout Reservation Master Plan by Erik Schofield' by changing the line with =2 4 \0$a to =245  \0$a
 4. Fix the missing MARC field 245 for the title 'Fundo Mandorpampa Ecological Center by Timothy Christian Grey' by removing the duplicate MARC field 245.
   
   
