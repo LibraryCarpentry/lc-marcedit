@@ -183,7 +183,7 @@ The results list will show one record missing a 245 field. Click on Jump to Reco
 
 #### Solution
 
-1. The 245 field number is formatted incorrectly. The MarcEditor relies on a standard format to identify and take actions on fields. Remove the rogue space and update the field number to correct this record.
+1. The 245 field number is formatted incorrectly. The MarcEditor relies on a standard format to identify and take actions on fields.  Fix the missing MARC field 245 for the title 'McGregor Smith Scout Reservation Master Plan by Erik Schofield' by changing the line with =2 4 \0$a to =245  \0$a Removing the rogue space in the field number will correct this record.
   
   
 
