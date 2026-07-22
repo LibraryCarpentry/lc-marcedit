@@ -359,7 +359,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Manipulating MARC data advanced</h1>
-        <p>Last updated on 2026-06-02 |
+        <p>Last updated on 2026-07-22 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/07-manipulating-MARC-data-advanced.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -416,14 +416,14 @@ missing a word, find records missing a field, find records with
 duplicate tags, insert a Generic LDR if it is missing, limit the number
 of fields, replace HTML entities, or swap a title.</li>
 <li>Math Functions: Convert to decimal degrees.</li>
-</ul><div id="let-us-use-edit-shortcuts-to-make-the-099a-upper-case" class="callout checklist">
+</ul><div id="use-edit-shortcuts-to-make-the-099a-upper-case" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
 </div>
 <span class="callout-header">Checklist</span>
-<div id="let-us-use-edit-shortcuts-to-make-the-099a-upper-case" class="callout-inner">
-<h3 class="callout-title">Let us use Edit Shortcuts to make the 099$a
-upper case</h3>
+<div id="use-edit-shortcuts-to-make-the-099a-upper-case" class="callout-inner">
+<h3 class="callout-title">Use Edit Shortcuts to make the 099$a upper
+case</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Go to Edit → Edit Shortcuts -&gt; Change Case -&gt; Upper Case</li>
 <li>In the new window, in the field box, type in <code>099$a</code>
@@ -450,15 +450,15 @@ profile your data before doing batch edits.</p>
 </section><section><h2 class="section-heading" id="building-a-marc-field">Building a MARC field<a class="anchor" aria-label="anchor" href="#building-a-marc-field"></a></h2>
 <hr class="half-width"><p>Sometimes it is necessary to create a new MARC field based on the
 content of existing MARC fields. This is possible using the function
-called, Build New Field.</p>
-<figure><img src="fig/buildNewField.png" alt="Build New Field Window" class="figure mx-auto d-block"></figure><div id="let-us-build-a-new-035-9a-using-the-data-from-the-001-and-static-data" class="callout checklist">
+called Build New Field.</p>
+<figure><img src="fig/buildNewField.png" alt="Image of the popup window to configure how to build your MARC field" class="figure mx-auto d-block"></figure><div id="build-a-new-035-9a-using-the-data-from-the-001-and-static-data" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
 </div>
 <span class="callout-header">Checklist</span>
-<div id="let-us-build-a-new-035-9a-using-the-data-from-the-001-and-static-data" class="callout-inner">
-<h3 class="callout-title">Let us build a new <code>035 9\$a</code> using
-the data from the 001 and static data</h3>
+<div id="build-a-new-035-9a-using-the-data-from-the-001-and-static-data" class="callout-inner">
+<h3 class="callout-title">Build a new <code>035 9\$a</code> using the
+data from the 001 and static data</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Go to Tools → Build New Field</li>
 <li>In the new window, in the field box, type in
@@ -491,7 +491,7 @@ the <code>856$u</code>.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Go to Tools → Build New Field</li>
 <li>In the new window, in the field box, type in
@@ -519,9 +519,9 @@ include this parameter in your function. This would look like
 <p>Also note, the build new field works on the first iteration of the
 field. When working in particular with the MARC field 856, if you need
 to build a new field using all of the MARC fields 856 in your record,
-you can use the syntax [x] as in {856$u[x]}. This will ensure all of the
-MARC fields in the records will undergo the build operation you
-specify.</p>
+you can use the syntax bracket, x, bracket or [x] as in ‘{856$u[x]}’.
+This will ensure all of the MARC fields in the records will undergo the
+build operation you specify.</p>
 </div>
 </div>
 </div>
@@ -530,23 +530,23 @@ specify.</p>
 useful. These are append, prepend, and change subfield. These are not
 regular expressions but special characters built into the MarcEditor
 Edit Subfield tool.</p>
-<ul><li>Prepend data to a subfield: Special character ^b</li>
-<li>Change subfield character: Special character ^c</li>
-<li>Append data to a subfield: Special character ^e</li>
-</ul><div id="let-us-add-the-proxy-to-the-856u-using-the-prepend-special-character-b" class="callout checklist">
+<ul><li>Prepend data to a subfield: Special character: ‘^b’</li>
+<li>Change subfield character: Special character: ‘^c’</li>
+<li>Append data to a subfield: Special character: ‘^e’</li>
+</ul><div id="add-the-proxy-to-the-856u-using-the-prepend-special-character-b" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
 </div>
 <span class="callout-header">Checklist</span>
-<div id="let-us-add-the-proxy-to-the-856u-using-the-prepend-special-character-b" class="callout-inner">
-<h3 class="callout-title">Let us add the proxy to the 856$u using the
-prepend special character ^b</h3>
+<div id="add-the-proxy-to-the-856u-using-the-prepend-special-character-b" class="callout-inner">
+<h3 class="callout-title">Add the proxy to the 856$u using the prepend
+special character ^b</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Go to Tools → Edit Subfield Data</li>
-<li>In Field, Enter 856</li>
-<li>In Subfield, Enter u</li>
-<li>In Field Data, Enter ^b</li>
-<li>In Replace with, Enter “<a href="https://exampleproxy.edu/login?url=" class="external-link uri">https://exampleproxy.edu/login?url=</a>”</li>
+<li>In Field, Enter ‘856’</li>
+<li>In Subfield, Enter ‘u’</li>
+<li>In Field Data, Enter ‘^b’</li>
+<li>In Replace with, Enter ‘<a href="https://exampleproxy.edu/login?url=" class="external-link uri">https://exampleproxy.edu/login?url=</a>’</li>
 <li>Click Replace</li>
 </ol></div>
 </div>
@@ -554,18 +554,18 @@ prepend special character ^b</h3>
 </section><section><h2 class="section-heading" id="rda-helper">RDA Helper<a class="anchor" aria-label="anchor" href="#rda-helper"></a></h2>
 <hr class="half-width"><p>Records are not created equal in that we encounter MARC data that
 follows different descriptive cataloging standards. There are many
-records cataloged according to the AACR2 standard or even AACR or
-earlier. Sometimes it is necessary to make sure these records follow the
-current RDA descriptive cataloging standard. MarcEdit lets you do this
-through the function called RDA Helper.</p>
+records cataloged according to the old descriptive standard AACR2 or
+even AACR or earlier. Sometimes it is necessary to make sure these
+records follow the current RDA descriptive cataloging standard. MarcEdit
+lets you do this through the function called RDA Helper.</p>
 <p>To run the RDA Helper, go to Tools and select RDA Helper. In the
 window that opens, you can pick and choose how you would like to
 transform your records to align better with the RDA descriptive
 standard. For example, you can add the RDA fields 336, 337, and 338 for
 content, media, and carrier types. You can update the MARC field 040 to
-include the <code>$e</code> rda and delete the GMD statement. You can
-also evaluate the 260/264.</p>
-<figure><img src="fig/rdaHelper.png" alt="MarcEdit RDA Helper" class="figure mx-auto d-block"></figure><div id="run-the-rda-helper-on-your-marc-data" class="callout challenge">
+include the <code>$e</code> rda and delete the General Material
+Designation (GMD) statement. You can also evaluate the 260/264.</p>
+<figure><img src="fig/rdaHelper.png" alt="Image of the popup window for the MarcEdit RDA Helper" class="figure mx-auto d-block"></figure><div id="run-the-rda-helper-on-your-marc-data" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -584,13 +584,14 @@ abbreviations; Remove the GMD.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Go to Tools in the upper menu in the MarcEditor</li>
 <li>Select RDA Helper</li>
 <li>Check off the settings listed above</li>
 <li>Click the OK button.</li>
-<li>Check your MARC data. Do you see the changes?</li>
+<li>Check your MARC data.</li>
+<li>List 1-3 changes</li>
 </ol></div>
 </div>
 </div>
@@ -621,25 +622,24 @@ new record subset (Save As), or merge the edits back into your complete
 record set (Save). When selecting (Save) to merge edits back into your
 complete record set, the temporary record set will close. Reopen your
 complete record set .mrk file to continue editing.</p>
-<div id="let-us-add-cutters-to-call-numbers-in-the-099" class="callout checklist">
+<div id="add-cutters-to-call-numbers-in-the-099" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
 </div>
 <span class="callout-header">Checklist</span>
-<div id="let-us-add-cutters-to-call-numbers-in-the-099" class="callout-inner">
-<h3 class="callout-title">Let us add cutters to call numbers in the
-099</h3>
+<div id="add-cutters-to-call-numbers-in-the-099" class="callout-inner">
+<h3 class="callout-title">Add cutters to call numbers in the 099</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Go to File → Select Records to Edit</li>
-<li>In the new window, type in <code>099$b</code> in the Field
-Display</li>
+<li>In the new window, type in <code>099$b</code> in the Display
+Field</li>
 <li>Click on Import File</li>
 <li>In the search box, type in “Display field not found” to locate all
 records missing <code>099$b</code>
 </li>
 <li>Click the magnifying glass icon. A pop up window will indicate the
 number of records selected that match your criteria. Click OK.</li>
-<li>Click on Export Selected. A pop up window indicate that your
+<li>Click on Export Selected. A pop up window indicates that your
 selected records have been extracted. Click OK.</li>
 <li>A new MarcEditor window will open. Note the temporary file name at
 the top of the editor window indicating this file is distinct from your
@@ -657,6 +657,7 @@ Generating Cutter for Call Numbers</a></p>
 </div>
 </div>
 </div>
+
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -665,7 +666,7 @@ Generating Cutter for Call Numbers</a></p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul><li>Advanced reports and functions are available in MarcEdit to apply
-global and selective edits</li>
+global and selective edits.</li>
 <li>MarcEdit comes with an array of tools to manipulate data and
 validate MARC.</li>
 </ul></div>
@@ -731,8 +732,8 @@ validate MARC.</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/07-manipulating-MARC-data-advanced.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/07-manipulating-MARC-data-advanced.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2026-06-02",
-  "datePublished": "2026-07-21"
+  "dateModified": "2026-07-22",
+  "datePublished": "2026-07-22"
 }
 
   </script><script>

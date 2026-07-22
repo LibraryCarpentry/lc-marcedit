@@ -874,7 +874,7 @@ MarcEditor</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Note: A number of differences have been noted in setting preferences
 for Mac users in this lesson:</p>
@@ -1209,7 +1209,7 @@ episodes.</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
   <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
 <div class="accordion-body">
 <p>Note: Some preference updates will force MarcEdit to restart and
 others will not. Also note that in order for some preference changes to
@@ -1247,7 +1247,7 @@ is key to working with the records.</li>
 </div>
 </section></section><section id="aio-04-layout-of-the-MarcEditor"><p>Content from <a href="04-layout-of-the-MarcEditor.html">Layout of the MarcEditor</a></p>
 <hr>
-<p>Last updated on 2026-06-02 |
+<p>Last updated on 2026-07-22 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/04-layout-of-the-MarcEditor.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
@@ -1263,7 +1263,7 @@ is key to working with the records.</li>
 <h3 class="card-title">Questions</h3>
 <ul>
 <li>What is the MarcEditor?</li>
-<li>How are MARC files organized in the MarcEditor</li>
+<li>How are MARC files organized in the MarcEditor?</li>
 </ul>
 </div>
 </div>
@@ -1295,7 +1295,9 @@ format.</p>
 level menu. Features can be accessed through the menu or through
 shortcut keys. The shortcut key for a feature appears next to it in the
 menu. The next episodes will look more in-depth at how to use these
-features.</p>
+features. Each top level menu heading contains many options. Below are
+some highlights of those features that are frequently used when working
+with a set of MARC data.</p>
 <figure><img src="../fig/topLevelFeatures_marcEditor.png" alt="MarcEdit top level menu" class="figure mx-auto d-block"></figure><div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
@@ -1310,14 +1312,8 @@ Level Menu design and features for Mac users in this lesson.</p>
 </div>
 </div>
 <div class="section level3">
-<h3 id="marceditor-top-level-menu-features">MarcEditor Top Level Menu Features<a class="anchor" aria-label="anchor" href="#marceditor-top-level-menu-features"></a>
+<h3 id="file">File<a class="anchor" aria-label="anchor" href="#file"></a>
 </h3>
-<p>Each top level menu heading contains many options. Below are some
-highlights of those features that are frequently used when working with
-a set of MARC data.</p>
-<div class="section level4">
-<h4 id="file">File<a class="anchor" aria-label="anchor" href="#file"></a>
-</h4>
 <ul>
 <li>Save, Save As, Open, Recent: This is where you will find those
 important functions of saving, saving as, opening up a recent file, or
@@ -1329,9 +1325,9 @@ the readable MARC data file (.mrk) being edited in the MarcEditor will
 be converted to a MARC binary file (.mrc).</li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="edit">Edit<a class="anchor" aria-label="anchor" href="#edit"></a>
-</h4>
+<div class="section level3">
+<h3 id="edit">Edit<a class="anchor" aria-label="anchor" href="#edit"></a>
+</h3>
 <ul>
 <li>Find and Replace: You can find or find and replace just on the
 current page or in the entire file.</li>
@@ -1345,9 +1341,9 @@ edit these fixed fields.</li>
 based on invalid encoding characters.</li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="fonts">Fonts<a class="anchor" aria-label="anchor" href="#fonts"></a>
-</h4>
+<div class="section level3">
+<h3 id="fonts">Fonts<a class="anchor" aria-label="anchor" href="#fonts"></a>
+</h3>
 <ul>
 <li>If you need to change the font and size for the current MARC data
 you are working on in the MarcEditor, this is the place to do that.</li>
@@ -1367,9 +1363,9 @@ instructor.</p>
 </div>
 </div>
 </div>
-<div class="section level4">
-<h4 id="reports">Reports<a class="anchor" aria-label="anchor" href="#reports"></a>
-</h4>
+<div class="section level3">
+<h3 id="reports">Reports<a class="anchor" aria-label="anchor" href="#reports"></a>
+</h3>
 <ul>
 <li>Create a custom report</li>
 <li>Get a count of all the MARC Fields in the MARC Data</li>
@@ -1378,9 +1374,9 @@ recordings, etc.)</li>
 <li>MARCValidator</li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="tools">Tools<a class="anchor" aria-label="anchor" href="#tools"></a>
-</h4>
+<div class="section level3">
+<h3 id="tools">Tools<a class="anchor" aria-label="anchor" href="#tools"></a>
+</h3>
 <ul>
 <li>Add/Delete Marc Fields</li>
 <li>Edit subfields</li>
@@ -1390,9 +1386,24 @@ recordings, etc.)</li>
 <li>Sort By</li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="oclc-worldcat-requires-oclc-integration-setup">OCLC WorldCat: Requires OCLC Integration Setup<a class="anchor" aria-label="anchor" href="#oclc-worldcat-requires-oclc-integration-setup"></a>
-</h4>
+<div class="section level3">
+<h3 id="oclc-worldcat">OCLC WorldCat<a class="anchor" aria-label="anchor" href="#oclc-worldcat"></a>
+</h3>
+<div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Note: This requires OCLC Integration Setup beforhand. OCLC provides
+guidelines on how to set up the <a href="https://help.oclc.org/Librarian_Toolbox/OCLC_APIs/Troubleshooting/How_do_I_set_up_MarcEdit_OCLC_Integration%3F" class="external-link">MarcEdit
+OCLC Intergration</a>. The MarcEdit page on <a href="https://marcedit.reeset.net/oclc-integration-information" class="external-link">OCLC
+Integration</a> also provides more details on what you can do with this
+integration.</p>
+</div>
+</div>
+</div>
 <ul>
 <li>Search WorldCat</li>
 <li>Add/Delete/Update OCLC Bibliographic Data</li>
@@ -1414,7 +1425,6 @@ format.</li>
 select representation of those used most when working with MARC
 data.</li>
 </ul>
-</div>
 </div>
 </div>
 </div>
@@ -1482,7 +1492,7 @@ or to locate potential errors.</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Note: The type of material report is generated by the LEADER or LDR
 field position 6 (type of record), position 7 (bibliographic level), and
@@ -1578,7 +1588,7 @@ title</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Field Count outlines each field found in our records, the number of
@@ -1680,7 +1690,7 @@ MarcEditor. Once on the record you can manually delete the duplicated
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
   <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
 <div class="accordion-body">
 <p>Note: In previous versions of MarcEdit, there is no step number 4.
 The user can go from Field Edits to the list of options. With the newer
@@ -1735,7 +1745,7 @@ correctly?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The 245 field number is formatted incorrectly. The MarcEditor relies
@@ -1952,7 +1962,7 @@ the record set.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Click Edit-&gt;Replace.</li>
@@ -2043,7 +2053,7 @@ blank and second indicator <code>4</code> to the MARC data.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor.</li>
@@ -2102,7 +2112,7 @@ a number</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Verify your file has multiple <code>9XX</code> fields by using the
@@ -2191,7 +2201,7 @@ XYZ.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor.</li>
@@ -2248,7 +2258,7 @@ indicator blank and a second indicator <code>4</code>.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2360,7 +2370,7 @@ in the MarcEditor.</li>
 </div>
 </section></section><section id="aio-07-manipulating-MARC-data-advanced"><p>Content from <a href="07-manipulating-MARC-data-advanced.html">Manipulating MARC data advanced</a></p>
 <hr>
-<p>Last updated on 2026-06-02 |
+<p>Last updated on 2026-07-22 |
 
         <a href="https://github.com/librarycarpentry/lc-marcedit/edit/main/episodes/07-manipulating-MARC-data-advanced.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 50 minutes</p>
@@ -2425,7 +2435,7 @@ of fields, replace HTML entities, or swap a title.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Note: With version 7.7, the Field Edits have an additional menu
 level. Cleaning smart characters, ISBD punctuation, and limiting number
@@ -2436,14 +2446,14 @@ Data Tools.</p>
 </div>
 </div>
 </div>
-<div id="let-us-use-edit-shortcuts-to-make-the-099a-upper-case" class="callout checklist">
+<div id="use-edit-shortcuts-to-make-the-099a-upper-case" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
 </div>
 <span class="callout-header">Checklist</span>
-<div id="let-us-use-edit-shortcuts-to-make-the-099a-upper-case" class="callout-inner">
-<h3 class="callout-title">Let us use Edit Shortcuts to make the 099$a
-upper case</h3>
+<div id="use-edit-shortcuts-to-make-the-099a-upper-case" class="callout-inner">
+<h3 class="callout-title">Use Edit Shortcuts to make the 099$a upper
+case</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
 <li>Go to Edit → Edit Shortcuts -&gt; Change Case -&gt; Upper Case</li>
@@ -2474,15 +2484,15 @@ profile your data before doing batch edits.</p>
 <hr class="half-width">
 <p>Sometimes it is necessary to create a new MARC field based on the
 content of existing MARC fields. This is possible using the function
-called, Build New Field.</p>
-<figure><img src="../fig/buildNewField.png" alt="Build New Field Window" class="figure mx-auto d-block"></figure><div id="let-us-build-a-new-035-9a-using-the-data-from-the-001-and-static-data" class="callout checklist">
+called Build New Field.</p>
+<figure><img src="../fig/buildNewField.png" alt="Image of the popup window to configure how to build your MARC field" class="figure mx-auto d-block"></figure><div id="build-a-new-035-9a-using-the-data-from-the-001-and-static-data" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
 </div>
 <span class="callout-header">Checklist</span>
-<div id="let-us-build-a-new-035-9a-using-the-data-from-the-001-and-static-data" class="callout-inner">
-<h3 class="callout-title">Let us build a new <code>035 9\$a</code> using
-the data from the 001 and static data</h3>
+<div id="build-a-new-035-9a-using-the-data-from-the-001-and-static-data" class="callout-inner">
+<h3 class="callout-title">Build a new <code>035 9\$a</code> using the
+data from the 001 and static data</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
 <li>Go to Tools → Build New Field</li>
@@ -2519,7 +2529,7 @@ the <code>856$u</code>.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools → Build New Field</li>
@@ -2549,9 +2559,9 @@ include this parameter in your function. This would look like
 <p>Also note, the build new field works on the first iteration of the
 field. When working in particular with the MARC field 856, if you need
 to build a new field using all of the MARC fields 856 in your record,
-you can use the syntax [x] as in {856$u[x]}. This will ensure all of the
-MARC fields in the records will undergo the build operation you
-specify.</p>
+you can use the syntax bracket, x, bracket or [x] as in ‘{856$u[x]}’.
+This will ensure all of the MARC fields in the records will undergo the
+build operation you specify.</p>
 </div>
 </div>
 </div>
@@ -2563,25 +2573,25 @@ useful. These are append, prepend, and change subfield. These are not
 regular expressions but special characters built into the MarcEditor
 Edit Subfield tool.</p>
 <ul>
-<li>Prepend data to a subfield: Special character ^b</li>
-<li>Change subfield character: Special character ^c</li>
-<li>Append data to a subfield: Special character ^e</li>
+<li>Prepend data to a subfield: Special character: ‘^b’</li>
+<li>Change subfield character: Special character: ‘^c’</li>
+<li>Append data to a subfield: Special character: ‘^e’</li>
 </ul>
-<div id="let-us-add-the-proxy-to-the-856u-using-the-prepend-special-character-b" class="callout checklist">
+<div id="add-the-proxy-to-the-856u-using-the-prepend-special-character-b" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
 </div>
 <span class="callout-header">Checklist</span>
-<div id="let-us-add-the-proxy-to-the-856u-using-the-prepend-special-character-b" class="callout-inner">
-<h3 class="callout-title">Let us add the proxy to the 856$u using the
-prepend special character ^b</h3>
+<div id="add-the-proxy-to-the-856u-using-the-prepend-special-character-b" class="callout-inner">
+<h3 class="callout-title">Add the proxy to the 856$u using the prepend
+special character ^b</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
 <li>Go to Tools → Edit Subfield Data</li>
-<li>In Field, Enter 856</li>
-<li>In Subfield, Enter u</li>
-<li>In Field Data, Enter ^b</li>
-<li>In Replace with, Enter “<a href="https://exampleproxy.edu/login?url=" class="external-link uri">https://exampleproxy.edu/login?url=</a>”</li>
+<li>In Field, Enter ‘856’</li>
+<li>In Subfield, Enter ‘u’</li>
+<li>In Field Data, Enter ‘^b’</li>
+<li>In Replace with, Enter ‘<a href="https://exampleproxy.edu/login?url=" class="external-link uri">https://exampleproxy.edu/login?url=</a>’</li>
 <li>Click Replace</li>
 </ol>
 </div>
@@ -2592,18 +2602,18 @@ prepend special character ^b</h3>
 <hr class="half-width">
 <p>Records are not created equal in that we encounter MARC data that
 follows different descriptive cataloging standards. There are many
-records cataloged according to the AACR2 standard or even AACR or
-earlier. Sometimes it is necessary to make sure these records follow the
-current RDA descriptive cataloging standard. MarcEdit lets you do this
-through the function called RDA Helper.</p>
+records cataloged according to the old descriptive standard AACR2 or
+even AACR or earlier. Sometimes it is necessary to make sure these
+records follow the current RDA descriptive cataloging standard. MarcEdit
+lets you do this through the function called RDA Helper.</p>
 <p>To run the RDA Helper, go to Tools and select RDA Helper. In the
 window that opens, you can pick and choose how you would like to
 transform your records to align better with the RDA descriptive
 standard. For example, you can add the RDA fields 336, 337, and 338 for
 content, media, and carrier types. You can update the MARC field 040 to
-include the <code>$e</code> rda and delete the GMD statement. You can
-also evaluate the 260/264.</p>
-<figure><img src="../fig/rdaHelper.png" alt="MarcEdit RDA Helper" class="figure mx-auto d-block"></figure><div id="run-the-rda-helper-on-your-marc-data" class="callout challenge">
+include the <code>$e</code> rda and delete the General Material
+Designation (GMD) statement. You can also evaluate the 260/264.</p>
+<figure><img src="../fig/rdaHelper.png" alt="Image of the popup window for the MarcEdit RDA Helper" class="figure mx-auto d-block"></figure><div id="run-the-rda-helper-on-your-marc-data" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -2624,14 +2634,15 @@ abbreviations; Remove the GMD.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
 <li>Select RDA Helper</li>
 <li>Check off the settings listed above</li>
 <li>Click the OK button.</li>
-<li>Check your MARC data. Do you see the changes?</li>
+<li>Check your MARC data.</li>
+<li>List 1-3 changes</li>
 </ol>
 </div>
 </div>
@@ -2665,26 +2676,25 @@ new record subset (Save As), or merge the edits back into your complete
 record set (Save). When selecting (Save) to merge edits back into your
 complete record set, the temporary record set will close. Reopen your
 complete record set .mrk file to continue editing.</p>
-<div id="let-us-add-cutters-to-call-numbers-in-the-099" class="callout checklist">
+<div id="add-cutters-to-call-numbers-in-the-099" class="callout checklist">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check-square"></i>
 </div>
 <span class="callout-header">Checklist</span>
-<div id="let-us-add-cutters-to-call-numbers-in-the-099" class="callout-inner">
-<h3 class="callout-title">Let us add cutters to call numbers in the
-099</h3>
+<div id="add-cutters-to-call-numbers-in-the-099" class="callout-inner">
+<h3 class="callout-title">Add cutters to call numbers in the 099</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
 <li>Go to File → Select Records to Edit</li>
-<li>In the new window, type in <code>099$b</code> in the Field
-Display</li>
+<li>In the new window, type in <code>099$b</code> in the Display
+Field</li>
 <li>Click on Import File</li>
 <li>In the search box, type in “Display field not found” to locate all
 records missing <code>099$b</code>
 </li>
 <li>Click the magnifying glass icon. A pop up window will indicate the
 number of records selected that match your criteria. Click OK.</li>
-<li>Click on Export Selected. A pop up window indicate that your
+<li>Click on Export Selected. A pop up window indicates that your
 selected records have been extracted. Click OK.</li>
 <li>A new MarcEditor window will open. Note the temporary file name at
 the top of the editor window indicating this file is distinct from your
@@ -2703,6 +2713,19 @@ Generating Cutter for Call Numbers</a></p>
 </div>
 </div>
 </div>
+<div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
+  <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
+</button>
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div class="accordion-body">
+<p>Note: For step 1 in the checklist above, this might be different for
+Mac users.</p>
+</div>
+</div>
+</div>
+</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -2712,7 +2735,7 @@ Generating Cutter for Call Numbers</a></p>
 <div class="callout-content">
 <ul>
 <li>Advanced reports and functions are available in MarcEdit to apply
-global and selective edits</li>
+global and selective edits.</li>
 <li>MarcEdit comes with an array of tools to manipulate data and
 validate MARC.</li>
 </ul>
@@ -2840,7 +2863,7 @@ they organize their task workspace.</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Note: “Task Actions” and “Manage Existing Tasks” menu options are
 different on a Mac.</p>
@@ -2903,7 +2926,7 @@ helper and removes 9XX fields</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -2941,7 +2964,7 @@ the right to reorder your functions.</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
   <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
 <div class="accordion-body">
 <p>Note: If learners need instructions on deleting their existing
 proxies for the next challenge, suggest they use a find and replace, for
@@ -2981,7 +3004,7 @@ that in your Task.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the upper menu in the MarcEditor</li>
@@ -3283,7 +3306,7 @@ number 983545?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Go to Tools in the main menu</li>
@@ -3702,8 +3725,8 @@ are working as intended</li>
   "url": "https://librarycarpentry.github.io/lc-marcedit/instructor/aio.html",
   "identifier": "https://librarycarpentry.github.io/lc-marcedit/instructor/aio.html",
   "dateCreated": "2019-08-17",
-  "dateModified": "2026-07-21",
-  "datePublished": "2026-07-21"
+  "dateModified": "2026-07-22",
+  "datePublished": "2026-07-22"
 }
 
   </script><script>
