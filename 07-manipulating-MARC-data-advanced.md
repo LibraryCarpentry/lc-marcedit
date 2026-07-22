@@ -39,7 +39,7 @@ Note: With version 7.7, the Field Edits have an additional menu level. Cleaning 
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
-## Let us use Edit Shortcuts to make the 099$a upper case
+## Use Edit Shortcuts to make the 099$a upper case
 
 1. Go to Edit → Edit Shortcuts -> Change Case -> Upper Case
 2. In the new window, in the field box, type in `099$a`
@@ -58,14 +58,14 @@ You can use Find or Find All to verify that the change did what you expected on 
 ## Building a MARC field
 
 Sometimes it is necessary to create a new MARC field based on the content of existing MARC fields.
-This is possible using the function called, Build New Field.
+This is possible using the function called Build New Field.
 
-![](fig/buildNewField.png){alt='Build New Field Window'}
+![](fig/buildNewField.png){alt='Image of the popup window to configure how to build your MARC field'}
 
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
-## Let us build a new `035 9\$a` using the data from the 001 and static data
+## Build a new `035 9\$a` using the data from the 001 and static data
 
 1. Go to Tools → Build New Field
 2. In the new window, in the field box, type in `=035  9\$a(LCMarcEdit){001}`
@@ -98,7 +98,7 @@ This is possible using the function called, Build New Field.
 ## Beware the Build New Field Function
 In the example above, if your 856 contains other subfields such as \$3, then these will not be retained because you are only building a new 856 that replaces the current one. To retain \$3 data, you would need to include this parameter in your function. This would look like `=856 40{856$3}\$uhttps://exampleproxy.edu/login?url={856$u}`
 
-Also note, the build new field works on the first iteration of the field. When working in particular with the MARC field 856, if you need to build a new field using all of the MARC fields 856 in your record, you can use the syntax [x] as in {856$u[x]}. This will ensure all of the MARC fields in the records will undergo the build operation you specify.
+Also note, the build new field works on the first iteration of the field. When working in particular with the MARC field 856, if you need to build a new field using all of the MARC fields 856 in your record, you can use the syntax bracket, x, bracket or [x] as in '{856$u[x]}'. This will ensure all of the MARC fields in the records will undergo the build operation you specify.
   
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -106,30 +106,30 @@ Also note, the build new field works on the first iteration of the field. When w
 ## Advanced Subfield Edit Functions
 There are 3 advanced Edit Subfield features that are extremely useful. These are append, prepend, and change subfield. These are not regular expressions but special characters built into the MarcEditor Edit Subfield tool.
 
-- Prepend data to a subfield: Special character ^b
-- Change subfield character: Special character ^c
-- Append data to a subfield: Special character ^e
+- Prepend data to a subfield: Special character: '^b'
+- Change subfield character: Special character: '^c'
+- Append data to a subfield: Special character: '^e'
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
-## Let us add the proxy to the 856$u using the prepend special character ^b
+## Add the proxy to the 856$u using the prepend special character ^b
 
 1. Go to Tools → Edit Subfield Data
-2. In Field, Enter 856
-3. In Subfield, Enter u
-4. In Field Data, Enter ^b
-5. In Replace with, Enter "https://exampleproxy.edu/login?url="
+2. In Field, Enter '856'
+3. In Subfield, Enter 'u'
+4. In Field Data, Enter '^b'
+5. In Replace with, Enter 'https://exampleproxy.edu/login?url='
 6. Click Replace
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## RDA Helper
 
-Records are not created equal in that we encounter MARC data that follows different descriptive cataloging standards. There are many records cataloged according to the AACR2 standard or even AACR or earlier. Sometimes it is necessary to make sure these records follow the current RDA descriptive cataloging standard. MarcEdit lets you do this through the function called RDA Helper.
+Records are not created equal in that we encounter MARC data that follows different descriptive cataloging standards. There are many records cataloged according to the old descriptive standard AACR2 or even AACR or earlier. Sometimes it is necessary to make sure these records follow the current RDA descriptive cataloging standard. MarcEdit lets you do this through the function called RDA Helper.
 
-To run the RDA Helper, go to Tools and select RDA Helper. In the window that opens, you can pick and choose how you would like to transform your records to align better with the RDA descriptive standard. For example, you can add the RDA fields 336, 337, and 338 for content, media, and carrier types. You can update the MARC field 040 to include the `$e` rda and delete the GMD statement. You can also evaluate the 260/264.
+To run the RDA Helper, go to Tools and select RDA Helper. In the window that opens, you can pick and choose how you would like to transform your records to align better with the RDA descriptive standard. For example, you can add the RDA fields 336, 337, and 338 for content, media, and carrier types. You can update the MARC field 040 to include the `$e` rda and delete the General Material Designation (GMD) statement. You can also evaluate the 260/264.
 
-![](fig/rdaHelper.png){alt='MarcEdit RDA Helper'}
+![](fig/rdaHelper.png){alt='Image of the popup window for the MarcEdit RDA Helper'}
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -145,7 +145,8 @@ To run the RDA Helper, go to Tools and select RDA Helper. In the window that ope
 2. Select RDA Helper
 3. Check off the settings listed above
 4. Click the OK button.
-5. Check your MARC data. Do you see the changes?
+5. Check your MARC data.
+6. List 1-3 changes
   
 :::::::::::::::::::::::::
 
@@ -170,14 +171,14 @@ When saving the exported records you can choose to save the file as a new record
 
 :::::::::::::::::::::::::::::::::::::::  checklist
 
-## Let us add cutters to call numbers in the 099
+## Add cutters to call numbers in the 099
 
 1. Go to File → Select Records to Edit
-2. In the new window, type in `099$b` in the Field Display
+2. In the new window, type in `099$b` in the Display Field
 3. Click on Import File
 4. In the search box, type in "Display field not found" to locate all records missing `099$b`
 5. Click the magnifying glass icon. A pop up window will indicate the number of records selected that match your criteria. Click OK.
-6. Click on Export Selected. A pop up window indicate that your selected records have been extracted. Click OK.
+6. Click on Export Selected. A pop up window indicates that your selected records have been extracted. Click OK.
 7. A new MarcEditor window will open. Note the temporary file name at the top of the editor window indicating this file is distinct from your main file. In the new MarcEditor, go to Tools → Call Number tools → Cuttering Tools → Generate Cutters.
 8. In the field box enter 099, select Cutter order (1xx,2xx), and click Process
 9. Check your results by using Find All `=099`
@@ -186,9 +187,16 @@ When saving the exported records you can choose to save the file as a new record
 For more information on the Cuttering Tool, watch Terry Reese's YouTube video [Automatically Generating Cutter for Call Numbers](https://www.youtube.com/watch?v=F75qwnXKRMY&t=0s) 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+:::::::::::::::::::::::::::::::::::::: instructor
+
+Note: For step 1 in the checklist above, this might be different for Mac users.
+  
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- Advanced reports and functions are available in MarcEdit to apply global and selective edits
+- Advanced reports and functions are available in MarcEdit to apply global and selective edits.
 - MarcEdit comes with an array of tools to manipulate data and validate MARC.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
