@@ -30,7 +30,7 @@ Library Carpentry is authored and maintained through issues, commits, and pull r
 
 ## Citation
 
-Library Carpentry: MarcEdit (2019, September). [https://github.com/LibraryCarpentry/lc-marcedit](https://github.com/LibraryCarpentry/lc-marcedit).
+Eustis, J., Oon, S., Sparling, A., Stephens, O. Library Carpentry: MarcEdit (2026, July). Retrieved from [https://github.com/LibraryCarpentry/lc-marcedit](https://github.com/LibraryCarpentry/lc-marcedit).
 
 ## Acknowledgement
 
