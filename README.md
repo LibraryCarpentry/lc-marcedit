@@ -1,7 +1,7 @@
 # Maintainers for Library Carpentry: MarcEdit
 
 - [Owen Stephens](https://github.com/ostephens)
-- [Jennifer Eustis](https://github.com/jenmawe)
+- [Jennifer Eustis](https://github.com/jenmawe), [Orcid ID](https://orcid.org/0000-0001-6461-8625)
 - [Abigail Sparling](https://github.com/abigailsparling)
 - Interested in being a maintainer on this lesson, let us know!
 
