@@ -1,4 +1,7 @@
-# Maintainers for Library Carpentry: MarcEdit
+# Library Carpentry: MarcEdit
+This Library Carpentry lesson introduces people working in library- and information-related roles to working with MARC data in MarcEdit.
+
+## Maintainers
 
 - [Owen Stephens](https://github.com/ostephens)
 - [Jennifer Eustis](https://github.com/jenmawe), [Orcid ID](https://orcid.org/0000-0001-6461-8625)
@@ -38,6 +41,6 @@ Some of the content in this MarcEdit lesson was initially based on CC-BY materia
 
 ## Checking and Previewing the Lesson
 
-To check and preview a lesson locally, see [http://carpentries.github.io/lesson-example/07-checking/index.html](https://carpentries.github.io/lesson-example/07-checking/index.html).
+To check and preview a lesson locally, refer to [The Carpentries Workbench documentation](https://carpentries.github.io/sandpaper-docs/).
 
 
