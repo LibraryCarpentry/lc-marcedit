@@ -1,6 +1,8 @@
 # Library Carpentry: MarcEdit
 This Library Carpentry lesson introduces people working in library- and information-related roles to working with MARC data in MarcEdit.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7863912.svg)](https://doi.org/10.5281/zenodo.7863912)
+
 ## Maintainers
 
 - [Owen Stephens](https://github.com/ostephens)
