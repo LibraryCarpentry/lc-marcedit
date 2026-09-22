@@ -33,14 +33,10 @@ Library Carpentry is authored and maintained through issues, commits, and pull r
 
 ## Citation
 
-Eustis, J., Oon, S., Sparling, A., Stephens, O. Library Carpentry: MarcEdit (2026, July). Retrieved from [https://github.com/LibraryCarpentry/lc-marcedit](https://github.com/LibraryCarpentry/lc-marcedit).
+Eustis, J., Oon, S., Sparling, A., Stephens, O. (2026) LibraryCarpentry/lc-marcedit: Library Carpentry: MarcEdit (2026-09). Zenodo. [https://doi.org/10.5281/zenodo.7863912](https://doi.org/10.5281/zenodo.7863912).
 
 ## Acknowledgement
 
 Some of the content in this MarcEdit lesson was initially based on CC-BY materials developed by Owen Stephens in November 2015.
-
-## Checking and Previewing the Lesson
-
-To check and preview a lesson locally, refer to [The Carpentries Workbench documentation](https://carpentries.github.io/sandpaper-docs/).
 
 
