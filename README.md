@@ -8,7 +8,8 @@ This Library Carpentry lesson introduces people working in library- and informat
 - [Owen Stephens](https://github.com/ostephens)
 - [Jennifer Eustis](https://github.com/jenmawe), [Orcid ID](https://orcid.org/0000-0001-6461-8625)
 - [Abigail Sparling](https://github.com/abigailsparling)
-- Interested in being a maintainer on this lesson, let us know!
+- [Senn Oon](https://github.com/s-oon), [ORCiD](https://orcid.org/0000-0001-9038-5837)
+- If you're interested in being a maintainer on this lesson, let us know!
 
 Lesson Maintainers communication is via Slack.
 
