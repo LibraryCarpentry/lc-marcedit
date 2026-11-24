@@ -1,0 +1,147 @@
+---
+title: Integrations
+teaching: 20
+exercises: 1
+---
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Understand what integrations are and why they are useful
+- Understand where to set up an integration
+- Set up a Z39.50 service and search for a MARC record
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- What are integrations?
+- What work can integrations support?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+## MarcEdit and 3rd Party Integrations
+
+MarcEdit can interface (or integrate) with other applications. Integrations with other cataloguing utilities, such as vendor ILS and LSP systems and OCLC WorldCat, support advanced actions, including downloading records, pushing new records or record updates, and setting holdings (OCLC WorldCat). Currently, MarcEdit can integrate with the ILS Alma, Koha, or a local ILS if you can connect to the host database. MarcEdit can be set up to integrate with OCLC's APIs for metadata and connect to OCLC or the Library of Congress (UTF-8 or MARC8) Z39.50 services.
+
+For the ILS integrations you will need one or some of the following:
+
+- Host URL of the database
+- Username and password
+- OCLC Connexion username and password
+- Token
+- API Key
+
+### Integration with an ILS
+At this time, MarcEdit supports integrations with the ILS Alma and Koha. The ILS integration will require you to request an API key from your systems person, your ILS vendor, or your hosting vendor. For additional support setting up the integration, you may leverage your vendor or user group community. For example, for Alma, you can reach out to the Alma listserv to get guidance or to the Alma Tech Blog on [integrating MarcEdit with Alma](https://developers.exlibrisgroup.com/blog/configure-marcedit-7-to-work-with-alma-updated-for-marcedit-7-5-116-12-17-2021/). For Koha, this [article](https://bywatersolutions.com/education/koha-tutorial-exporting-records-marcedit) from ByWater Solutions offers guidance on how to edit records in MarcEdit using the Koha MarcEdit integration.
+
+### Integration with OCLC's API
+For the OCLC API integration, you need to [check if your institution is eligible and request an API key](https://www.oclc.org/developer/support/eligibility.en.html) for this service. If your institution is eligible, you can request a key through [OCLC's developer network](https://www.oclc.org/developer/develop/authentication/how-to-request-a-wskey.en.html). You can also go to Preferences from the main menu in MarcEdit, click on OCLC API Integration and then click on the "Request an OCLC Key". It is recommended to consult OCLC's help page on [setting up MarcEdit OCLC integration]([https://help.oclc.org/Librarian_Toolbox/OCLC_APIs/Troubleshooting/How_do_I_set_up_MarcEdit_OCLC_Integration%3F?sl=en](https://help.oclc.org/Librarian_Toolbox/OCLC_APIs/Troubleshooting/How_do_I_set_up_MarcEdit_OCLC_Integration%3F)) as well as Terry Reese's information from his blog.
+
+### Integration with a Z39.50 Database
+Many systems rely on the Z39.50 protocol to search and exchange data. It could be the case that your current ILS relies on it for Interlibrary loan or copy cataloging. [zbrary](https://www.z-brary.com/) provide a directory of available Z39.50 databases along with the required information.
+
+The required information for setting up a new Z39.50 Database is outlined below:
+
+<table>
+  <tr>
+    <th><strong>Field</strong></th>
+    <th><strong>Value</strong></th>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>Enter a name that helps you remember which Z39.50 service you are connecting to</td>
+  </tr>
+  <tr>
+    <td>Host</td>
+    <td>The link to the host's Z39.50.</td>
+  </tr>
+  <tr>
+    <td>Database</td>
+    <td>Enter the name of the database</td>
+  </tr>
+  <tr>
+    <td>Port</td>
+    <td>Enter the port number</td>
+  </tr>
+  <tr>
+    <td>Syntax</td>
+    <td>Enter the flavor of MARC such as USMARC</td>
+  </tr>
+  <tr>
+    <td>Username</td>
+    <td>Enter a username</td>
+  </tr>
+</table>
+
+For [OCLC](https://help.oclc.org/Metadata_Services/Z3950_Cataloging/Get_started/Configuration_guide_for_OCLC_Z39.50_Cataloging), this information looks like the following. 
+
+<table>
+  <tr>
+    <th><strong>Field</strong></th>
+    <th><strong>Value</strong></th>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>OCLC's Library Catalog</td>
+  </tr>
+  <tr>
+    <td>Host</td>
+    <td>zcat.oclc.org</td>
+  </tr>
+  <tr>
+    <td>Database</td>
+    <td>OLUCWorldCat</td>
+  </tr>
+  <tr>
+    <td>Port</td>
+    <td>210</td>
+  </tr>
+  <tr>
+    <td>Syntax</td>
+    <td>MARC21</td>
+  </tr>
+  <tr>
+    <td>Username & Password</td>
+    <td>Connexion Username of 3 numbers - 3 numbers - 3 numbers as in 100-034-090 and your Connexion Password</td>
+  </tr>
+</table>
+
+You can add multiple Z39.50 connections. To do this, go to the main menu, click on Tools, then Utilities, then Z39.50/SRU Client. In the new window, click on Actions in the upper left hand corner and select "Add new Z39.50 Server". 
+
+::::::::::::::::::::::::::::::::::::::: challenge
+## Add an integration with a Z39.50 Database
+
+Add a connection to the Library of Congress' Z39.50 using the information below. What is the main entry if you search for the record number 983545?
+
+- Name: Library of Congress
+- Host: lx2.loc.gov
+- Database: LCDB
+- Port: 210
+- Syntax: MARC21
+- Username/Password: Leave Blank
+
+::::::::::::::: solution
+## Solution
+
+1. Go to Tools in the main menu
+2. Click on Tools -> Utilities -> Z39.50/SRU Client
+3. In the new window, click on Actions -> Add new Z39.50 Client
+4. Use the information above to fill out the fields
+5. Click Save
+6. Make sure the Query Database has "Library of Congress"
+7. Make sure the Search box is set to "Record Number"
+8. In that Search box, put in 983545
+9. 1 result with the Main Entry of "Querelae & opprobira ventribuli, sive."
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+- Integrations allow you to connect to external catalogue applications that can support search, exchange, and editing of MARC data
+- Some integrations are free, while others require institutional subscriptions before they can be configured and used
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
